@@ -16,205 +16,147 @@
 * limitations under the License.
 */
 
-import arcsine = require( './index' );
+import namedtypedtuple = require( './index' );
 
 
 // TESTS //
 
-// The function returns a number...
+// The function returns a factory function...
 {
-	arcsine( 2, 3 ); // $ExpectType number
-	arcsine( 1, 2 ); // $ExpectType number
+	namedtypedtuple( [ 'x', 'y' ] ); // $ExpectType Factory
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': 'int32' } ); // $ExpectType Factory
 }
 
-// The compiler throws an error if the function is provided values other than two numbers...
+// The compiler throws an error if the function is provided a first argument that is not a string array...
 {
-	arcsine( true, 3 ); // $ExpectError
-	arcsine( false, 2 ); // $ExpectError
-	arcsine( '5', 1 ); // $ExpectError
-	arcsine( [], 1 ); // $ExpectError
-	arcsine( {}, 2 ); // $ExpectError
-	arcsine( ( x: number ): number => x, 2 ); // $ExpectError
+	namedtypedtuple( 123, 1 ); // $ExpectError
+	namedtypedtuple( true ); // $ExpectError
+	namedtypedtuple( false ); // $ExpectError
+	namedtypedtuple( null ); // $ExpectError
+	namedtypedtuple( 'abc' ); // $ExpectError
+	namedtypedtuple( {}, 2 ); // $ExpectError
+	namedtypedtuple( ( x: number ): number => x ); // $ExpectError
 
-	arcsine( 9, true ); // $ExpectError
-	arcsine( 9, false ); // $ExpectError
-	arcsine( 5, '5' ); // $ExpectError
-	arcsine( 8, [] ); // $ExpectError
-	arcsine( 9, {} ); // $ExpectError
-	arcsine( 8, ( x: number ): number => x ); // $ExpectError
+	namedtypedtuple( 123, {} ); // $ExpectError
+	namedtypedtuple( true, {} ); // $ExpectError
+	namedtypedtuple( false, {} ); // $ExpectError
+	namedtypedtuple( null, {} ); // $ExpectError
+	namedtypedtuple( 'abc', {} ); // $ExpectError
+	namedtypedtuple( {}, {} ); // $ExpectError
+	namedtypedtuple( ( x: number ): number => x, {} ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `dtype` option which is not a recognized data type...
+{
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': 123 } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': 'abc' } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': null } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': [] } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': {} } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': true } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': false } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'dtype': ( x: number ): number => x } ); // $ExpectError
+}
+
+// The compiler throws an error if the function is provided a `name` option which is not a string...
+{
+	namedtypedtuple( [ 'x', 'y' ], { 'name': 123 } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': null } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': [] } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': {} } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': true } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': false } ); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], { 'name': ( x: number ): number => x } ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided an unsupported number of arguments...
 {
-	arcsine(); // $ExpectError
-	arcsine( 2 ); // $ExpectError
-	arcsine( 2, 2, 4 ); // $ExpectError
+	namedtypedtuple(); // $ExpectError
+	namedtypedtuple( [ 'x', 'y' ], {}, {} ); // $ExpectError
 }
 
-// Attached to main export is a `factory` method which returns a function...
+// The function returns a `factory` function that returns a tuple...
 {
-	arcsine.factory( 2, 2 ); // $ExpectType NullaryFunction
-	arcsine.factory(); // $ExpectType BinaryFunction
-	arcsine.factory( { 'copy': false } ); // $ExpectType BinaryFunction
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory( [ 1, 2 ] ); // $ExpectType Tuple
+	factory( [ 1, 2 ], 'int16' ); // $ExpectType Tuple
+	factory( new Int32Array( [ 1, 2 ] ), 'int16' ); // $ExpectType Tuple
+	factory(); // $ExpectType Tuple
+	factory( 'float32' ); // $ExpectType Tuple
 }
 
-// The `factory` method returns a function which returns a number...
+// The function returns a `factory` function with a `from` method which returns a tuple...
 {
-	const fcn1 = arcsine.factory( 2, 2 );
-	fcn1(); // $ExpectType number
-
-	const fcn2 = arcsine.factory();
-	fcn2( 2, 2 ); // $ExpectType number
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory.from( [ 1, 2 ] ); // $ExpectType Tuple
+	factory.from( [ 1, 2 ], ( x: number ): number => x * x ); // $ExpectType Tuple
+	factory.from( [ 1, 2 ], ( x: number ): number => x * x, {} ); // $ExpectType Tuple
 }
 
-// The compiler throws an error if the function returned by the `factory` method is provided invalid arguments...
+// The compiler throws an error if the `from` method of the `factory` function is provided a first argument which is not array-like...
 {
-	const fcn1 = arcsine.factory( 2, 4 );
-	fcn1( 12 ); // $ExpectError
-	fcn1( true ); // $ExpectError
-	fcn1( false ); // $ExpectError
-	fcn1( '5' ); // $ExpectError
-	fcn1( [] ); // $ExpectError
-	fcn1( {} ); // $ExpectError
-	fcn1( ( x: number ): number => x ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory.from( true ); // $ExpectError
+	factory.from( false ); // $ExpectError
+	factory.from( 123 ); // $ExpectError
+	factory.from( null ); // $ExpectError
+	factory.from( {} ); // $ExpectError
 
-	const fcn2 = arcsine.factory();
-	fcn2( true, 2 ); // $ExpectError
-	fcn2( false, 2 ); // $ExpectError
-	fcn2( '5', 2 ); // $ExpectError
-	fcn2( [], 2 ); // $ExpectError
-	fcn2( {}, 2 ); // $ExpectError
-	fcn2( ( x: number ): number => x, 2 ); // $ExpectError
+	factory.from( true, ( x: number ): number => x * x ); // $ExpectError
+	factory.from( false, ( x: number ): number => x * x ); // $ExpectError
+	factory.from( 123, ( x: number ): number => x * x ); // $ExpectError
+	factory.from( null, ( x: number ): number => x * x ); // $ExpectError
+	factory.from( {}, ( x: number ): number => x * x ); // $ExpectError
 
-	fcn2( 1, true ); // $ExpectError
-	fcn2( 1, false ); // $ExpectError
-	fcn2( 1, '5' ); // $ExpectError
-	fcn2( 1, [] ); // $ExpectError
-	fcn2( 1, {} ); // $ExpectError
-	fcn2( 1, ( x: number ): number => x ); // $ExpectError
+	factory.from( true, ( x: number ): number => x * x, {} ); // $ExpectError
+	factory.from( false, ( x: number ): number => x * x, {} ); // $ExpectError
+	factory.from( 123, ( x: number ): number => x * x, {} ); // $ExpectError
+	factory.from( null, ( x: number ): number => x * x, {} ); // $ExpectError
+	factory.from( {}, ( x: number ): number => x * x, {} ); // $ExpectError
 }
 
-// The compiler throws an error if the function returned by the `factory` method is provided an unsupported number of arguments...
+// The compiler throws an error if the `from` method of the `factory` function is provided a second argument which is not a function with a supported signature...
 {
-	const fcn1 = arcsine.factory( 2, 2 );
-	fcn1( 1 ); // $ExpectError
-	fcn1( 2, 1 ); // $ExpectError
-	fcn1( 2, 1, 1 ); // $ExpectError
-
-	const fcn2 = arcsine.factory();
-	fcn2(); // $ExpectError
-	fcn2( 1 ); // $ExpectError
-	fcn2( 2, 1, 1 ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory.from( [ 1, 2 ], true ); // $ExpectError
+	factory.from( [ 1, 2 ], false ); // $ExpectError
+	factory.from( [ 1, 2 ], 123 ); // $ExpectError
+	factory.from( [ 1, 2 ], null ); // $ExpectError
+	factory.from( [ 1, 2 ], {} ); // $ExpectError
 }
 
-// The compiler throws an error if the `factory` method is provided values other than two numbers aside from an options object...
+// The function returns a `factory` function with a `fromObject` method which returns a tuple...
 {
-	arcsine.factory( true, 3 ); // $ExpectError
-	arcsine.factory( false, 2 ); // $ExpectError
-	arcsine.factory( '5', 1 ); // $ExpectError
-	arcsine.factory( [], 1 ); // $ExpectError
-	arcsine.factory( {}, 2 ); // $ExpectError
-	arcsine.factory( ( x: number ): number => x, 2 ); // $ExpectError
-
-	arcsine.factory( 9, true ); // $ExpectError
-	arcsine.factory( 9, false ); // $ExpectError
-	arcsine.factory( 5, '5' ); // $ExpectError
-	arcsine.factory( 8, [] ); // $ExpectError
-	arcsine.factory( 9, {} ); // $ExpectError
-	arcsine.factory( 8, ( x: number ): number => x ); // $ExpectError
-
-	arcsine.factory( true, 3, {} ); // $ExpectError
-	arcsine.factory( false, 2, {} ); // $ExpectError
-	arcsine.factory( '5', 1, {} ); // $ExpectError
-	arcsine.factory( [], 1, {} ); // $ExpectError
-	arcsine.factory( {}, 2, {} ); // $ExpectError
-	arcsine.factory( ( x: number ): number => x, 2, {} ); // $ExpectError
-
-	arcsine.factory( 9, true, {} ); // $ExpectError
-	arcsine.factory( 9, false, {} ); // $ExpectError
-	arcsine.factory( 5, '5', {} ); // $ExpectError
-	arcsine.factory( 8, [], {} ); // $ExpectError
-	arcsine.factory( 9, {}, {} ); // $ExpectError
-	arcsine.factory( 8, ( x: number ): number => x, {} ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	const obj = { 'x': 1.0, 'y': -1.0 };
+	factory.fromObject( obj ); // $ExpectType Tuple
+	factory.fromObject( obj, ( x: number ): number => x * x ); // $ExpectType Tuple
+	factory.fromObject( obj, ( x: number ): number => x * x, {} ); // $ExpectType Tuple
 }
 
-// The compiler throws an error if the `factory` method is provided an options argument which is not an object...
+// The compiler throws an error if the `fromObject` method of the `factory` function is provided a second argument which is not a function with a supported signature...
 {
-	arcsine.factory( null ); // $ExpectError
-	arcsine.factory( 2, 2, null ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	const obj = { 'x': 1.0, 'y': -1.0 };
+	factory.fromObject( obj, true ); // $ExpectError
+	factory.fromObject( obj, false ); // $ExpectError
+	factory.fromObject( obj, 123 ); // $ExpectError
+	factory.fromObject( obj, null ); // $ExpectError
+	factory.fromObject( obj, {} ); // $ExpectError
+	factory.fromObject( obj, ( x: number, y: number ): number => x * y ); // $ExpectError
 }
 
-// The compiler throws an error if the `factory` method is provided a `prng` option which is not a pseudorandom number generator...
+// The function returns a `factory` function with an `of` method which returns a tuple...
 {
-	arcsine.factory( 2, 2, { 'prng': 123 } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': 'abc' } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': null } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': [] } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'prng': true ); // $ExpectError
-
-	arcsine.factory( { 'prng': 123 } ); // $ExpectError
-	arcsine.factory( { 'prng': 'abc' } ); // $ExpectError
-	arcsine.factory( { 'prng': null } ); // $ExpectError
-	arcsine.factory( { 'prng': [] } ); // $ExpectError
-	arcsine.factory( { 'prng': {} } ); // $ExpectError
-	arcsine.factory( { 'prng': true ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory.of( 1, 2 ); // $ExpectType Tuple
 }
 
-// The compiler throws an error if the `factory` method is provided a `seed` option which is not a valid seed...
+// The compiler throws an error if the `of` method of the `factory` function is provided arguments that are not numbers...
 {
-	arcsine.factory( 2, 2, { 'seed': true } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'seed': 'abc' } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'seed': null } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'seed': [ 'a' ] } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'seed': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'seed': ( x: number ): number => x } ); // $ExpectError
-
-	arcsine.factory( { 'seed': true } ); // $ExpectError
-	arcsine.factory( { 'seed': 'abc' } ); // $ExpectError
-	arcsine.factory( { 'seed': null } ); // $ExpectError
-	arcsine.factory( { 'seed': [ 'a' ] } ); // $ExpectError
-	arcsine.factory( { 'seed': {} } ); // $ExpectError
-	arcsine.factory( { 'seed': ( x: number ): number => x } ); // $ExpectError
-}
-
-// The compiler throws an error if the `factory` method is provided a `state` option which is not a valid state...
-{
-	arcsine.factory( 2, 2, { 'state': 123 } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': 'abc' } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': null } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': [] } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': true ); // $ExpectError
-	arcsine.factory( 2, 2, { 'state': ( x: number ): number => x } ); // $ExpectError
-
-	arcsine.factory( { 'state': 123 } ); // $ExpectError
-	arcsine.factory( { 'state': 'abc' } ); // $ExpectError
-	arcsine.factory( { 'state': null } ); // $ExpectError
-	arcsine.factory( { 'state': [] } ); // $ExpectError
-	arcsine.factory( { 'state': {} } ); // $ExpectError
-	arcsine.factory( { 'state': true ); // $ExpectError
-	arcsine.factory( { 'state': ( x: number ): number => x } ); // $ExpectError
-}
-
-// The compiler throws an error if the `factory` method is provided a `copy` option which is not a boolean...
-{
-	arcsine.factory( 2, 2, { 'copy': 123 } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'copy': 'abc' } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'copy': null } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'copy': [] } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'copy': {} } ); // $ExpectError
-	arcsine.factory( 2, 2, { 'copy': ( x: number ): number => x } ); // $ExpectError
-
-	arcsine.factory( { 'copy': 123 } ); // $ExpectError
-	arcsine.factory( { 'copy': 'abc' } ); // $ExpectError
-	arcsine.factory( { 'copy': null } ); // $ExpectError
-	arcsine.factory( { 'copy': [] } ); // $ExpectError
-	arcsine.factory( { 'copy': {} } ); // $ExpectError
-	arcsine.factory( { 'copy': ( x: number ): number => x } ); // $ExpectError
-}
-
-// The compiler throws an error if the `factory` method is provided more than three arguments...
-{
-	arcsine.factory( 2, 4, {}, 2 ); // $ExpectError
+	const factory = namedtypedtuple( [ 'x', 'y' ] );
+	factory.of( 'abc' ); // $ExpectError
+	factory.of( true, false ); // $ExpectError
+	factory.of( {}, [] ); // $ExpectError
+	factory.of( null ); // $ExpectError
 }

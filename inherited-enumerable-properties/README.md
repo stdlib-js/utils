@@ -168,7 +168,7 @@ console.log( props );
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/symbol/ctor
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 </section>
 

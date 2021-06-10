@@ -355,6 +355,11 @@ interface Namespace {
 	argumentFunction: typeof argumentFunction;
 
 	/**
+	* Standard async utilities.
+	*/
+	async: typeof async;
+
+	/**
 	* Splits values into two groups.
 	*
 	* ## Notes
@@ -3279,6 +3284,38 @@ interface Namespace {
 	* // returns false
 	*/
 	moveProperty: typeof moveProperty;
+
+	/**
+	* Returns a named typed tuple factory.
+	*
+	* @param names - field (property) names
+	* @param options - options
+	* @param options.dtype - default data type (default: 'float64')
+	* @param options.name - tuple name (default: 'tuple')
+	* @throws must provide distinct field names
+	* @throws cannot provide a reserved field (property) name
+	* @throws must provide valid options
+	* @throws must provide a recognized data type
+	* @returns factory function
+	*
+	* @example
+	* var point = ns.namedtypedtuple( [ 'x', 'y' ] );
+	*
+	* var p = point( [ 1.0, -1.0 ] );
+	*
+	* var x = p[ 0 ];
+	* // returns 1.0
+	*
+	* x = p.x;
+	* // returns 1.0
+	*
+	* var y = p[ 1 ];
+	* // returns -1.0
+	*
+	* y = p.y;
+	* // returns -1.0
+	*/
+	namedtypedtuple: typeof namedtypedtuple;
 
 	/**
 	* Returns a string value indicating a specification defined classification (via the internal property `[[Class]]`) of an object.

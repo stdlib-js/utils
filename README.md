@@ -20,14 +20,16 @@ limitations under the License.
 
 # Utils
 
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+
 > Standard library utilities.
 
 <section class="installation">
 
 ## Installation
 
-``` bash
-$ npm install @stdlib/utils
+```bash
+npm install @stdlib/utils
 ```
 
 </section>
@@ -358,21 +360,13 @@ console.log( objectKeys( utils ) );
 
 <section class="main-repo" >
 
-# stdlib-js
+* * *
 
+## Notice
 
-<div class="image" align="center">
-	<img src="https://raw.githubusercontent.com/stdlib-js/esm/main/docs/assets/logo_header.png" alt="stdlib logo">
-	<br>
-</div>
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
----
-
-> This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js.
-
-stdlib is a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
-
-For unit tests, benchmarks, and information on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
+For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
 ---
 
@@ -383,7 +377,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2020. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -392,6 +386,18 @@ Copyright &copy; 2016-2020. The Stdlib [Authors][stdlib-authors].
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+[npm-image]: http://img.shields.io/npm/v/@stdlib/utils.svg
+[npm-url]: https://npmjs.org/package/@stdlib/utils
+
+[test-image]: https://github.com/stdlib-js/utils/actions/workflows/test.yml/badge.svg
+[test-url]: https://github.com/stdlib-js/utils/actions/workflows/test.yml
+
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/utils?branch=main
+
+[dependencies-image]: https://img.shields.io/david/stdlib-js/utils
+[dependencies-url]: https://david-dm.org/stdlib-js/utils/main
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 

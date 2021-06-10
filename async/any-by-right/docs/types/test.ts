@@ -22,23 +22,22 @@ const isPositive = ( v: number ): boolean => {
 	return ( v > 0 );
 };
 
-const done = ( error, bool ) => {
+const done = ( error: Error | null, bool: boolean ) => {
 	if ( error ) {
 		throw error;
 	}
-	if ( bool ) {
-		console.log( 'Successfully read at least one file.' );
-	} else {
-		console.log( 'Unable to read any files.' );
+	if ( bool === void 0 ) {
+		throw new Error( '`bool` is not a boolean.' );
 	}
-}
+};
+
 
 // TESTS //
 
-// The function returns a boolean...
+// The function returns void...
 {
-	anyByRightAsync( [ 0, 1, 1 ], isPositive, done ); // $ExpectType boolean
-	anyByRightAsync( [ -1, 1, 2 ], isPositive, done ); // $ExpectType boolean
+	anyByRightAsync( [ 0, 1, 1 ], isPositive, done ); // $ExpectType void
+	anyByRightAsync( [ -1, 1, 2 ], isPositive, done ); // $ExpectType void
 }
 
 // The compiler throws an error if the function is provided a first argument which is not a collection...
@@ -57,7 +56,6 @@ const done = ( error, bool ) => {
 	anyByRightAsync( [ 1, 2, 3 ], 'abc', done ); // $ExpectError
 	anyByRightAsync( [ 1, 2, 3 ], {}, done ); // $ExpectError
 	anyByRightAsync( [ 1, 2, 3 ], [], done ); // $ExpectError
-	anyByRightAsync( [ 1, 2, 3 ], ( x: number ): number => x, done ); // $ExpectError
 }
 
 // The compiler throws an error if the function is provided a done callback argument which is not a function having a supported signature...
@@ -101,7 +99,6 @@ const done = ( error, bool ) => {
 	anyByRightAsync.factory( false ); // $ExpectError
 	anyByRightAsync.factory( {}, 123 ); // $ExpectError
 	anyByRightAsync.factory( {}, 'abc' ); // $ExpectError
-	anyByRightAsync.factory( {}, ( x: number ): number => x ); // $ExpectError
 }
 
 // The compiler throws an error if the function returned by the `factory` method is provided invalid arguments...
@@ -110,9 +107,7 @@ const done = ( error, bool ) => {
 	fcn1( 12, done ); // $ExpectError
 	fcn1( true, done ); // $ExpectError
 	fcn1( false, done ); // $ExpectError
-	fcn1( '5', done ); // $ExpectError
 	fcn1( {}, done ); // $ExpectError
-	fcn1( ( x: number ): number => x, done ); // $ExpectError
 
 	fcn1( [ 1, 2, 3 ], 12 ); // $ExpectError
 	fcn1( [ 1, 2, 3 ], true ); // $ExpectError
