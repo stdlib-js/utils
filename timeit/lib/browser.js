@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var noop = require( '@stdlib/utils/noop' ); // TODO: iframe/workers; will have to determine clock resolution
+var noop = require( './../../noop' ); // TODO: iframe/workers; will have to determine clock resolution
 
 
 // EXPORTS //

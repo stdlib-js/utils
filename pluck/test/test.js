@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var pluck = require( './../lib' );
 
 

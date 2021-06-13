@@ -23,7 +23,7 @@
 var fork = require( 'child_process' ).fork;
 var path = require( 'path' );
 var logger = require( 'debug' );
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../../keys' );
 var getOpts = require( './options.js' );
 
 

@@ -20,13 +20,13 @@
 
 // MODULES //
 
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var isObject = require( '@stdlib/assert/is-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isBuffer = require( '@stdlib/assert/is-buffer' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var typeOf = require( '@stdlib/utils/type-of' );
-var deepCopy = require( '@stdlib/utils/copy' );
+var typeOf = require( './../../type-of' );
+var deepCopy = require( './../../copy' );
 
 
 // MAIN //

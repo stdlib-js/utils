@@ -21,7 +21,7 @@
 // MODULES //
 
 var logger = require( 'debug' );
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../../../keys' );
 var proc = require( './process.js' );
 var db = require( './children.js' );
 

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var getGlobal = require( '@stdlib/utils/global' );
+var getGlobal = require( './../../../global' );
 
 
 // MAIN //

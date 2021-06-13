@@ -23,8 +23,8 @@
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
 var ENV = require( '@stdlib/process/env' );
-var noop = require( '@stdlib/utils/noop' );
-var nextTick = require( '@stdlib/utils/next-tick' );
+var noop = require( './../../noop' );
+var nextTick = require( './../../next-tick' );
 var exec = require( './../lib/node/worker/exec.js' );
 
 

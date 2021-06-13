@@ -23,7 +23,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var moveProperty = require( './../lib' );
 
 

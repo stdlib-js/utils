@@ -58,7 +58,7 @@
 
 // MODULES //
 
-var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
+var setReadOnly = require( './../../../define-nonenumerable-read-only-property' );
 var tabulateByAsync = require( './tabulate_by.js' );
 var factory = require( './factory.js' );
 

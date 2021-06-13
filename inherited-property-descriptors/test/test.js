@@ -23,10 +23,10 @@
 var tape = require( 'tape' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var getSymbols = require( '@stdlib/utils/property-symbols' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var inherit = require( '@stdlib/utils/inherit' );
+var objectKeys = require( './../../keys' );
+var getSymbols = require( './../../property-symbols' );
+var defineProperty = require( './../../define-property' );
+var inherit = require( './../../inherit' );
 var inheritedPropertyDescriptors = require( './../lib' ); // eslint-disable-line id-length
 
 

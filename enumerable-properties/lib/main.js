@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var keys = require( '@stdlib/utils/keys' );
-var propertySymbols = require( '@stdlib/utils/property-symbols' );
+var keys = require( './../../keys' );
+var propertySymbols = require( './../../property-symbols' );
 var isEnumerable = require( '@stdlib/assert/is-enumerable-property' );
 
 

@@ -21,9 +21,9 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var noop = require( '@stdlib/utils/noop' );
+var defineProperty = require( './../../define-property' );
+var objectKeys = require( './../../keys' );
+var noop = require( './../../noop' );
 var forOwn = require( './../lib' );
 
 

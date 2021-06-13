@@ -42,7 +42,7 @@ var Uint32Array = require( '@stdlib/array/uint32' );
 var ArrayBuffer = require( '@stdlib/array/buffer' );
 var Number = require( '@stdlib/number/ctor' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
+var setReadOnly = require( './../../define-read-only-property' );
 
 
 // VARIABLES //

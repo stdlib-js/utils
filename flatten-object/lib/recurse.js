@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var isPlainObject = require( '@stdlib/assert/is-plain-object' );
 var isArray = require( '@stdlib/assert/is-array' );
 

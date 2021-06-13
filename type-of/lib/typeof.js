@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var ctorName = require( '@stdlib/utils/constructor-name' );
+var ctorName = require( './../../constructor-name' );
 
 
 // NOTES //

@@ -23,7 +23,7 @@
 var bench = require( '@stdlib/bench' );
 var isArray = require( '@stdlib/assert/is-array' );
 var randu = require( '@stdlib/random/base/randu' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var pkg = require( './../package.json' ).name;
 var nonEnumerablePropertySymbols = require( './../lib' ); // eslint-disable-line id-length
 

@@ -21,7 +21,7 @@
 // MODULES //
 
 var logger = require( 'debug' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../../index-of' );
 
 
 // VARIABLES //

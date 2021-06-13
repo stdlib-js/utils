@@ -20,10 +20,10 @@
 
 // MODULES //
 
-var propertyNames = require( '@stdlib/utils/property-names' );
-var propertySymbols = require( '@stdlib/utils/property-symbols' );
-var propertyDescriptor = require( '@stdlib/utils/property-descriptor' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var propertyNames = require( './../../property-names' );
+var propertySymbols = require( './../../property-symbols' );
+var propertyDescriptor = require( './../../property-descriptor' );
+var defineProperty = require( './../../define-property' );
 
 
 // MAIN //

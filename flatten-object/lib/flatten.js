@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var recurse = require( './recurse.js' );
 
 

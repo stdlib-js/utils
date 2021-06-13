@@ -21,7 +21,7 @@
 // MODULES //
 
 var isEnumerableProperty = require( '@stdlib/assert/is-enumerable-property' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 
 
 // MAIN //

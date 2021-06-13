@@ -23,7 +23,7 @@
 var EventEmitter = require( 'events' ).EventEmitter;
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var nextTick = require( '@stdlib/utils/next-tick' );
+var nextTick = require( './../../next-tick' );
 var worker = require( './../lib/node/worker/worker.js' );
 
 

@@ -18,7 +18,7 @@
 
 'use strict';
 
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var inheritedPropertyDescriptors = require( './../lib' ); // eslint-disable-line id-length
 
 function Foo() {

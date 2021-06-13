@@ -22,9 +22,9 @@
 
 var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var propertySymbols = require( '@stdlib/utils/property-symbols' );
-var propertyNames = require( '@stdlib/utils/property-names' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var propertySymbols = require( './../../property-symbols' );
+var propertyNames = require( './../../property-names' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 
 
 // FUNCTIONS //

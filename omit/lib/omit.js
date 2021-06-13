@@ -20,10 +20,10 @@
 
 // MODULES //
 
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isStringArray = require( '@stdlib/assert/is-string-array' ).primitives;
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 
 
 // MAIN //

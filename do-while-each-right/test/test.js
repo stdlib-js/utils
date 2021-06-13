@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var isnan = require( '@stdlib/assert/is-nan' ).isPrimitive;
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );

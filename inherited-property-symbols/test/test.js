@@ -21,10 +21,10 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var inherit = require( '@stdlib/utils/inherit' );
+var inherit = require( './../../inherit' );
 var inheritedPropertySymbols = require( './../lib' );
 
 

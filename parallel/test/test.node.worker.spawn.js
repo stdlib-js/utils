@@ -23,7 +23,7 @@
 var EventEmitter = require( 'events' ).EventEmitter;
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var spawn = require( './../lib/node/worker/spawn.js' );
 
 

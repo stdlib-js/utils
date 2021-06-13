@@ -24,9 +24,9 @@ var path = require( 'path' );
 var EventEmitter = require( 'events' ).EventEmitter;
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var noop = require( '@stdlib/utils/noop' );
-var nextTick = require( '@stdlib/utils/next-tick' );
+var objectKeys = require( './../../keys' );
+var noop = require( './../../noop' );
+var nextTick = require( './../../next-tick' );
 var rand = require( '@stdlib/random/base/minstd' );
 var exec = require( './../lib/node/exec.js' );
 

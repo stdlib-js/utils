@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var sqrt = require( '@stdlib/math/base/special/sqrt' );
 var defineProperty = require( './../lib/polyfill.js' );
 

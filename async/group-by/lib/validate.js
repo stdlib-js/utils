@@ -24,7 +24,7 @@ var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isBoolean = require( '@stdlib/assert/is-boolean' ).isPrimitive;
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../../index-of' );
 
 
 // VARIABLES //

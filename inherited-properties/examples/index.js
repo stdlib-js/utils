@@ -20,7 +20,7 @@
 
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var inheritedProperties = require( './../lib' );
 
 var hasSymbols;

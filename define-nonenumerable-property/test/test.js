@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var isNonEnumerableProperty = require( '@stdlib/assert/is-nonenumerable-property' );
 var isConfigurableProperty = require( '@stdlib/assert/is-configurable-property' );
 var isWritableProperty = require( '@stdlib/assert/is-writable-property' );

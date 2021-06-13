@@ -21,8 +21,8 @@
 // MODULES //
 
 var isFunction = require( '@stdlib/assert/is-function' );
-var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
-var identity = require( '@stdlib/utils/identity-function' );
+var setReadOnly = require( './../../define-nonenumerable-read-only-property' );
+var identity = require( './../../identity-function' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 

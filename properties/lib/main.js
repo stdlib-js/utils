@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var propertyNames = require( '@stdlib/utils/property-names' );
-var propertySymbols = require( '@stdlib/utils/property-symbols' );
+var propertyNames = require( './../../property-names' );
+var propertySymbols = require( './../../property-symbols' );
 
 
 // MAIN //

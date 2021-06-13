@@ -21,10 +21,10 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
-var inherit = require( '@stdlib/utils/inherit' );
+var inherit = require( './../../inherit' );
 var inheritedPropertyDescriptor = require( './../lib' ); // eslint-disable-line id-length
 
 

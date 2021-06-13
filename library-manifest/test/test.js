@@ -22,10 +22,10 @@
 
 var path = require( 'path' );
 var tape = require( 'tape' );
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var IS_WINDOWS = require( '@stdlib/assert/is-windows' );
-var convertPath = require( '@stdlib/utils/convert-path' );
+var convertPath = require( './../../convert-path' );
 var manifest = require( './../lib' );
 
 

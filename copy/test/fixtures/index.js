@@ -33,8 +33,8 @@ var Int32Array = require( '@stdlib/array/int32' );
 var Uint32Array = require( '@stdlib/array/uint32' );
 var Float32Array = require( '@stdlib/array/float32' );
 var Float64Array = require( '@stdlib/array/float64' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var noop = require( '@stdlib/utils/noop' );
+var defineProperty = require( './../../../define-property' );
+var noop = require( './../../../noop' );
 
 function Foo() {
 	this._data = [ 1, 2, 3, 4 ];

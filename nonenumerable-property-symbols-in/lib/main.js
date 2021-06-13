@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var getOwnPropertySymbols = require( '@stdlib/utils/property-symbols' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertySymbols = require( './../../property-symbols' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 var isNonEnumerableProperty = require( '@stdlib/assert/is-nonenumerable-property' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 

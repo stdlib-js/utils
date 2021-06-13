@@ -21,9 +21,9 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var propertyDescriptor = require( '@stdlib/utils/property-descriptor' );
+var objectKeys = require( './../../keys' );
+var defineProperty = require( './../../define-property' );
+var propertyDescriptor = require( './../../property-descriptor' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var setConfigurableReadWriteAccessor = require( './../lib' ); // eslint-disable-line id-length
 

@@ -23,7 +23,7 @@
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isArray = require( '@stdlib/assert/is-array' );
 var isObjectLike = require( '@stdlib/assert/is-object-like' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var validate = require( './validate.js' );
 var defaults = require( './defaults.json' );
 var dset = require( './dset.js' );

@@ -19,7 +19,7 @@
 'use strict';
 
 var fromCodePoint = require( '@stdlib/string/from-code-point' );
-var curryRight = require( '@stdlib/utils/curry-right' );
+var curryRight = require( './../../curry-right' );
 var uncurryRight = require( './../lib' );
 
 var uncurried;

@@ -18,7 +18,7 @@
 
 'use strict';
 
-var curry = require( '@stdlib/utils/curry' );
+var curry = require( './../../curry' );
 var uncurry = require( './../lib' );
 
 var uncurried;

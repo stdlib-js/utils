@@ -23,7 +23,7 @@
 var path = require( 'path' );
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var parallel = require( './../lib/main.js' );
 
 

@@ -21,7 +21,7 @@
 // MODULES //
 
 var isCollection = require( '@stdlib/assert/is-collection' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 
 
 // MAIN //

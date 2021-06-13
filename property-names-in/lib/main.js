@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var getOwnPropertyNames = require( '@stdlib/utils/property-names' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertyNames = require( './../../property-names' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 
 
 // FUNCTIONS //

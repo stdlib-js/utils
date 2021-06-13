@@ -25,8 +25,8 @@
 var isCollection = require( '@stdlib/assert/is-collection' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var isNonNegativeInteger = require( '@stdlib/assert/is-nonnegative-integer' ).isPrimitive;
-var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
-var setReadOnlyAccessor = require( '@stdlib/utils/define-nonenumerable-read-only-accessor' );
+var setReadOnly = require( './../../define-nonenumerable-read-only-property' );
+var setReadOnlyAccessor = require( './../../define-nonenumerable-read-only-accessor' );
 var iteratorSymbol = require( '@stdlib/symbol/iterator' );
 var MAX_ITERATIONS = require( '@stdlib/constants/float64/max' );
 

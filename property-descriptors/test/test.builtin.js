@@ -21,12 +21,12 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var hasProxySupport = require( '@stdlib/assert/has-proxy-support' );
 var Symbol = require( '@stdlib/symbol/ctor' );
 var Proxy = require( '@stdlib/proxy/ctor' );
-var getOwnPropertyDescriptor = require( '@stdlib/utils/property-descriptor' );
+var getOwnPropertyDescriptor = require( './../../property-descriptor' );
 var getOwnPropertyDescriptors = require( './../lib/builtin.js' );
 
 

@@ -21,8 +21,8 @@
 // MODULES //
 
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var indexOf = require( '@stdlib/utils/index-of' );
-var typeOf = require( '@stdlib/utils/type-of' );
+var indexOf = require( './../../index-of' );
+var typeOf = require( './../../type-of' );
 var isConstructorPrototype = require( './is_constructor_prototype.js' );
 var EXCLUDED_KEYS = require( './excluded_keys.json' );
 var win = require( './window.js' );

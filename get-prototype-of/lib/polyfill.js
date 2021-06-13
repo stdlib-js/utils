@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var nativeClass = require( '@stdlib/utils/native-class' );
+var nativeClass = require( './../../native-class' );
 var getProto = require( './proto.js' );
 
 

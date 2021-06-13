@@ -18,7 +18,7 @@
 
 'use strict';
 
-var objectEntries = require( '@stdlib/utils/entries' );
+var objectEntries = require( './../../entries' );
 var objectFromEntries = require( './../lib' );
 
 var obj1 = {

@@ -21,7 +21,7 @@
 // MODULES //
 
 var isArray = require( '@stdlib/assert/is-array' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 
 
 // MAIN //

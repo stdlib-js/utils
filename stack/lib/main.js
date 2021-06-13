@@ -22,8 +22,8 @@
 
 // MODULES //
 
-var setReadOnly = require( '@stdlib/utils/define-nonenumerable-read-only-property' );
-var setReadOnlyAccessor = require( '@stdlib/utils/define-nonenumerable-read-only-accessor' );
+var setReadOnly = require( './../../define-nonenumerable-read-only-property' );
+var setReadOnlyAccessor = require( './../../define-nonenumerable-read-only-accessor' );
 var iteratorSymbol = require( '@stdlib/symbol/iterator' );
 
 

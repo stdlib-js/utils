@@ -22,8 +22,8 @@
 
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var defineProperty = require( './../../define-property' );
+var indexOf = require( './../../index-of' );
 var hasSymbolSupport = require( '@stdlib/assert/has-symbol-support' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var Symbol = require( '@stdlib/symbol/ctor' );

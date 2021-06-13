@@ -25,7 +25,7 @@ var assert = require( 'chai' ).assert;
 var PINF = require( '@stdlib/constants/float64/pinf' );
 var hasSetSupport = require( '@stdlib/assert/has-set-support' );
 var hasMapSupport = require( '@stdlib/assert/has-map-support' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var copy = require( './../lib/deep_copy.js' );
 var fixtures = require( './fixtures' );
 

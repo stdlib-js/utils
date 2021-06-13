@@ -22,8 +22,8 @@
 
 var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
-var getOwnPropertyDescriptor = require( '@stdlib/utils/property-descriptor' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertyDescriptor = require( './../../property-descriptor' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 
 
 // MAIN //

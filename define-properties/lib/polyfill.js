@@ -21,8 +21,8 @@
 // MODULES //
 
 var isObject = require( '@stdlib/assert/is-object' );
-var objectKeys = require( '@stdlib/utils/keys' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var objectKeys = require( './../../keys' );
+var defineProperty = require( './../../define-property' );
 
 
 // MAIN //

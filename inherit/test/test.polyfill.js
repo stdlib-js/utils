@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var getPrototype = require( '@stdlib/utils/get-prototype-of' );
+var getPrototype = require( './../../get-prototype-of' );
 var createObject = require( './../lib/polyfill.js' );
 
 

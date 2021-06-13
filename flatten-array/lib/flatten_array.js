@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var isArray = require( '@stdlib/assert/is-array' );
 var defaults = require( './defaults.js' );
 var validate = require( './validate.js' );

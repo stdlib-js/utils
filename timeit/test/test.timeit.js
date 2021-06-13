@@ -23,7 +23,7 @@
 var join = require( 'path' ).join;
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var readFileSync = require( '@stdlib/fs/read-file' ).sync;
 var timeit = require( './../lib/timeit.js' );
 

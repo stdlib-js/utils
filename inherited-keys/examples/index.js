@@ -18,7 +18,7 @@
 
 'use strict';
 
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var inheritedKeys = require( './../lib' );
 
 function Foo() {

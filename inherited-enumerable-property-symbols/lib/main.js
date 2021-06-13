@@ -23,8 +23,8 @@
 var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var isEnumerableProperty = require( '@stdlib/assert/is-enumerable-property' );
-var getOwnPropertySymbols = require( '@stdlib/utils/property-symbols' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertySymbols = require( './../../property-symbols' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 

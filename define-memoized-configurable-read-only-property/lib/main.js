@@ -22,7 +22,7 @@
 
 var isObject = require( '@stdlib/assert/is-object' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var defineMemoizedProperty = require( '@stdlib/utils/define-memoized-property' );
+var defineMemoizedProperty = require( './../../define-memoized-property' );
 
 
 // MAIN //

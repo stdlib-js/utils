@@ -24,7 +24,7 @@
 
 // MODULES //
 
-var setReadOnly = require( '@stdlib/utils/define-read-only-property' );
+var setReadOnly = require( './../../define-read-only-property' );
 
 
 // MAIN //
@@ -43,7 +43,7 @@ var ns = {};
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/any-by}
 */
-setReadOnly( ns, 'anyByAsync', require( '@stdlib/utils/async/any-by' ) );
+setReadOnly( ns, 'anyByAsync', require( './../../async/any-by' ) );
 
 /**
 * @name anyByRightAsync
@@ -52,7 +52,7 @@ setReadOnly( ns, 'anyByAsync', require( '@stdlib/utils/async/any-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/any-by-right}
 */
-setReadOnly( ns, 'anyByRightAsync', require( '@stdlib/utils/async/any-by-right' ) );
+setReadOnly( ns, 'anyByRightAsync', require( './../../async/any-by-right' ) );
 
 /**
 * @name bifurcateByAsync
@@ -61,7 +61,7 @@ setReadOnly( ns, 'anyByRightAsync', require( '@stdlib/utils/async/any-by-right' 
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/bifurcate-by}
 */
-setReadOnly( ns, 'bifurcateByAsync', require( '@stdlib/utils/async/bifurcate-by' ) );
+setReadOnly( ns, 'bifurcateByAsync', require( './../../async/bifurcate-by' ) );
 
 /**
 * @name composeAsync
@@ -70,7 +70,7 @@ setReadOnly( ns, 'bifurcateByAsync', require( '@stdlib/utils/async/bifurcate-by'
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/compose}
 */
-setReadOnly( ns, 'composeAsync', require( '@stdlib/utils/async/compose' ) );
+setReadOnly( ns, 'composeAsync', require( './../../async/compose' ) );
 
 /**
 * @name countByAsync
@@ -79,7 +79,7 @@ setReadOnly( ns, 'composeAsync', require( '@stdlib/utils/async/compose' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/count-by}
 */
-setReadOnly( ns, 'countByAsync', require( '@stdlib/utils/async/count-by' ) );
+setReadOnly( ns, 'countByAsync', require( './../../async/count-by' ) );
 
 /**
 * @name doUntilAsync
@@ -88,7 +88,7 @@ setReadOnly( ns, 'countByAsync', require( '@stdlib/utils/async/count-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/do-until}
 */
-setReadOnly( ns, 'doUntilAsync', require( '@stdlib/utils/async/do-until' ) );
+setReadOnly( ns, 'doUntilAsync', require( './../../async/do-until' ) );
 
 /**
 * @name doWhileAsync
@@ -97,7 +97,7 @@ setReadOnly( ns, 'doUntilAsync', require( '@stdlib/utils/async/do-until' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/do-while}
 */
-setReadOnly( ns, 'doWhileAsync', require( '@stdlib/utils/async/do-while' ) );
+setReadOnly( ns, 'doWhileAsync', require( './../../async/do-while' ) );
 
 /**
 * @name everyByAsync
@@ -106,7 +106,7 @@ setReadOnly( ns, 'doWhileAsync', require( '@stdlib/utils/async/do-while' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/every-by}
 */
-setReadOnly( ns, 'everyByAsync', require( '@stdlib/utils/async/every-by' ) );
+setReadOnly( ns, 'everyByAsync', require( './../../async/every-by' ) );
 
 /**
 * @name everyByRightAsync
@@ -115,7 +115,7 @@ setReadOnly( ns, 'everyByAsync', require( '@stdlib/utils/async/every-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/every-by-right}
 */
-setReadOnly( ns, 'everyByRightAsync', require( '@stdlib/utils/async/every-by-right' ) );
+setReadOnly( ns, 'everyByRightAsync', require( './../../async/every-by-right' ) );
 
 /**
 * @name forEachAsync
@@ -124,7 +124,7 @@ setReadOnly( ns, 'everyByRightAsync', require( '@stdlib/utils/async/every-by-rig
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/for-each}
 */
-setReadOnly( ns, 'forEachAsync', require( '@stdlib/utils/async/for-each' ) );
+setReadOnly( ns, 'forEachAsync', require( './../../async/for-each' ) );
 
 /**
 * @name forEachRightAsync
@@ -133,7 +133,7 @@ setReadOnly( ns, 'forEachAsync', require( '@stdlib/utils/async/for-each' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/for-each-right}
 */
-setReadOnly( ns, 'forEachRightAsync', require( '@stdlib/utils/async/for-each-right' ) );
+setReadOnly( ns, 'forEachRightAsync', require( './../../async/for-each-right' ) );
 
 /**
 * @name functionSequenceAsync
@@ -142,7 +142,7 @@ setReadOnly( ns, 'forEachRightAsync', require( '@stdlib/utils/async/for-each-rig
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/function-sequence}
 */
-setReadOnly( ns, 'functionSequenceAsync', require( '@stdlib/utils/async/function-sequence' ) );
+setReadOnly( ns, 'functionSequenceAsync', require( './../../async/function-sequence' ) );
 
 /**
 * @name groupByAsync
@@ -151,7 +151,7 @@ setReadOnly( ns, 'functionSequenceAsync', require( '@stdlib/utils/async/function
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/group-by}
 */
-setReadOnly( ns, 'groupByAsync', require( '@stdlib/utils/async/group-by' ) );
+setReadOnly( ns, 'groupByAsync', require( './../../async/group-by' ) );
 
 /**
 * @name ifelseAsync
@@ -160,7 +160,7 @@ setReadOnly( ns, 'groupByAsync', require( '@stdlib/utils/async/group-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/if-else}
 */
-setReadOnly( ns, 'ifelseAsync', require( '@stdlib/utils/async/if-else' ) );
+setReadOnly( ns, 'ifelseAsync', require( './../../async/if-else' ) );
 
 /**
 * @name ifthenAsync
@@ -169,7 +169,7 @@ setReadOnly( ns, 'ifelseAsync', require( '@stdlib/utils/async/if-else' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/if-then}
 */
-setReadOnly( ns, 'ifthenAsync', require( '@stdlib/utils/async/if-then' ) );
+setReadOnly( ns, 'ifthenAsync', require( './../../async/if-then' ) );
 
 /**
 * @name inmapAsync
@@ -178,7 +178,7 @@ setReadOnly( ns, 'ifthenAsync', require( '@stdlib/utils/async/if-then' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/inmap}
 */
-setReadOnly( ns, 'inmapAsync', require( '@stdlib/utils/async/inmap' ) );
+setReadOnly( ns, 'inmapAsync', require( './../../async/inmap' ) );
 
 /**
 * @name inmapRightAsync
@@ -187,7 +187,7 @@ setReadOnly( ns, 'inmapAsync', require( '@stdlib/utils/async/inmap' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/inmap-right}
 */
-setReadOnly( ns, 'inmapRightAsync', require( '@stdlib/utils/async/inmap-right' ) );
+setReadOnly( ns, 'inmapRightAsync', require( './../../async/inmap-right' ) );
 
 /**
 * @name mapFunAsync
@@ -196,7 +196,7 @@ setReadOnly( ns, 'inmapRightAsync', require( '@stdlib/utils/async/inmap-right' )
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/map-function}
 */
-setReadOnly( ns, 'mapFunAsync', require( '@stdlib/utils/async/map-function' ) );
+setReadOnly( ns, 'mapFunAsync', require( './../../async/map-function' ) );
 
 /**
 * @name mapKeysAsync
@@ -205,7 +205,7 @@ setReadOnly( ns, 'mapFunAsync', require( '@stdlib/utils/async/map-function' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/map-keys}
 */
-setReadOnly( ns, 'mapKeysAsync', require( '@stdlib/utils/async/map-keys' ) );
+setReadOnly( ns, 'mapKeysAsync', require( './../../async/map-keys' ) );
 
 /**
 * @name mapValuesAsync
@@ -214,7 +214,7 @@ setReadOnly( ns, 'mapKeysAsync', require( '@stdlib/utils/async/map-keys' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/map-values}
 */
-setReadOnly( ns, 'mapValuesAsync', require( '@stdlib/utils/async/map-values' ) );
+setReadOnly( ns, 'mapValuesAsync', require( './../../async/map-values' ) );
 
 /**
 * @name noneByAsync
@@ -223,7 +223,7 @@ setReadOnly( ns, 'mapValuesAsync', require( '@stdlib/utils/async/map-values' ) )
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/none-by}
 */
-setReadOnly( ns, 'noneByAsync', require( '@stdlib/utils/async/none-by' ) );
+setReadOnly( ns, 'noneByAsync', require( './../../async/none-by' ) );
 
 /**
 * @name noneByRightAsync
@@ -232,7 +232,7 @@ setReadOnly( ns, 'noneByAsync', require( '@stdlib/utils/async/none-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/none-by-right}
 */
-setReadOnly( ns, 'noneByRightAsync', require( '@stdlib/utils/async/none-by-right' ) );
+setReadOnly( ns, 'noneByRightAsync', require( './../../async/none-by-right' ) );
 
 /**
 * @name reduceAsync
@@ -241,7 +241,7 @@ setReadOnly( ns, 'noneByRightAsync', require( '@stdlib/utils/async/none-by-right
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/reduce}
 */
-setReadOnly( ns, 'reduceAsync', require( '@stdlib/utils/async/reduce' ) );
+setReadOnly( ns, 'reduceAsync', require( './../../async/reduce' ) );
 
 /**
 * @name reduceRightAsync
@@ -250,7 +250,7 @@ setReadOnly( ns, 'reduceAsync', require( '@stdlib/utils/async/reduce' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/reduce-right}
 */
-setReadOnly( ns, 'reduceRightAsync', require( '@stdlib/utils/async/reduce-right' ) );
+setReadOnly( ns, 'reduceRightAsync', require( './../../async/reduce-right' ) );
 
 /**
 * @name waterfall
@@ -259,7 +259,7 @@ setReadOnly( ns, 'reduceRightAsync', require( '@stdlib/utils/async/reduce-right'
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/series-waterfall}
 */
-setReadOnly( ns, 'waterfall', require( '@stdlib/utils/async/series-waterfall' ) );
+setReadOnly( ns, 'waterfall', require( './../../async/series-waterfall' ) );
 
 /**
 * @name someByAsync
@@ -268,7 +268,7 @@ setReadOnly( ns, 'waterfall', require( '@stdlib/utils/async/series-waterfall' ) 
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/some-by}
 */
-setReadOnly( ns, 'someByAsync', require( '@stdlib/utils/async/some-by' ) );
+setReadOnly( ns, 'someByAsync', require( './../../async/some-by' ) );
 
 /**
 * @name someByRightAsync
@@ -277,7 +277,7 @@ setReadOnly( ns, 'someByAsync', require( '@stdlib/utils/async/some-by' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/some-by-right}
 */
-setReadOnly( ns, 'someByRightAsync', require( '@stdlib/utils/async/some-by-right' ) );
+setReadOnly( ns, 'someByRightAsync', require( './../../async/some-by-right' ) );
 
 /**
 * @name tabulateByAsync
@@ -286,7 +286,7 @@ setReadOnly( ns, 'someByRightAsync', require( '@stdlib/utils/async/some-by-right
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/tabulate-by}
 */
-setReadOnly( ns, 'tabulateByAsync', require( '@stdlib/utils/async/tabulate-by' ) );
+setReadOnly( ns, 'tabulateByAsync', require( './../../async/tabulate-by' ) );
 
 /**
 * @name trycatchAsync
@@ -295,7 +295,7 @@ setReadOnly( ns, 'tabulateByAsync', require( '@stdlib/utils/async/tabulate-by' )
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/try-catch}
 */
-setReadOnly( ns, 'trycatchAsync', require( '@stdlib/utils/async/try-catch' ) );
+setReadOnly( ns, 'trycatchAsync', require( './../../async/try-catch' ) );
 
 /**
 * @name trythenAsync
@@ -304,7 +304,7 @@ setReadOnly( ns, 'trycatchAsync', require( '@stdlib/utils/async/try-catch' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/try-then}
 */
-setReadOnly( ns, 'trythenAsync', require( '@stdlib/utils/async/try-then' ) );
+setReadOnly( ns, 'trythenAsync', require( './../../async/try-then' ) );
 
 /**
 * @name untilAsync
@@ -313,7 +313,7 @@ setReadOnly( ns, 'trythenAsync', require( '@stdlib/utils/async/try-then' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/until}
 */
-setReadOnly( ns, 'untilAsync', require( '@stdlib/utils/async/until' ) );
+setReadOnly( ns, 'untilAsync', require( './../../async/until' ) );
 
 /**
 * @name whileAsync
@@ -322,7 +322,7 @@ setReadOnly( ns, 'untilAsync', require( '@stdlib/utils/async/until' ) );
 * @type {Function}
 * @see {@link module:@stdlib/utils/async/while}
 */
-setReadOnly( ns, 'whileAsync', require( '@stdlib/utils/async/while' ) );
+setReadOnly( ns, 'whileAsync', require( './../../async/while' ) );
 
 
 // EXPORTS //

@@ -22,7 +22,7 @@
 
 var isObject = require( '@stdlib/assert/is-object' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 
 
 // MAIN //

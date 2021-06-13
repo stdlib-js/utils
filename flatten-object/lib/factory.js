@@ -21,7 +21,7 @@
 // MODULES //
 
 var isObjectLike = require( '@stdlib/assert/is-object-like' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var defaults = require( './defaults.js' );
 var validate = require( './validate.js' );
 var flatten = require( './flatten.js' );

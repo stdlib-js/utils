@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../../noop' );
 var inmapRightAsync = require( './../lib/inmap_right.js' );
 
 

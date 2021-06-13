@@ -18,7 +18,7 @@
 
 'use strict';
 
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 var randu = require( '@stdlib/random/base/randu' );
 var round = require( '@stdlib/math/base/special/round' );
 var invertBy = require( './../lib' );

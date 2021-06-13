@@ -23,9 +23,9 @@
 var MAX_SAFE_INTEGER = require( '@stdlib/constants/float64/max-safe-integer' );
 var isPositiveInteger = require( '@stdlib/assert/is-positive-integer' ).isPrimitive;
 var isNonEnumerableProperty = require( '@stdlib/assert/is-nonenumerable-property' );
-var getOwnPropertyNames = require( '@stdlib/utils/property-names' );
-var getOwnPropertySymbols = require( '@stdlib/utils/property-symbols' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertyNames = require( './../../property-names' );
+var getOwnPropertySymbols = require( './../../property-symbols' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 
 

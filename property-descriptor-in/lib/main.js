@@ -20,8 +20,8 @@
 
 // MODULES //
 
-var getOwnPropertyDescriptor = require( '@stdlib/utils/property-descriptor' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertyDescriptor = require( './../../property-descriptor' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 
 
 // MAIN //

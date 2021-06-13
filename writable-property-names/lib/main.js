@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var getOwnPropertyNames = require( '@stdlib/utils/property-names' );
+var getOwnPropertyNames = require( './../../property-names' );
 var isWritableProperty = require( '@stdlib/assert/is-writable-property' );
 
 

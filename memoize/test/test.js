@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var randu = require( '@stdlib/random/base/randu' );

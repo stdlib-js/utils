@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 var propertyNamesIn = require( './../lib' );
 
 

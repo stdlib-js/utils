@@ -22,7 +22,7 @@
 
 var isObject = require( '@stdlib/assert/is-plain-object' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 
 
 // VARIABLES //

@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var validate = require( './validate.js' );
 var defaults = require( './defaults.js' );
 var mergefcn = require( './mergefcn.js' );

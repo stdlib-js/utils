@@ -23,7 +23,7 @@
 var tape = require( 'tape' );
 var proxyquire = require( 'proxyquire' );
 var IS_BROWSER = require( '@stdlib/assert/is-browser' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var openURL = require( './../lib' );
 
 

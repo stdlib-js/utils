@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../keys' );
 var utils = require( './../lib' );
 
 

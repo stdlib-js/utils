@@ -22,11 +22,11 @@
 
 var tape = require( 'tape' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var isEnumerableProperty = require( '@stdlib/assert/is-enumerable-property' );
 var isWritableProperty = require( '@stdlib/assert/is-writable-property' );
 var isConfigurableProperty = require( '@stdlib/assert/is-configurable-property' );
-var propertyDescriptor = require( '@stdlib/utils/property-descriptor' );
+var propertyDescriptor = require( './../../property-descriptor' );
 var setMemoizedConfigurableReadOnly = require( './../lib' ); // eslint-disable-line id-length
 
 

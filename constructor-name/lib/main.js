@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var nativeClass = require( '@stdlib/utils/native-class' );
+var nativeClass = require( './../../native-class' );
 var RE = require( '@stdlib/regexp/function-name' ).REGEXP;
 var isBuffer = require( '@stdlib/assert/is-buffer' );
 

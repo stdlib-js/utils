@@ -20,9 +20,9 @@
 
 // MODULES //
 
-var getOwnPropertySymbols = require( '@stdlib/utils/property-symbols' );
-var getOwnPropertyNames = require( '@stdlib/utils/property-names' );
-var getPrototypeOf = require( '@stdlib/utils/get-prototype-of' );
+var getOwnPropertySymbols = require( './../../property-symbols' );
+var getOwnPropertyNames = require( './../../property-names' );
+var getPrototypeOf = require( './../../get-prototype-of' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isWritable = require( '@stdlib/assert/is-writable-property' );
 

@@ -23,9 +23,9 @@
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isFunction = require( '@stdlib/assert/is-function' );
 var isArray = require( '@stdlib/assert/is-array' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var cwd = require( '@stdlib/process/cwd' );
-var nextTick = require( '@stdlib/utils/next-tick' );
+var nextTick = require( './../../next-tick' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
 var evaluate = require( './vm_evaluate.js' );

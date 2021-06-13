@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var keys = require( '@stdlib/utils/keys' );
+var keys = require( './../../keys' );
 
 
 // MAIN //

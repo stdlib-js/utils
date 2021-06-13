@@ -21,7 +21,7 @@
 // MODULES //
 
 var isArray = require( '@stdlib/assert/is-array' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );

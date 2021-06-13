@@ -21,7 +21,7 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var copy = require( '@stdlib/utils/copy' );
+var copy = require( './../../copy' );
 var string2buffer = require( '@stdlib/buffer/from-string' );
 var Uint8Array = require( '@stdlib/array/uint8' );
 var Number = require( '@stdlib/number/ctor' );

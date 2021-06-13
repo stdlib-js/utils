@@ -21,8 +21,8 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var indexOf = require( '@stdlib/utils/index-of' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var indexOf = require( './../../index-of' );
+var defineProperty = require( './../../define-property' );
 var writablePropertyNames = require( './../lib' );
 
 

@@ -21,9 +21,9 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var indexOf = require( '@stdlib/utils/index-of' );
-var defineProperty = require( '@stdlib/utils/define-property' );
-var inherit = require( '@stdlib/utils/inherit' );
+var indexOf = require( './../../index-of' );
+var defineProperty = require( './../../define-property' );
+var inherit = require( './../../inherit' );
 var inheritedPropertyNames = require( './../lib' );
 
 

@@ -34,7 +34,7 @@ var Uint32Array = require( '@stdlib/array/uint32' );
 var ArrayBuffer = require( '@stdlib/array/buffer' );
 var Buffer = require( '@stdlib/buffer/ctor' );
 var Number = require( '@stdlib/number/ctor' );
-var noop = require( '@stdlib/utils/noop' );
+var noop = require( './../../noop' );
 var pkg = require( './../package.json' ).name;
 var typeOf = require( './../lib' );
 

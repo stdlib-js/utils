@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 
 
 // MAIN //

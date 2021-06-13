@@ -22,7 +22,7 @@
 
 var isCollection = require( '@stdlib/assert/is-collection' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var indexOf = require( '@stdlib/utils/index-of' );
+var indexOf = require( './../../index-of' );
 var validate = require( './validate.js' );
 
 

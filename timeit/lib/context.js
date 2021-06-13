@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var tic = require( '@stdlib/time/tic' );
 var toc = require( '@stdlib/time/toc' );
 

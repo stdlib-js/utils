@@ -20,7 +20,7 @@
 
 // MODULES //
 
-var objectKeys = require( '@stdlib/utils/keys' );
+var objectKeys = require( './../../keys' );
 
 
 // VARIABLES //

@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var hasClassSupport = require( '@stdlib/assert/has-class-support' );
-var defineProperty = require( '@stdlib/utils/define-property' );
+var defineProperty = require( './../../define-property' );
 var copy = require( './../lib' );
 
 
