@@ -128,7 +128,7 @@ tape( 'the function returns an array of an object\'s own and inherited writable 
 	var i;
 
 	writablePropertySymbolsIn = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/property-symbols': propertySymbols
+		'./../../property-symbols': propertySymbols
 	});
 
 	syms = [

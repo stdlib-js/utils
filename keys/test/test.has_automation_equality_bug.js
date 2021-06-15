@@ -35,7 +35,7 @@ tape( 'main export is a boolean', function test( t ) {
 
 tape( 'the exported value is `false` if an environment does not have a `window` global', function test( t ) {
 	var bool = proxyquire( './../lib/has_automation_equality_bug.js', {
-		'@stdlib/utils/type-of': mock
+		'./../../type-of': mock
 	});
 
 	t.strictEqual( bool, false, 'returns expected value' );

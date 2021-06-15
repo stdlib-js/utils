@@ -143,7 +143,7 @@ tape( 'the function returns `null` for bizarre values', function test( t ) {
 	var proto;
 
 	getPrototypeOf = proxyquire( './../lib/polyfill.js', {
-		'@stdlib/utils/native-class': nativeClass,
+		'./../../native-class': nativeClass,
 		'./proto.js': getProto
 	});
 

@@ -150,7 +150,7 @@ tape( 'the function supports environments lacking `Function.name` support', func
 	var v;
 
 	constructorName = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/native-class': nativeClass
+		'./../../native-class': nativeClass
 	});
 
 	function Foo() {

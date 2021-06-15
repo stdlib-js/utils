@@ -122,7 +122,7 @@ tape( 'the function returns an array of an object\'s own non-enumerable symbol p
 	var i;
 
 	nonEnumerablePropertySymbols = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/property-symbols': propertySymbols
+		'./../../property-symbols': propertySymbols
 	});
 
 	syms = [

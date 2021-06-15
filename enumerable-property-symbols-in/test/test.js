@@ -123,7 +123,7 @@ tape( 'the function returns an array of an object\'s own and inherited enumerabl
 	var i;
 
 	enumerablePropertySymbolsIn = proxyquire( './../lib/main.js', {
-		'@stdlib/utils/property-symbols': propertySymbols
+		'./../../property-symbols': propertySymbols
 	});
 
 	syms = [
