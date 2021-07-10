@@ -31,10 +31,10 @@ var timeit = require( './../lib/timeit.js' );
 // FIXTURES //
 
 var dir = join( __dirname, 'fixtures' );
-var before = readFileSync( join( dir, 'before.txt' ), 'utf8' );
-var code = readFileSync( join( dir, 'code.txt' ), 'utf8' );
-var codeAsync = readFileSync( join( dir, 'code.async.txt' ), 'utf8' );
-var after = readFileSync( join( dir, 'after.txt' ), 'utf8' );
+var before = readFileSync( join( dir, 'before.js.txt' ), 'utf8' );
+var code = readFileSync( join( dir, 'code.js.txt' ), 'utf8' );
+var codeAsync = readFileSync( join( dir, 'code.async.js.txt' ), 'utf8' );
+var after = readFileSync( join( dir, 'after.js.txt' ), 'utf8' );
 
 
 // TESTS //
@@ -54,7 +54,7 @@ tape( 'the function throws an error if provided a first argument which is not a 
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		{},
 		function noop() {}
@@ -80,7 +80,7 @@ tape( 'the function throws an error if provided a first argument which is not a 
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		{},
 		function noop() {}
@@ -107,7 +107,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		{}
 	];
@@ -133,7 +133,7 @@ tape( 'the function throws an error if provided a callback argument which is not
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		{}
 	];
@@ -159,7 +159,7 @@ tape( 'the function throws an error if provided an options argument which is not
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		function noop() {}
 	];
@@ -184,7 +184,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 		NaN,
 		true,
 		null,
-		undefined,
+		void 0,
 		[],
 		{},
 		function noop() {}
