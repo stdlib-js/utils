@@ -316,6 +316,7 @@ The package contains the following sub-namespaces:
 -   <span class="signature">[`inherit( ctor, superCtor )`][@stdlib/utils/inherit]</span><span class="delimiter">: </span><span class="description">implement prototypical inheritance by replacing the prototype of one constructor with the prototype of another constructor.</span>
 -   <span class="signature">[`objectKeys( obj )`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
 -   <span class="signature">[`nativeClass( value )`][@stdlib/utils/native-class]</span><span class="delimiter">: </span><span class="description">determine the specification defined classification of an object.</span>
+-   <span class="signature">[`nextTick( clbk[, ...args] )`][@stdlib/utils/next-tick]</span><span class="delimiter">: </span><span class="description">add a callback to the "next tick queue".</span>
 -   <span class="signature">[`openURL()`][@stdlib/utils/open-url]</span><span class="delimiter">: </span><span class="description">open a URL.</span>
 -   <span class="signature">[`parallel( files, [options,] clbk )`][@stdlib/utils/parallel]</span><span class="delimiter">: </span><span class="description">execute scripts in parallel.</span>
 -   <span class="signature">[`parseJSON( str[, reviver] )`][@stdlib/utils/parse-json]</span><span class="delimiter">: </span><span class="description">parse a string as JSON.</span>
@@ -439,6 +440,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys
 
 [@stdlib/utils/native-class]: https://github.com/stdlib-js/utils/tree/main/native-class
+
+[@stdlib/utils/next-tick]: https://github.com/stdlib-js/utils/tree/main/next-tick
 
 [@stdlib/utils/open-url]: https://github.com/stdlib-js/utils/tree/main/open-url
 
