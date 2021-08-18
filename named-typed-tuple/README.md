@@ -2267,9 +2267,9 @@ console.log( JSON.stringify( p ) );
 
 <section class="links">
 
-[@stdlib/array/typed]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/typed]: https://github.com/stdlib-js/array-typed
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
 [json]: http://www.json.org/
 
