@@ -70,6 +70,7 @@ The package contains the following sub-namespaces:
 <div class="namespace-toc">
 
 -   <span class="signature">[`CircularBuffer( buffer )`][@stdlib/utils/circular-buffer]</span><span class="delimiter">: </span><span class="description">circular buffer constructor.</span>
+-   <span class="signature">[`CompactAdjacencyMatrix( N )`][@stdlib/utils/compact-adjacency-matrix]</span><span class="delimiter">: </span><span class="description">compact adjacency matrix constructor.</span>
 -   <span class="signature">[`DoublyLinkedList()`][@stdlib/utils/doubly-linked-list]</span><span class="delimiter">: </span><span class="description">doubly linked list constructor.</span>
 -   <span class="signature">[`FIFO()`][@stdlib/utils/fifo]</span><span class="delimiter">: </span><span class="description">first-in-first-out (FIFO) queue.</span>
 -   <span class="signature">[`LinkedList()`][@stdlib/utils/linked-list]</span><span class="delimiter">: </span><span class="description">singly linked list.</span>
@@ -794,6 +795,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each
 
 [@stdlib/utils/circular-buffer]: https://github.com/stdlib-js/utils/tree/main/circular-buffer
+
+[@stdlib/utils/compact-adjacency-matrix]: https://github.com/stdlib-js/utils/tree/main/compact-adjacency-matrix
 
 [@stdlib/utils/doubly-linked-list]: https://github.com/stdlib-js/utils/tree/main/doubly-linked-list
 
