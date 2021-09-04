@@ -143,7 +143,24 @@ console.log( zipped.join( '\n' ) );
 
 <!-- /.examples -->
 
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/unzip`][@stdlib/utils/unzip]: https://github.com/stdlib-js/utils/tree/main/unzip`][@stdlib/utils/unzip
+
+
+<!-- /.related -->
+
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/unzip]: https://github.com/stdlib-js/utils/tree/main/unzip
+
+<!-- </related-links> -->
 
 </section>
 
