@@ -219,6 +219,15 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate`][@stdlib/utils/bifurcate
+-   [`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by`][@stdlib/utils/bifurcate-by
+-   [`@stdlib/utils/bifurcate-in`][@stdlib/utils/bifurcate-in]: https://github.com/stdlib-js/utils/tree/main/bifurcate-in`][@stdlib/utils/bifurcate-in
+-   [`@stdlib/utils/group-own`][@stdlib/utils/group-own]: https://github.com/stdlib-js/utils/tree/main/group-own`][@stdlib/utils/group-own
+
 </section>
 
 <!-- /.related -->
@@ -228,6 +237,18 @@ console.log( out );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate
+
+[@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by
+
+[@stdlib/utils/bifurcate-in]: https://github.com/stdlib-js/utils/tree/main/bifurcate-in
+
+[@stdlib/utils/group-own]: https://github.com/stdlib-js/utils/tree/main/group-own
+
+<!-- </related-links> -->
 
 </section>
 

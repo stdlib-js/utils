@@ -101,6 +101,13 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/if-else`][@stdlib/utils/async/if-else]: https://github.com/stdlib-js/utils/tree/main/async/if-else`][@stdlib/utils/async/if-else
+-   [`@stdlib/utils/if-then`][@stdlib/utils/if-then]: https://github.com/stdlib-js/utils/tree/main/if-then`][@stdlib/utils/if-then
+
 </section>
 
 <!-- /.related -->
@@ -108,6 +115,14 @@ for ( i = 0; i < 100; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/if-else]: https://github.com/stdlib-js/utils/tree/main/async/if-else
+
+[@stdlib/utils/if-then]: https://github.com/stdlib-js/utils/tree/main/if-then
+
+<!-- </related-links> -->
 
 </section>
 

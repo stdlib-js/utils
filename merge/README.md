@@ -462,6 +462,12 @@ out = merge( {}, target, source );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/copy`][@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy`][@stdlib/utils/copy
+
 </section>
 
 <!-- /.related -->
@@ -470,9 +476,13 @@ out = merge( {}, target, source );
 
 <section class="links">
 
+[node-buffer]: http://nodejs.org/api/buffer.html
+
+<!-- <related-links> -->
+
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
 
-[node-buffer]: http://nodejs.org/api/buffer.html
+<!-- </related-links> -->
 
 </section>
 

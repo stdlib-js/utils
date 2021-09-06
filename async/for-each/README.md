@@ -325,6 +325,21 @@ forEachAsync( files, read, done );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
+-   [`@stdlib/utils/async/for-each-right`][@stdlib/utils/async/for-each-right]: https://github.com/stdlib-js/utils/tree/main/async/for-each-right`][@stdlib/utils/async/for-each-right
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
@@ -334,6 +349,14 @@ forEachAsync( files, read, done );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each
+
+[@stdlib/utils/async/for-each-right]: https://github.com/stdlib-js/utils/tree/main/async/for-each-right
+
+<!-- </related-links> -->
 
 </section>
 

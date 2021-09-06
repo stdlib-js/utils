@@ -153,6 +153,13 @@ for ( i = 0; i < data.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck`][@stdlib/utils/deep-pluck
+-   [`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set`][@stdlib/utils/deep-set
+
 </section>
 
 <!-- /.related -->
@@ -160,6 +167,14 @@ for ( i = 0; i < data.length; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck
+
+[@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set
+
+<!-- </related-links> -->
 
 </section>
 

@@ -416,6 +416,13 @@ len = list.length;
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/doubly-linked-list`][@stdlib/utils/doubly-linked-list]: https://github.com/stdlib-js/utils/tree/main/doubly-linked-list`][@stdlib/utils/doubly-linked-list
+-   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+
 </section>
 
 <!-- /.related -->
@@ -423,6 +430,14 @@ len = list.length;
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/doubly-linked-list]: https://github.com/stdlib-js/utils/tree/main/doubly-linked-list
+
+[@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack
+
+<!-- </related-links> -->
 
 </section>
 

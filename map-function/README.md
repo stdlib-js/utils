@@ -124,6 +124,12 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/map-function`][@stdlib/utils/async/map-function]: https://github.com/stdlib-js/utils/tree/main/async/map-function`][@stdlib/utils/async/map-function
+
 </section>
 
 <!-- /.related -->
@@ -131,6 +137,12 @@ console.log( arr );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/map-function]: https://github.com/stdlib-js/utils/tree/main/async/map-function
+
+<!-- </related-links> -->
 
 </section>
 

@@ -242,6 +242,13 @@ untilEach( arr, predicate, log );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right`][@stdlib/utils/until-each-right
+-   [`@stdlib/utils/while-each`][@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each`][@stdlib/utils/while-each
+
 </section>
 
 <!-- /.related -->
@@ -255,6 +262,14 @@ untilEach( arr, predicate, log );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right
+
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each
+
+<!-- </related-links> -->
 
 </section>
 

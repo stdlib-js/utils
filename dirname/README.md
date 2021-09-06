@@ -83,6 +83,12 @@ for ( i = 0; i < files.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/extname`][@stdlib/utils/extname]: https://github.com/stdlib-js/utils/tree/main/extname`][@stdlib/utils/extname
+
 </section>
 
 <!-- /.related -->
@@ -92,6 +98,12 @@ for ( i = 0; i < files.length; i++ ) {
 <section class="links">
 
 [dirname]: https://en.wikipedia.org/wiki/Dirname
+
+<!-- <related-links> -->
+
+[@stdlib/utils/extname]: https://github.com/stdlib-js/utils/tree/main/extname
+
+<!-- </related-links> -->
 
 </section>
 

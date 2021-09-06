@@ -120,6 +120,13 @@ for ( i = 0; i < 10; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-memoized-read-only-property`][@stdlib/utils/define-memoized-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-memoized-read-only-property`][@stdlib/utils/define-memoized-read-only-property
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+
 </section>
 
 <!-- /.related -->
@@ -129,6 +136,14 @@ for ( i = 0; i < 10; i++ ) {
 <section class="links">
 
 [mdn-define-property]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-memoized-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-memoized-read-only-property
+
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+<!-- </related-links> -->
 
 </section>
 

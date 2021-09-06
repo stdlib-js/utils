@@ -197,6 +197,17 @@ bool = anyBy( arr, threshold );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/any-by`][@stdlib/utils/async/any-by]: https://github.com/stdlib-js/utils/tree/main/async/any-by`][@stdlib/utils/async/any-by
+-   [`@stdlib/utils/any-by-right`][@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils/tree/main/any-by-right`][@stdlib/utils/any-by-right
+-   [`@stdlib/utils/every-by`][@stdlib/utils/every-by]: https://github.com/stdlib-js/utils/tree/main/every-by`][@stdlib/utils/every-by
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
+-   [`@stdlib/utils/none-by`][@stdlib/utils/none-by]: https://github.com/stdlib-js/utils/tree/main/none-by`][@stdlib/utils/none-by
+-   [`@stdlib/utils/some-by`][@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by`][@stdlib/utils/some-by
+
 </section>
 
 <!-- /.related -->
@@ -212,6 +223,22 @@ bool = anyBy( arr, threshold );
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 [mdn-array-some]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/any-by]: https://github.com/stdlib-js/utils/tree/main/async/any-by
+
+[@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils/tree/main/any-by-right
+
+[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils/tree/main/every-by
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each
+
+[@stdlib/utils/none-by]: https://github.com/stdlib-js/utils/tree/main/none-by
+
+[@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by
+
+<!-- </related-links> -->
 
 </section>
 

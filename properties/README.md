@@ -99,6 +99,16 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties`][@stdlib/utils/define-properties
+-   [`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-properties`][@stdlib/utils/inherited-properties
+-   [`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in`][@stdlib/utils/properties-in
+-   [`@stdlib/utils/property-names`][@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names`][@stdlib/utils/property-names
+-   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+
 </section>
 
 <!-- /.related -->
@@ -108,6 +118,20 @@ console.log( props );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties
+
+[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-properties
+
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in
+
+[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names
+
+[@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols
+
+<!-- </related-links> -->
 
 </section>
 

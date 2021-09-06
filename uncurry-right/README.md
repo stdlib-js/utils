@@ -218,6 +218,14 @@ out = uncurried.apply( null, abcs );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/curry`][@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry`][@stdlib/utils/curry
+-   [`@stdlib/utils/curry-right`][@stdlib/utils/curry-right]: https://github.com/stdlib-js/utils/tree/main/curry-right`][@stdlib/utils/curry-right
+-   [`@stdlib/utils/uncurry`][@stdlib/utils/uncurry]: https://github.com/stdlib-js/utils/tree/main/uncurry`][@stdlib/utils/uncurry
+
 </section>
 
 <!-- /.related -->
@@ -226,7 +234,15 @@ out = uncurried.apply( null, abcs );
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry
+
+[@stdlib/utils/curry-right]: https://github.com/stdlib-js/utils/tree/main/curry-right
+
 [@stdlib/utils/uncurry]: https://github.com/stdlib-js/utils/tree/main/uncurry
+
+<!-- </related-links> -->
 
 </section>
 

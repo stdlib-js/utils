@@ -244,6 +244,12 @@ bool = ( arr[ 1 ].z === out[ 1 ].z );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/merge`][@stdlib/utils/merge]: https://github.com/stdlib-js/utils/tree/main/merge`][@stdlib/utils/merge
+
 </section>
 
 <!-- /.related -->
@@ -269,6 +275,12 @@ bool = ( arr[ 1 ].z === out[ 1 ].z );
 [node-system-error]: https://nodejs.org/api/errors.html#errors_class_system_error
 
 [node-buffer]: http://nodejs.org/api/buffer.html
+
+<!-- <related-links> -->
+
+[@stdlib/utils/merge]: https://github.com/stdlib-js/utils/tree/main/merge
+
+<!-- </related-links> -->
 
 </section>
 

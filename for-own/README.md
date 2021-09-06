@@ -181,6 +181,13 @@ console.log( obj );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
+-   [`@stdlib/utils/for-in`][@stdlib/utils/for-in]: https://github.com/stdlib-js/utils/tree/main/for-in`][@stdlib/utils/for-in
+
 </section>
 
 <!-- /.related -->
@@ -188,6 +195,14 @@ console.log( obj );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each
+
+[@stdlib/utils/for-in]: https://github.com/stdlib-js/utils/tree/main/for-in
+
+<!-- </related-links> -->
 
 </section>
 

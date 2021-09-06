@@ -116,6 +116,13 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/try-catch`][@stdlib/utils/async/try-catch]: https://github.com/stdlib-js/utils/tree/main/async/try-catch`][@stdlib/utils/async/try-catch
+-   [`@stdlib/utils/try-then`][@stdlib/utils/try-then]: https://github.com/stdlib-js/utils/tree/main/try-then`][@stdlib/utils/try-then
+
 </section>
 
 <!-- /.related -->
@@ -123,6 +130,14 @@ for ( i = 0; i < 100; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/try-catch]: https://github.com/stdlib-js/utils/tree/main/async/try-catch
+
+[@stdlib/utils/try-then]: https://github.com/stdlib-js/utils/tree/main/try-then
+
+<!-- </related-links> -->
 
 </section>
 

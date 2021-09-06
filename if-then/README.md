@@ -123,6 +123,13 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/if-then`][@stdlib/utils/async/if-then]: https://github.com/stdlib-js/utils/tree/main/async/if-then`][@stdlib/utils/async/if-then
+-   [`@stdlib/utils/if-else`][@stdlib/utils/if-else]: https://github.com/stdlib-js/utils/tree/main/if-else`][@stdlib/utils/if-else
+
 </section>
 
 <!-- /.related -->
@@ -131,7 +138,14 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="links">
 
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/if-then]: https://github.com/stdlib-js/utils/tree/main/async/if-then
+
 [@stdlib/utils/if-else]: https://github.com/stdlib-js/utils/tree/main/if-else
+
+<!-- </related-links> -->
 
 </section>
 

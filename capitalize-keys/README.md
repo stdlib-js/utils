@@ -111,6 +111,13 @@ console.dir( obj2 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/uncapitalize-keys`][@stdlib/utils/uncapitalize-keys]: https://github.com/stdlib-js/utils/tree/main/uncapitalize-keys`][@stdlib/utils/uncapitalize-keys
+-   [`@stdlib/utils/uppercase-keys`][@stdlib/utils/uppercase-keys]: https://github.com/stdlib-js/utils/tree/main/uppercase-keys`][@stdlib/utils/uppercase-keys
+
 </section>
 
 <!-- /.related -->
@@ -118,6 +125,14 @@ console.dir( obj2 );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/uncapitalize-keys]: https://github.com/stdlib-js/utils/tree/main/uncapitalize-keys
+
+[@stdlib/utils/uppercase-keys]: https://github.com/stdlib-js/utils/tree/main/uppercase-keys
+
+<!-- </related-links> -->
 
 </section>
 

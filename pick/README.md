@@ -127,6 +127,12 @@ var obj2 = pick( obj1, [ 'b', 'c', 'e' ] );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/pick-by`][@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils/tree/main/pick-by`][@stdlib/utils/pick-by
+
 </section>
 
 <!-- /.related -->
@@ -134,6 +140,12 @@ var obj2 = pick( obj1, [ 'b', 'c', 'e' ] );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils/tree/main/pick-by
+
+<!-- </related-links> -->
 
 </section>
 

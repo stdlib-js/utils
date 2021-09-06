@@ -294,9 +294,29 @@ mapFunAsync( rand, 10, done );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/map-function`][@stdlib/utils/map-function]: https://github.com/stdlib-js/utils/tree/main/map-function`][@stdlib/utils/map-function
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map-function]: https://github.com/stdlib-js/utils/tree/main/map-function
+
+<!-- </related-links> -->
 
 </section>
 

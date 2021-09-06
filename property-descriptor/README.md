@@ -102,6 +102,15 @@ console.log( desc );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]: test if an object has a specified property.
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+-   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptor-in`][@stdlib/utils/property-descriptor-in
+-   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors`][@stdlib/utils/property-descriptors
+
 </section>
 
 <!-- /.related -->
@@ -109,6 +118,18 @@ console.log( desc );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/assert/has-own-property]: https://github.com/stdlib-js/assert-has-own-property
+
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptor-in
+
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors
+
+<!-- </related-links> -->
 
 </section>
 

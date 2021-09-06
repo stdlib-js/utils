@@ -186,6 +186,13 @@ $ typemin int16
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/real-min`][@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min`][@stdlib/utils/real-min
+-   [`@stdlib/utils/type-max`][@stdlib/utils/type-max]: https://github.com/stdlib-js/utils/tree/main/type-max`][@stdlib/utils/type-max
+
 </section>
 
 <!-- /.related -->
@@ -193,6 +200,14 @@ $ typemin int16
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min
+
+[@stdlib/utils/type-max]: https://github.com/stdlib-js/utils/tree/main/type-max
+
+<!-- </related-links> -->
 
 </section>
 

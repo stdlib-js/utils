@@ -195,6 +195,17 @@ bool = someByRight( arr, 5, threshold );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/any-by-right`][@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils/tree/main/any-by-right`][@stdlib/utils/any-by-right
+-   [`@stdlib/utils/every-by-right`][@stdlib/utils/every-by-right]: https://github.com/stdlib-js/utils/tree/main/every-by-right`][@stdlib/utils/every-by-right
+-   [`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils/tree/main/for-each-right`][@stdlib/utils/for-each-right
+-   [`@stdlib/utils/none-by-right`][@stdlib/utils/none-by-right]: https://github.com/stdlib-js/utils/tree/main/none-by-right`][@stdlib/utils/none-by-right
+-   [`@stdlib/utils/some-by`][@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by`][@stdlib/utils/some-by
+-   [`@stdlib/utils/async/some-by-right`][@stdlib/utils/async/some-by-right]: https://github.com/stdlib-js/utils/tree/main/async/some-by-right`][@stdlib/utils/async/some-by-right
+
 </section>
 
 <!-- /.related -->
@@ -208,6 +219,22 @@ bool = someByRight( arr, 5, threshold );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/any-by-right]: https://github.com/stdlib-js/utils/tree/main/any-by-right
+
+[@stdlib/utils/every-by-right]: https://github.com/stdlib-js/utils/tree/main/every-by-right
+
+[@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils/tree/main/for-each-right
+
+[@stdlib/utils/none-by-right]: https://github.com/stdlib-js/utils/tree/main/none-by-right
+
+[@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by
+
+[@stdlib/utils/async/some-by-right]: https://github.com/stdlib-js/utils/tree/main/async/some-by-right
+
+<!-- </related-links> -->
 
 </section>
 

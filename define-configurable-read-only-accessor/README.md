@@ -107,6 +107,16 @@ try {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property
+-   [`@stdlib/utils/define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor
+-   [`@stdlib/utils/define-configurable-write-only-accessor`][@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-write-only-accessor`][@stdlib/utils/define-configurable-write-only-accessor
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+-   [`@stdlib/utils/define-read-only-accessor`][@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-only-accessor`][@stdlib/utils/define-read-only-accessor
+
 </section>
 
 <!-- /.related -->
@@ -115,7 +125,19 @@ try {
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property
+
+[@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-write-accessor
+
+[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-write-only-accessor
+
 [@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+[@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-only-accessor
+
+<!-- </related-links> -->
 
 </section>
 

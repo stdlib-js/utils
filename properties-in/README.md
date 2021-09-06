@@ -94,6 +94,16 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties`][@stdlib/utils/define-properties
+-   [`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-properties`][@stdlib/utils/inherited-properties
+-   [`@stdlib/utils/properties`][@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties`][@stdlib/utils/properties
+-   [`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils/tree/main/property-names-in`][@stdlib/utils/property-names-in
+-   [`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in`][@stdlib/utils/property-symbols-in
+
 </section>
 
 <!-- /.related -->
@@ -103,6 +113,20 @@ console.log( props );
 <section class="links">
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties
+
+[@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-properties
+
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties
+
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils/tree/main/property-names-in
+
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in
+
+<!-- </related-links> -->
 
 </section>
 

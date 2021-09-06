@@ -96,6 +96,16 @@ console.log( symbols );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys`][@stdlib/utils/inherited-keys
+-   [`@stdlib/utils/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors
+-   [`@stdlib/utils/inherited-property-names`][@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names`][@stdlib/utils/inherited-property-names
+-   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+-   [`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in`][@stdlib/utils/property-symbols-in
+
 </section>
 
 <!-- /.related -->
@@ -105,6 +115,20 @@ console.log( symbols );
 <section class="links">
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys
+
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors
+
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names
+
+[@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols
+
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in
+
+<!-- </related-links> -->
 
 </section>
 

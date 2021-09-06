@@ -140,6 +140,12 @@ console.dir( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/object-inverse-by`][@stdlib/utils/object-inverse-by]: https://github.com/stdlib-js/utils/tree/main/object-inverse-by`][@stdlib/utils/object-inverse-by
+
 </section>
 
 <!-- /.related -->
@@ -149,6 +155,12 @@ console.dir( out );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/object-inverse-by]: https://github.com/stdlib-js/utils/tree/main/object-inverse-by
+
+<!-- </related-links> -->
 
 </section>
 

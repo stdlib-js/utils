@@ -101,6 +101,17 @@ console.log( desc );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+-   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties`][@stdlib/utils/define-properties
+-   [`@stdlib/utils/property-descriptor`][@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils/tree/main/property-descriptor`][@stdlib/utils/property-descriptor
+-   [`@stdlib/utils/property-descriptors-in`][@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptors-in`][@stdlib/utils/property-descriptors-in
+-   [`@stdlib/utils/property-names`][@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names`][@stdlib/utils/property-names
+-   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+
 </section>
 
 <!-- /.related -->
@@ -109,7 +120,21 @@ console.log( desc );
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties
+
 [@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils/tree/main/property-descriptor
+
+[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptors-in
+
+[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names
+
+[@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols
+
+<!-- </related-links> -->
 
 </section>
 

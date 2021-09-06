@@ -83,6 +83,12 @@ for ( i = 0; i < files.length; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/dirname`][@stdlib/utils/dirname]: https://github.com/stdlib-js/utils/tree/main/dirname`][@stdlib/utils/dirname
+
 </section>
 
 <!-- /.related -->
@@ -90,6 +96,12 @@ for ( i = 0; i < files.length; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/dirname]: https://github.com/stdlib-js/utils/tree/main/dirname
+
+<!-- </related-links> -->
 
 </section>
 

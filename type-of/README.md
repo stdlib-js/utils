@@ -247,6 +247,13 @@ str = typeOf( new Person2() );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name`][@stdlib/utils/constructor-name
+-   [`@stdlib/utils/native-class`][@stdlib/utils/native-class]: https://github.com/stdlib-js/utils/tree/main/native-class`][@stdlib/utils/native-class
+
 </section>
 
 <!-- /.related -->
@@ -254,6 +261,14 @@ str = typeOf( new Person2() );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name
+
+[@stdlib/utils/native-class]: https://github.com/stdlib-js/utils/tree/main/native-class
+
+<!-- </related-links> -->
 
 </section>
 

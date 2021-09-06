@@ -117,6 +117,16 @@ console.log( foo.name );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property
+-   [`@stdlib/utils/define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor
+-   [`@stdlib/utils/define-configurable-write-only-accessor`][@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-write-only-accessor`][@stdlib/utils/define-configurable-write-only-accessor
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+-   [`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor
+
 </section>
 
 <!-- /.related -->
@@ -126,6 +136,18 @@ console.log( foo.name );
 <section class="links">
 
 [@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property
+
+[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-accessor
+
+[@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-write-only-accessor
+
+[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor
+
+<!-- </related-links> -->
 
 </section>
 

@@ -148,9 +148,32 @@ next();
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/if-then`][@stdlib/utils/async/if-then]: https://github.com/stdlib-js/utils/tree/main/async/if-then`][@stdlib/utils/async/if-then
+-   [`@stdlib/utils/if-else`][@stdlib/utils/if-else]: https://github.com/stdlib-js/utils/tree/main/if-else`][@stdlib/utils/if-else
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/if-then]: https://github.com/stdlib-js/utils/tree/main/async/if-then
+
+[@stdlib/utils/if-else]: https://github.com/stdlib-js/utils/tree/main/if-else
+
+<!-- </related-links> -->
 
 </section>
 

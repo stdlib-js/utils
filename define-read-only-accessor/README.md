@@ -101,6 +101,14 @@ try {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property`][@stdlib/utils/define-read-only-property
+-   [`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor
+-   [`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor
+
 </section>
 
 <!-- /.related -->
@@ -110,6 +118,16 @@ try {
 <section class="links">
 
 [@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property
+
+[@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor
+
+[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-write-only-accessor
+
+<!-- </related-links> -->
 
 </section>
 

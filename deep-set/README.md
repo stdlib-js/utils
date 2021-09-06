@@ -245,6 +245,13 @@ console.log( data );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get`][@stdlib/utils/deep-get
+-   [`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck`][@stdlib/utils/deep-pluck
+
 </section>
 
 <!-- /.related -->
@@ -252,6 +259,14 @@ console.log( data );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get
+
+[@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck
+
+<!-- </related-links> -->
 
 </section>
 

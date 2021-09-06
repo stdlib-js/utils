@@ -357,11 +357,34 @@ mapKeysAsync( files, read, done );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils/tree/main/map-keys`][@stdlib/utils/map-keys
+-   [`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils/tree/main/async/map-values`][@stdlib/utils/async/map-values
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
 [ecma-262]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils/tree/main/map-keys
+
+[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils/tree/main/async/map-values
+
+<!-- </related-links> -->
 
 </section>
 

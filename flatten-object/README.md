@@ -255,6 +255,12 @@ var out = flattenObject( obj, {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/flatten-array`][@stdlib/utils/flatten-array]: https://github.com/stdlib-js/utils/tree/main/flatten-array`][@stdlib/utils/flatten-array
+
 </section>
 
 <!-- /.related -->
@@ -264,6 +270,12 @@ var out = flattenObject( obj, {
 <section class="links">
 
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
+
+<!-- <related-links> -->
+
+[@stdlib/utils/flatten-array]: https://github.com/stdlib-js/utils/tree/main/flatten-array
+
+<!-- </related-links> -->
 
 </section>
 

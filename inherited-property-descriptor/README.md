@@ -132,6 +132,17 @@ console.log( desc );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/property-descriptor`][@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils/tree/main/property-descriptor`][@stdlib/utils/property-descriptor
+-   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptor-in`][@stdlib/utils/property-descriptor-in
+-   [`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys`][@stdlib/utils/inherited-keys
+-   [`@stdlib/utils/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors
+-   [`@stdlib/utils/inherited-property-names`][@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names`][@stdlib/utils/inherited-property-names
+-   [`@stdlib/utils/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols
+
 </section>
 
 <!-- /.related -->
@@ -139,6 +150,22 @@ console.log( desc );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/property-descriptor]: https://github.com/stdlib-js/utils/tree/main/property-descriptor
+
+[@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptor-in
+
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys
+
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors
+
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names
+
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols
+
+<!-- </related-links> -->
 
 </section>
 

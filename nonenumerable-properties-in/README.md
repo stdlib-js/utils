@@ -130,6 +130,15 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in
+-   [`@stdlib/utils/inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties
+-   [`@stdlib/utils/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties
+-   [`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in`][@stdlib/utils/properties-in
+
 </section>
 
 <!-- /.related -->
@@ -139,6 +148,18 @@ console.log( props );
 <section class="links">
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/enumerable-properties-in
+
+[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-properties
+
+[@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties
+
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in
+
+<!-- </related-links> -->
 
 </section>
 

@@ -126,6 +126,12 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/papply-right`][@stdlib/utils/papply-right]: https://github.com/stdlib-js/utils/tree/main/papply-right`][@stdlib/utils/papply-right
+
 </section>
 
 <!-- /.related -->
@@ -133,6 +139,12 @@ for ( i = 0; i < 100; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/papply-right]: https://github.com/stdlib-js/utils/tree/main/papply-right
+
+<!-- </related-links> -->
 
 </section>
 

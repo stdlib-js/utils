@@ -180,6 +180,13 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/group`][@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group`][@stdlib/utils/group
+-   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
+
 </section>
 
 <!-- /.related -->
@@ -193,6 +200,14 @@ console.log( out );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group
+
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by
+
+<!-- </related-links> -->
 
 </section>
 

@@ -122,6 +122,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/count-by`][@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by`][@stdlib/utils/count-by
+-   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
+-   [`@stdlib/utils/tabulate-by`][@stdlib/utils/tabulate-by]: https://github.com/stdlib-js/utils/tree/main/tabulate-by`][@stdlib/utils/tabulate-by
+
 </section>
 
 <!-- /.related -->
@@ -135,6 +143,16 @@ console.log( out );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by
+
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by
+
+[@stdlib/utils/tabulate-by]: https://github.com/stdlib-js/utils/tree/main/tabulate-by
+
+<!-- </related-links> -->
 
 </section>
 

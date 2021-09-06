@@ -375,6 +375,22 @@ countByAsync( files, indicator, done );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/count-by`][@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by`][@stdlib/utils/count-by
+-   [`@stdlib/utils/async/group-by`][@stdlib/utils/async/group-by]: https://github.com/stdlib-js/utils/tree/main/async/group-by`][@stdlib/utils/async/group-by
+-   [`@stdlib/utils/async/tabulate-by`][@stdlib/utils/async/tabulate-by]: https://github.com/stdlib-js/utils/tree/main/async/tabulate-by`][@stdlib/utils/async/tabulate-by
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
@@ -384,6 +400,16 @@ countByAsync( files, indicator, done );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by
+
+[@stdlib/utils/async/group-by]: https://github.com/stdlib-js/utils/tree/main/async/group-by
+
+[@stdlib/utils/async/tabulate-by]: https://github.com/stdlib-js/utils/tree/main/async/tabulate-by
+
+<!-- </related-links> -->
 
 </section>
 

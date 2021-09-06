@@ -87,6 +87,13 @@ var vals = objectValues( obj );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/entries`][@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries`][@stdlib/utils/entries
+-   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
+
 </section>
 
 <!-- /.related -->
@@ -96,6 +103,14 @@ var vals = objectValues( obj );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries
+
+[@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys
+
+<!-- </related-links> -->
 
 </section>
 

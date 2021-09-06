@@ -158,6 +158,14 @@ $ safeintmin float16
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/safe-int-max`][@stdlib/utils/safe-int-max]: https://github.com/stdlib-js/utils/tree/main/safe-int-max`][@stdlib/utils/safe-int-max
+-   [`@stdlib/utils/real-min`][@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min`][@stdlib/utils/real-min
+-   [`@stdlib/utils/type-min`][@stdlib/utils/type-min]: https://github.com/stdlib-js/utils/tree/main/type-min`][@stdlib/utils/type-min
+
 </section>
 
 <!-- /.related -->
@@ -165,6 +173,16 @@ $ safeintmin float16
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/safe-int-max]: https://github.com/stdlib-js/utils/tree/main/safe-int-max
+
+[@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min
+
+[@stdlib/utils/type-min]: https://github.com/stdlib-js/utils/tree/main/type-min
+
+<!-- </related-links> -->
 
 </section>
 

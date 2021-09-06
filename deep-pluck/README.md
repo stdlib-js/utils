@@ -211,6 +211,13 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get`][@stdlib/utils/deep-get
+-   [`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set`][@stdlib/utils/deep-set
+
 </section>
 
 <!-- /.related -->
@@ -219,9 +226,15 @@ console.log( out );
 
 <section class="links">
 
+[@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
+
+<!-- <related-links> -->
+
 [@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get
 
-[@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
+[@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set
+
+<!-- </related-links> -->
 
 </section>
 

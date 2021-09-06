@@ -104,6 +104,16 @@ foo.secret = 'boop';
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property
+-   [`@stdlib/utils/define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-accessor`][@stdlib/utils/define-configurable-read-only-accessor
+-   [`@stdlib/utils/define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-write-accessor`][@stdlib/utils/define-configurable-read-write-accessor
+-   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
+-   [`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor
+
 </section>
 
 <!-- /.related -->
@@ -112,7 +122,19 @@ foo.secret = 'boop';
 
 <section class="links">
 
+<!-- <related-links> -->
+
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property
+
+[@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-accessor
+
+[@stdlib/utils/define-configurable-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-write-accessor
+
 [@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
+
+[@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-write-only-accessor
+
+<!-- </related-links> -->
 
 </section>
 

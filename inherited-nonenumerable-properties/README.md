@@ -184,6 +184,18 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/inherited-enumerable-properties`][@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-enumerable-properties`][@stdlib/utils/inherited-enumerable-properties
+-   [`@stdlib/utils/inherited-nonenumerable-property-names`][@stdlib/utils/inherited-nonenumerable-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-names`][@stdlib/utils/inherited-nonenumerable-property-names
+-   [`@stdlib/utils/inherited-nonenumerable-property-symbols`][@stdlib/utils/inherited-nonenumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-symbols`][@stdlib/utils/inherited-nonenumerable-property-symbols
+-   [`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys`][@stdlib/utils/inherited-keys
+-   [`@stdlib/utils/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties
+-   [`@stdlib/utils/nonenumerable-properties-in`][@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties-in`][@stdlib/utils/nonenumerable-properties-in
+-   [`@stdlib/utils/properties`][@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties`][@stdlib/utils/properties
+
 </section>
 
 <!-- /.related -->
@@ -195,6 +207,24 @@ console.log( props );
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-enumerable-properties
+
+[@stdlib/utils/inherited-nonenumerable-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-names
+
+[@stdlib/utils/inherited-nonenumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-symbols
+
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys
+
+[@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties
+
+[@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties-in
+
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties
+
+<!-- </related-links> -->
 
 </section>
 

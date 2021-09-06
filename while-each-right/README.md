@@ -246,6 +246,13 @@ whileEachRight( arr, predicate, log );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/while-each`][@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each`][@stdlib/utils/while-each
+-   [`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right`][@stdlib/utils/until-each-right
+
 </section>
 
 <!-- /.related -->
@@ -259,6 +266,14 @@ whileEachRight( arr, predicate, log );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each
+
+[@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right
+
+<!-- </related-links> -->
 
 </section>
 

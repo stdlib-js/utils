@@ -320,6 +320,12 @@ len = queue.length;
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+
 </section>
 
 <!-- /.related -->
@@ -327,6 +333,12 @@ len = queue.length;
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack
+
+<!-- </related-links> -->
 
 </section>
 

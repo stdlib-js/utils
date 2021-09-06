@@ -100,6 +100,12 @@ console.dir( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/zip`][@stdlib/utils/zip]: https://github.com/stdlib-js/utils/tree/main/zip`][@stdlib/utils/zip
+
 </section>
 
 <!-- /.related -->
@@ -108,7 +114,11 @@ console.dir( out );
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/utils/zip]: https://github.com/stdlib-js/utils/tree/main/zip
+
+<!-- </related-links> -->
 
 </section>
 

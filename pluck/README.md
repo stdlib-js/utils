@@ -179,6 +179,13 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck`][@stdlib/utils/deep-pluck
+-   [`@stdlib/utils/pick`][@stdlib/utils/pick]: https://github.com/stdlib-js/utils/tree/main/pick`][@stdlib/utils/pick
+
 </section>
 
 <!-- /.related -->
@@ -188,6 +195,14 @@ console.log( out );
 <section class="links">
 
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
+
+<!-- <related-links> -->
+
+[@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck
+
+[@stdlib/utils/pick]: https://github.com/stdlib-js/utils/tree/main/pick
+
+<!-- </related-links> -->
 
 </section>
 

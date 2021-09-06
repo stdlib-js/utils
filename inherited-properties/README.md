@@ -125,6 +125,15 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/properties`][@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties`][@stdlib/utils/properties
+-   [`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in`][@stdlib/utils/properties-in
+-   [`@stdlib/utils/inherited-property-names`][@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names`][@stdlib/utils/inherited-property-names
+-   [`@stdlib/utils/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols
+
 </section>
 
 <!-- /.related -->
@@ -134,6 +143,18 @@ console.log( props );
 <section class="links">
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties
+
+[@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in
+
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names
+
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols
+
+<!-- </related-links> -->
 
 </section>
 

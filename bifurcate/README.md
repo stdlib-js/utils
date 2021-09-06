@@ -154,6 +154,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by`][@stdlib/utils/bifurcate-by
+-   [`@stdlib/utils/bifurcate-own`][@stdlib/utils/bifurcate-own]: https://github.com/stdlib-js/utils/tree/main/bifurcate-own`][@stdlib/utils/bifurcate-own
+-   [`@stdlib/utils/group`][@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group`][@stdlib/utils/group
+
 </section>
 
 <!-- /.related -->
@@ -167,6 +175,16 @@ console.log( out );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by
+
+[@stdlib/utils/bifurcate-own]: https://github.com/stdlib-js/utils/tree/main/bifurcate-own
+
+[@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group
+
+<!-- </related-links> -->
 
 </section>
 

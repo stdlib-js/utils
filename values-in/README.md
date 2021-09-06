@@ -96,6 +96,14 @@ console.log( values );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in`][@stdlib/utils/entries-in
+-   [`@stdlib/utils/keys-in`][@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils/tree/main/keys-in`][@stdlib/utils/keys-in
+-   [`@stdlib/utils/values`][@stdlib/utils/values]: https://github.com/stdlib-js/utils/tree/main/values`][@stdlib/utils/values
+
 </section>
 
 <!-- /.related -->
@@ -105,6 +113,16 @@ console.log( values );
 <section class="links">
 
 [spec-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in
+
+[@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils/tree/main/keys-in
+
+[@stdlib/utils/values]: https://github.com/stdlib-js/utils/tree/main/values
+
+<!-- </related-links> -->
 
 </section>
 

@@ -190,11 +190,34 @@ f( 5, 3, done );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/async/compose`][@stdlib/utils/async/compose]: https://github.com/stdlib-js/utils/tree/main/async/compose`][@stdlib/utils/async/compose
+-   [`@stdlib/utils/function-sequence`][@stdlib/utils/function-sequence]: https://github.com/stdlib-js/utils/tree/main/function-sequence`][@stdlib/utils/function-sequence
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
 
 [@stdlib/utils/async/compose]: https://github.com/stdlib-js/utils/tree/main/async/compose
+
+<!-- <related-links> -->
+
+[@stdlib/utils/async/compose]: https://github.com/stdlib-js/utils/tree/main/async/compose
+
+[@stdlib/utils/function-sequence]: https://github.com/stdlib-js/utils/tree/main/function-sequence
+
+<!-- </related-links> -->
 
 </section>
 

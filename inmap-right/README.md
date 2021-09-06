@@ -217,6 +217,13 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils/tree/main/for-each-right`][@stdlib/utils/for-each-right
+-   [`@stdlib/utils/inmap`][@stdlib/utils/inmap]: https://github.com/stdlib-js/utils/tree/main/inmap`][@stdlib/utils/inmap
+
 </section>
 
 <!-- /.related -->
@@ -232,6 +239,14 @@ console.log( out );
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 [mdn-array-map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+<!-- <related-links> -->
+
+[@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils/tree/main/for-each-right
+
+[@stdlib/utils/inmap]: https://github.com/stdlib-js/utils/tree/main/inmap
+
+<!-- </related-links> -->
 
 </section>
 

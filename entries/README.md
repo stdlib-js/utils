@@ -87,6 +87,15 @@ var entries = objectEntries( obj );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in`][@stdlib/utils/entries-in
+-   [`@stdlib/utils/from-entries`][@stdlib/utils/from-entries]: https://github.com/stdlib-js/utils/tree/main/from-entries`][@stdlib/utils/from-entries
+-   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
+-   [`@stdlib/utils/values`][@stdlib/utils/values]: https://github.com/stdlib-js/utils/tree/main/values`][@stdlib/utils/values
+
 </section>
 
 <!-- /.related -->
@@ -96,6 +105,18 @@ var entries = objectEntries( obj );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in
+
+[@stdlib/utils/from-entries]: https://github.com/stdlib-js/utils/tree/main/from-entries
+
+[@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys
+
+[@stdlib/utils/values]: https://github.com/stdlib-js/utils/tree/main/values
+
+<!-- </related-links> -->
 
 </section>
 

@@ -86,6 +86,13 @@ console.log( symbols );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/property-names`][@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names`][@stdlib/utils/property-names
+-   [`@stdlib/utils/property-symbols-in`][@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in`][@stdlib/utils/property-symbols-in
+
 </section>
 
 <!-- /.related -->
@@ -95,6 +102,14 @@ console.log( symbols );
 <section class="links">
 
 [@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
+
+<!-- <related-links> -->
+
+[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names
+
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in
+
+<!-- </related-links> -->
 
 </section>
 

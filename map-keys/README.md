@@ -127,6 +127,12 @@ console.dir( obj2 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/map-values`][@stdlib/utils/map-values]: https://github.com/stdlib-js/utils/tree/main/map-values`][@stdlib/utils/map-values
+
 </section>
 
 <!-- /.related -->
@@ -136,6 +142,12 @@ console.dir( obj2 );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map-values]: https://github.com/stdlib-js/utils/tree/main/map-values
+
+<!-- </related-links> -->
 
 </section>
 

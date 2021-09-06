@@ -166,6 +166,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate`][@stdlib/utils/bifurcate
+-   [`@stdlib/utils/count-by`][@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by`][@stdlib/utils/count-by
+-   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
+
 </section>
 
 <!-- /.related -->
@@ -179,6 +187,16 @@ console.log( out );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate
+
+[@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by
+
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by
+
+<!-- </related-links> -->
 
 </section>
 

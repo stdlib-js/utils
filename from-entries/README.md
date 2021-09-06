@@ -92,6 +92,12 @@ var obj2 = objectFromEntries( entries );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/entries`][@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries`][@stdlib/utils/entries
+
 </section>
 
 <!-- /.related -->
@@ -99,6 +105,12 @@ var obj2 = objectFromEntries( entries );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries
+
+<!-- </related-links> -->
 
 </section>
 

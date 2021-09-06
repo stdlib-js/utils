@@ -153,6 +153,12 @@ console.log( obj );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
+
 </section>
 
 <!-- /.related -->
@@ -166,6 +172,12 @@ console.log( obj );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each
+
+<!-- </related-links> -->
 
 </section>
 

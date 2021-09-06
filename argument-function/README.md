@@ -104,6 +104,13 @@ for ( i = 0; i < 10; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]: https://github.com/stdlib-js/utils/tree/main/constant-function`][@stdlib/utils/constant-function
+-   [`@stdlib/utils/identity-function`][@stdlib/utils/identity-function]: https://github.com/stdlib-js/utils/tree/main/identity-function`][@stdlib/utils/identity-function
+
 </section>
 
 <!-- /.related -->
@@ -111,6 +118,14 @@ for ( i = 0; i < 10; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/constant-function]: https://github.com/stdlib-js/utils/tree/main/constant-function
+
+[@stdlib/utils/identity-function]: https://github.com/stdlib-js/utils/tree/main/identity-function
+
+<!-- </related-links> -->
 
 </section>
 

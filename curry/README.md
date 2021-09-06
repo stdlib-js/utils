@@ -204,6 +204,14 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/curry-right`][@stdlib/utils/curry-right]: https://github.com/stdlib-js/utils/tree/main/curry-right`][@stdlib/utils/curry-right
+-   [`@stdlib/utils/uncurry`][@stdlib/utils/uncurry]: https://github.com/stdlib-js/utils/tree/main/uncurry`][@stdlib/utils/uncurry
+-   [`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right`][@stdlib/utils/uncurry-right
+
 </section>
 
 <!-- /.related -->
@@ -211,6 +219,16 @@ console.log( out );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/curry-right]: https://github.com/stdlib-js/utils/tree/main/curry-right
+
+[@stdlib/utils/uncurry]: https://github.com/stdlib-js/utils/tree/main/uncurry
+
+[@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right
+
+<!-- </related-links> -->
 
 </section>
 

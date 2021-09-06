@@ -139,6 +139,16 @@ whilst( predicate, log );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/do-until`][@stdlib/utils/do-until]: https://github.com/stdlib-js/utils/tree/main/do-until`][@stdlib/utils/do-until
+-   [`@stdlib/utils/do-while`][@stdlib/utils/do-while]: https://github.com/stdlib-js/utils/tree/main/do-while`][@stdlib/utils/do-while
+-   [`@stdlib/utils/until`][@stdlib/utils/until]: https://github.com/stdlib-js/utils/tree/main/until`][@stdlib/utils/until
+-   [`@stdlib/utils/async/while`][@stdlib/utils/async/while]: https://github.com/stdlib-js/utils/tree/main/async/while`][@stdlib/utils/async/while
+-   [`@stdlib/utils/while-each`][@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each`][@stdlib/utils/while-each
+
 </section>
 
 <!-- /.related -->
@@ -146,6 +156,20 @@ whilst( predicate, log );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/do-until]: https://github.com/stdlib-js/utils/tree/main/do-until
+
+[@stdlib/utils/do-while]: https://github.com/stdlib-js/utils/tree/main/do-while
+
+[@stdlib/utils/until]: https://github.com/stdlib-js/utils/tree/main/until
+
+[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils/tree/main/async/while
+
+[@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each
+
+<!-- </related-links> -->
 
 </section>
 

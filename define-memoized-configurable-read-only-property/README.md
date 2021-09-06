@@ -111,6 +111,14 @@ for ( i = 0; i < 10; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property`][@stdlib/utils/define-configurable-read-only-property
+-   [`@stdlib/utils/define-memoized-read-only-property`][@stdlib/utils/define-memoized-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-memoized-read-only-property`][@stdlib/utils/define-memoized-read-only-property
+-   [`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property`][@stdlib/utils/define-read-only-property
+
 </section>
 
 <!-- /.related -->
@@ -120,6 +128,16 @@ for ( i = 0; i < 10; i++ ) {
 <section class="links">
 
 [mdn-define-property]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property
+
+[@stdlib/utils/define-memoized-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-memoized-read-only-property
+
+[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property
+
+<!-- </related-links> -->
 
 </section>
 

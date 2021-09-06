@@ -118,6 +118,12 @@ var obj2 = omitBy( obj1, predicate );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/omit`][@stdlib/utils/omit]: https://github.com/stdlib-js/utils/tree/main/omit`][@stdlib/utils/omit
+
 </section>
 
 <!-- /.related -->
@@ -125,6 +131,12 @@ var obj2 = omitBy( obj1, predicate );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/omit]: https://github.com/stdlib-js/utils/tree/main/omit
+
+<!-- </related-links> -->
 
 </section>
 

@@ -139,6 +139,13 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/append`][@stdlib/utils/append]: https://github.com/stdlib-js/utils/tree/main/append`][@stdlib/utils/append
+-   [`@stdlib/utils/unshift`][@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift`][@stdlib/utils/unshift
+
 </section>
 
 <!-- /.related -->
@@ -154,6 +161,14 @@ console.log( arr );
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/append]: https://github.com/stdlib-js/utils/tree/main/append
+
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift
+
+<!-- </related-links> -->
 
 </section>
 

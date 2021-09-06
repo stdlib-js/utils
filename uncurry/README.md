@@ -192,6 +192,13 @@ out = uncurried( 0, 10, 20, 30, 40, 50 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/curry`][@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry`][@stdlib/utils/curry
+-   [`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right`][@stdlib/utils/uncurry-right
+
 </section>
 
 <!-- /.related -->
@@ -199,6 +206,14 @@ out = uncurried( 0, 10, 20, 30, 40, 50 );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry
+
+[@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right
+
+<!-- </related-links> -->
 
 </section>
 

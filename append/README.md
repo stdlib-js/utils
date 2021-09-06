@@ -137,6 +137,13 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/prepend`][@stdlib/utils/prepend]: https://github.com/stdlib-js/utils/tree/main/prepend`][@stdlib/utils/prepend
+-   [`@stdlib/utils/push`][@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push`][@stdlib/utils/push
+
 </section>
 
 <!-- /.related -->
@@ -152,6 +159,14 @@ console.log( arr );
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/prepend]: https://github.com/stdlib-js/utils/tree/main/prepend
+
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push
+
+<!-- </related-links> -->
 
 </section>
 

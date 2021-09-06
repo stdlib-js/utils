@@ -131,6 +131,16 @@ console.log( desc );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors`][@stdlib/utils/property-descriptors
+-   [`@stdlib/utils/property-descriptors-in`][@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptors-in`][@stdlib/utils/property-descriptors-in
+-   [`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys`][@stdlib/utils/inherited-keys
+-   [`@stdlib/utils/inherited-property-names`][@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names`][@stdlib/utils/inherited-property-names
+-   [`@stdlib/utils/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols
+
 </section>
 
 <!-- /.related -->
@@ -140,6 +150,20 @@ console.log( desc );
 <section class="links">
 
 [@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors
+
+<!-- <related-links> -->
+
+[@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors
+
+[@stdlib/utils/property-descriptors-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptors-in
+
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys
+
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-property-names
+
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols
+
+<!-- </related-links> -->
 
 </section>
 

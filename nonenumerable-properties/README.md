@@ -133,6 +133,15 @@ console.log( props );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/enumerable-properties`][@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/enumerable-properties`][@stdlib/utils/enumerable-properties
+-   [`@stdlib/utils/inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-properties`][@stdlib/utils/inherited-nonenumerable-properties
+-   [`@stdlib/utils/nonenumerable-properties-in`][@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties-in`][@stdlib/utils/nonenumerable-properties-in
+-   [`@stdlib/utils/properties`][@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties`][@stdlib/utils/properties
+
 </section>
 
 <!-- /.related -->
@@ -142,6 +151,18 @@ console.log( props );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/enumerable-properties
+
+[@stdlib/utils/inherited-nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-properties
+
+[@stdlib/utils/nonenumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties-in
+
+[@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties
+
+<!-- </related-links> -->
 
 </section>
 

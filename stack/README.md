@@ -328,6 +328,12 @@ len = stack.length;
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/fifo`][@stdlib/utils/fifo]: https://github.com/stdlib-js/utils/tree/main/fifo`][@stdlib/utils/fifo
+
 </section>
 
 <!-- /.related -->
@@ -335,6 +341,12 @@ len = stack.length;
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/fifo]: https://github.com/stdlib-js/utils/tree/main/fifo
+
+<!-- </related-links> -->
 
 </section>
 

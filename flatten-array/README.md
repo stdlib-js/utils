@@ -207,6 +207,12 @@ bool = ( arr[4][20][2] === val );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/flatten-object`][@stdlib/utils/flatten-object]: https://github.com/stdlib-js/utils/tree/main/flatten-object`][@stdlib/utils/flatten-object
+
 </section>
 
 <!-- /.related -->
@@ -216,6 +222,12 @@ bool = ( arr[4][20][2] === val );
 <section class="links">
 
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
+
+<!-- <related-links> -->
+
+[@stdlib/utils/flatten-object]: https://github.com/stdlib-js/utils/tree/main/flatten-object
+
+<!-- </related-links> -->
 
 </section>
 

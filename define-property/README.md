@@ -107,6 +107,13 @@ try {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties`][@stdlib/utils/define-properties
+-   [`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property`][@stdlib/utils/define-read-only-property
+
 </section>
 
 <!-- /.related -->
@@ -116,6 +123,14 @@ try {
 <section class="links">
 
 [mdn-define-property]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+
+<!-- <related-links> -->
+
+[@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties
+
+[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property
+
+<!-- </related-links> -->
 
 </section>
 

@@ -133,6 +133,16 @@ console.log( keys );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/inherited-keys`][@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys`][@stdlib/utils/inherited-keys
+-   [`@stdlib/utils/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors`][@stdlib/utils/inherited-property-descriptors
+-   [`@stdlib/utils/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols`][@stdlib/utils/inherited-property-symbols
+-   [`@stdlib/utils/property-names`][@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names`][@stdlib/utils/property-names
+-   [`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils/tree/main/property-names-in`][@stdlib/utils/property-names-in
+
 </section>
 
 <!-- /.related -->
@@ -142,6 +152,20 @@ console.log( keys );
 <section class="links">
 
 [ecma-262-for-in]: http://www.ecma-international.org/ecma-262/5.1/#sec-12.6.4
+
+<!-- <related-links> -->
+
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils/tree/main/inherited-keys
+
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils/tree/main/inherited-property-descriptors
+
+[@stdlib/utils/inherited-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-property-symbols
+
+[@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names
+
+[@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils/tree/main/property-names-in
+
+<!-- </related-links> -->
 
 </section>
 

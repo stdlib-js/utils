@@ -142,6 +142,13 @@ var v = f( 5, 3 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/compose`][@stdlib/utils/compose]: https://github.com/stdlib-js/utils/tree/main/compose`][@stdlib/utils/compose
+-   [`@stdlib/utils/async/function-sequence`][@stdlib/utils/async/function-sequence]: https://github.com/stdlib-js/utils/tree/main/async/function-sequence`][@stdlib/utils/async/function-sequence
+
 </section>
 
 <!-- /.related -->
@@ -150,7 +157,13 @@ var v = f( 5, 3 );
 
 <section class="links">
 
+<!-- <related-links> -->
+
 [@stdlib/utils/compose]: https://github.com/stdlib-js/utils/tree/main/compose
+
+[@stdlib/utils/async/function-sequence]: https://github.com/stdlib-js/utils/tree/main/async/function-sequence
+
+<!-- </related-links> -->
 
 </section>
 

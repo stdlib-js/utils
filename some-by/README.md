@@ -195,6 +195,17 @@ bool = someBy( arr, 5, threshold );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/any-by`][@stdlib/utils/any-by]: https://github.com/stdlib-js/utils/tree/main/any-by`][@stdlib/utils/any-by
+-   [`@stdlib/utils/every-by`][@stdlib/utils/every-by]: https://github.com/stdlib-js/utils/tree/main/every-by`][@stdlib/utils/every-by
+-   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
+-   [`@stdlib/utils/none-by`][@stdlib/utils/none-by]: https://github.com/stdlib-js/utils/tree/main/none-by`][@stdlib/utils/none-by
+-   [`@stdlib/utils/async/some-by`][@stdlib/utils/async/some-by]: https://github.com/stdlib-js/utils/tree/main/async/some-by`][@stdlib/utils/async/some-by
+-   [`@stdlib/utils/some-by-right`][@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils/tree/main/some-by-right`][@stdlib/utils/some-by-right
+
 </section>
 
 <!-- /.related -->
@@ -208,6 +219,22 @@ bool = someBy( arr, 5, threshold );
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/any-by]: https://github.com/stdlib-js/utils/tree/main/any-by
+
+[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils/tree/main/every-by
+
+[@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each
+
+[@stdlib/utils/none-by]: https://github.com/stdlib-js/utils/tree/main/none-by
+
+[@stdlib/utils/async/some-by]: https://github.com/stdlib-js/utils/tree/main/async/some-by
+
+[@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils/tree/main/some-by-right
+
+<!-- </related-links> -->
 
 </section>
 

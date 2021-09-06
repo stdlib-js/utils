@@ -334,6 +334,13 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/fifo`][@stdlib/utils/fifo]: https://github.com/stdlib-js/utils/tree/main/fifo`][@stdlib/utils/fifo
+-   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+
 </section>
 
 <!-- /.related -->
@@ -341,6 +348,14 @@ for ( i = 0; i < 100; i++ ) {
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/fifo]: https://github.com/stdlib-js/utils/tree/main/fifo
+
+[@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack
+
+<!-- </related-links> -->
 
 </section>
 

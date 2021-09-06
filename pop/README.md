@@ -136,6 +136,14 @@ console.log( arr );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/push`][@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push`][@stdlib/utils/push
+-   [`@stdlib/utils/shift`][@stdlib/utils/shift]: https://github.com/stdlib-js/utils/tree/main/shift`][@stdlib/utils/shift
+-   [`@stdlib/utils/unshift`][@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift`][@stdlib/utils/unshift
+
 </section>
 
 <!-- /.related -->
@@ -153,6 +161,16 @@ console.log( arr );
 [mdn-arraybuffer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push
+
+[@stdlib/utils/shift]: https://github.com/stdlib-js/utils/tree/main/shift
+
+[@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift
+
+<!-- </related-links> -->
 
 </section>
 

@@ -134,6 +134,12 @@ out = bar( 1, 2, 3 );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/reorder-arguments`][@stdlib/utils/reorder-arguments]: https://github.com/stdlib-js/utils/tree/main/reorder-arguments`][@stdlib/utils/reorder-arguments
+
 </section>
 
 <!-- /.related -->
@@ -141,6 +147,12 @@ out = bar( 1, 2, 3 );
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/reorder-arguments]: https://github.com/stdlib-js/utils/tree/main/reorder-arguments
+
+<!-- </related-links> -->
 
 </section>
 

@@ -509,6 +509,13 @@ len = list.length;
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/linked-list`][@stdlib/utils/linked-list]: https://github.com/stdlib-js/utils/tree/main/linked-list`][@stdlib/utils/linked-list
+-   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+
 </section>
 
 <!-- /.related -->
@@ -516,6 +523,14 @@ len = list.length;
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="links">
+
+<!-- <related-links> -->
+
+[@stdlib/utils/linked-list]: https://github.com/stdlib-js/utils/tree/main/linked-list
+
+[@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack
+
+<!-- </related-links> -->
 
 </section>
 
