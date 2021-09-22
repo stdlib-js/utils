@@ -29,9 +29,11 @@ var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 /**
 * Returns the common own property names of two or more objects.
 *
-* @param {...Object} obj - two or more objects
+* @param {*} obj1 - first object
+* @param {*} obj2 - second object
+* @param {...*} [obj] - additional objects
 * @throws {Error} must provide at least two objects
-* @returns {Array} common keys of objects
+* @returns {(StringArray|EmptyArray)} common keys
 *
 * @example
 * var obj = {
@@ -71,7 +73,8 @@ function commonKeys() {
 	var nargs;
 	var keys;
 	var arg;
-	var out;
+	var ptr;
+	var N;
 	var i;
 	var j;
 
@@ -79,18 +82,21 @@ function commonKeys() {
 	if ( nargs < 2 ) {
 		throw new Error( 'insufficient input arguments. Must provide at least two objects.' );
 	}
-	arg = arguments[ 0 ];
-	keys = objectKeys( arg );
+	keys = objectKeys( arguments[ 0 ] );
+	N = keys.length;
+
 	for ( i = 1; i < nargs; i++ ) {
 		arg = arguments[ i ];
-		out = [];
-		for ( j = 0; j < keys.length; j++ ) {
+		ptr = 0;
+		for ( j = 0; j < N; j++ ) {
 			if ( hasOwnProp( arg, keys[ j ] ) ) {
-				out.push( keys[ j ] );
+				keys[ ptr ] = keys[ j ];
+				ptr += 1;
 			}
 		}
-		keys = out;
+		N = ptr;
 	}
+	keys.length = N;
 	return keys;
 }
 
