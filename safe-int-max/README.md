@@ -162,9 +162,9 @@ $ safeintmax float16
 
 ## See Also
 
--   [`@stdlib/utils/safe-int-min`][@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils/tree/main/safe-int-min`][@stdlib/utils/safe-int-min
--   [`@stdlib/utils/real-max`][@stdlib/utils/real-max]: https://github.com/stdlib-js/utils/tree/main/real-max`][@stdlib/utils/real-max
--   [`@stdlib/utils/type-max`][@stdlib/utils/type-max]: https://github.com/stdlib-js/utils/tree/main/type-max`][@stdlib/utils/type-max
+-   <span class="package-name">[`@stdlib/utils/safe-int-min`][@stdlib/utils/safe-int-min]</span><span class="delimiter">: </span><span class="description">return the minimum safe integer capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/real-max`][@stdlib/utils/real-max]</span><span class="delimiter">: </span><span class="description">return the maximum finite value capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 
 </section>
 

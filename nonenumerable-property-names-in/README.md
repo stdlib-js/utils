@@ -121,10 +121,10 @@ console.log( keys );
 
 ## See Also
 
--   [`@stdlib/utils/keys-in`][@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils/tree/main/keys-in`][@stdlib/utils/keys-in
--   [`@stdlib/utils/inherited-nonenumerable-property-names`][@stdlib/utils/inherited-nonenumerable-property-names]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-names`][@stdlib/utils/inherited-nonenumerable-property-names
--   [`@stdlib/utils/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names
--   [`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]: https://github.com/stdlib-js/utils/tree/main/property-names-in`][@stdlib/utils/property-names-in
+-   <span class="package-name">[`@stdlib/utils/keys-in`][@stdlib/utils/keys-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/inherited-nonenumerable-property-names`][@stdlib/utils/inherited-nonenumerable-property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's own non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/property-names-in`][@stdlib/utils/property-names-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable and non-enumerable property names.</span>
 
 </section>
 

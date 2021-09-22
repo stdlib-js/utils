@@ -185,7 +185,7 @@ console.dir( out );
 
 ## See Also
 
--   [`@stdlib/utils/object-inverse`][@stdlib/utils/object-inverse]: https://github.com/stdlib-js/utils/tree/main/object-inverse`][@stdlib/utils/object-inverse
+-   <span class="package-name">[`@stdlib/utils/object-inverse`][@stdlib/utils/object-inverse]</span><span class="delimiter">: </span><span class="description">invert an object, such that keys become values and values become keys.</span>
 
 </section>
 

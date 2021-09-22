@@ -118,12 +118,12 @@ console.log( props );
 
 ## See Also
 
--   [`@stdlib/utils/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in]: https://github.com/stdlib-js/utils/tree/main/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in
--   [`@stdlib/utils/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols
--   [`@stdlib/utils/inherited-enumerable-properties`][@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-enumerable-properties`][@stdlib/utils/inherited-enumerable-properties
--   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
--   [`@stdlib/utils/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties
--   [`@stdlib/utils/properties`][@stdlib/utils/properties]: https://github.com/stdlib-js/utils/tree/main/properties`][@stdlib/utils/properties
+-   <span class="package-name">[`@stdlib/utils/enumerable-properties-in`][@stdlib/utils/enumerable-properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/inherited-enumerable-properties`][@stdlib/utils/inherited-enumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/keys`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/nonenumerable-properties`][@stdlib/utils/nonenumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own non-enumerable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/properties`][@stdlib/utils/properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable and non-enumerable property names and symbols.</span>
 
 </section>
 

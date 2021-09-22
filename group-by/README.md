@@ -215,9 +215,9 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by`][@stdlib/utils/bifurcate-by
--   [`@stdlib/utils/count-by`][@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by`][@stdlib/utils/count-by
--   [`@stdlib/utils/group`][@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group`][@stdlib/utils/group
+-   <span class="package-name">[`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]</span><span class="delimiter">: </span><span class="description">split values into two groups according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/count-by`][@stdlib/utils/count-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function and return group counts.</span>
+-   <span class="package-name">[`@stdlib/utils/group`][@stdlib/utils/group]</span><span class="delimiter">: </span><span class="description">group values as arrays associated with distinct keys.</span>
 
 </section>
 

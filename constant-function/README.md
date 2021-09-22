@@ -117,8 +117,8 @@ for ( i = 0; i < 10; i++ ) {
 
 ## See Also
 
--   [`@stdlib/utils/argument-function`][@stdlib/utils/argument-function]: https://github.com/stdlib-js/utils/tree/main/argument-function`][@stdlib/utils/argument-function
--   [`@stdlib/utils/identity-function`][@stdlib/utils/identity-function]: https://github.com/stdlib-js/utils/tree/main/identity-function`][@stdlib/utils/identity-function
+-   <span class="package-name">[`@stdlib/utils/argument-function`][@stdlib/utils/argument-function]</span><span class="delimiter">: </span><span class="description">argument function.</span>
+-   <span class="package-name">[`@stdlib/utils/identity-function`][@stdlib/utils/identity-function]</span><span class="delimiter">: </span><span class="description">identity function.</span>
 
 </section>
 

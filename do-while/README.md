@@ -143,11 +143,11 @@ doWhile( log, predicate );
 
 ## See Also
 
--   [`@stdlib/utils/do-until`][@stdlib/utils/do-until]: https://github.com/stdlib-js/utils/tree/main/do-until`][@stdlib/utils/do-until
--   [`@stdlib/utils/async/do-while`][@stdlib/utils/async/do-while]: https://github.com/stdlib-js/utils/tree/main/async/do-while`][@stdlib/utils/async/do-while
--   [`@stdlib/utils/do-while-each`][@stdlib/utils/do-while-each]: https://github.com/stdlib-js/utils/tree/main/do-while-each`][@stdlib/utils/do-while-each
--   [`@stdlib/utils/until`][@stdlib/utils/until]: https://github.com/stdlib-js/utils/tree/main/until`][@stdlib/utils/until
--   [`@stdlib/utils/while`][@stdlib/utils/while]: https://github.com/stdlib-js/utils/tree/main/while`][@stdlib/utils/while
+-   <span class="package-name">[`@stdlib/utils/do-until`][@stdlib/utils/do-until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/async/do-while`][@stdlib/utils/async/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/do-while-each`][@stdlib/utils/do-while-each]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/until`][@stdlib/utils/until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/while`][@stdlib/utils/while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
 
 </section>
 

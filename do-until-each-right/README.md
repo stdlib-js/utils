@@ -270,9 +270,9 @@ doUntilEachRight( arr, log, predicate );
 
 ## See Also
 
--   [`@stdlib/utils/do-until-each`][@stdlib/utils/do-until-each]: https://github.com/stdlib-js/utils/tree/main/do-until-each`][@stdlib/utils/do-until-each
--   [`@stdlib/utils/do-while-each-right`][@stdlib/utils/do-while-each-right]: https://github.com/stdlib-js/utils/tree/main/do-while-each-right`][@stdlib/utils/do-while-each-right
--   [`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right`][@stdlib/utils/until-each-right
+-   <span class="package-name">[`@stdlib/utils/do-until-each`][@stdlib/utils/do-until-each]</span><span class="delimiter">: </span><span class="description">until a test condition is true, invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/do-while-each-right`][@stdlib/utils/do-while-each-right]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]</span><span class="delimiter">: </span><span class="description">until a test condition is true, invoke a function for each element in a collection, iterating from right to left.</span>
 
 </section>
 

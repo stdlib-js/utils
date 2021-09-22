@@ -122,7 +122,7 @@ var obj2 = omitBy( obj1, predicate );
 
 ## See Also
 
--   [`@stdlib/utils/omit`][@stdlib/utils/omit]: https://github.com/stdlib-js/utils/tree/main/omit`][@stdlib/utils/omit
+-   <span class="package-name">[`@stdlib/utils/omit`][@stdlib/utils/omit]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding specified keys.</span>
 
 </section>
 

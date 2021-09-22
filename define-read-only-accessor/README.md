@@ -105,9 +105,9 @@ try {
 
 ## See Also
 
--   [`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property`][@stdlib/utils/define-read-only-property
--   [`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor
--   [`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor
+-   <span class="package-name">[`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]</span><span class="delimiter">: </span><span class="description">define a read-only property.</span>
+-   <span class="package-name">[`@stdlib/utils/define-read-write-accessor`][@stdlib/utils/define-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a read-write accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-write-only-accessor`][@stdlib/utils/define-write-only-accessor]</span><span class="delimiter">: </span><span class="description">define a write-only accessor.</span>
 
 </section>
 

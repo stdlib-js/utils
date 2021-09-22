@@ -200,8 +200,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate`][@stdlib/utils/bifurcate
--   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
+-   <span class="package-name">[`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]</span><span class="delimiter">: </span><span class="description">split values into two groups.</span>
+-   <span class="package-name">[`@stdlib/utils/group-by`][@stdlib/utils/group-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function.</span>
 
 </section>
 

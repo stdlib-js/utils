@@ -194,8 +194,8 @@ console.log( obj );
 
 ## See Also
 
--   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
--   [`@stdlib/utils/for-own`][@stdlib/utils/for-own]: https://github.com/stdlib-js/utils/tree/main/for-own`][@stdlib/utils/for-own
+-   <span class="package-name">[`@stdlib/utils/for-each`][@stdlib/utils/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/for-own`][@stdlib/utils/for-own]</span><span class="delimiter">: </span><span class="description">invoke a function for each own enumerable property of an object.</span>
 
 </section>
 

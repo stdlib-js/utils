@@ -210,9 +210,9 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/curry`][@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry`][@stdlib/utils/curry
--   [`@stdlib/utils/uncurry`][@stdlib/utils/uncurry]: https://github.com/stdlib-js/utils/tree/main/uncurry`][@stdlib/utils/uncurry
--   [`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right`][@stdlib/utils/uncurry-right
+-   <span class="package-name">[`@stdlib/utils/curry`][@stdlib/utils/curry]</span><span class="delimiter">: </span><span class="description">transform a function into a sequence of functions each accepting a single argument.</span>
+-   <span class="package-name">[`@stdlib/utils/uncurry`][@stdlib/utils/uncurry]</span><span class="delimiter">: </span><span class="description">transform a curried function into a function invoked with multiple arguments.</span>
+-   <span class="package-name">[`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]</span><span class="delimiter">: </span><span class="description">transform a curried function into a function invoked with multiple arguments.</span>
 
 </section>
 

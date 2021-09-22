@@ -138,7 +138,7 @@ out = bar( 1, 2, 3 );
 
 ## See Also
 
--   [`@stdlib/utils/reverse-arguments`][@stdlib/utils/reverse-arguments]: https://github.com/stdlib-js/utils/tree/main/reverse-arguments`][@stdlib/utils/reverse-arguments
+-   <span class="package-name">[`@stdlib/utils/reverse-arguments`][@stdlib/utils/reverse-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with arguments in reverse order.</span>
 
 </section>
 

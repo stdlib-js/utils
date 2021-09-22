@@ -230,8 +230,8 @@ str = nativeClass( new Person() );
 
 ## See Also
 
--   [`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name`][@stdlib/utils/constructor-name
--   [`@stdlib/utils/type-of`][@stdlib/utils/type-of]: https://github.com/stdlib-js/utils/tree/main/type-of`][@stdlib/utils/type-of
+-   <span class="package-name">[`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
+-   <span class="package-name">[`@stdlib/utils/type-of`][@stdlib/utils/type-of]</span><span class="delimiter">: </span><span class="description">determine a value's type.</span>
 
 </section>
 

@@ -197,7 +197,7 @@ f( 5, 3, done );
 
 ## See Also
 
--   [`@stdlib/utils/compose`][@stdlib/utils/compose]: https://github.com/stdlib-js/utils/tree/main/compose`][@stdlib/utils/compose
+-   <span class="package-name">[`@stdlib/utils/compose`][@stdlib/utils/compose]</span><span class="delimiter">: </span><span class="description">function composition.</span>
 
 </section>
 

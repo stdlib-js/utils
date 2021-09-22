@@ -419,9 +419,9 @@ inmapAsync( files, read, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/for-each`][@stdlib/utils/async/for-each]: https://github.com/stdlib-js/utils/tree/main/async/for-each`][@stdlib/utils/async/for-each
--   [`@stdlib/utils/async/inmap-right`][@stdlib/utils/async/inmap-right]: https://github.com/stdlib-js/utils/tree/main/async/inmap-right`][@stdlib/utils/async/inmap-right
--   [`@stdlib/utils/inmap`][@stdlib/utils/inmap]: https://github.com/stdlib-js/utils/tree/main/inmap`][@stdlib/utils/inmap
+-   <span class="package-name">[`@stdlib/utils/async/for-each`][@stdlib/utils/async/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function once for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/async/inmap-right`][@stdlib/utils/async/inmap-right]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection and update the collection in-place, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/inmap`][@stdlib/utils/inmap]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection and update the collection in-place.</span>
 
 </section>
 

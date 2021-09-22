@@ -126,11 +126,11 @@ console.log( symbols );
 
 ## See Also
 
--   [`@stdlib/utils/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols
--   [`@stdlib/utils/inherited-nonenumerable-property-symbols`][@stdlib/utils/inherited-nonenumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-nonenumerable-property-symbols`][@stdlib/utils/inherited-nonenumerable-property-symbols
--   [`@stdlib/utils/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names
--   [`@stdlib/utils/nonenumerable-property-symbols-in`][@stdlib/utils/nonenumerable-property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-property-symbols-in`][@stdlib/utils/nonenumerable-property-symbols-in
--   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+-   <span class="package-name">[`@stdlib/utils/enumerable-property-symbols`][@stdlib/utils/enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/inherited-nonenumerable-property-symbols`][@stdlib/utils/inherited-nonenumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited non-enumerable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/nonenumerable-property-names`][@stdlib/utils/nonenumerable-property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's own non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/nonenumerable-property-symbols-in`][@stdlib/utils/nonenumerable-property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited non-enumerable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own symbol properties.</span>
 
 </section>
 

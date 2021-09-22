@@ -111,11 +111,11 @@ console.log( symbols );
 
 ## See Also
 
--   [`@stdlib/utils/inherited-writable-property-symbols`][@stdlib/utils/inherited-writable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/inherited-writable-property-symbols`][@stdlib/utils/inherited-writable-property-symbols
--   [`@stdlib/utils/writable-properties`][@stdlib/utils/writable-properties]: https://github.com/stdlib-js/utils/tree/main/writable-properties`][@stdlib/utils/writable-properties
--   [`@stdlib/utils/writable-property-names`][@stdlib/utils/writable-property-names]: https://github.com/stdlib-js/utils/tree/main/writable-property-names`][@stdlib/utils/writable-property-names
--   [`@stdlib/utils/writable-property-symbols-in`][@stdlib/utils/writable-property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/writable-property-symbols-in`][@stdlib/utils/writable-property-symbols-in
--   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+-   <span class="package-name">[`@stdlib/utils/inherited-writable-property-symbols`][@stdlib/utils/inherited-writable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/writable-properties`][@stdlib/utils/writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own writable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/writable-property-names`][@stdlib/utils/writable-property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's own writable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/writable-property-symbols-in`][@stdlib/utils/writable-property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited writable symbol properties.</span>
+-   <span class="package-name">[`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own symbol properties.</span>
 
 </section>
 

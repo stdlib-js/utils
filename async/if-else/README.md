@@ -156,8 +156,8 @@ next();
 
 ## See Also
 
--   [`@stdlib/utils/async/if-then`][@stdlib/utils/async/if-then]: https://github.com/stdlib-js/utils/tree/main/async/if-then`][@stdlib/utils/async/if-then
--   [`@stdlib/utils/if-else`][@stdlib/utils/if-else]: https://github.com/stdlib-js/utils/tree/main/if-else`][@stdlib/utils/if-else
+-   <span class="package-name">[`@stdlib/utils/async/if-then`][@stdlib/utils/async/if-then]</span><span class="delimiter">: </span><span class="description">if a predicate function returns a truthy value, invoke `x`; otherwise, invoke `y`.</span>
+-   <span class="package-name">[`@stdlib/utils/if-else`][@stdlib/utils/if-else]</span><span class="delimiter">: </span><span class="description">if a condition is truthy, return `x`; otherwise, return `y`.</span>
 
 </section>
 

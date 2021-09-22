@@ -420,8 +420,8 @@ len = list.length;
 
 ## See Also
 
--   [`@stdlib/utils/doubly-linked-list`][@stdlib/utils/doubly-linked-list]: https://github.com/stdlib-js/utils/tree/main/doubly-linked-list`][@stdlib/utils/doubly-linked-list
--   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+-   <span class="package-name">[`@stdlib/utils/doubly-linked-list`][@stdlib/utils/doubly-linked-list]</span><span class="delimiter">: </span><span class="description">doubly linked list.</span>
+-   <span class="package-name">[`@stdlib/utils/stack`][@stdlib/utils/stack]</span><span class="delimiter">: </span><span class="description">stack.</span>
 
 </section>
 

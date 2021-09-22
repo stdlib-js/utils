@@ -246,8 +246,8 @@ untilEach( arr, predicate, log );
 
 ## See Also
 
--   [`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]: https://github.com/stdlib-js/utils/tree/main/until-each-right`][@stdlib/utils/until-each-right
--   [`@stdlib/utils/while-each`][@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each`][@stdlib/utils/while-each
+-   <span class="package-name">[`@stdlib/utils/until-each-right`][@stdlib/utils/until-each-right]</span><span class="delimiter">: </span><span class="description">until a test condition is true, invoke a function for each element in a collection, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/while-each`][@stdlib/utils/while-each]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection.</span>
 
 </section>
 

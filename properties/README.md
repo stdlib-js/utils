@@ -103,11 +103,11 @@ console.log( props );
 
 ## See Also
 
--   [`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]: https://github.com/stdlib-js/utils/tree/main/define-properties`][@stdlib/utils/define-properties
--   [`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-properties`][@stdlib/utils/inherited-properties
--   [`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in`][@stdlib/utils/properties-in
--   [`@stdlib/utils/property-names`][@stdlib/utils/property-names]: https://github.com/stdlib-js/utils/tree/main/property-names`][@stdlib/utils/property-names
--   [`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols`][@stdlib/utils/property-symbols
+-   <span class="package-name">[`@stdlib/utils/define-properties`][@stdlib/utils/define-properties]</span><span class="delimiter">: </span><span class="description">define (and/or modify) object properties.</span>
+-   <span class="package-name">[`@stdlib/utils/inherited-properties`][@stdlib/utils/inherited-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/property-names`][@stdlib/utils/property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable and non-enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/property-symbols`][@stdlib/utils/property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own symbol properties.</span>
 
 </section>
 

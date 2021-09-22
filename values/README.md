@@ -91,8 +91,8 @@ var vals = objectValues( obj );
 
 ## See Also
 
--   [`@stdlib/utils/entries`][@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries`][@stdlib/utils/entries
--   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
+-   <span class="package-name">[`@stdlib/utils/entries`][@stdlib/utils/entries]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property key-value pairs.</span>
+-   <span class="package-name">[`@stdlib/utils/keys`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
 
 </section>
 

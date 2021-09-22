@@ -157,8 +157,8 @@ for ( i = 0; i < data.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck`][@stdlib/utils/deep-pluck
--   [`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set`][@stdlib/utils/deep-set
+-   <span class="package-name">[`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]</span><span class="delimiter">: </span><span class="description">extract a nested property value from each element of an object array.</span>
+-   <span class="package-name">[`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]</span><span class="delimiter">: </span><span class="description">set a nested property value.</span>
 
 </section>
 

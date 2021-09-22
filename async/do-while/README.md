@@ -241,10 +241,10 @@ doWhileAsync( fcn, predicate, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/do-until`][@stdlib/utils/async/do-until]: https://github.com/stdlib-js/utils/tree/main/async/do-until`][@stdlib/utils/async/do-until
--   [`@stdlib/utils/do-while`][@stdlib/utils/do-while]: https://github.com/stdlib-js/utils/tree/main/do-while`][@stdlib/utils/do-while
--   [`@stdlib/utils/async/until`][@stdlib/utils/async/until]: https://github.com/stdlib-js/utils/tree/main/async/until`][@stdlib/utils/async/until
--   [`@stdlib/utils/async/while`][@stdlib/utils/async/while]: https://github.com/stdlib-js/utils/tree/main/async/while`][@stdlib/utils/async/while
+-   <span class="package-name">[`@stdlib/utils/async/do-until`][@stdlib/utils/async/do-until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/do-while`][@stdlib/utils/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/async/until`][@stdlib/utils/async/until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/async/while`][@stdlib/utils/async/while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
 
 </section>
 

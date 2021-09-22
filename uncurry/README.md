@@ -196,8 +196,8 @@ out = uncurried( 0, 10, 20, 30, 40, 50 );
 
 ## See Also
 
--   [`@stdlib/utils/curry`][@stdlib/utils/curry]: https://github.com/stdlib-js/utils/tree/main/curry`][@stdlib/utils/curry
--   [`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]: https://github.com/stdlib-js/utils/tree/main/uncurry-right`][@stdlib/utils/uncurry-right
+-   <span class="package-name">[`@stdlib/utils/curry`][@stdlib/utils/curry]</span><span class="delimiter">: </span><span class="description">transform a function into a sequence of functions each accepting a single argument.</span>
+-   <span class="package-name">[`@stdlib/utils/uncurry-right`][@stdlib/utils/uncurry-right]</span><span class="delimiter">: </span><span class="description">transform a curried function into a function invoked with multiple arguments.</span>
 
 </section>
 

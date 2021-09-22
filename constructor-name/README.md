@@ -288,7 +288,7 @@ v = constructorName( new Person2() );
 
 ## See Also
 
--   [`@stdlib/utils/function-name`][@stdlib/utils/function-name]: https://github.com/stdlib-js/utils/tree/main/function-name`][@stdlib/utils/function-name
+-   <span class="package-name">[`@stdlib/utils/function-name`][@stdlib/utils/function-name]</span><span class="delimiter">: </span><span class="description">determine a function's name.</span>
 
 </section>
 

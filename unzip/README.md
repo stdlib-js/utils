@@ -104,7 +104,7 @@ console.dir( out );
 
 ## See Also
 
--   [`@stdlib/utils/zip`][@stdlib/utils/zip]: https://github.com/stdlib-js/utils/tree/main/zip`][@stdlib/utils/zip
+-   <span class="package-name">[`@stdlib/utils/zip`][@stdlib/utils/zip]</span><span class="delimiter">: </span><span class="description">generate array tuples from input arrays.</span>
 
 </section>
 

@@ -85,7 +85,7 @@ v = identity();
 
 ## See Also
 
--   [`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]: https://github.com/stdlib-js/utils/tree/main/constant-function`][@stdlib/utils/constant-function
+-   <span class="package-name">[`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]</span><span class="delimiter">: </span><span class="description">constant function.</span>
 
 </section>
 

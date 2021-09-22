@@ -215,8 +215,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get`][@stdlib/utils/deep-get
--   [`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set`][@stdlib/utils/deep-set
+-   <span class="package-name">[`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]</span><span class="delimiter">: </span><span class="description">get a nested property value.</span>
+-   <span class="package-name">[`@stdlib/utils/deep-set`][@stdlib/utils/deep-set]</span><span class="delimiter">: </span><span class="description">set a nested property value.</span>
 
 </section>
 

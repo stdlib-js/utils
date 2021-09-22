@@ -151,7 +151,7 @@ console.log( zipped.join( '\n' ) );
 
 ## See Also
 
--   [`@stdlib/utils/unzip`][@stdlib/utils/unzip]: https://github.com/stdlib-js/utils/tree/main/unzip`][@stdlib/utils/unzip
+-   <span class="package-name">[`@stdlib/utils/unzip`][@stdlib/utils/unzip]</span><span class="delimiter">: </span><span class="description">unzip a zipped array (i.e., a nested array of tuples).</span>
 
 </section>
 

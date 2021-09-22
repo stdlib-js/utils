@@ -249,8 +249,8 @@ console.log( data );
 
 ## See Also
 
--   [`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get`][@stdlib/utils/deep-get
--   [`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]: https://github.com/stdlib-js/utils/tree/main/deep-pluck`][@stdlib/utils/deep-pluck
+-   <span class="package-name">[`@stdlib/utils/deep-get`][@stdlib/utils/deep-get]</span><span class="delimiter">: </span><span class="description">get a nested property value.</span>
+-   <span class="package-name">[`@stdlib/utils/deep-pluck`][@stdlib/utils/deep-pluck]</span><span class="delimiter">: </span><span class="description">extract a nested property value from each element of an object array.</span>
 
 </section>
 

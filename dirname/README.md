@@ -87,7 +87,7 @@ for ( i = 0; i < files.length; i++ ) {
 
 ## See Also
 
--   [`@stdlib/utils/extname`][@stdlib/utils/extname]: https://github.com/stdlib-js/utils/tree/main/extname`][@stdlib/utils/extname
+-   <span class="package-name">[`@stdlib/utils/extname`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
 
 </section>
 

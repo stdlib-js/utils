@@ -266,10 +266,10 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate`][@stdlib/utils/bifurcate
--   [`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by`][@stdlib/utils/bifurcate-by
--   [`@stdlib/utils/bifurcate-own`][@stdlib/utils/bifurcate-own]: https://github.com/stdlib-js/utils/tree/main/bifurcate-own`][@stdlib/utils/bifurcate-own
--   [`@stdlib/utils/group-in`][@stdlib/utils/group-in]: https://github.com/stdlib-js/utils/tree/main/group-in`][@stdlib/utils/group-in
+-   <span class="package-name">[`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]</span><span class="delimiter">: </span><span class="description">split values into two groups.</span>
+-   <span class="package-name">[`@stdlib/utils/bifurcate-by`][@stdlib/utils/bifurcate-by]</span><span class="delimiter">: </span><span class="description">split values into two groups according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/bifurcate-own`][@stdlib/utils/bifurcate-own]</span><span class="delimiter">: </span><span class="description">split an object's own property values into two groups according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/group-in`][@stdlib/utils/group-in]</span><span class="delimiter">: </span><span class="description">group an object's own and inherited property values according to an indicator function.</span>
 
 </section>
 

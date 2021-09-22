@@ -138,7 +138,7 @@ out = bar( 1, 2, 3 );
 
 ## See Also
 
--   [`@stdlib/utils/reorder-arguments`][@stdlib/utils/reorder-arguments]: https://github.com/stdlib-js/utils/tree/main/reorder-arguments`][@stdlib/utils/reorder-arguments
+-   <span class="package-name">[`@stdlib/utils/reorder-arguments`][@stdlib/utils/reorder-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with reordered arguments.</span>
 
 </section>
 

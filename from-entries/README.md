@@ -96,7 +96,7 @@ var obj2 = objectFromEntries( entries );
 
 ## See Also
 
--   [`@stdlib/utils/entries`][@stdlib/utils/entries]: https://github.com/stdlib-js/utils/tree/main/entries`][@stdlib/utils/entries
+-   <span class="package-name">[`@stdlib/utils/entries`][@stdlib/utils/entries]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property key-value pairs.</span>
 
 </section>
 

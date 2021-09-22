@@ -106,10 +106,10 @@ console.log( desc );
 
 ## See Also
 
--   [`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]: test if an object has a specified property.
--   [`@stdlib/utils/define-property`][@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property`][@stdlib/utils/define-property
--   [`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]: https://github.com/stdlib-js/utils/tree/main/property-descriptor-in`][@stdlib/utils/property-descriptor-in
--   [`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]: https://github.com/stdlib-js/utils/tree/main/property-descriptors`][@stdlib/utils/property-descriptors
+-   <span class="package-name">[`@stdlib/assert/has-own-property`][@stdlib/assert/has-own-property]</span><span class="delimiter">: </span><span class="description">test if an object has a specified property.</span>
+-   <span class="package-name">[`@stdlib/utils/define-property`][@stdlib/utils/define-property]</span><span class="delimiter">: </span><span class="description">define (or modify) an object property.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptor-in`][@stdlib/utils/property-descriptor-in]</span><span class="delimiter">: </span><span class="description">return a property descriptor for an object's own or inherited property.</span>
+-   <span class="package-name">[`@stdlib/utils/property-descriptors`][@stdlib/utils/property-descriptors]</span><span class="delimiter">: </span><span class="description">return an object's own property descriptors.</span>
 
 </section>
 

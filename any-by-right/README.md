@@ -201,12 +201,12 @@ bool = anyByRight( arr, threshold );
 
 ## See Also
 
--   [`@stdlib/utils/any-by`][@stdlib/utils/any-by]: https://github.com/stdlib-js/utils/tree/main/any-by`][@stdlib/utils/any-by
--   [`@stdlib/utils/async/any-by-right`][@stdlib/utils/async/any-by-right]: https://github.com/stdlib-js/utils/tree/main/async/any-by-right`][@stdlib/utils/async/any-by-right
--   [`@stdlib/utils/every-by-right`][@stdlib/utils/every-by-right]: https://github.com/stdlib-js/utils/tree/main/every-by-right`][@stdlib/utils/every-by-right
--   [`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]: https://github.com/stdlib-js/utils/tree/main/for-each-right`][@stdlib/utils/for-each-right
--   [`@stdlib/utils/none-by-right`][@stdlib/utils/none-by-right]: https://github.com/stdlib-js/utils/tree/main/none-by-right`][@stdlib/utils/none-by-right
--   [`@stdlib/utils/some-by-right`][@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils/tree/main/some-by-right`][@stdlib/utils/some-by-right
+-   <span class="package-name">[`@stdlib/utils/any-by`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/async/any-by-right`][@stdlib/utils/async/any-by-right]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/every-by-right`][@stdlib/utils/every-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/for-each-right`][@stdlib/utils/for-each-right]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/none-by-right`][@stdlib/utils/none-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/some-by-right`][@stdlib/utils/some-by-right]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.</span>
 
 </section>
 

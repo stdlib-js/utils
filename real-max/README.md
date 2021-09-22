@@ -162,8 +162,8 @@ $ realmax float16
 
 ## See Also
 
--   [`@stdlib/utils/real-min`][@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min`][@stdlib/utils/real-min
--   [`@stdlib/utils/type-max`][@stdlib/utils/type-max]: https://github.com/stdlib-js/utils/tree/main/type-max`][@stdlib/utils/type-max
+-   <span class="package-name">[`@stdlib/utils/real-min`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/type-max`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 
 </section>
 

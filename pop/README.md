@@ -140,9 +140,9 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/utils/push`][@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push`][@stdlib/utils/push
--   [`@stdlib/utils/shift`][@stdlib/utils/shift]: https://github.com/stdlib-js/utils/tree/main/shift`][@stdlib/utils/shift
--   [`@stdlib/utils/unshift`][@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift`][@stdlib/utils/unshift
+-   <span class="package-name">[`@stdlib/utils/push`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/shift`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
 
 </section>
 

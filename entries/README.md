@@ -91,10 +91,10 @@ var entries = objectEntries( obj );
 
 ## See Also
 
--   [`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in`][@stdlib/utils/entries-in
--   [`@stdlib/utils/from-entries`][@stdlib/utils/from-entries]: https://github.com/stdlib-js/utils/tree/main/from-entries`][@stdlib/utils/from-entries
--   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
--   [`@stdlib/utils/values`][@stdlib/utils/values]: https://github.com/stdlib-js/utils/tree/main/values`][@stdlib/utils/values
+-   <span class="package-name">[`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property key-value pairs.</span>
+-   <span class="package-name">[`@stdlib/utils/from-entries`][@stdlib/utils/from-entries]</span><span class="delimiter">: </span><span class="description">create an object from key-value pairs.</span>
+-   <span class="package-name">[`@stdlib/utils/keys`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/values`][@stdlib/utils/values]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property values.</span>
 
 </section>
 

@@ -97,11 +97,11 @@ try {
 
 ## See Also
 
--   [`@stdlib/utils/define-nonenumerable-property`][@stdlib/utils/define-nonenumerable-property]: https://github.com/stdlib-js/utils/tree/main/define-nonenumerable-property`][@stdlib/utils/define-nonenumerable-property
--   [`@stdlib/utils/define-nonenumerable-read-only-accessor`][@stdlib/utils/define-nonenumerable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-nonenumerable-read-only-accessor`][@stdlib/utils/define-nonenumerable-read-only-accessor
--   [`@stdlib/utils/define-nonenumerable-read-write-accessor`][@stdlib/utils/define-nonenumerable-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-nonenumerable-read-write-accessor`][@stdlib/utils/define-nonenumerable-read-write-accessor
--   [`@stdlib/utils/define-nonenumerable-write-only-accessor`][@stdlib/utils/define-nonenumerable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-nonenumerable-write-only-accessor`][@stdlib/utils/define-nonenumerable-write-only-accessor
--   [`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-read-only-property`][@stdlib/utils/define-read-only-property
+-   <span class="package-name">[`@stdlib/utils/define-nonenumerable-property`][@stdlib/utils/define-nonenumerable-property]</span><span class="delimiter">: </span><span class="description">define a non-enumerable property.</span>
+-   <span class="package-name">[`@stdlib/utils/define-nonenumerable-read-only-accessor`][@stdlib/utils/define-nonenumerable-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a non-enumerable read-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-nonenumerable-read-write-accessor`][@stdlib/utils/define-nonenumerable-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a non-enumerable read-write accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-nonenumerable-write-only-accessor`][@stdlib/utils/define-nonenumerable-write-only-accessor]</span><span class="delimiter">: </span><span class="description">define a non-enumerable write-only accessor.</span>
+-   <span class="package-name">[`@stdlib/utils/define-read-only-property`][@stdlib/utils/define-read-only-property]</span><span class="delimiter">: </span><span class="description">define a read-only property.</span>
 
 </section>
 

@@ -216,8 +216,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
--   [`@stdlib/utils/inmap-right`][@stdlib/utils/inmap-right]: https://github.com/stdlib-js/utils/tree/main/inmap-right`][@stdlib/utils/inmap-right
+-   <span class="package-name">[`@stdlib/utils/for-each`][@stdlib/utils/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/inmap-right`][@stdlib/utils/inmap-right]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection and update the collection in-place, iterating from right to left.</span>
 
 </section>
 

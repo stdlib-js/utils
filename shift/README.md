@@ -140,9 +140,9 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/utils/pop`][@stdlib/utils/pop]: https://github.com/stdlib-js/utils/tree/main/pop`][@stdlib/utils/pop
--   [`@stdlib/utils/push`][@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push`][@stdlib/utils/push
--   [`@stdlib/utils/unshift`][@stdlib/utils/unshift]: https://github.com/stdlib-js/utils/tree/main/unshift`][@stdlib/utils/unshift
+-   <span class="package-name">[`@stdlib/utils/pop`][@stdlib/utils/pop]</span><span class="delimiter">: </span><span class="description">remove and return the last element of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/push`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/unshift`][@stdlib/utils/unshift]</span><span class="delimiter">: </span><span class="description">add one or more elements to the beginning of a collection.</span>
 
 </section>
 

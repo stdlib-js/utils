@@ -100,9 +100,9 @@ console.log( keys );
 
 ## See Also
 
--   [`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]: https://github.com/stdlib-js/utils/tree/main/entries-in`][@stdlib/utils/entries-in
--   [`@stdlib/utils/keys`][@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys`][@stdlib/utils/keys
--   [`@stdlib/utils/values-in`][@stdlib/utils/values-in]: https://github.com/stdlib-js/utils/tree/main/values-in`][@stdlib/utils/values-in
+-   <span class="package-name">[`@stdlib/utils/entries-in`][@stdlib/utils/entries-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property key-value pairs.</span>
+-   <span class="package-name">[`@stdlib/utils/keys`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
+-   <span class="package-name">[`@stdlib/utils/values-in`][@stdlib/utils/values-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property values.</span>
 
 </section>
 

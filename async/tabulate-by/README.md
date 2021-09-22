@@ -359,9 +359,9 @@ tabulateByAsync( files, indicator, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/count-by`][@stdlib/utils/async/count-by]: https://github.com/stdlib-js/utils/tree/main/async/count-by`][@stdlib/utils/async/count-by
--   [`@stdlib/utils/async/group-by`][@stdlib/utils/async/group-by]: https://github.com/stdlib-js/utils/tree/main/async/group-by`][@stdlib/utils/async/group-by
--   [`@stdlib/utils/tabulate-by`][@stdlib/utils/tabulate-by]: https://github.com/stdlib-js/utils/tree/main/tabulate-by`][@stdlib/utils/tabulate-by
+-   <span class="package-name">[`@stdlib/utils/async/count-by`][@stdlib/utils/async/count-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function and return group counts.</span>
+-   <span class="package-name">[`@stdlib/utils/async/group-by`][@stdlib/utils/async/group-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function.</span>
+-   <span class="package-name">[`@stdlib/utils/tabulate-by`][@stdlib/utils/tabulate-by]</span><span class="delimiter">: </span><span class="description">generate a frequency table according to an indicator function.</span>
 
 </section>
 

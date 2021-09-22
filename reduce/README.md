@@ -202,9 +202,9 @@ console.log( s );
 
 ## See Also
 
--   [`@stdlib/utils/for-each`][@stdlib/utils/for-each]: https://github.com/stdlib-js/utils/tree/main/for-each`][@stdlib/utils/for-each
--   [`@stdlib/utils/async/reduce`][@stdlib/utils/async/reduce]: https://github.com/stdlib-js/utils/tree/main/async/reduce`][@stdlib/utils/async/reduce
--   [`@stdlib/utils/reduce-right`][@stdlib/utils/reduce-right]: https://github.com/stdlib-js/utils/tree/main/reduce-right`][@stdlib/utils/reduce-right
+-   <span class="package-name">[`@stdlib/utils/for-each`][@stdlib/utils/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/async/reduce`][@stdlib/utils/async/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result.</span>
+-   <span class="package-name">[`@stdlib/utils/reduce-right`][@stdlib/utils/reduce-right]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result, iterating from right to left.</span>
 
 </section>
 

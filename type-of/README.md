@@ -251,8 +251,8 @@ str = typeOf( new Person2() );
 
 ## See Also
 
--   [`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name`][@stdlib/utils/constructor-name
--   [`@stdlib/utils/native-class`][@stdlib/utils/native-class]: https://github.com/stdlib-js/utils/tree/main/native-class`][@stdlib/utils/native-class
+-   <span class="package-name">[`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
+-   <span class="package-name">[`@stdlib/utils/native-class`][@stdlib/utils/native-class]</span><span class="delimiter">: </span><span class="description">determine the specification defined classification of an object.</span>
 
 </section>
 

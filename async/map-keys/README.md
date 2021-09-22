@@ -365,8 +365,8 @@ mapKeysAsync( files, read, done );
 
 ## See Also
 
--   [`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils/tree/main/map-keys`][@stdlib/utils/map-keys
--   [`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils/tree/main/async/map-values`][@stdlib/utils/async/map-values
+-   <span class="package-name">[`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
+-   <span class="package-name">[`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 
 </section>
 

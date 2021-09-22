@@ -141,8 +141,8 @@ console.log( arr );
 
 ## See Also
 
--   [`@stdlib/utils/prepend`][@stdlib/utils/prepend]: https://github.com/stdlib-js/utils/tree/main/prepend`][@stdlib/utils/prepend
--   [`@stdlib/utils/push`][@stdlib/utils/push]: https://github.com/stdlib-js/utils/tree/main/push`][@stdlib/utils/push
+-   <span class="package-name">[`@stdlib/utils/prepend`][@stdlib/utils/prepend]</span><span class="delimiter">: </span><span class="description">add elements from one collection to the beginning of another collection.</span>
+-   <span class="package-name">[`@stdlib/utils/push`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
 
 </section>
 

@@ -134,9 +134,9 @@ console.log( props );
 
 ## See Also
 
--   [`@stdlib/utils/inherited-writable-properties`][@stdlib/utils/inherited-writable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-writable-properties`][@stdlib/utils/inherited-writable-properties
--   [`@stdlib/utils/writable-properties`][@stdlib/utils/writable-properties]: https://github.com/stdlib-js/utils/tree/main/writable-properties`][@stdlib/utils/writable-properties
--   [`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]: https://github.com/stdlib-js/utils/tree/main/properties-in`][@stdlib/utils/properties-in
+-   <span class="package-name">[`@stdlib/utils/inherited-writable-properties`][@stdlib/utils/inherited-writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/writable-properties`][@stdlib/utils/writable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's own writable property names and symbols.</span>
+-   <span class="package-name">[`@stdlib/utils/properties-in`][@stdlib/utils/properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited property names and symbols.</span>
 
 </section>
 

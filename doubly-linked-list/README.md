@@ -513,8 +513,8 @@ len = list.length;
 
 ## See Also
 
--   [`@stdlib/utils/linked-list`][@stdlib/utils/linked-list]: https://github.com/stdlib-js/utils/tree/main/linked-list`][@stdlib/utils/linked-list
--   [`@stdlib/utils/stack`][@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack`][@stdlib/utils/stack
+-   <span class="package-name">[`@stdlib/utils/linked-list`][@stdlib/utils/linked-list]</span><span class="delimiter">: </span><span class="description">linked list.</span>
+-   <span class="package-name">[`@stdlib/utils/stack`][@stdlib/utils/stack]</span><span class="delimiter">: </span><span class="description">stack.</span>
 
 </section>
 

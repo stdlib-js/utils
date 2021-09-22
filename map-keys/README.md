@@ -131,7 +131,7 @@ console.dir( obj2 );
 
 ## See Also
 
--   [`@stdlib/utils/map-values`][@stdlib/utils/map-values]: https://github.com/stdlib-js/utils/tree/main/map-values`][@stdlib/utils/map-values
+-   <span class="package-name">[`@stdlib/utils/map-values`][@stdlib/utils/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 
 </section>
 

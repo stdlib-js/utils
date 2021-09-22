@@ -175,9 +175,9 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/count-by`][@stdlib/utils/count-by]: https://github.com/stdlib-js/utils/tree/main/count-by`][@stdlib/utils/count-by
--   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
--   [`@stdlib/utils/tabulate`][@stdlib/utils/tabulate]: https://github.com/stdlib-js/utils/tree/main/tabulate`][@stdlib/utils/tabulate
+-   <span class="package-name">[`@stdlib/utils/count-by`][@stdlib/utils/count-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function and return group counts.</span>
+-   <span class="package-name">[`@stdlib/utils/group-by`][@stdlib/utils/group-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function.</span>
+-   <span class="package-name">[`@stdlib/utils/tabulate`][@stdlib/utils/tabulate]</span><span class="delimiter">: </span><span class="description">generate a frequency table.</span>
 
 </section>
 

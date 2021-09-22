@@ -410,9 +410,9 @@ reduceRightAsync( files, acc, read, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/for-each-right`][@stdlib/utils/async/for-each-right]: https://github.com/stdlib-js/utils/tree/main/async/for-each-right`][@stdlib/utils/async/for-each-right
--   [`@stdlib/utils/async/reduce`][@stdlib/utils/async/reduce]: https://github.com/stdlib-js/utils/tree/main/async/reduce`][@stdlib/utils/async/reduce
--   [`@stdlib/utils/reduce-right`][@stdlib/utils/reduce-right]: https://github.com/stdlib-js/utils/tree/main/reduce-right`][@stdlib/utils/reduce-right
+-   <span class="package-name">[`@stdlib/utils/async/for-each-right`][@stdlib/utils/async/for-each-right]</span><span class="delimiter">: </span><span class="description">invoke a function once for each element in a collection, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/async/reduce`][@stdlib/utils/async/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result.</span>
+-   <span class="package-name">[`@stdlib/utils/reduce-right`][@stdlib/utils/reduce-right]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result, iterating from right to left.</span>
 
 </section>
 

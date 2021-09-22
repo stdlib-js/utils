@@ -108,8 +108,8 @@ for ( i = 0; i < 10; i++ ) {
 
 ## See Also
 
--   [`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]: https://github.com/stdlib-js/utils/tree/main/constant-function`][@stdlib/utils/constant-function
--   [`@stdlib/utils/identity-function`][@stdlib/utils/identity-function]: https://github.com/stdlib-js/utils/tree/main/identity-function`][@stdlib/utils/identity-function
+-   <span class="package-name">[`@stdlib/utils/constant-function`][@stdlib/utils/constant-function]</span><span class="delimiter">: </span><span class="description">constant function.</span>
+-   <span class="package-name">[`@stdlib/utils/identity-function`][@stdlib/utils/identity-function]</span><span class="delimiter">: </span><span class="description">identity function.</span>
 
 </section>
 

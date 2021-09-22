@@ -184,8 +184,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/group`][@stdlib/utils/group]: https://github.com/stdlib-js/utils/tree/main/group`][@stdlib/utils/group
--   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: https://github.com/stdlib-js/utils/tree/main/group-by`][@stdlib/utils/group-by
+-   <span class="package-name">[`@stdlib/utils/group`][@stdlib/utils/group]</span><span class="delimiter">: </span><span class="description">group values as arrays associated with distinct keys.</span>
+-   <span class="package-name">[`@stdlib/utils/group-by`][@stdlib/utils/group-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function.</span>
 
 </section>
 

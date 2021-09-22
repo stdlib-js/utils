@@ -136,7 +136,7 @@ v = functionName( function () {} );
 
 ## See Also
 
--   [`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name`][@stdlib/utils/constructor-name
+-   <span class="package-name">[`@stdlib/utils/constructor-name`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
 
 </section>
 

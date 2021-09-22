@@ -162,9 +162,9 @@ $ safeintmin float16
 
 ## See Also
 
--   [`@stdlib/utils/safe-int-max`][@stdlib/utils/safe-int-max]: https://github.com/stdlib-js/utils/tree/main/safe-int-max`][@stdlib/utils/safe-int-max
--   [`@stdlib/utils/real-min`][@stdlib/utils/real-min]: https://github.com/stdlib-js/utils/tree/main/real-min`][@stdlib/utils/real-min
--   [`@stdlib/utils/type-min`][@stdlib/utils/type-min]: https://github.com/stdlib-js/utils/tree/main/type-min`][@stdlib/utils/type-min
+-   <span class="package-name">[`@stdlib/utils/safe-int-max`][@stdlib/utils/safe-int-max]</span><span class="delimiter">: </span><span class="description">return the maximum safe integer capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/real-min`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
+-   <span class="package-name">[`@stdlib/utils/type-min`][@stdlib/utils/type-min]</span><span class="delimiter">: </span><span class="description">return the minimum value of a specified numeric type.</span>
 
 </section>
 

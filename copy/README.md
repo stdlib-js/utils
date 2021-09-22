@@ -248,7 +248,7 @@ bool = ( arr[ 1 ].z === out[ 1 ].z );
 
 ## See Also
 
--   [`@stdlib/utils/merge`][@stdlib/utils/merge]: https://github.com/stdlib-js/utils/tree/main/merge`][@stdlib/utils/merge
+-   <span class="package-name">[`@stdlib/utils/merge`][@stdlib/utils/merge]</span><span class="delimiter">: </span><span class="description">merge and extend objects.</span>
 
 </section>
 

@@ -376,12 +376,12 @@ everyByAsync( files, predicate, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/any-by`][@stdlib/utils/async/any-by]: https://github.com/stdlib-js/utils/tree/main/async/any-by`][@stdlib/utils/async/any-by
--   [`@stdlib/utils/every-by`][@stdlib/utils/every-by]: https://github.com/stdlib-js/utils/tree/main/every-by`][@stdlib/utils/every-by
--   [`@stdlib/utils/async/every-by-right`][@stdlib/utils/async/every-by-right]: https://github.com/stdlib-js/utils/tree/main/async/every-by-right`][@stdlib/utils/async/every-by-right
--   [`@stdlib/utils/async/for-each`][@stdlib/utils/async/for-each]: https://github.com/stdlib-js/utils/tree/main/async/for-each`][@stdlib/utils/async/for-each
--   [`@stdlib/utils/async/none-by`][@stdlib/utils/async/none-by]: https://github.com/stdlib-js/utils/tree/main/async/none-by`][@stdlib/utils/async/none-by
--   [`@stdlib/utils/async/some-by`][@stdlib/utils/async/some-by]: https://github.com/stdlib-js/utils/tree/main/async/some-by`][@stdlib/utils/async/some-by
+-   <span class="package-name">[`@stdlib/utils/async/any-by`][@stdlib/utils/async/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/every-by`][@stdlib/utils/every-by]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/async/every-by-right`][@stdlib/utils/async/every-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/async/for-each`][@stdlib/utils/async/for-each]</span><span class="delimiter">: </span><span class="description">invoke a function once for each element in a collection.</span>
+-   <span class="package-name">[`@stdlib/utils/async/none-by`][@stdlib/utils/async/none-by]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection fail a test implemented by a predicate function.</span>
+-   <span class="package-name">[`@stdlib/utils/async/some-by`][@stdlib/utils/async/some-by]</span><span class="delimiter">: </span><span class="description">test whether a collection contains `n` elements which pass a test implemented by a predicate function.</span>
 
 </section>
 
