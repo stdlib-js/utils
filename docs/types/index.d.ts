@@ -33,6 +33,9 @@ import bifurcateIn = require( './../../bifurcate-in' );
 import bifurcateOwn = require( './../../bifurcate-own' );
 import capitalizeKeys = require( './../../capitalize-keys' );
 import CircularBuffer = require( './../../circular-buffer' );
+import commonKeys = require( './../../common-keys' );
+import commonKeysIn = require( './../../common-keys-in' );
+import CompactAdjacencyMatrix = require( './../../compact-adjacency-matrix' );
 import compose = require( './../../compose' );
 import constantFunction = require( './../../constant-function' );
 import constructorName = require( './../../constructor-name' );
@@ -602,6 +605,94 @@ interface Namespace {
 	* Circular buffer.
 	*/
 	CircularBuffer: typeof CircularBuffer;
+
+	/**
+	* Returns the common own property names of two or more objects.
+	*
+	* @param obj1 - first object
+	* @param obj2 - second object
+	* @param obj - additional objects
+	* @returns common keys of objects
+	*
+	* @example
+	* var obj = {
+	*     'a': 1,
+	*     'b': 2,
+	*     'c': 3
+	* };
+	*
+	* var obj2 = {
+	*     'a': 1,
+	*     'b': 2
+	* };
+	*
+	* var keys = ns.commonKeys( obj, obj2 );
+	* // returns [ 'a', 'b' ]
+	*
+	* @example
+	* var obj1 = {
+	*     'a': 1,
+	*     'b': 2,
+	*     'c': 3
+	* };
+	*
+	* var obj2 = {
+	*     'a': 1,
+	*     'b': 2
+	* };
+	*
+	* var obj3 = {
+	*     'a': 1,
+	* };
+	*
+	* var keys = ns.commonKeys( obj1, obj2, obj3 );
+	* // returns [ 'a' ]
+	*/
+	commonKeys: typeof commonKeys;
+
+	/**
+	* Returns the common own and inherited property names of two or more objects.
+	*
+	* @param obj1 - first object
+	* @param obj2 - second object
+	* @param obj - additional objects
+	* @returns common keys
+	*
+	* @example
+	* var obj = {
+	*     'a': 1,
+	*     'b': 2,
+	*     'c': 3
+	* };
+	*
+	* var obj2 = {
+	*     'a': 1,
+	*     'b': 2
+	* };
+	*
+	* var keys = ns.commonKeysIn( obj, obj2 );
+	* // returns [ 'a', 'b' ]
+	*
+	* @example
+	* var obj1 = {
+	*     'a': 1,
+	*     'b': 2,
+	*     'c': 3
+	* };
+	*
+	* var obj2 = {
+	*     'a': 1,
+	*     'b': 2
+	* };
+	*
+	* var obj3 = {
+	*     'a': 1,
+	* };
+	*
+	* var keys = ns.commonKeysIn( obj1, obj2, obj3 );
+	* // returns [ 'a' ]
+	*/
+	commonKeysIn: typeof commonKeysIn;
 
 	/**
 	* Function composition.

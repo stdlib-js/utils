@@ -20,9 +20,9 @@ limitations under the License.
 
 # Utils
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Standard library utilities.
+> Utilities.
 
 <section class="installation">
 
@@ -44,20 +44,20 @@ var utils = require( '@stdlib/utils' );
 
 #### utils
 
-Standard library utilities.
+Namespace containing utilities.
 
 ```javascript
 var o = utils;
 // returns {...}
 ```
 
-The package contains the following sub-namespaces:
+The namespace has the following sub-namespaces:
 
 <!-- <toc pattern="async"> -->
 
 <div class="namespace-toc">
 
--   <span class="signature">[`async`][@stdlib/utils/async]</span><span class="delimiter">: </span><span class="description">standard library async utilities.</span>
+-   <span class="signature">[`async`][@stdlib/utils/async]</span><span class="delimiter">: </span><span class="description">async utilities.</span>
 
 </div>
 
@@ -159,6 +159,7 @@ The package contains the following sub-namespaces:
 <div class="namespace-toc">
 
 -   <span class="signature">[`capitalizeKeys( obj )`][@stdlib/utils/capitalize-keys]</span><span class="delimiter">: </span><span class="description">convert the first letter of each object key to uppercase.</span>
+-   <span class="signature">[`commonKeys( obj1, obj2[, obj3[,...,objN]] )`][@stdlib/utils/common-keys]</span><span class="delimiter">: </span><span class="description">return the common own property names of two or more objects.</span>
 -   <span class="signature">[`deepGet( obj, path[, options] )`][@stdlib/utils/deep-get]</span><span class="delimiter">: </span><span class="description">get a nested property value.</span>
 -   <span class="signature">[`deepSet( obj, path, value[, options] )`][@stdlib/utils/deep-set]</span><span class="delimiter">: </span><span class="description">set a nested property value.</span>
 -   <span class="signature">[`setConfigurableReadOnlyAccessor( obj, prop, getter )`][@stdlib/utils/define-configurable-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable **read-only** accessor.</span>
@@ -304,6 +305,7 @@ The package contains the following sub-namespaces:
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`commonKeysIn( obj1, obj2[, obj3[,...,objN]] )`][@stdlib/utils/common-keys-in]</span><span class="delimiter">: </span><span class="description">return the common own and inherited property names of two or more objects.</span>
 -   <span class="signature">[`constructorName( value )`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
 -   <span class="signature">[`convertPath( from, to )`][@stdlib/utils/convert-path]</span><span class="delimiter">: </span><span class="description">convert between POSIX and Windows paths.</span>
 -   <span class="signature">[`copy( value[, level] )`][@stdlib/utils/copy]</span><span class="delimiter">: </span><span class="description">copy or deep clone a value to an arbitrary depth.</span>
@@ -412,8 +414,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
@@ -425,6 +431,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/utils/common-keys-in]: https://github.com/stdlib-js/utils/tree/main/common-keys-in
 
 [@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name
 
@@ -539,6 +547,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/while]: https://github.com/stdlib-js/utils/tree/main/while
 
 [@stdlib/utils/capitalize-keys]: https://github.com/stdlib-js/utils/tree/main/capitalize-keys
+
+[@stdlib/utils/common-keys]: https://github.com/stdlib-js/utils/tree/main/common-keys
 
 [@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get
 
