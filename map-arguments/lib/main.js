@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,60 +21,64 @@
 // MODULES //
 
 var isFunction = require( '@stdlib/assert/is-function' );
-var isNonNegativeIntegerArray = require( '@stdlib/assert/is-nonnegative-integer-array' );
 
 
 // MAIN //
 
 /**
-* Returns a function that invokes a provided function with reordered arguments.
+* Returns a function that applies arguments to a provided function after transforming arguments according to a callback function.
+*
+* ## Notes
+*
+-   The callback function is provided the following arguments:
+*
+*     -   **value**: argument value.
+*     -   **index**: argument index.
 *
 * @param {Function} fcn - input function
-* @param {NonNegativeIntegerArray} indices - argument indices
+* @param {Function} clbk - callback function
 * @param {*} [thisArg] - function context
 * @throws {TypeError} first argument must be a function
-* @throws {TypeError} second argument must be an array of nonnegative integers
-* @returns {Function} function with reordered arguments
+* @throws {TypeError} second argument must be a function
+* @returns {Function} wrapped function
 *
 * @example
 * function foo( a, b, c ) {
 *     return [ a, b, c ];
 * }
 *
-* var bar = reorderArguments( foo, [ 2, 0, 1 ] );
+* function clbk( v ) {
+*     return v * 2;
+* }
+*
+* var bar = mapArguments( foo, clbk );
 *
 * var out = bar( 1, 2, 3 );
-* // returns [ 3, 1, 2 ]
+* // returns [ 2, 4, 6 ]
 */
-function reorderArguments( fcn, indices, thisArg ) {
+function mapArguments( fcn, clbk, thisArg ) {
 	if ( !isFunction( fcn ) ) {
 		throw new TypeError( 'invalid argument. First argument must be a function. Value: `'+fcn+'`.' );
 	}
-	if ( !isNonNegativeIntegerArray( indices ) ) {
-		throw new TypeError( 'invalid argument. Second argument must be an array containing only nonnegative integers. Value: `'+indices+'`.' );
+	if ( !isFunction( clbk ) ) {
+		throw new TypeError( 'invalid argument. Second argument must be a function. Value: `'+clbk+'`.' );
 	}
-	return reordered;
+	return wrap;
 
 	/**
-	* Invokes a function with reordered arguments.
+	* Invokes a function after transforming arguments according to a callback function.
 	*
 	* @private
 	* @param {...*} args - arguments
-	* @throws {Error} must provide expected number of input arguments
 	* @returns {*} return value
 	*/
-	function reordered() {
+	function wrap() {
 		var args;
-		var len;
 		var i;
 
-		len = arguments.length;
-		if ( len !== indices.length ) {
-			throw new Error( 'invalid invocation. Unexpected number of input arguments. Expected: '+indices.length+'. Actual: '+len+'.' );
-		}
-		args = new Array( len );
-		for ( i = 0; i < len; i++ ) {
-			args[ i ] = arguments[ indices[i] ];
+		args = [];
+		for ( i = 0; i < arguments.length; i++ ) {
+			args.push( clbk( arguments[ i ], i ) ); // eslint-disable-line node/callback-return
 		}
 		return fcn.apply( thisArg, args );
 	}
@@ -83,4 +87,4 @@ function reorderArguments( fcn, indices, thisArg ) {
 
 // EXPORTS //
 
-module.exports = reorderArguments;
+module.exports = mapArguments;

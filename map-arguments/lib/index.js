@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,21 +19,25 @@
 'use strict';
 
 /**
-* Create a function that invokes a provided function with reordered arguments.
+* Return a function that applies arguments to a provided function after transforming arguments according to a callback function.
 *
-* @module @stdlib/utils/reorder-arguments
+* @module @stdlib/utils/map-arguments
 *
 * @example
-* var reorderArguments = require( '@stdlib/utils/reorder-arguments' );
+* var mapArguments = require( '@stdlib/utils/map-arguments' );
 *
 * function foo( a, b, c ) {
 *     return [ a, b, c ];
 * }
 *
-* var bar = reorderArguments( foo, [ 2, 0, 1 ] );
+* function clbk( v ) {
+*     return v * 2;
+* }
+*
+* var bar = mapArguments( foo, clbk );
 *
 * var out = bar( 1, 2, 3 );
-* // returns [ 3, 1, 2 ]
+* // returns [ 2, 4, 6 ]
 */
 
 // MODULES //

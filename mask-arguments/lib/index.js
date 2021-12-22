@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -19,21 +19,21 @@
 'use strict';
 
 /**
-* Create a function that invokes a provided function with reordered arguments.
+* Return a function that applies arguments to a provided function according to a specified mask.
 *
-* @module @stdlib/utils/reorder-arguments
+* @module @stdlib/utils/mask-arguments
 *
 * @example
-* var reorderArguments = require( '@stdlib/utils/reorder-arguments' );
+* var maskArguments = require( '@stdlib/utils/mask-arguments' );
 *
-* function foo( a, b, c ) {
-*     return [ a, b, c ];
+* function foo( a, b ) {
+*     return [ a, b ];
 * }
 *
-* var bar = reorderArguments( foo, [ 2, 0, 1 ] );
+* var bar = maskArguments( foo, [ 1, 0, 1 ] );
 *
 * var out = bar( 1, 2, 3 );
-* // returns [ 3, 1, 2 ]
+* // returns [ 1, 3 ]
 */
 
 // MODULES //
