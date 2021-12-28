@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/ndarray": "github:stdlib-js/ndarray",
     "@stdlib/number": "github:stdlib-js/number",
     "@stdlib/proxy": "github:stdlib-js/proxy",
     "chai": "^3.5.0",
