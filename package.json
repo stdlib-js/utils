@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",
+    "@stdlib/complex": "github:stdlib-js/complex",
     "@stdlib/ndarray": "github:stdlib-js/ndarray",
     "@stdlib/number": "github:stdlib-js/number",
     "@stdlib/proxy": "github:stdlib-js/proxy",

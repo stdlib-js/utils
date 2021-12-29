@@ -35,6 +35,7 @@ var MODE = 'throw';
 *
 * @private
 * @param {Object} x - object containing input ndarray meta data
+* @param {string} x.ref - reference to original input ndarray-like object
 * @param {string} x.dtype - data type
 * @param {Collection} x.data - data buffer
 * @param {NonNegativeInteger} x.length - number of elements
@@ -93,6 +94,7 @@ var MODE = 'throw';
 *
 * // Create the input and output ndarray-like objects:
 * var x = {
+*     'ref': null,
 *     'dtype': 'complex64',
 *     'data': xbuf,
 *     'length': 4,
@@ -102,7 +104,10 @@ var MODE = 'throw';
 *     'order': 'row-major',
 *     'getter': getter
 * };
+* x.ref = x;
+*
 * var y = {
+*     'ref': null,
 *     'dtype': 'complex64',
 *     'data': ybuf,
 *     'length': 4,
@@ -132,7 +137,9 @@ function map( x, y, fcn, thisArg ) {
 	var len;
 	var get;
 	var set;
-	var sh;
+	var ref;
+	var shx;
+	var shy;
 	var sx;
 	var sy;
 	var ox;
@@ -141,10 +148,12 @@ function map( x, y, fcn, thisArg ) {
 	var iy;
 	var i;
 
-	sh = x.shape;
-
 	// Cache the total number of elements over which to iterate:
 	len = x.length;
+
+	// Cache the input array shape:
+	shx = x.shape;
+	shy = y.shape;
 
 	// Cache references to the input and output ndarray data buffers:
 	xbuf = x.data;
@@ -166,11 +175,14 @@ function map( x, y, fcn, thisArg ) {
 	get = x.getter;
 	set = y.setter;
 
+	// Cache the reference to the original input array:
+	ref = x.ref;
+
 	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory (note: this has negative performance implications for non-contiguous ndarrays due to a lack of data locality)...
 	for ( i = 0; i < len; i++ ) {
-		ix = vind2bind( sh, sx, ox, ordx, i, MODE );
-		iy = vind2bind( sh, sy, oy, ordy, i, MODE );
-		set( ybuf, iy, fcn.call( thisArg, get( xbuf, ix ), i, x ) );
+		ix = vind2bind( shx, sx, ox, ordx, i, MODE );
+		iy = vind2bind( shy, sy, oy, ordy, i, MODE );
+		set( ybuf, iy, fcn.call( thisArg, get( xbuf, ix ), i, ref ) );
 	}
 }
 
