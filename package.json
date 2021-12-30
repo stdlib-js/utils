@@ -44,6 +44,7 @@
     "@stdlib/constants": "github:stdlib-js/constants#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
     "@stdlib/math": "github:stdlib-js/math#main",
+    "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
     "@stdlib/os": "github:stdlib-js/os#main",
     "@stdlib/process": "github:stdlib-js/process#main",
     "@stdlib/random": "github:stdlib-js/random#main",
@@ -58,7 +59,6 @@
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench",
     "@stdlib/complex": "github:stdlib-js/complex",
-    "@stdlib/ndarray": "github:stdlib-js/ndarray",
     "@stdlib/number": "github:stdlib-js/number",
     "@stdlib/proxy": "github:stdlib-js/proxy",
     "chai": "^3.5.0",

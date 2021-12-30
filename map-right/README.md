@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# map
+# mapRight
 
-> Apply a function to each element in an array and assign the result to an element in an output array.
+> Apply a function to each element in an array and assign the result to an element in an output array, iterating from right to left.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,14 +37,14 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var map = require( '@stdlib/utils/map' );
+var mapRight = require( '@stdlib/utils/map-right' );
 ```
 
-<a name="fcn-map"></a>
+<a name="fcn-map-right"></a>
 
-#### map( arr, fcn\[, thisArg] )
+#### mapRight( arr, fcn\[, thisArg] )
 
-Applies a function to each element in an array and assigns the result to an element in a new array.
+Applies a function to each element in an array and assigns the result to an element in a new array, iterating from right to left.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -52,7 +52,7 @@ var abs = require( '@stdlib/math/base/special/abs' );
 
 var arr = [ -1, -2, -3, -4, -5, -6 ];
 
-var out = map( arr, naryFunction( abs, 1 ) );
+var out = mapRight( arr, naryFunction( abs, 1 ) );
 // returns [ 1, 2, 3, 4, 5, 6 ]
 ```
 
@@ -68,7 +68,7 @@ var opts = {
 };
 var arr = array( [ [ -1, -2, -3 ], [ -4, -5, -6 ] ], opts );
 
-var out = map( arr, naryFunction( abs, 1 ) );
+var out = mapRight( arr, naryFunction( abs, 1 ) );
 // returns <ndarray>
 
 var v = out.get( 1, 1 );
@@ -99,18 +99,18 @@ var ctx = {
     'count': 0
 };
 
-var out = map( arr, fcn, ctx );
+var out = mapRight( arr, fcn, ctx );
 // returns [ 1, 2, 3, 4, 5, 6 ]
 
 var cnt = ctx.count;
 // returns 6
 ```
 
-<a name="method-map-assign"></a>
+<a name="method-map-right-assign"></a>
 
-#### map.assign( arr, out, fcn\[, thisArg] )
+#### mapRight.assign( arr, out, fcn\[, thisArg] )
 
-Applies a function to each element in an array and assigns the result to an element in an output array.
+Applies a function to each element in an array and assigns the result to an element in an output array, iterating from right to left.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -119,7 +119,7 @@ var abs = require( '@stdlib/math/base/special/abs' );
 var arr = [ -1, -2, -3, -4, -5, -6 ];
 var out = [ 0, 0, 0, 0, 0, 0 ];
 
-map.assign( arr, out, naryFunction( abs, 1 ) );
+mapRight.assign( arr, out, naryFunction( abs, 1 ) );
 
 console.log( out );
 // => [ 1, 2, 3, 4, 5, 6 ]
@@ -139,7 +139,7 @@ var opts = {
 var arr = array( [ [ -1, -2, -3 ], [ -4, -5, -6 ] ], opts );
 var out = array( opts );
 
-map.assign( arr, out, naryFunction( abs, 1 ) );
+mapRight.assign( arr, out, naryFunction( abs, 1 ) );
 
 var v = out.get( 1, 1 );
 // returns 5
@@ -147,7 +147,7 @@ var v = out.get( 1, 1 );
 
 Input and output arrays must be either both array-like objects or both [`ndarray`][@stdlib/ndarray/ctor]-like objects and must have the same number of elements. [`ndarray`][@stdlib/ndarray/ctor]-like objects are **not** required to have the same shape.
 
-The applied function is provided the same arguments as with [`map`](#fcn-map).
+The applied function is provided the same arguments as with [`mapRight`](#fcn-map-right).
 
 </section>
 
@@ -159,11 +159,11 @@ The applied function is provided the same arguments as with [`map`](#fcn-map).
 
 ## Notes
 
--   The [`map`](#fcn-map) function **always** returns an output value having a "generic" data type. For example, if provided an array-like object, the function returns a generic `array`. If provided an [`ndarray`][@stdlib/ndarray/ctor], the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a "generic" data type.
+-   The [`mapRight`](#fcn-map-right) function **always** returns an output value having a "generic" data type. For example, if provided an array-like object, the function returns a generic `array`. If provided an [`ndarray`][@stdlib/ndarray/ctor], the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a "generic" data type.
 
-    Accordingly, in contrast to [`TypedArray.prototype.map()`][mdn-typedarray-map], when provided a typed array, the [`map`](#fcn-map) function does **not** return a typed array of the same type. To assign results to a typed array, use the [`map.assign`](#method-map-assign) method.
+    Accordingly, in contrast to [`TypedArray.prototype.map()`][mdn-typedarray-map], when provided a typed array, the [`mapRight`](#fcn-map-right) function does **not** return a typed array of the same type. To assign results to a typed array, use the [`mapRight.assign`](#method-map-right-assign) method.
 
--   Both [`map`](#fcn-map) and [`map.assign`](#method-map-assign) accept array-like objects exposing getters and setters for array element access (e.g., [`Complex64Array`][@stdlib/array/complex64], [`Complex128Array`][@stdlib/array/complex128], etc).
+-   Both [`mapRight`](#fcn-map-right) and [`mapRight.assign`](#method-map-right-assign) accept array-like objects exposing getters and setters for array element access (e.g., [`Complex64Array`][@stdlib/array/complex64], [`Complex128Array`][@stdlib/array/complex128], etc).
 
     ```javascript
     var Complex64Array = require( '@stdlib/array/complex64' );
@@ -178,7 +178,7 @@ The applied function is provided the same arguments as with [`map`](#fcn-map).
     var x = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
     var y = new Complex64Array( 4 );
 
-    map.assign( x, y, scale );
+    mapRight.assign( x, y, scale );
 
     var v = y.get( 0 );
 
@@ -191,7 +191,7 @@ The applied function is provided the same arguments as with [`map`](#fcn-map).
 
 -   When applying a function to [`ndarray`][@stdlib/ndarray/ctor]-like objects, performance will be best for [`ndarray`][@stdlib/ndarray/ctor]-like objects which are single-segment contiguous. For non-contiguous arrays, see [`@stdlib/ndarray/base/unary`][@stdlib/ndarray/base/unary].
 
--   Both [`map`](#fcn-map) and [`map.assign`](#method-map-assign) do **not** skip `undefined` elements.
+-   Both [`mapRight`](#fcn-map-right) and [`mapRight.assign`](#method-map-right-assign) do **not** skip `undefined` elements.
 
 </section>
 
@@ -211,7 +211,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var naryFunction = require( '@stdlib/utils/nary-function' );
 var abs2 = require( '@stdlib/math/base/special/abs2' );
 var array = require( '@stdlib/ndarray/array' );
-var map = require( '@stdlib/utils/map' );
+var mapRight = require( '@stdlib/utils/map-right' );
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
@@ -228,7 +228,7 @@ var x = array( filledarrayBy( 10, 'generic', fill ), {
 var f = naryFunction( abs2, 1 );
 
 // Compute the element-wise squared absolute value...
-var y = map( x, f );
+var y = mapRight( x, f );
 
 console.log( 'x:' );
 console.log( x.data );
