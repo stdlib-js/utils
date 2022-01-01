@@ -31,7 +31,7 @@ var MODE = 'throw';
 // MAIN //
 
 /**
-* Applies a function to each element in an ndarray and assigns the result to an element in an output ndarray, iterating from right to left.
+* Applies a function against an accumulator and each element in an array and returns the accumulated result.
 *
 * @private
 * @param {Object} x - object containing input ndarray meta data
@@ -44,55 +44,37 @@ var MODE = 'throw';
 * @param {NonNegativeInteger} x.offset - index offset
 * @param {string} x.order - specifies whether `x` is row-major (C-style) or column-major (Fortran-style)
 * @param {Function} x.getter - callback for accessing `x` data buffer elements
-* @param {Object} y - object containing output ndarray meta data
-* @param {string} y.dtype - data type
-* @param {Collection} y.data - data buffer
-* @param {NonNegativeInteger} y.length - number of elements
-* @param {NonNegativeIntegerArray} y.shape - dimensions
-* @param {IntegerArray} y.strides - stride lengths
-* @param {NonNegativeInteger} y.offset - index offset
-* @param {string} y.order - specifies whether `y` is row-major (C-style) or column-major (Fortran-style)
-* @param {Function} y.setter - callback for setting `y` data buffer elements
+* @param {*} initial - initial value
 * @param {Function} fcn - function to apply
 * @param {*} thisArg - function execution context
-* @returns {void}
+* @returns {*} accumulated result
 *
 * @example
 * var Complex64Array = require( '@stdlib/array/complex64' );
 * var Complex64 = require( '@stdlib/complex/float32' );
 * var realf = require( '@stdlib/complex/realf' );
 * var imagf = require( '@stdlib/complex/imagf' );
+* var cadd = require( '@stdlib/math/base/ops/cadd' );
 * var naryFunction = require( '@stdlib/utils/nary-function' );
 *
-* function scale( z ) {
-*     return new Complex64( realf(z)*10.0, imagf(z)*10.0 );
-* }
-*
-* // Create data buffers:
+* // Create a data buffer:
 * var xbuf = new Complex64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0 ] );
-* var ybuf = new Complex64Array( 4 );
 *
-* // Define the shape of the input and output arrays:
+* // Define the shape of the input array:
 * var shape = [ 2, 2 ];
 *
 * // Define the array strides:
 * var sx = [ 2, 1 ];
-* var sy = [ 2, 1 ];
 *
-* // Define the index offsets:
+* // Define the index offset:
 * var ox = 0;
-* var oy = 0;
 *
-* // Define getters and setters:
+* // Define a getter:
 * function getter( buf, idx ) {
 *     return buf.get( idx );
 * }
 *
-* function setter( buf, idx, value ) {
-*     buf.set( value, idx );
-* }
-*
-* // Create the input and output ndarray-like objects:
+* // Create the input ndarray-like object:
 * var x = {
 *     'ref': null,
 *     'dtype': 'complex64',
@@ -106,46 +88,26 @@ var MODE = 'throw';
 * };
 * x.ref = x;
 *
-* var y = {
-*     'ref': null,
-*     'dtype': 'complex64',
-*     'data': ybuf,
-*     'length': 4,
-*     'shape': shape,
-*     'strides': sy,
-*     'offset': oy,
-*     'order': 'row-major',
-*     'setter': setter
-* };
-*
-* // Apply the unary function:
-* mapRight( x, y, naryFunction( scale, 1 ) );
-*
-* var v = y.data.get( 0 );
+* // Compute the sum:
+* var v = reduce( x, new Complex64( 0.0, 0.0 ), naryFunction( cadd, 2 ) );
 *
 * var re = realf( v );
-* // returns 10.0
+* // returns 16.0
 *
 * var im = imagf( v );
 * // returns 20.0
 */
-function mapRight( x, y, fcn, thisArg ) {
+function reduce( x, initial, fcn, thisArg ) {
 	var xbuf;
-	var ybuf;
 	var ordx;
-	var ordy;
+	var acc;
 	var len;
 	var get;
-	var set;
 	var ref;
 	var shx;
-	var shy;
 	var sx;
-	var sy;
 	var ox;
-	var oy;
 	var ix;
-	var iy;
 	var i;
 
 	// Cache the total number of elements over which to iterate:
@@ -153,40 +115,35 @@ function mapRight( x, y, fcn, thisArg ) {
 
 	// Cache the input array shape:
 	shx = x.shape;
-	shy = y.shape;
 
-	// Cache references to the input and output ndarray data buffers:
+	// Cache reference to the input ndarray data buffer:
 	xbuf = x.data;
-	ybuf = y.data;
 
-	// Cache references to the respective stride arrays:
+	// Cache reference to the stride array:
 	sx = x.strides;
-	sy = y.strides;
 
-	// Cache the indices of the first indexed elements in the respective ndarrays:
+	// Cache the index of the first indexed element:
 	ox = x.offset;
-	oy = y.offset;
 
-	// Cache the respective array orders:
+	// Cache the array order:
 	ordx = x.order;
-	ordy = y.order;
 
-	// Cache accessors:
+	// Cache the element accessor:
 	get = x.getter;
-	set = y.setter;
 
 	// Cache the reference to the original input array:
 	ref = x.ref;
 
 	// Iterate over each element based on the linear **view** index, regardless as to how the data is stored in memory (note: this has negative performance implications for non-contiguous ndarrays due to a lack of data locality)...
-	for ( i = len-1; i >= 0; i-- ) {
+	acc = initial;
+	for ( i = 0; i < len; i++ ) {
 		ix = vind2bind( shx, sx, ox, ordx, i, MODE );
-		iy = vind2bind( shy, sy, oy, ordy, i, MODE );
-		set( ybuf, iy, fcn.call( thisArg, get( xbuf, ix ), i, ref ) );
+		acc = fcn.call( thisArg, acc, get( xbuf, ix ), i, ref );
 	}
+	return acc;
 }
 
 
 // EXPORTS //
 
-module.exports = mapRight;
+module.exports = reduce;
