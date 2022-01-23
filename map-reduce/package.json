@@ -1,7 +1,7 @@
 {
-  "name": "@stdlib/utils/reduce",
+  "name": "@stdlib/utils/map-reduce",
   "version": "0.0.0",
-  "description": "Apply a function against an accumulator and each element in an array and return the accumulated result.",
+  "description": "Perform a single-pass map-reduce operation against each element in an array and return the accumulated result.",
   "license": "Apache-2.0",
   "author": {
     "name": "The Stdlib Authors",
@@ -56,9 +56,13 @@
     "utility",
     "utils",
     "util",
+    "map",
+    "transform",
+    "map-reduce",
     "reduce",
     "reducer",
     "reduction",
+    "array.map",
     "array.reduce",
     "iterate",
     "aggregate",
