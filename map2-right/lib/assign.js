@@ -23,11 +23,8 @@
 var isArrayLikeObject = require( '@stdlib/assert/is-array-like-object' );
 var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isFunction = require( '@stdlib/assert/is-function' );
-var zeros = require( '@stdlib/array/base/zeros' );
 var ndarraylike2object = require( '@stdlib/ndarray/base/ndarraylike2object' );
 var arraylike2object = require( '@stdlib/array/base/arraylike2object' );
-var ndzeros = require( '@stdlib/ndarray/zeros' );
-var broadcastShapes = require( '@stdlib/ndarray/base/broadcast-shapes' );
 var broadcast = require( '@stdlib/ndarray/base/maybe-broadcast-array' );
 var ndarrayFcn = require( './ndarray.js' );
 var arrayFcn = require( './array.js' );
@@ -36,7 +33,7 @@ var arrayFcn = require( './array.js' );
 // MAIN //
 
 /**
-* Applies a function to elements in two input arrays and assigns the results to a new array.
+* Applies a function to elements in two input arrays while iterating from right to left and assigns the results to an output array.
 *
 * ## Notes
 *
@@ -50,15 +47,17 @@ var arrayFcn = require( './array.js' );
 *
 * @param {(ArrayLikeObject|ndarray)} x - first input array
 * @param {(ArrayLikeObject|ndarray)} y - second input array
+* @param {(ArrayLikeObject|ndarray)} out - output array
 * @param {Function} fcn - function to apply
 * @param {*} [thisArg] - function execution context
 * @throws {TypeError} first argument must be an array-like object or an ndarray
 * @throws {TypeError} second argument must be an array-like object or an ndarray
-* @throws {TypeError} input arrays must be either both array-like objects or both ndarrays
-* @throws {RangeError} input arrays must have the same length
-* @throws {Error} input ndarrays must be broadcast compatible
-* @throws {TypeError} third argument must be a function
-* @returns {(Array|ndarray)} output array
+* @throws {TypeError} third argument must be an array-like object or an ndarray
+* @throws {TypeError} fourth argument must be a function
+* @throws {TypeError} input and output arrays must be either all array-like objects or all ndarrays
+* @throws {RangeError} input and output arrays must have the same length
+* @throws {Error} input and output ndarrays must be broadcast compatible
+* @returns {(ArrayLikeObject|ndarray)} output array
 *
 * @example
 * var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -66,9 +65,12 @@ var arrayFcn = require( './array.js' );
 *
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 * var y = [ 1, 1, 1, 1, 1, 1 ];
+* var out = [ 0, 0, 0, 0, 0, 0 ];
 *
-* var out = map2( x, y, naryFunction( add, 2 ) );
-* // returns [ 2, 3, 4, 5, 6, 7 ]
+* map2Right( x, y, out, naryFunction( add, 2 ) );
+*
+* console.log( out );
+* // => [ 2, 3, 4, 5, 6, 7 ]
 *
 * @example
 * var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -76,38 +78,40 @@ var arrayFcn = require( './array.js' );
 * var array = require( '@stdlib/ndarray/array' );
 *
 * var opts = {
-*     'dtype': 'generic'
+*     'dtype': 'generic',
+*     'shape': [ 2, 3 ]
 * };
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
 * var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
+* var out = array( opts );
 *
-* var out = map2( x, y, naryFunction( add, 2 ) );
-* // returns <ndarray>
+* map2Right( x, y, out, naryFunction( add, 2 ) );
 *
 * var data = out.data;
 * // returns [ 2, 3, 4, 5, 6, 7 ]
 */
-function map2( x, y, fcn, thisArg ) {
+function map2Right( x, y, out, fcn, thisArg ) {
 	var isxnd;
 	var isynd;
-	var out;
+	var isznd;
 	var tmp;
 	var sh;
-
 	if ( !isFunction( fcn ) ) {
-		throw new TypeError( 'invalid argument. Second argument must be a function. Value: `' + fcn + '`.' );
+		throw new TypeError( 'invalid argument. Fourth argument must be a function. Value: `' + fcn + '`.' );
 	}
 	isxnd = isndarrayLike( x );
 	isynd = isndarrayLike( y );
+	isznd = isndarrayLike( out );
 	if ( isxnd ) { // note: assertion order matters here, as an ndarray-like object is also array-like
 		if ( !isynd ) {
 			throw new TypeError( 'invalid argument. If the first input array is an ndarray, the second input array must also be an ndarray. Value: `' + y + '`.' );
 		}
-		// Broadcast `x` and `y` to a common shape:
-		sh = broadcastShapes( [ x.shape, y.shape ] );
-		if ( sh === null ) {
-			throw new Error( 'invalid arguments. Input ndarrays must be broadcast compatible.' );
+		if ( !isznd ) {
+			throw new TypeError( 'invalid argument. If the input arrays are ndarrays, the output array must also be an ndarray. Value: `' + out + '`.' );
 		}
+		out = ndarraylike2object( out );
+		sh = out.shape;
+
 		// Broadcast and wrap the input arrays and ensure that the `ref` properties point to the original input arrays...
 		tmp = ndarraylike2object( broadcast( x, sh ) );
 		tmp.ref = x;
@@ -117,24 +121,19 @@ function map2( x, y, fcn, thisArg ) {
 		tmp.ref = y;
 		y = tmp;
 
-		// Create an output array:
-		out = ndzeros( sh, {
-			'dtype': 'generic',
-			'order': x.order
-		});
-
-		// Apply the function to the input arrays:
-		ndarrayFcn( x, y, ndarraylike2object( out ), fcn, thisArg );
-		return out;
+		ndarrayFcn( x, y, out, fcn, thisArg );
+		return out.ref;
 	}
 	if ( isArrayLikeObject( x ) ) {
 		if ( isynd || !isArrayLikeObject( y ) ) {
 			throw new TypeError( 'invalid argument. If the first input array is an array-like object, the second input array must also be an array-like object. Value: `' + y + '`.' );
 		}
-		if ( y.length !== x.length ) {
-			throw new RangeError( 'invalid arguments. Input arrays must have the same number of elements (i.e., length).' );
+		if ( isznd || !isArrayLikeObject( out ) ) {
+			throw new TypeError( 'invalid argument. If the input arrays are array-like objects, the output array must also be an array-like object. Value: `' + out + '`.' );
 		}
-		out = zeros( x.length );
+		if ( x.length !== y.length || y.length !== out.length ) {
+			throw new RangeError( 'invalid arguments. Input and output arrays must have the same number of elements ( i.e., length).' );
+		}
 		arrayFcn( arraylike2object( x ), arraylike2object( y ), arraylike2object( out ), fcn, thisArg ); // eslint-disable-line max-len
 		return out;
 	}
@@ -144,4 +143,4 @@ function map2( x, y, fcn, thisArg ) {
 
 // EXPORTS //
 
-module.exports = map2;
+module.exports = map2Right;

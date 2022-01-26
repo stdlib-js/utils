@@ -25,46 +25,9 @@ var isndarrayLike = require( '@stdlib/assert/is-ndarray-like' );
 var isFunction = require( '@stdlib/assert/is-function' );
 var ndarraylike2object = require( '@stdlib/ndarray/base/ndarraylike2object' );
 var arraylike2object = require( '@stdlib/array/base/arraylike2object' );
-var broadcast = require( '@stdlib/ndarray/base/broadcast-array' );
+var broadcast = require( '@stdlib/ndarray/base/maybe-broadcast-array' );
 var ndarrayFcn = require( './ndarray.js' );
 var arrayFcn = require( './array.js' );
-
-
-// FUNCTIONS //
-
-/**
-* Broadcasts an ndarray to a specified shape if that shape differs from the provided ndarray's shape and otherwise return the provided ndarray.
-*
-* @private
-* @param {ndarray} arr - input array
-* @param {NonNegativeIntegerArray} shape - desired shape
-* @throws {Error} input array cannot have more dimensions than the desired shape
-* @throws {Error} input array dimension sizes must be `1` or equal to the corresponding dimension in the provided shape
-* @throws {Error} input array and desired shape must be broadcast compatible
-* @returns {ndarray} broadcasted array
-*/
-function maybeBroadcastArray( arr, shape ) {
-	var sh;
-	var N;
-	var i;
-
-	N = shape.length;
-	sh = arr.shape;
-
-	// Check whether we need to broadcast the input array...
-	if ( sh.length === N ) {
-		for ( i = 0; i < N; i++ ) {
-			// Check whether dimensions match...
-			if ( sh[ i ] !== shape[ i ] ) {
-				// We found a mismatched dimension; delegate to `broadcast` to ensure that the input array is broadcast compatible with the desired array shape...
-				return broadcast( arr, shape );
-			}
-		}
-		return arr;
-	}
-	// If we are provided an array having a different rank (i.e., number of dimensions) than the desired shape, assume we need to broadcast, delegating to `broadcast` to ensure that the input array is broadcast compatible with the desired array shape...
-	return broadcast( arr, shape );
-}
 
 
 // MAIN //
@@ -84,7 +47,7 @@ function maybeBroadcastArray( arr, shape ) {
 *
 * @param {(ArrayLikeObject|ndarray)} x - first input array
 * @param {(ArrayLikeObject|ndarray)} y - second input array
-* @param {(ArrayLikeObject|ndarray)} z - output array
+* @param {(ArrayLikeObject|ndarray)} out - output array
 * @param {Function} fcn - function to apply
 * @param {*} [thisArg] - function execution context
 * @throws {TypeError} first argument must be an array-like object or an ndarray
@@ -102,11 +65,11 @@ function maybeBroadcastArray( arr, shape ) {
 *
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 * var y = [ 1, 1, 1, 1, 1, 1 ];
-* var z = [ 0, 0, 0, 0, 0, 0 ];
+* var out = [ 0, 0, 0, 0, 0, 0 ];
 *
-* map2( x, y, z, naryFunction( add, 2 ) );
+* map2( x, y, out, naryFunction( add, 2 ) );
 *
-* console.log( z );
+* console.log( out );
 * // => [ 2, 3, 4, 5, 6, 7 ]
 *
 * @example
@@ -120,52 +83,59 @@ function maybeBroadcastArray( arr, shape ) {
 * };
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
 * var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
-* var z = array( opts );
+* var out = array( opts );
 *
-* map2( x, y, z, naryFunction( add, 2 ) );
+* map2( x, y, out, naryFunction( add, 2 ) );
 *
-* var data = z.data;
+* var data = out.data;
 * // returns [ 2, 3, 4, 5, 6, 7 ]
 */
-function map2( x, y, z, fcn, thisArg ) {
+function map2( x, y, out, fcn, thisArg ) {
 	var isxnd;
 	var isynd;
 	var isznd;
+	var tmp;
 	var sh;
 	if ( !isFunction( fcn ) ) {
 		throw new TypeError( 'invalid argument. Fourth argument must be a function. Value: `' + fcn + '`.' );
 	}
 	isxnd = isndarrayLike( x );
 	isynd = isndarrayLike( y );
-	isznd = isndarrayLike( z );
+	isznd = isndarrayLike( out );
 	if ( isxnd ) { // note: assertion order matters here, as an ndarray-like object is also array-like
 		if ( !isynd ) {
 			throw new TypeError( 'invalid argument. If the first input array is an ndarray, the second input array must also be an ndarray. Value: `' + y + '`.' );
 		}
 		if ( !isznd ) {
-			throw new TypeError( 'invalid argument. If the input arrays are ndarrays, the output array must also be an ndarray. Value: `' + z + '`.' );
+			throw new TypeError( 'invalid argument. If the input arrays are ndarrays, the output array must also be an ndarray. Value: `' + out + '`.' );
 		}
-		z = ndarraylike2object( z );
-		sh = z.shape;
+		out = ndarraylike2object( out );
+		sh = out.shape;
 
-		x = ndarraylike2object( maybeBroadcastArray( x, sh ) );
-		y = ndarraylike2object( maybeBroadcastArray( y, sh ) );
+		// Broadcast and wrap the input arrays and ensure that the `ref` properties point to the original input arrays...
+		tmp = ndarraylike2object( broadcast( x, sh ) );
+		tmp.ref = x;
+		x = tmp;
 
-		ndarrayFcn( x, y, z, fcn, thisArg );
-		return z.ref;
+		tmp = ndarraylike2object( broadcast( y, sh ) );
+		tmp.ref = y;
+		y = tmp;
+
+		ndarrayFcn( x, y, out, fcn, thisArg );
+		return out.ref;
 	}
 	if ( isArrayLikeObject( x ) ) {
 		if ( isynd || !isArrayLikeObject( y ) ) {
 			throw new TypeError( 'invalid argument. If the first input array is an array-like object, the second input array must also be an array-like object. Value: `' + y + '`.' );
 		}
-		if ( isznd || !isArrayLikeObject( z ) ) {
-			throw new TypeError( 'invalid argument. If the input arrays are array-like objects, the output array must also be an array-like object. Value: `' + z + '`.' );
+		if ( isznd || !isArrayLikeObject( out ) ) {
+			throw new TypeError( 'invalid argument. If the input arrays are array-like objects, the output array must also be an array-like object. Value: `' + out + '`.' );
 		}
-		if ( x.length !== y.length || y.length !== z.length ) {
-			throw new RangeError( 'invalid arguments. Input and output arrays must have the same length.' );
+		if ( x.length !== y.length || y.length !== out.length ) {
+			throw new RangeError( 'invalid arguments. Input and output arrays must have the same number of elements ( i.e., length).' );
 		}
-		arrayFcn( arraylike2object( x ), arraylike2object( y ), arraylike2object( z ), fcn, thisArg ); // eslint-disable-line max-len
-		return z;
+		arrayFcn( arraylike2object( x ), arraylike2object( y ), arraylike2object( out ), fcn, thisArg ); // eslint-disable-line max-len
+		return out;
 	}
 	throw new TypeError( 'invalid argument. First argument must be an array-like object or an ndarray. Value: `' + x + '`.' );
 }

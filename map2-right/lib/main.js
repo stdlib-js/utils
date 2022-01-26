@@ -36,7 +36,7 @@ var arrayFcn = require( './array.js' );
 // MAIN //
 
 /**
-* Applies a function to elements in two input arrays and assigns the results to a new array.
+* Applies a function to elements in two input arrays while iterating from right to left and assigns the results to a new array.
 *
 * ## Notes
 *
@@ -67,7 +67,7 @@ var arrayFcn = require( './array.js' );
 * var x = [ 1, 2, 3, 4, 5, 6 ];
 * var y = [ 1, 1, 1, 1, 1, 1 ];
 *
-* var out = map2( x, y, naryFunction( add, 2 ) );
+* var out = map2Right( x, y, naryFunction( add, 2 ) );
 * // returns [ 2, 3, 4, 5, 6, 7 ]
 *
 * @example
@@ -81,13 +81,13 @@ var arrayFcn = require( './array.js' );
 * var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
 * var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
 *
-* var out = map2( x, y, naryFunction( add, 2 ) );
+* var out = map2Right( x, y, naryFunction( add, 2 ) );
 * // returns <ndarray>
 *
 * var data = out.data;
 * // returns [ 2, 3, 4, 5, 6, 7 ]
 */
-function map2( x, y, fcn, thisArg ) {
+function map2Right( x, y, fcn, thisArg ) {
 	var isxnd;
 	var isynd;
 	var out;
@@ -144,4 +144,4 @@ function map2( x, y, fcn, thisArg ) {
 
 // EXPORTS //
 
-module.exports = map2;
+module.exports = map2Right;

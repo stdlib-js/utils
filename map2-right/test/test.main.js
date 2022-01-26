@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2021 The Stdlib Authors.
+* Copyright (c) 2022 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -22,23 +22,23 @@
 
 var tape = require( 'tape' );
 var naryFunction = require( './../../nary-function' );
-var abs = require( '@stdlib/math/base/special/abs' );
+var add = require( '@stdlib/math/base/ops/add' );
+var caddf = require( '@stdlib/math/base/ops/caddf' );
 var Float64Array = require( '@stdlib/array/float64' );
 var Complex64Array = require( '@stdlib/array/complex64' );
+var zeros = require( '@stdlib/array/base/zeros' );
 var array = require( '@stdlib/ndarray/array' );
 var ndarray = require( '@stdlib/ndarray/ctor' );
-var Complex64 = require( '@stdlib/complex/float32' );
 var realf = require( '@stdlib/complex/realf' );
 var imagf = require( '@stdlib/complex/imagf' );
-var zeros = require( '@stdlib/array/base/zeros' );
-var map = require( './../lib/assign.js' );
+var map2Right = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof map, 'function', 'main export is a function' );
+	t.strictEqual( typeof map2Right, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -65,12 +65,12 @@ tape( 'the function throws an error if not provided a first argument which is ei
 
 	function badValue( value ) {
 		return function badValue() {
-			map( value, [ 0 ], naryFunction( abs, 1 ) );
+			map2Right( value, [ 1, 2, 3 ], naryFunction( add, 2 ) );
 		};
 	}
 });
 
-tape( 'the function throws an error if not provided a second argument which is either an array-like object or an ndarray', function test( t ) {
+tape( 'the function throws an error if not provided a first argument which is either an array-like object or an ndarray', function test( t ) {
 	var values;
 	var i;
 
@@ -93,7 +93,65 @@ tape( 'the function throws an error if not provided a second argument which is e
 
 	function badValue( value ) {
 		return function badValue() {
-			map( [ 0 ], value, naryFunction( abs, 1 ) );
+			map2Right( value, array( [ 1, 2, 3 ] ), naryFunction( add, 2 ) );
+		};
+	}
+});
+
+tape( 'the function throws an error if not provided a second argument which is not an array-like object (x: array-like object)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		{},
+		array( [ 1, 2, 3 ] ),
+		function noop() {}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			map2Right( [ 1, 2, 3 ], value, naryFunction( add, 2 ) );
+		};
+	}
+});
+
+tape( 'the function throws an error if not provided a second argument which is not an ndarray (x: ndarray)', function test( t ) {
+	var values;
+	var i;
+
+	values = [
+		'5',
+		5,
+		NaN,
+		true,
+		false,
+		null,
+		void 0,
+		{},
+		[ 1, 2, 3 ],
+		function noop() {}
+	];
+
+	for ( i = 0; i < values.length; i++ ) {
+		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
+	}
+	t.end();
+
+	function badValue( value ) {
+		return function badValue() {
+			map2Right( array( [ 1, 2, 3 ] ), value, naryFunction( add, 2 ) );
 		};
 	}
 });
@@ -121,7 +179,7 @@ tape( 'the function throws an error if provided a third argument which is not a 
 
 	function badValue( value ) {
 		return function badValue() {
-			map( [ 1, 2, 3, 4, 5, 6 ], [ 0, 0, 0, 0, 0, 0 ], value );
+			map2Right( [ 1, 2, 3, 4, 5, 6 ], [ 1, 1, 1, 1, 1, 1 ], value );
 		};
 	}
 });
@@ -149,7 +207,7 @@ tape( 'the function throws an error if provided a third argument which is not a 
 
 	function badValue( value ) {
 		return function badValue() {
-			map( [ 1, 2, 3, 4, 5, 6 ], [ 0, 0, 0, 0, 0, 0 ], value, {} );
+			map2Right( [ 1, 2, 3, 4, 5, 6 ], [ 1, 1, 1, 1, 1, 1 ], value, {} );
 		};
 	}
 });
@@ -178,7 +236,7 @@ tape( 'the function throws an error if provided array-like objects having differ
 
 	function badValue( value ) {
 		return function badValue() {
-			map( [ 1, 2, 3, 4, 5, 6 ], value, naryFunction( abs, 1 ) );
+			map2Right( [ 1, 2, 3, 4, 5, 6 ], value, naryFunction( add, 2 ) );
 		};
 	}
 });
@@ -188,7 +246,6 @@ tape( 'the function throws an error if provided ndarrays which are not broadcast
 	var i;
 
 	values = [
-		array( [ 0 ] ),
 		array( [ 0, 0 ] ),
 		array( [ 0, 0, 0 ] ),
 		array( [ 0, 0, 0, 0 ] ),
@@ -206,7 +263,7 @@ tape( 'the function throws an error if provided ndarrays which are not broadcast
 
 	function badValue( value ) {
 		return function badValue() {
-			map( array( [ 1, 2, 3, 4, 5, 6 ] ), value, naryFunction( abs, 1 ) );
+			map2Right( array( [ 1, 2, 3, 4, 5, 6 ] ), value, naryFunction( add, 2 ) ); // eslint-disable-line max-len
 		};
 	}
 });
@@ -223,7 +280,7 @@ tape( 'the function throws an error if not provided either both array-like objec
 		var y = array( zeros( x.length ), {
 			'dtype': 'generic'
 		});
-		map( x, y, naryFunction( abs, 1 ) );
+		map2Right( x, y, naryFunction( add, 2 ) );
 	}
 
 	function fcn2() {
@@ -231,7 +288,7 @@ tape( 'the function throws an error if not provided either both array-like objec
 		var y = array( zeros( x.length ), {
 			'dtype': 'generic'
 		});
-		map( x, y, naryFunction( abs, 1 ), {} );
+		map2Right( x, y, naryFunction( add, 2 ), {} );
 	}
 
 	function fcn3() {
@@ -239,7 +296,7 @@ tape( 'the function throws an error if not provided either both array-like objec
 			'dtype': 'generic'
 		});
 		var y = zeros( x.length );
-		map( x, y, naryFunction( abs, 1 ) );
+		map2Right( x, y, naryFunction( add, 2 ) );
 	}
 
 	function fcn4() {
@@ -247,26 +304,24 @@ tape( 'the function throws an error if not provided either both array-like objec
 			'dtype': 'generic'
 		});
 		var y = zeros( x.length );
-		map( x, y, naryFunction( abs, 1 ), {} );
+		map2Right( x, y, naryFunction( add, 2 ), {} );
 	}
 });
 
 tape( 'the function applies a function to array elements (array-like object)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = [ -1, -2, -3, -4, -5, -6 ];
-	out = zeros( arr.length );
+	x = [ 1, 2, 3, 4, 5, 6 ];
+	y = [ 1, 1, 1, 1, 1, 1 ];
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.end();
 });
@@ -274,21 +329,22 @@ tape( 'the function applies a function to array elements (array-like object)', f
 tape( 'the function applies a function to array elements (complex number array)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
 	var re;
 	var im;
+	var x;
+	var y;
+	var f;
 	var v;
 	var i;
 
-	arr = new Complex64Array( [ -1, -2, -3, -4, -5, -6 ] );
-	out = zeros( arr.length );
+	f = naryFunction( caddf, 2 );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, fcn );
+	x = new Complex64Array( [ 1, 2, 3, 4, 5, 6 ] );
+	y = new Complex64Array( [ 1, 1, 1, 1, 1, 1 ] );
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
-	for ( i = 0; i < arr.length; i++ ) {
+	for ( i = 0; i < x.length; i++ ) {
 		v = actual[ i ];
 		re = realf( v );
 		im = imagf( v );
@@ -296,34 +352,26 @@ tape( 'the function applies a function to array elements (complex number array)'
 		t.strictEqual( im, expected[ (i*2)+1 ], 'returns expected value' );
 	}
 	t.end();
-
-	function fcn( z ) {
-		var re = realf( z );
-		var im = imagf( z );
-		return new Complex64( abs( re ), abs( im ) );
-	}
 });
 
 tape( 'the function applies a function to array elements (ndarray)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic'
 	});
-	out = array( zeros( arr.length ), {
+	y = array( [ 1, 1, 1, 1, 1, 1 ], {
 		'dtype': 'generic'
 	});
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 	t.end();
 });
@@ -331,132 +379,218 @@ tape( 'the function applies a function to array elements (ndarray)', function te
 tape( 'the function applies a function to array elements (ndarray; broadcasting)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'row-major'
 	});
-	out = array( zeros( arr.length*2 ), {
+	y = ndarray( 'generic', [ 1 ], [], [ 0 ], 0, 'row-major' );
+
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
+
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, x.shape, 'returns expected value' );
+	t.deepEqual( actual.data, expected, 'returns expected value' );
+
+	x = ndarray( 'generic', [ 1 ], [], [ 0 ], 0, 'row-major' );
+	y = array( [ 1, 2, 3, 4, 5, 6 ], {
+		'dtype': 'generic',
+		'shape': [ 2, 3 ],
+		'order': 'row-major'
+	});
+
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
+
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, y.shape, 'returns expected value' );
+	t.deepEqual( actual.data, expected, 'returns expected value' );
+
+	x = array( [ 1, 1 ], {
+		'dtype': 'generic',
+		'shape': [ 2, 1 ],
+		'order': 'row-major'
+	});
+	y = array( [ 1, 2, 3 ], {
+		'dtype': 'generic',
+		'shape': [ 1, 3 ],
+		'order': 'row-major'
+	});
+
+	expected = [ 2, 3, 4, 2, 3, 4 ];
+	actual = map2Right( x, y, f );
+
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, [ 2, 3 ], 'returns expected value' );
+	t.deepEqual( actual.data, expected, 'returns expected value' );
+
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
+		'dtype': 'generic',
+		'shape': [ 2, 3 ],
+		'order': 'row-major'
+	});
+	y = array( zeros( x.length*2 ), {
 		'dtype': 'generic',
 		'shape': [ 2, 2, 3 ],
 		'order': 'row-major'
 	});
 
 	expected = [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, f );
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, y.shape, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	y = array( [ 1, 2, 3, 4, 5, 6 ], {
+		'dtype': 'generic',
+		'shape': [ 2, 3 ],
+		'order': 'row-major'
+	});
+	x = array( zeros( y.length*2 ), {
+		'dtype': 'generic',
+		'shape': [ 2, 2, 3 ],
+		'order': 'row-major'
+	});
+
+	expected = [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6 ];
+	actual = map2Right( x, y, f );
+
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, x.shape, 'returns expected value' );
+	t.deepEqual( actual.data, expected, 'returns expected value' );
+
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'column-major'
 	});
-	out = array( zeros( arr.length*2 ), {
+	y = array( zeros( x.length*2 ), {
 		'dtype': 'generic',
 		'shape': [ 2, 2, 3 ],
 		'order': 'column-major'
 	});
 
 	expected = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 ];
-	actual = map( arr, out, f );
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, y.shape, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	y = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'column-major'
 	});
-	out = array( zeros( arr.length*2 ), {
+	x = array( zeros( y.length*2 ), {
+		'dtype': 'generic',
+		'shape': [ 2, 2, 3 ],
+		'order': 'column-major'
+	});
+
+	expected = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 ];
+	actual = map2Right( x, y, f );
+
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, x.shape, 'returns expected value' );
+	t.deepEqual( actual.data, expected, 'returns expected value' );
+
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
+		'dtype': 'generic',
+		'shape': [ 2, 3 ],
+		'order': 'column-major'
+	});
+	y = array( zeros( x.length*2 ), {
 		'dtype': 'generic',
 		'shape': [ 2, 2, 3 ],
 		'order': 'row-major'
 	});
 
 	expected = [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 ];
-	actual = map( arr, out, f );
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, y.shape, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'row-major'
 	});
-	out = array( zeros( arr.length*2 ), {
+	y = array( zeros( x.length*2 ), {
 		'dtype': 'generic',
 		'shape': [ 2, 2, 3 ],
 		'order': 'column-major'
 	});
 
 	expected = [ 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, f );
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
+	t.strictEqual( actual.order, x.order, 'returns expected value' );
+	t.deepEqual( actual.shape, y.shape, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 
 	t.end();
 });
 
 tape( 'the function throws an error if provided ndarrays which are not broadcast compatible', function test( t ) {
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 6 ]
 	});
-	out = array( zeros( arr.length ), {
+	y = array( zeros( x.length ), {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'row-major'
 	});
 
-	t.throws( badValues( arr, out ), Error, 'throws an error' );
+	t.throws( badValues( x, y ), Error, 'throws an error' );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 6 ]
 	});
-	out = array( zeros( arr.length ), {
+	y = array( zeros( x.length ), {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'column-major'
 	});
 
-	t.throws( badValues( arr, out ), Error, 'throws an error' );
+	t.throws( badValues( x, y ), Error, 'throws an error' );
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic',
 		'shape': [ 3, 2 ],
 		'order': 'row-major'
 	});
-	out = array( zeros( arr.length ), {
+	y = array( zeros( x.length ), {
 		'dtype': 'generic',
 		'shape': [ 2, 3 ],
 		'order': 'column-major'
 	});
 
-	t.throws( badValues( arr, out ), Error, 'throws an error' );
+	t.throws( badValues( x, y ), Error, 'throws an error' );
 
 	t.end();
 
-	function badValues( arr, out ) {
+	function badValues( x, y ) {
 		return function fcn() {
-			map( arr, out, f );
+			map2Right( x, y, f );
 		};
 	}
 });
@@ -464,19 +598,17 @@ tape( 'the function throws an error if provided ndarrays which are not broadcast
 tape( 'the function applies a function to array elements (typed arrays)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = new Float64Array( [ -1, -2, -3, -4, -5, -6 ] );
-	out = new Float64Array( arr.length );
+	x = new Float64Array( [ 1, 2, 3, 4, 5, 6 ] );
+	y = new Float64Array( [ 1, 1, 1, 1, 1, 1 ] );
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, f );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.end();
 });
@@ -484,19 +616,17 @@ tape( 'the function applies a function to array elements (typed arrays)', functi
 tape( 'the function applies a function to array elements (empty array)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = [];
-	out = [];
-
+	x = [];
+	y = [];
 	expected = [];
-	actual = map( arr, out, f );
+	actual = map2Right( x, y, f );
 
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.end();
 });
@@ -504,19 +634,17 @@ tape( 'the function applies a function to array elements (empty array)', functio
 tape( 'the function applies a function to array elements (zero-dimensional ndarray)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = ndarray( 'generic', [ -1 ], [], [ 0 ], 0, 'row-major' );
-	out = ndarray( 'generic', [ 0 ], [], [ 0 ], 0, 'row-major' );
+	x = ndarray( 'generic', [ 1 ], [], [ 0 ], 0, 'row-major' );
+	y = ndarray( 'generic', [ 1 ], [], [ 0 ], 0, 'row-major' );
+	expected = [ 2 ];
+	actual = map2Right( x, y, f );
 
-	expected = [ 1 ];
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 	t.end();
 });
@@ -524,19 +652,17 @@ tape( 'the function applies a function to array elements (zero-dimensional ndarr
 tape( 'the function applies a function to array elements (empty ndarray)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = ndarray( 'generic', [ -1, -2, -3, -4 ], [ 2, 1, 2 ], [ 2, 2, 1 ], 0, 'row-major' );
-	out = ndarray( 'generic', [ 0, 0, 0, 0 ], [ 2, 0, 2 ], [ 0, 2, 1 ], 0, 'row-major' );
+	x = ndarray( 'generic', [], [ 2, 0, 2 ], [ 0, 2, 1 ], 0, 'row-major' );
+	y = ndarray( 'generic', [], [ 2, 0, 2 ], [ 0, 2, 1 ], 0, 'row-major' );
+	expected = [];
+	actual = map2Right( x, y, f );
 
-	expected = [ 0, 0, 0, 0 ];
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 	t.end();
 });
@@ -544,116 +670,139 @@ tape( 'the function applies a function to array elements (empty ndarray)', funct
 tape( 'the function applies a function to array elements (empty typed array)', function test( t ) {
 	var expected;
 	var actual;
-	var arr;
-	var out;
+	var x;
+	var y;
 	var f;
 
-	f = naryFunction( abs, 1 );
+	f = naryFunction( add, 2 );
 
-	arr = new Float64Array( [] );
-	out = new Float64Array( [] );
+	x = new Float64Array( [] );
+	y = new Float64Array( [] );
+	expected = [];
+	actual = map2Right( x, y, f );
 
-	expected = new Float64Array( [] );
-	actual = map( arr, out, f );
-
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.end();
 });
 
-tape( 'the function invokes an applied function with three arguments (array-like object)', function test( t ) {
+tape( 'the function invokes an applied function with five arguments (array-like object)', function test( t ) {
 	var expected;
 	var actual;
-	var values;
-	var arrays;
+	var xarrs;
+	var yarrs;
+	var xvals;
+	var yvals;
 	var nargs;
 	var idx;
-	var arr;
-	var out;
+	var x;
+	var y;
 
-	arr = [ -1, -2, -3, -4, -5, -6 ];
-	out = zeros( arr.length );
+	x = [ 1, 2, 3, 4, 5, 6 ];
+	y = [ 1, 1, 1, 1, 1, 1 ];
 
 	nargs = [];
-	values = [];
+	xvals = [];
+	yvals = [];
 	idx = [];
-	arrays = [];
+	xarrs = [];
+	yarrs = [];
 
-	actual = map( arr, out, fcn );
+	actual = map2Right( x, y, fcn );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
+	expected = [ 2, 3, 4, 5, 6, 7 ];
 	t.deepEqual( actual, expected, 'returns expected value' );
 
-	expected = [ -1, -2, -3, -4, -5, -6 ];
-	t.deepEqual( values, expected, 'returns expected value' );
+	expected = [ 6, 5, 4, 3, 2, 1 ];
+	t.deepEqual( xvals, expected, 'returns expected value' );
 
-	expected = [ 0, 1, 2, 3, 4, 5 ];
+	expected = [ 1, 1, 1, 1, 1, 1 ];
+	t.deepEqual( yvals, expected, 'returns expected value' );
+
+	expected = [ 5, 4, 3, 2, 1, 0 ];
 	t.deepEqual( idx, expected, 'returns expected value' );
 
-	expected = [ arr, arr, arr, arr, arr, arr ];
-	t.deepEqual( arrays, expected, 'returns expected value' );
+	expected = [ x, x, x, x, x, x ];
+	t.deepEqual( xarrs, expected, 'returns expected value' );
 
-	expected = [ 3, 3, 3, 3, 3, 3 ];
+	expected = [ y, y, y, y, y, y ];
+	t.deepEqual( yarrs, expected, 'returns expected value' );
+
+	expected = [ 5, 5, 5, 5, 5, 5 ];
 	t.deepEqual( nargs, expected, 'returns expected value' );
 
 	t.end();
 
-	function fcn( v, i, arr ) {
+	function fcn( v1, v2, i, x, y ) {
 		nargs.push( arguments.length );
-		values.push( v );
+		xvals.push( v1 );
+		yvals.push( v2 );
 		idx.push( i );
-		arrays.push( arr );
-		return abs( v );
+		xarrs.push( x );
+		yarrs.push( y );
+		return add( v1, v2 );
 	}
 });
 
 tape( 'the function invokes an applied function with three arguments (ndarray)', function test( t ) {
 	var expected;
 	var actual;
-	var values;
-	var arrays;
+	var xarrs;
+	var yarrs;
+	var xvals;
+	var yvals;
 	var nargs;
 	var idx;
-	var arr;
-	var out;
+	var x;
+	var y;
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic'
 	});
-	out = array( zeros( arr.length ), {
+	y = array( [ 1, 1, 1, 1, 1, 1 ], {
 		'dtype': 'generic'
 	});
 
 	nargs = [];
-	values = [];
+	nargs = [];
+	xvals = [];
+	yvals = [];
 	idx = [];
-	arrays = [];
+	xarrs = [];
+	yarrs = [];
 
-	actual = map( arr, out, fcn );
+	actual = map2Right( x, y, fcn );
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
+	expected = [ 2, 3, 4, 5, 6, 7 ];
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 
-	expected = [ -1, -2, -3, -4, -5, -6 ];
-	t.deepEqual( values, expected, 'returns expected value' );
+	expected = [ 6, 5, 4, 3, 2, 1 ];
+	t.deepEqual( xvals, expected, 'returns expected value' );
 
-	expected = [ 0, 1, 2, 3, 4, 5 ];
+	expected = [ 1, 1, 1, 1, 1, 1 ];
+	t.deepEqual( yvals, expected, 'returns expected value' );
+
+	expected = [ 5, 4, 3, 2, 1, 0 ];
 	t.deepEqual( idx, expected, 'returns expected value' );
 
-	expected = [ arr, arr, arr, arr, arr, arr ];
-	t.deepEqual( arrays, expected, 'returns expected value' );
+	expected = [ x, x, x, x, x, x ];
+	t.deepEqual( xarrs, expected, 'returns expected value' );
 
-	expected = [ 3, 3, 3, 3, 3, 3 ];
+	expected = [ y, y, y, y, y, y ];
+	t.deepEqual( yarrs, expected, 'returns expected value' );
+
+	expected = [ 5, 5, 5, 5, 5, 5 ];
 	t.deepEqual( nargs, expected, 'returns expected value' );
 
 	t.end();
 
-	function fcn( v, i, arr ) {
+	function fcn( v1, v2, i, x, y ) {
 		nargs.push( arguments.length );
-		values.push( v );
+		xvals.push( v1 );
+		yvals.push( v2 );
 		idx.push( i );
-		arrays.push( arr );
-		return abs( v );
+		xarrs.push( x );
+		yarrs.push( y );
+		return add( v1, v2 );
 	}
 });
 
@@ -661,28 +810,27 @@ tape( 'the function supports providing a `this` context (array-like object)', fu
 	var expected;
 	var actual;
 	var ctx;
-	var arr;
-	var out;
+	var x;
+	var y;
 
-	arr = [ -1, -2, -3, -4, -5, -6 ];
-	out = zeros( arr.length );
+	x = [ 1, 2, 3, 4, 5, 6 ];
+	y = [ 1, 1, 1, 1, 1, 1 ];
 
 	ctx = {
 		'count': 0
 	};
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, fcn, ctx );
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, fcn, ctx );
 
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual, expected, 'returns expected value' );
 	t.strictEqual( ctx.count, 6, 'returns expected value' );
 
 	t.end();
 
-	function fcn( v ) {
+	function fcn( v1, v2 ) {
 		this.count += 1; // eslint-disable-line no-invalid-this
-		return abs( v );
+		return add( v1, v2 );
 	}
 });
 
@@ -690,13 +838,13 @@ tape( 'the function supports providing a `this` context (ndarray)', function tes
 	var expected;
 	var actual;
 	var ctx;
-	var arr;
-	var out;
+	var x;
+	var y;
 
-	arr = array( [ -1, -2, -3, -4, -5, -6 ], {
+	x = array( [ 1, 2, 3, 4, 5, 6 ], {
 		'dtype': 'generic'
 	});
-	out = array( zeros( arr.length ), {
+	y = array( [ 1, 1, 1, 1, 1, 1 ], {
 		'dtype': 'generic'
 	});
 
@@ -704,17 +852,16 @@ tape( 'the function supports providing a `this` context (ndarray)', function tes
 		'count': 0
 	};
 
-	expected = [ 1, 2, 3, 4, 5, 6 ];
-	actual = map( arr, out, fcn, ctx );
+	expected = [ 2, 3, 4, 5, 6, 7 ];
+	actual = map2Right( x, y, fcn, ctx );
 
-	t.strictEqual( actual, out, 'returns expected value' );
 	t.deepEqual( actual.data, expected, 'returns expected value' );
 	t.strictEqual( ctx.count, 6, 'returns expected value' );
 
 	t.end();
 
-	function fcn( v ) {
+	function fcn( v1, v2 ) {
 		this.count += 1; // eslint-disable-line no-invalid-this
-		return abs( v );
+		return add( v1, v2 );
 	}
 });

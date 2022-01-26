@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# map2
+# map2Right
 
-> Apply a function to elements in two input arrays and assign the results to an output array.
+> Apply a function to elements in two input arrays while iterating from right to left and assign the results to an output array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,14 +37,14 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var map2 = require( '@stdlib/utils/map2' );
+var map2Right = require( '@stdlib/utils/map2-right' );
 ```
 
-<a name="fcn-map2"></a>
+<a name="fcn-map2-right"></a>
 
-#### map2( x, y, fcn\[, thisArg] )
+#### map2Right( x, y, fcn\[, thisArg] )
 
-Applies a function to elements in two input arrays and assigns the results to a new array.
+Applies a function to elements in two input arrays while iterating from right to left and assigns the results to a new array.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -53,7 +53,7 @@ var add = require( '@stdlib/math/base/ops/add' );
 var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
 
-var out = map2( x, y, naryFunction( add, 2 ) );
+var out = map2Right( x, y, naryFunction( add, 2 ) );
 // returns [ 2, 3, 4, 5, 6, 7 ]
 ```
 
@@ -70,7 +70,7 @@ var opts = {
 var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
 var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
 
-var out = map2( x, y, naryFunction( add, 2 ) );
+var out = map2Right( x, y, naryFunction( add, 2 ) );
 // returns <ndarray>
 
 var v = out.get( 1, 1 );
@@ -104,18 +104,18 @@ var ctx = {
     'count': 0
 };
 
-var out = map2( x, y, fcn, ctx );
+var out = map2Right( x, y, fcn, ctx );
 // returns [ 2, 3, 4, 5, 6, 7 ]
 
 var cnt = ctx.count;
 // returns 6
 ```
 
-<a name="method-map2-assign"></a>
+<a name="method-map2-right-assign"></a>
 
-#### map2.assign( x, y, out, fcn\[, thisArg] )
+#### map2Right.assign( x, y, out, fcn\[, thisArg] )
 
-Applies a function to elements in two input arrays and assigns the results to an output array `z`.
+Applies a function to elements in two input arrays while iterating from right to left and assigns the results to an output array `z`.
 
 ```javascript
 var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -125,7 +125,7 @@ var x = [ 1, 2, 3, 4, 5, 6 ];
 var y = [ 1, 1, 1, 1, 1, 1 ];
 var out = [ 0, 0, 0, 0, 0, 0 ];
 
-map2.assign( x, y, out, naryFunction( add, 2 ) );
+map2Right.assign( x, y, out, naryFunction( add, 2 ) );
 
 console.log( out );
 // => [ 2, 3, 4, 5, 6, 7 ]
@@ -146,7 +146,7 @@ var x = array( [ [ 1, 2, 3 ], [ 4, 5, 6 ] ], opts );
 var y = array( [ [ 1, 1, 1 ], [ 1, 1, 1 ] ], opts );
 var out = array( opts );
 
-map2.assign( x, y, out, naryFunction( add, 2 ) );
+map2Right.assign( x, y, out, naryFunction( add, 2 ) );
 
 var v = out.get( 1, 1 );
 // returns 6
@@ -174,7 +174,7 @@ opts = {
 };
 var out = array( opts );
 
-map2.assign( x, y, out, naryFunction( add, 2 ) );
+map2Right.assign( x, y, out, naryFunction( add, 2 ) );
 
 var v = out.get( 0, 1, 1 );
 // returns 6
@@ -185,7 +185,7 @@ v = out.get( 1, 1, 1 );
 
 In general, avoid providing output [`ndarray`][@stdlib/ndarray/ctor]-like objects which are [non-contiguous][@stdlib/ndarray/base/assert/is-contiguous] views containing one or more elements referring to the **same** memory location. Writing to an overlapping [non-contiguous][@stdlib/ndarray/base/assert/is-contiguous] view is likely to simultaneously affect multiple elements and yield unexpected results.
 
-The applied function is provided the same arguments as with [`map2`](#fcn-map2).
+The applied function is provided the same arguments as with [`map2Right`](#fcn-map2-right).
 
 </section>
 
@@ -197,11 +197,11 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
 
 ## Notes
 
--   The [`map2`](#fcn-map2) function **always** returns an output value having a "generic" data type. For example, if provided array-like objects, the function returns a generic `array`. If provided [`ndarrays`][@stdlib/ndarray/ctor], the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a "generic" data type.
+-   The [`map2Right`](#fcn-map2-right) function **always** returns an output value having a "generic" data type. For example, if provided array-like objects, the function returns a generic `array`. If provided [`ndarrays`][@stdlib/ndarray/ctor], the function returns an [`ndarray`][@stdlib/ndarray/ctor] having a "generic" data type.
 
-    Accordingly, when provided a typed array, the [`map2`](#fcn-map2) function does **not** return a typed array of the same type. To assign results to a typed array, use the [`map2.assign`](#method-map2-assign) method.
+    Accordingly, when provided a typed array, the [`map2Right`](#fcn-map2-right) function does **not** return a typed array of the same type. To assign results to a typed array, use the [`map2Right.assign`](#method-map2-right-assign) method.
 
--   Both [`map2`](#fcn-map2) and [`map2.assign`](#method-map2-assign) accept array-like objects exposing getters and setters for array element access (e.g., [`Complex64Array`][@stdlib/array/complex64], [`Complex128Array`][@stdlib/array/complex128], etc).
+-   Both [`map2Right`](#fcn-map2-right) and [`map2Right.assign`](#method-map2-right-assign) accept array-like objects exposing getters and setters for array element access (e.g., [`Complex64Array`][@stdlib/array/complex64], [`Complex128Array`][@stdlib/array/complex128], etc).
 
     ```javascript
     var naryFunction = require( '@stdlib/utils/nary-function' );
@@ -215,7 +215,7 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
     var y = new Complex64Array( [ 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0 ] );
     var z = new Complex64Array( 4 );
 
-    map2.assign( x, y, z, naryFunction( add, 2 ) );
+    map2Right.assign( x, y, z, naryFunction( add, 2 ) );
 
     var v = z.get( 0 );
 
@@ -228,7 +228,7 @@ The applied function is provided the same arguments as with [`map2`](#fcn-map2).
 
 -   When applying a function to [`ndarray`][@stdlib/ndarray/ctor]-like objects, performance will be best for [`ndarray`][@stdlib/ndarray/ctor]-like objects which are single-segment contiguous. For non-contiguous arrays, see [`@stdlib/ndarray/base/binary`][@stdlib/ndarray/base/binary].
 
--   Both [`map2`](#fcn-map2) and [`map2.assign`](#method-map2-assign) do **not** skip `undefined` elements.
+-   Both [`map2Right`](#fcn-map2-right) and [`map2Right.assign`](#method-map2-right-assign) do **not** skip `undefined` elements.
 
 </section>
 
@@ -248,7 +248,7 @@ var discreteUniform = require( '@stdlib/random/base/discrete-uniform' ).factory;
 var naryFunction = require( '@stdlib/utils/nary-function' );
 var add = require( '@stdlib/math/base/ops/add' );
 var array = require( '@stdlib/ndarray/array' );
-var map2 = require( '@stdlib/utils/map2' );
+var map2Right = require( '@stdlib/utils/map2-right' );
 
 function fill( i ) {
     var rand = discreteUniform( -10*(i+1), 10*(i+1) );
@@ -267,7 +267,7 @@ var y = array( filledarrayBy( 10, opts.dtype, fill ), opts );
 var f = naryFunction( add, 2 );
 
 // Compute element-wise sums...
-var z = map2( x, y, f );
+var z = map2Right( x, y, f );
 
 console.log( 'x:' );
 console.log( x.data );
