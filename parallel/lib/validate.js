@@ -76,13 +76,13 @@ function validate( opts, options ) {
 	if ( hasOwnProp( options, 'cmd' ) ) {
 		opts.cmd = options.cmd;
 		if ( !isString( opts.cmd ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a string primitive. Option: `%s`.', 'cmd', opts.cmd ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a string. Option: `%s`.', 'cmd', opts.cmd ) );
 		}
 	}
 	if ( hasOwnProp( options, 'ordered' ) ) {
 		opts.ordered = options.ordered;
 		if ( !isBoolean( opts.ordered ) ) {
-			return new TypeError( format( 'invalid option. `%s` option must be a boolean primitive. Option: `%s`.', 'ordered', opts.ordered ) );
+			return new TypeError( format( 'invalid option. `%s` option must be a boolean. Option: `%s`.', 'ordered', opts.ordered ) );
 		}
 	}
 	if ( hasOwnProp( options, 'uid' ) ) {
