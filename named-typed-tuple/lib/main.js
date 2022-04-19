@@ -105,7 +105,7 @@ function factory( names, options ) { // eslint-disable-line max-lines-per-functi
 	nfields = fields.length;
 	for ( i = 0; i < nfields; i++ ) {
 		if ( contains( RESERVED_PROPS, fields[ i ] ) ) {
-			throw new Error( 'invalid argument. Provided field name is reserved. Name: `' + fields[ i ] + '`.' );
+			throw new Error( format( 'invalid argument. Provided field name is reserved. Name: `%s`.', fields[ i ] ) );
 		}
 	}
 	opts = {
@@ -169,7 +169,7 @@ function factory( names, options ) { // eslint-disable-line max-lines-per-functi
 			tuple = typedarray( arguments[ 0 ], arguments[ 1 ], nfields, arguments[ 2 ] );
 		}
 		if ( tuple.length !== nfields ) {
-			throw new RangeError( 'invalid arguments. Arguments are incompatible with number of tuple fields. Number of fields: `' + nfields + '`. Number of data elements: `' + tuple.length + '`.' );
+			throw new RangeError( format( 'invalid arguments. Arguments are incompatible with number of tuple fields. Number of fields: `%u`. Number of data elements: `%u`.', nfields, tuple.length ) );
 		}
 		dtype = getDtype( tuple );
 
@@ -1273,7 +1273,7 @@ function factory( names, options ) { // eslint-disable-line max-lines-per-functi
 			}
 			if ( isCollection( src ) ) {
 				if ( src.length !== nfields ) {
-					throw new RangeError( 'invalid argument. Source is incompatible with number of tuple fields. Number of fields: `' + nfields + '`. Source length: `' + src.length + '`.' );
+					throw new RangeError( format( 'invalid argument. Source is incompatible with number of tuple fields. Number of fields: `%u`. Source length: `%u`.', nfields, src.length ) );
 				}
 				tuple = namedtypedtuple( nfields, opts.dtype );
 				if ( clbk ) {
@@ -1288,7 +1288,7 @@ function factory( names, options ) { // eslint-disable-line max-lines-per-functi
 			} else if ( isObject( src ) && HAS_ITERATOR_SYMBOL && isFunction( src[ ITERATOR_SYMBOL ] ) ) {
 				it = src[ ITERATOR_SYMBOL ]();
 				if ( !isFunction( it.next ) ) {
-					throw new TypeError( 'invalid argument. First argument must be an array-like object or an iterable.' );
+					throw new TypeError( format( 'invalid argument. First argument must be an array-like object or an iterable. Value: `%s`.', src ) );
 				}
 				if ( clbk ) {
 					tmp = fromIteratorMap( fields, it, clbk, thisArg );
@@ -1388,7 +1388,7 @@ function factory( names, options ) { // eslint-disable-line max-lines-per-functi
 				throw new TypeError( 'invalid invocation. `this` is not the host tuple factory.' );
 			}
 			if ( arguments.length !== nfields ) {
-				throw new RangeError( 'invalid invocation. Number of arguments incompatible with number of tuple fields. Number of fields: `' + nfields + '`. Number of arguments: `' + arguments.length + '`.' );
+				throw new RangeError( format( 'invalid invocation. Number of arguments incompatible with number of tuple fields. Number of fields: `%u`. Number of arguments: `%u`.', nfields, arguments.length ) );
 			}
 			args = [];
 			for ( i = 0; i < arguments.length; i++ ) {
