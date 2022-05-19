@@ -91,13 +91,13 @@ function uncurry( fcn, arity, thisArg ) {
 		f = fcn;
 		if ( len ) {
 			if ( len > arguments.length ) {
-				throw new Error( format( 'insufficient input arguments. Expected %u argument(s) and only received %u argument(s).', len, arguments.length ) );
+				throw new Error( format( 'insufficient arguments. Expected %u argument(s) and only received %u argument(s).', len, arguments.length ) );
 			}
 			for ( i = 0; i < len; i++ ) {
 				if ( isFunction( f ) ) {
 					f = f.call( context, arguments[ i ] );
 				} else {
-					throw new Error( format( 'invalid invocation. The configured arity exceeds the number of possible curried function invocations. Expected: %u. Actual: %u.', len, i ) );
+					throw new Error( format( 'invalid invocation. The configured arity exceeds the number of possible curried function invocations. Expected: `%u`. Actual: `%u`.', len, i ) );
 				}
 			}
 			return f;
@@ -106,7 +106,7 @@ function uncurry( fcn, arity, thisArg ) {
 			if ( isFunction( f ) ) {
 				f = f.call( context, arguments[ i ] );
 			} else {
-				throw new Error( format( 'invalid invocation. Number of arguments exceeds the number of possible curried function invocations. Expected: %u. Actual: %u.', arguments.length, i ) );
+				throw new Error( format( 'invalid invocation. Number of arguments exceeds the number of possible curried function invocations. Expected: `%u`. Actual: `%u`.', arguments.length, i ) );
 			}
 		}
 		return f;

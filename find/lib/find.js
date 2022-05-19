@@ -26,7 +26,13 @@ var isObject = require( '@stdlib/assert/is-plain-object' );
 var isString = require( '@stdlib/assert/is-string' ).isPrimitive;
 var isCollection = require( '@stdlib/assert/is-collection' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var indexOf = require( './../../index-of' );
 var format = require( '@stdlib/string/format' );
+
+
+// VARIABLES //
+
+var RETURNS = [ 'values', 'indices', '*' ];
 
 
 // MAIN //
@@ -104,7 +110,6 @@ var format = require( '@stdlib/string/format' );
 * }
 */
 function find( arr, options, clbk ) { // eslint-disable-line stdlib/no-redeclare
-	var returns;
 	var count;
 	var mode;
 	var opts;
@@ -117,7 +122,6 @@ function find( arr, options, clbk ) { // eslint-disable-line stdlib/no-redeclare
 	var v;
 
 	mode = 0;
-	returns = [ 'values', 'indices', '*' ];
 
 	if ( !isCollection( arr ) && !isString( arr ) ) {
 		throw new TypeError( format( 'invalid argument. Must provide an array-like object. Value: `%s`.', arr ) );
@@ -139,15 +143,15 @@ function find( arr, options, clbk ) { // eslint-disable-line stdlib/no-redeclare
 	if ( hasOwnProp( opts, 'k' ) ) {
 		k = opts.k;
 		if ( !isInteger( k ) ) {
-			throw new TypeError( format( 'invalid argument. `k` must be an integer. Value: `%s`.', k ) );
+			throw new TypeError( format( 'invalid option. `%s` option must be an integer. Option: `%s`.', 'k', k ) );
 		}
 	} else {
 		k = len;
 	}
 	if ( hasOwnProp( opts, 'returns' ) ) {
 		ret = opts.returns;
-		if ( !isString( ret ) || returns.indexOf( ret ) === -1 ) {
-			throw new TypeError( format( 'invalid argument. `returns` option must be a string and have one of the following values: `values`, `indices`, `all`. Value: `%s`.', ret ) );
+		if ( !isString( ret ) || indexOf( RETURNS, ret ) === -1 ) {
+			throw new TypeError( format( 'invalid option. `%s` option must be one of the following: "%s". Option: `%s`.', 'returns', RETURNS.join( '", "' ), ret ) );
 		}
 		if ( ret === 'values' ) {
 			mode = 1;
