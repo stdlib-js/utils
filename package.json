@@ -43,6 +43,7 @@
     "@stdlib/cli": "github:stdlib-js/cli#main",
     "@stdlib/constants": "github:stdlib-js/constants#main",
     "@stdlib/fs": "github:stdlib-js/fs#main",
+    "@stdlib/function": "github:stdlib-js/function#main",
     "@stdlib/math": "github:stdlib-js/math#main",
     "@stdlib/ndarray": "github:stdlib-js/ndarray#main",
     "@stdlib/os": "github:stdlib-js/os#main",
