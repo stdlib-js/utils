@@ -191,7 +191,7 @@ setReadOnly( Parser.prototype, '_push', function push( ch ) {
 	this._cursor += 1;
 
 	// Only expand the internal buffer if we've run out of previously allocated memory...
-	if ( this._cursor > buf.length ) {
+	if ( this._cursor >= buf.length ) {
 		buf.push( ch );
 		debug( 'Internal buffer size increased. Length: %d.', buf.length );
 	} else {
@@ -474,8 +474,8 @@ setReadOnly( Parser.prototype, '_onCommentedRow', function onCommentedRow() {
 		if ( this._trimComment ) {
 			// FIXME: trim the leading and trailing whitespace (e.g., using @stdlib/string/base/trim)
 		}
-		this._onComment( v );
-		debug( 'Comment: %s', v );
+		this._onComment( v, this._line );
+		debug( 'New comment. Line: %d. Value: %s', this._line, v );
 	}
 	// Increment the counter for how many lines have been processed:
 	this._line += 1;
