@@ -323,7 +323,9 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`constructorName( value )`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
 -   <span class="signature">[`convertPath( from, to )`][@stdlib/utils/convert-path]</span><span class="delimiter">: </span><span class="description">convert between POSIX and Windows paths.</span>
 -   <span class="signature">[`copy( value[, level] )`][@stdlib/utils/copy]</span><span class="delimiter">: </span><span class="description">copy or deep clone a value to an arbitrary depth.</span>
+-   <span class="signature">[`decorateAfter( fcn, arity, after[, thisArg] )`][@stdlib/utils/decorate-after]</span><span class="delimiter">: </span><span class="description">decorate a provided function such that the function's return value is provided as an argument to another function.</span>
 -   <span class="signature">[`dirname( path )`][@stdlib/utils/dirname]</span><span class="delimiter">: </span><span class="description">return a directory name.</span>
+-   <span class="signature">[`dsv`][@stdlib/utils/dsv]</span><span class="delimiter">: </span><span class="description">utilities for working with data formatted as delimiter-separated values (DSV).</span>
 -   <span class="signature">[`rescape( str )`][@stdlib/utils/escape-regexp-string]</span><span class="delimiter">: </span><span class="description">escape a regular expression string or pattern.</span>
 -   <span class="signature">[`evil( str )`][@stdlib/utils/eval]</span><span class="delimiter">: </span><span class="description">alias for `eval` global.</span>
 -   <span class="signature">[`extname( filename )`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
@@ -354,6 +356,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`safeintmax( dtype )`][@stdlib/utils/safe-int-max]</span><span class="delimiter">: </span><span class="description">return the maximum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`safeintmin( dtype )`][@stdlib/utils/safe-int-min]</span><span class="delimiter">: </span><span class="description">return the minimum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`sizeOf( dtype )`][@stdlib/utils/size-of]</span><span class="delimiter">: </span><span class="description">return the size (in bytes) of the canonical binary representation of a specified numeric type.</span>
+-   <span class="signature">[`thunk( fcn[, ...args] )`][@stdlib/utils/thunk]</span><span class="delimiter">: </span><span class="description">generate a thunk.</span>
 -   <span class="signature">[`timeit( code, [options,] clbk )`][@stdlib/utils/timeit]</span><span class="delimiter">: </span><span class="description">time a snippet.</span>
 -   <span class="signature">[`typemax( dtype )`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 -   <span class="signature">[`typemin( dtype )`][@stdlib/utils/type-min]</span><span class="delimiter">: </span><span class="description">return the minimum value of a specified numeric type.</span>
@@ -473,7 +476,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
 
+[@stdlib/utils/decorate-after]: https://github.com/stdlib-js/utils/tree/main/decorate-after
+
 [@stdlib/utils/dirname]: https://github.com/stdlib-js/utils/tree/main/dirname
+
+[@stdlib/utils/dsv]: https://github.com/stdlib-js/utils/tree/main/dsv
 
 [@stdlib/utils/escape-regexp-string]: https://github.com/stdlib-js/utils/tree/main/escape-regexp-string
 
@@ -534,6 +541,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils/tree/main/safe-int-min
 
 [@stdlib/utils/size-of]: https://github.com/stdlib-js/utils/tree/main/size-of
+
+[@stdlib/utils/thunk]: https://github.com/stdlib-js/utils/tree/main/thunk
 
 [@stdlib/utils/timeit]: https://github.com/stdlib-js/utils/tree/main/timeit
 
