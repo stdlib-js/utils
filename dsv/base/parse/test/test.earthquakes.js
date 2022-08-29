@@ -26,7 +26,7 @@ var Parser = require( './../lib' );
 
 // FIXTURES //
 
-var fixture = require( './fixtures/custom_quote.json' );
+var fixture = require( './fixtures/earthquakes.json' );
 
 
 // TESTS //
@@ -37,17 +37,11 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the parser successfully parses DSV containing a custom quote', function test( t ) {
-	var expected;
+tape( 'the parser successfully parses complex DSV', function test( t ) {
 	var flg;
 	var p;
-	var i;
-
-	expected = fixture.json;
-	i = 0;
 
 	p = new Parser({
-		'quote': '\'',
 		'newline': '\n',
 		'onRow': onRow,
 		'onClose': onClose
@@ -56,8 +50,7 @@ tape( 'the parser successfully parses DSV containing a custom quote', function t
 
 	function onRow( record, row ) {
 		flg = true;
-		t.deepEqual( record, expected[ i ], 'returns expected value. Row: '+row+'.' );
-		i += 1;
+		t.ok( true, 'parses row '+row+'. record: | '+record.join( ' | ' )+' |' );
 	}
 
 	function onClose() {

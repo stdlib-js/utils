@@ -26,7 +26,7 @@ var Parser = require( './../lib' );
 
 // FIXTURES //
 
-var fixture = require( './fixtures/custom_quote.json' );
+var fixture = require( './fixtures/custom_quoted_field_with_escape.json' );
 
 
 // TESTS //
@@ -37,7 +37,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the parser successfully parses DSV containing a custom quote', function test( t ) {
+tape( 'the parser successfully parses DSV containing a custom quoted field containing an escape', function test( t ) {
 	var expected;
 	var flg;
 	var p;
@@ -48,6 +48,8 @@ tape( 'the parser successfully parses DSV containing a custom quote', function t
 
 	p = new Parser({
 		'quote': '\'',
+		'doublequote': false,
+		'escape': '\\',
 		'newline': '\n',
 		'onRow': onRow,
 		'onClose': onClose
