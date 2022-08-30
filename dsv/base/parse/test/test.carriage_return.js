@@ -26,7 +26,7 @@ var Parser = require( './../lib' );
 
 // FIXTURES //
 
-var fixture = require( './fixtures/comment_sequence.json' );
+var fixture = require( './fixtures/carriage_return.json' );
 
 
 // TESTS //
@@ -37,49 +37,30 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'the parser successfully parses DSV containing comment sequences', function test( t ) {
+tape( 'the parser successfully parses DSV containing carriage return row separators', function test( t ) {
 	var expected;
-	var comments;
-	var flg1;
-	var flg2;
+	var flg;
 	var p;
 	var i;
-	var j;
 
 	expected = fixture.json;
 	i = 0;
 
-	comments = [
-		'comment 1',
-		'comment 2',
-		'comment 3'
-	];
-	j = 0;
-
 	p = new Parser({
-		'newline': '\n',
-		'comment': '##$$@@ ',
-		'trimComment': false,
+		'newline': '\r',
 		'onRow': onRow,
-		'onComment': onComment,
 		'onClose': onClose
 	});
 	p.next( fixture.dsv ).close();
 
 	function onRow( record, row ) {
-		flg1 = true;
+		flg = true;
 		t.deepEqual( record, expected[ i ], 'returns expected value. Row: '+row+'.' );
 		i += 1;
 	}
 
-	function onComment( str, line ) {
-		flg2 = true;
-		t.strictEqual( str, comments[ j ], 'returns expected value. Line: '+line+'.' );
-		j += 1;
-	}
-
 	function onClose() {
-		t.ok( flg1 && flg2, 'parses rows' );
+		t.ok( flg, 'parses rows' );
 		t.end();
 	}
 });
