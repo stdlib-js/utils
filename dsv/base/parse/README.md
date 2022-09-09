@@ -77,7 +77,7 @@ The constructor accepts the following `options`:
 
 -   **escape**: character sequence for escaping character sequences having special meaning (i.e., the delimiter, newline, and escape sequences outside of quoted fields; the comment sequence at the beginning of a record and outside of a quoted field; and the quote sequence inside a quoted field when `doublequote` is `false`). Default: `''`.
 
--   **ltrim**: `boolean` indicating whether to trim leading whitepsace from field values. If `false`, the parser does not trim leading whitespace (e.g., `a, b, c` parses as `[ 'a', ' b', ' c' ]`).  If `true`, the parser does trim leading whitespace (e.g., `a, b, c` parses as `[ 'a', 'b', 'c' ]`). Default: `false`.
+-   **ltrim**: `boolean` indicating whether to trim leading whitepsace from field values. If `false`, the parser does not trim leading whitespace (e.g., `a, b, c` parses as `[ 'a', ' b', ' c' ]`).  If `true`, the parser trims leading whitespace (e.g., `a, b, c` parses as `[ 'a', 'b', 'c' ]`). Default: `false`.
 
 -   **newline**: character sequence separating rows. Default: `'\r\n'` (see [RFC 4180][rfc-4180]).
 
@@ -100,11 +100,11 @@ The constructor accepts the following `options`:
 
 -   **onError**: callback to be invoked upon encountering an unrecoverable parse error. By default, upon encountering a parse error, the parser throws an `Error`. When provided an error callback, the parser does **not** throw and, instead, invokes the provided callback. The callback is invoked with the following arguments:
 
-    -   **err**: an `Error` object.
+    -   **error**: an `Error` object.
 
 -   **onRow**: callback to be invoked upon processing a record. The callback is invoked with the following arguments:
 
-    -   **record**: an array-like object containing fields values. If provided a `rowBuffer`, the `record` argument will be the **same** array-like object for each invocation.
+    -   **record**: an array-like object containing field values. If provided a `rowBuffer`, the `record` argument will be the **same** array-like object for each invocation.
     -   **row**: row number (zero-based).
     -   **ncols**: number of fields (columns).
 
@@ -115,7 +115,7 @@ The constructor accepts the following `options`:
 
 -   **onWarn**: when `strict` is `false`, a callback to be invoked upon encountering invalid DSV. The callback is invoked with the following arguments:
 
-    -   **err**: an `Error` object.
+    -   **error**: an `Error` object.
 
 -   **quote**: character sequence demarcating the beginning and ending of a quoted field. When `quoting` is `false`, a quote character sequence has no special meaning and is processed as normal text. Default: `'"'`.
 
@@ -123,7 +123,7 @@ The constructor accepts the following `options`:
 
 -   **rowBuffer**: array-like object for the storing field values of the most recently processed record. When provided, the row buffer is **reused** and is provided to the `onRow` callback for each processed record. If a provided row buffer is a generic array, the parser grows the buffer as needed. If a provided row buffer is a typed array, the buffer size is fixed, and, thus, needs to be large enough to accommodate processed fields. Providing a fixed length array is appropriate when the number of fields is known prior to parsing. When the number of fields is unknown, providing a fixed length array may still be appropriate; however, one is advised to allocate a buffer having more elements than is reasonably expected in order to avoid buffer overflow.
 
--   **rtrim**: `boolean` indicating whether to trim trailing whitepsace from field values. If `false`, the parser does not trim trailing whitespace (e.g., `a ,b ,c` parses as `[ 'a ', 'b ', 'c' ]`).  If `true`, the parser does trim trailing whitespace (e.g., `a ,b ,c` parses as `[ 'a', 'b', 'c' ]`). Default: `false`.
+-   **rtrim**: `boolean` indicating whether to trim trailing whitepsace from field values. If `false`, the parser does not trim trailing whitespace (e.g., `a ,b ,c` parses as `[ 'a ', 'b ', 'c' ]`).  If `true`, the parser trims trailing whitespace (e.g., `a ,b ,c` parses as `[ 'a', 'b', 'c' ]`). Default: `false`.
 
 -   **skip**: character sequence appearing at the beginning of a row which demarcates that the row content should be parsed as a skipped record. Default: `''`.
 
