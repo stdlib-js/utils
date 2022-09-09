@@ -28,21 +28,21 @@ var state2enum = require( './state2enum.js' );
 
 // VARIABLES //
 
-var debug = logger( 'state:init' );
+var debug = logger( 'state:skip' );
 
 // Possible transition states...
-var COMMENT = state2enum[ 'comment' ];
-var FIELD = state2enum[ 'field' ];
-var ESCAPE = state2enum[ 'escape' ];
 var INIT = state2enum[ 'init' ];
-var QUOTED_FIELD = state2enum[ 'quoted_field' ];
 var SKIP = state2enum[ 'skip' ];
+var SKIPPED_COMMENT = state2enum[ 'skipped_comment' ];
+var SKIPPED_FIELD = state2enum[ 'skipped_field' ];
+var SKIPPED_ESCAPE = state2enum[ 'skipped_escape' ];
+var SKIPPED_QUOTED_FIELD = state2enum[ 'skipped_quoted_field' ];
 
 
 // MAIN //
 
 /**
-* Returns a function for processing the initial characters of a row.
+* Returns a function for processing a skipped line.
 *
 * @private
 * @param {Parser} parser - parser instance
@@ -110,9 +110,8 @@ function processor( parser ) {
 			ch === comment[ commentLastIndex ] &&     // we have a potential comment match
 			parser._scan( comment, commentLastIndex ) // we found a match
 		) {
-			// Rewind the cursor to point to the last character before the comment character sequence:
 			debug( 'Comment.' );
-			parser._rewind( commentLastIndex )._changeState( COMMENT );
+			parser._push( ch )._changeState( SKIPPED_COMMENT );
 			return;
 		}
 		/*
@@ -128,9 +127,8 @@ function processor( parser ) {
 			ch === skip[ skipLastIndex ] &&        // we have a potential match
 			parser._scan( skip, skipLastIndex )    // we found a match
 		) {
-			// Rewind the cursor to point to the last character before the skip character sequence:
 			debug( 'Skip.' );
-			parser._rewind( skipLastIndex )._changeState( SKIP );
+			parser._push( ch )._changeState( SKIP );
 			return;
 		}
 		/*
@@ -141,15 +139,14 @@ function processor( parser ) {
 		* -   An escape sequence escapes the delimiter, newline, and escape sequences in **non-quoted** fields.
 		* -   An escape sequence escapes comment and skip sequences in **non-quoted** fields when an escape sequence occurs at the beginning of a record.
 		* -   When `doublequote` is `false`, the escape sequence escapes quote sequences within **quoted** fields.
-		* -   In strict mode, if not immediately followed by a special character sequence, then the parser raises an exception.
-		* -   In non-strict mode, if not immediately followed by a special character sequence, then the escape sequence has no special meaning.
+		* -   If not immediately followed by a special character sequence, then the escape sequence has no special meaning.
 		*/
 		if (
 			ch === escape[ escapeLastIndex ] &&     // we have a potential match
 			parser._scan( escape, escapeLastIndex ) // we found a match
 		) {
 			debug( 'Escape.' );
-			parser._push( ch )._changeState( ESCAPE );
+			parser._push( ch )._changeState( SKIPPED_ESCAPE );
 			return;
 		}
 		/*
@@ -166,9 +163,8 @@ function processor( parser ) {
 			parser._scan( quote, quoteLastIndex ) // we found a match
 		) {
 			if ( quoting ) {
-				// Rewind the cursor to point to the last character before the quote character sequence:
 				debug( 'Quote.' );
-				parser._rewind( quoteLastIndex )._changeState( QUOTED_FIELD );
+				parser._push( ch )._changeState( SKIPPED_QUOTED_FIELD );
 				return;
 			}
 			// Continue processing until we can transition to a new state:
@@ -182,9 +178,8 @@ function processor( parser ) {
 			ch === delimiter[ delimiterLastIndex ] &&
 			parser._scan( delimiter, delimiterLastIndex )
 		) {
-			// Rewind the cursor to point to the last character before the delimiter character sequence:
 			debug( 'Delimiter.' );
-			parser._rewind( delimiterLastIndex )._changeState( FIELD );
+			parser._push( ch )._changeState( SKIPPED_FIELD );
 			return;
 		}
 		/*

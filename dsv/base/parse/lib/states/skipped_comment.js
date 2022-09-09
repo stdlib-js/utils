@@ -28,7 +28,7 @@ var state2enum = require( './state2enum.js' );
 
 // VARIABLES //
 
-var debug = logger( 'state:comment' );
+var debug = logger( 'state:skipped_comment' );
 
 // Possible transition states...
 var INIT = state2enum[ 'init' ];
@@ -37,7 +37,7 @@ var INIT = state2enum[ 'init' ];
 // MAIN //
 
 /**
-* Returns a function for processing a commented line.
+* Returns a function for processing a skipped commented line.
 *
 * @private
 * @param {Parser} parser - parser instance
@@ -61,8 +61,6 @@ function processor( parser ) {
 	*/
 	function next( ch ) {
 		debug( 'Char: %s', ch );
-
-		// FIXME: handle left whitespace trim
 
 		// Check for the end of the commented line...
 		if (

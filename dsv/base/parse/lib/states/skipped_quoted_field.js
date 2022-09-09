@@ -28,27 +28,36 @@ var state2enum = require( './state2enum.js' );
 
 // VARIABLES //
 
-var debug = logger( 'state:comment' );
+var debug = logger( 'state:skipped_quoted_field' );
 
 // Possible transition states...
-var INIT = state2enum[ 'init' ];
+var SKIPPED_QUOTE_END = state2enum[ 'skipped_quote_end' ];
+var SKIPPED_QUOTED_ESCAPE = state2enum[ 'skipped_quoted_escape' ];
 
 
 // MAIN //
 
 /**
-* Returns a function for processing a commented line.
+* Returns a function for processing a quoted field within a skipped line.
 *
 * @private
 * @param {Parser} parser - parser instance
 * @returns {Function} processing function
 */
 function processor( parser ) {
-	var newlineLastIndex;
-	var newline;
+	var escapeLastIndex;
+	var quoteLastIndex;
+	var doublequote;
+	var escape;
+	var quote;
 
-	newlineLastIndex = parser._newlineLastIndex;
-	newline = parser._newline;
+	escapeLastIndex = parser._escapeLastIndex;
+	escape = parser._escape;
+
+	quoteLastIndex = parser._quoteLastIndex;
+	quote = parser._quote;
+
+	doublequote = parser._doublequote;
 
 	return next;
 
@@ -62,16 +71,27 @@ function processor( parser ) {
 	function next( ch ) {
 		debug( 'Char: %s', ch );
 
-		// FIXME: handle left whitespace trim
-
-		// Check for the end of the commented line...
+		/*
+		* Check for an escape character sequence.
+		*/
 		if (
-			ch === newline[ newlineLastIndex ] &&
-			parser._scan( newline, newlineLastIndex )
+			doublequote === false &&                // double quoting is disabled
+			ch === escape[ escapeLastIndex ] &&     // we have a potential match
+			parser._scan( escape, escapeLastIndex ) // we found a match
 		) {
-			// Rewind the cursor to point to the last character before the newline character sequence:
-			debug( 'Newline.' );
-			parser._rewind( newlineLastIndex )._changeState( INIT );
+			debug( 'Escape.' );
+			parser._push( ch )._changeState( SKIPPED_QUOTED_ESCAPE );
+			return;
+		}
+		/*
+		* Check for an ending quote character sequence.
+		*/
+		if (
+			ch === quote[ quoteLastIndex ] &&     // we have a potential match
+			parser._scan( quote, quoteLastIndex ) // we found a match
+		) {
+			debug( 'Quote.' );
+			parser._push( ch )._changeState( SKIPPED_QUOTE_END );
 			return;
 		}
 		// Continue processing until we can transition to a new state:

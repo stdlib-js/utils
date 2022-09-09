@@ -47,6 +47,13 @@ var INIT = state2enum[ 'init' ];
 var QUOTE_END = state2enum[ 'quote_end' ];
 var QUOTED_ESCAPE = state2enum[ 'quoted_escape' ];
 var QUOTED_FIELD = state2enum[ 'quoted_field' ];
+var SKIP = state2enum[ 'skip' ];
+var SKIPPED_COMMENT = state2enum[ 'skipped_comment' ];
+var SKIPPED_ESCAPE = state2enum[ 'skipped_escape' ];
+var SKIPPED_FIELD = state2enum[ 'skipped_field' ];
+var SKIPPED_QUOTE_END = state2enum[ 'skipped_quote_end' ];
+var SKIPPED_QUOTED_ESCAPE = state2enum[ 'skipped_quoted_escape' ];
+var SKIPPED_QUOTED_FIELD = state2enum[ 'skipped_quoted_field' ];
 
 
 // MAIN //
@@ -91,7 +98,7 @@ function Parser( options ) {
 		}
 		return new Parser();
 	}
-	// TODO: option validation; enforce quote, comment, delimiter, escape, and newline all being different and none can be a substring of the other (i.e., no escape equal to `,,` and delimiter equal to `,`, and no delimiter equal to `,` and newline being `,,` and vice versa; is `,,` an escape or simply an empty field?); require thousands and decimal be different and not substrings of the other
+	// TODO: option validation; enforce quote, comment, delimiter, escape, and newline all being different and none can be a substring of the other (i.e., no escape equal to `,,` and delimiter equal to `,`, and no delimiter equal to `,` and newline being `,,` and vice versa; is `,,` an escape or simply an empty field?); when trimming is enabled, may need to require that "whitespace" does not conflict with any of the special character sequences
 	options = options || {};
 	opts = defaults();
 
@@ -122,33 +129,33 @@ function Parser( options ) {
 	// Initialize the state flag:
 	this._state = INIT;
 
+	// Initialize flags indicating whether we're processing a commented line:
+	this._commented = false;
+	this._skipped = false;
+
 	// Initialize the error state:
 	this._errname = '';
 
 	// Extract various options:
 	this._comment = options.comment || opts.comment;
-	this._decimal = options.decimal || opts.decimal;
 	this._delimiter = options.delimiter || opts.delimiter;
 	this._doublequote = ( options.doublequote === void 0 ) ? opts.doublequote : options.doublequote;
 	this._escape = options.escape || opts.escape;
-	this._false = options.false || opts.false; // TODO: convert to regexp
-	this._missing = options.missing || opts.missing; // TODO: convert to regexp
+	this._ltrim = ( options.ltrim === void 0 ) ? opts.ltrim : options.ltrim;
 	this._newline = options.newline || opts.newline;
 	this._quote = options.quote || opts.quote;
 	this._quoting = ( options.quoting === void 0 ) ? opts.quoting : options.quoting;
-	this._schema = options.schema || opts.schema;
+	this._rtrim = ( options.rtrim === void 0 ) ? opts.rtrim : options.rtrim;
+	this._skip = options.skip || opts.skip;
 	this._strict = ( options.strict === void 0 ) ? opts.strict : options.strict;
-	this._thousands = options.thousands || opts.thousands;
-	this._trim = ( options.trim === void 0 ) ? opts.trim : options.trim;
 	this._trimComment = ( options.trimComment === void 0 ) ? opts.trimComment : options.trimComment;
-	this._trimNonNumeric = ( options.trimNonNumeric === void 0 ) ? opts.trimNonNumeric : options.trimNumeric;
-	this._true = options.true || opts.true; // TODO: convert to regexp
-	this._whitespace = options.whitespace || opts.whitespace; // TODO: convert to regexp
+	this._whitespace = options.whitespace || opts.whitespace;
 
 	this._onClose = options.onClose || opts.onClose;
 	this._onColumn = options.onColumn || opts.onColumn;
 	this._onComment = options.onComment || opts.onComment;
 	this._onRow = options.onRow || opts.onRow;
+	this._onSkip = options.onSkip || opts.onSkip;
 
 	this._onError = options.onError || opts.onError;
 	this._onWarn = options.onWarn || opts.onWarn;
@@ -167,6 +174,9 @@ function Parser( options ) {
 
 	this._quoteLength = this._quote.length;
 	this._quoteLastIndex = this._quoteLength - 1;
+
+	this._skipLength = this._skip.length;
+	this._skipLastIndex = this._skipLength - 1;
 
 	// Initialize state processors...
 	this._states = states( this ); // NOTE: this should come after all other initialization!
@@ -261,6 +271,10 @@ setReadOnly( Parser.prototype, '_reset', function reset() {
 	// Reset the parser state to attempting to parse the first field of the next record:
 	this._state = INIT;
 
+	// Reset flags for commented lines:
+	this._commented = false;
+	this._skipped = false;
+
 	// Reset the buffer:
 	this._cursor = -1;
 
@@ -314,7 +328,7 @@ setReadOnly( Parser.prototype, '_getField', function get( start, end ) {
 	buf = this._buffer;
 	i = start;
 
-	// TODO: consider whether to support other trimming modalities, such as ltrim, rtrim, and both
+	// TODO: consider whether to support other trimming modalities, such as ltrim, rtrim, and both; FIXME: cannot rely on ltrim, rtrim, etc, as whitespace may be user defined; may be better to put logic in at the parser level
 	if ( this._trim ) {
 		re = this._whitespace;
 		for ( ; i <= end; i++ ) {
@@ -323,9 +337,7 @@ setReadOnly( Parser.prototype, '_getField', function get( start, end ) {
 			}
 		}
 	}
-
-	// TODO: presumably this is where we should perform any conversions/transformations
-
+	// FIXME: refactor if whitespace processing happens within char-by-char state logic
 	return buf.slice( i, end+1 ).join( '' );
 });
 
@@ -474,10 +486,37 @@ setReadOnly( Parser.prototype, '_onCommentedRow', function onCommentedRow() {
 	if ( this._onComment ) {
 		v = this._buffer.slice( 0, this._cursor+1 ).join( '' );
 		if ( this._trimComment ) {
-			// FIXME: trim the leading and trailing whitespace (e.g., using @stdlib/string/base/trim)
+			// FIXME: trim comment; this may be better done character by character
 		}
 		this._onComment( v, this._line );
 		debug( 'New comment. Line: %d. Value: %s', this._line, v );
+	}
+	// Increment the counter for how many lines have been processed:
+	this._line += 1;
+
+	// Reset the parser:
+	this._reset();
+
+	return this;
+});
+
+/**
+* Processes a skipped row.
+*
+* @private
+* @name _onSkippedRow
+* @memberof Parser.prototype
+* @type {Function}
+* @returns {Parser} parser instance
+*/
+setReadOnly( Parser.prototype, '_onSkippedRow', function onSkippedRow() {
+	var v;
+
+	// Invoke a callback for receiving skipped lines:
+	if ( this._onSkip ) {
+		v = this._buffer.slice( 0, this._cursor+1 ).join( '' );
+		this._onSkip( v, this._line );
+		debug( 'New skipped row. Line: %d. Value: %s', this._line, v );
 	}
 	// Increment the counter for how many lines have been processed:
 	this._line += 1;
@@ -604,16 +643,12 @@ setReadOnly( Parser.prototype, '_raiseException', function raiseException() {
 setReadOnly( Parser.prototype, '_changeState', function changeState( state ) {
 	debug( 'State transition: %s -> %s.', enum2state[ this._state ], enum2state[ state ] );
 
-	if ( this._state === COMMENT ) {
-		this._onCommentedRow();
-		this._state = state;
-		return this;
-	}
 	switch ( state ) { // eslint-disable-line default-case
 	case CLOSED:
 		this._close();
 		break;
 	case COMMENT:
+		this._commented = true;
 		break;
 	case ERROR:
 		this._raiseException();
@@ -627,7 +662,13 @@ setReadOnly( Parser.prototype, '_changeState', function changeState( state ) {
 		}
 		break;
 	case INIT:
-		this._onRecord();
+		if ( this._commented ) {
+			this._onCommentedRow();
+		} else if ( this._skipped ) {
+			this._onSkippedRow();
+		} else {
+			this._onRecord();
+		}
 		break;
 	case QUOTE_END:
 		this._onClosingQuote();
@@ -636,6 +677,16 @@ setReadOnly( Parser.prototype, '_changeState', function changeState( state ) {
 		this._onEscape();
 		break;
 	case QUOTED_FIELD:
+		break;
+	case SKIP:
+		this._skipped = true;
+		break;
+	case SKIPPED_COMMENT:
+	case SKIPPED_ESCAPE:
+	case SKIPPED_FIELD:
+	case SKIPPED_QUOTE_END:
+	case SKIPPED_QUOTED_ESCAPE:
+	case SKIPPED_QUOTED_FIELD:
 		break;
 	}
 	this._state = state;
