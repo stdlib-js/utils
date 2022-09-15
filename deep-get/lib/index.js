@@ -44,7 +44,7 @@
 // MODULES //
 
 var setReadOnly = require( './../../define-nonenumerable-read-only-property' );
-var deepGet = require( './deep_get.js' );
+var deepGet = require( './main.js' );
 var factory = require( './factory.js' );
 
 

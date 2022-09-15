@@ -60,7 +60,7 @@
 // MODULES //
 
 var setReadOnly = require( './../../../define-nonenumerable-read-only-property' );
-var inmapRightAsync = require( './inmap_right.js' );
+var inmapRightAsync = require( './main.js' );
 var factory = require( './factory.js' );
 
 

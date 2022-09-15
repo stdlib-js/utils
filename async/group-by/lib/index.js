@@ -59,7 +59,7 @@
 // MODULES //
 
 var setReadOnly = require( './../../../define-nonenumerable-read-only-property' );
-var groupByAsync = require( './group_by.js' );
+var groupByAsync = require( './main.js' );
 var factory = require( './factory.js' );
 
 
