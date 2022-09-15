@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var waterfall = require( './../lib/waterfall.js' );
+var waterfall = require( './../lib' );
 
 
 // TESTS //

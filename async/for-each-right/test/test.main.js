@@ -22,14 +22,14 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var anyByAsync = require( './../lib/any_by.js' );
+var forEachRightAsync = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof anyByAsync, 'function', 'main export is a function' );
+	t.strictEqual( typeof forEachRightAsync, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -38,7 +38,7 @@ tape( 'the function throws an error if not provided a collection', function test
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, false );
+		clbk();
 	}
 
 	values = [
@@ -62,12 +62,12 @@ tape( 'the function throws an error if not provided a collection', function test
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( value, next, noop );
+			forEachRightAsync( value, next, noop );
 		};
 	}
 });
 
-tape( 'the function throws an error if not provided a predicate function to invoke for each collection element (no options)', function test( t ) {
+tape( 'the function throws an error if not provided a function to invoke for each collection element (no options)', function test( t ) {
 	var values;
 	var i;
 
@@ -90,12 +90,12 @@ tape( 'the function throws an error if not provided a predicate function to invo
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( [ 1, 2, 3 ], value, noop );
+			forEachRightAsync( [ 1, 2, 3 ], value, noop );
 		};
 	}
 });
 
-tape( 'the function throws an error if not provided a predicate function to invoke for each collection element (options)', function test( t ) {
+tape( 'the function throws an error if not provided a function to invoke for each collection element (options)', function test( t ) {
 	var values;
 	var i;
 
@@ -118,7 +118,7 @@ tape( 'the function throws an error if not provided a predicate function to invo
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( [ 1, 2, 3 ], {}, value, noop );
+			forEachRightAsync( [ 1, 2, 3 ], {}, value, noop );
 		};
 	}
 });
@@ -128,7 +128,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, false );
+		clbk();
 	}
 
 	values = [
@@ -150,7 +150,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( [ 1, 2, 3 ], next, value );
+			forEachRightAsync( [ 1, 2, 3 ], next, value );
 		};
 	}
 });
@@ -160,7 +160,7 @@ tape( 'the function throws an error if not provided a callback function (options
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, false );
+		clbk();
 	}
 
 	values = [
@@ -182,7 +182,7 @@ tape( 'the function throws an error if not provided a callback function (options
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( [ 1, 2, 3 ], {}, next, value );
+			forEachRightAsync( [ 1, 2, 3 ], {}, next, value );
 		};
 	}
 });
@@ -192,7 +192,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, false );
+		clbk();
 	}
 
 	values = [
@@ -214,7 +214,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 
 	function badValue( value ) {
 		return function badValue() {
-			anyByAsync( [ 1, 2, 3 ], value, next, noop );
+			forEachRightAsync( [ 1, 2, 3 ], value, next, noop );
 		};
 	}
 });
@@ -224,7 +224,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, false );
+		clbk();
 	}
 
 	values = [
@@ -252,183 +252,190 @@ tape( 'the function throws an error if provided an invalid option', function tes
 			var opts = {
 				'limit': value
 			};
-			anyByAsync( [ 1, 2, 3 ], opts, next, noop );
+			forEachRightAsync( [ 1, 2, 3 ], opts, next, noop );
 		};
 	}
 });
 
-tape( 'the function invokes a predicate function once for each element in a collection (value,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,next)', function test( t ) {
 	var expected;
 	var arr;
 	var i;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, next ) {
+	function fcn( value, next ) {
 		i += 1;
 		t.strictEqual( value, expected[ i ], 'provides expected value' );
 
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'the function invokes a predicate function once for each element in a collection (value,index,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,index,next)', function test( t ) {
 	var expected;
 	var arr;
 	var i;
+	var j;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	expected = [ 1, 2, 3 ];
-	i = -1;
+	i = arr.length;
+	j = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, index, next ) {
-		i += 1;
-		t.strictEqual( value, expected[ index ], 'provides expected value' );
+	function fcn( value, index, next ) {
+		i -= 1;
+		j += 1;
+		t.strictEqual( value, expected[ j ], 'provides expected value' );
 		t.strictEqual( index, i, 'provides expected index' );
 
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'the function invokes a predicate function once for each element in a collection (value,index,collection,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,index,collection,next)', function test( t ) {
 	var expected;
 	var arr;
 	var i;
+	var j;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	expected = [ 1, 2, 3 ];
-	i = -1;
+	i = arr.length;
+	j = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, index, collection, next ) {
-		i += 1;
-		t.strictEqual( value, expected[ index ], 'provides expected value' );
+	function fcn( value, index, collection, next ) {
+		i -= 1;
+		j += 1;
+		t.strictEqual( value, expected[ j ], 'provides expected value' );
 		t.strictEqual( index, i, 'provides expected index' );
 		t.strictEqual( collection, arr, 'provides input collection' );
 
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'if a predicate function accepts fewer than 2 arguments, the function invokes a predicate function with four arguments (1 argument)', function test( t ) {
+tape( 'if a provided function accepts fewer than 2 arguments, the function invokes a provided function with four arguments (1 argument)', function test( t ) {
 	var expected;
 	var arr;
 	var i;
+	var j;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	expected = [ 1, 2, 3 ];
-	i = -1;
+	i = arr.length;
+	j = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value ) {
+	function fcn( value ) {
 		var next = arguments[ 3 ];
-		i += 1;
+		i -= 1;
+		j += 1;
 
-		t.strictEqual( value, expected[ i ], 'provides expected value' );
+		t.strictEqual( value, expected[ j ], 'provides expected value' );
 		t.strictEqual( arguments[ 1 ], i, 'provides expected index' );
 		t.strictEqual( arguments[ 2 ], arr, 'provides input collection' );
 
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'if a predicate function length is 0, the function invokes a predicate function with four arguments', function test( t ) {
+tape( 'if a provided function length is 0, the function invokes a provided function with four arguments', function test( t ) {
 	var expected;
 	var arr;
 	var i;
+	var j;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	expected = [ 1, 2, 3 ];
-	i = -1;
+	i = arr.length;
+	j = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate() {
+	function fcn() {
 		var next = arguments[ 3 ];
-		i += 1;
+		i -= 1;
+		j += 1;
 
-		t.strictEqual( arguments[ 0 ], expected[ i ], 'provides expected value' );
+		t.strictEqual( arguments[ 0 ], expected[ j ], 'provides expected value' );
 		t.strictEqual( arguments[ 1 ], i, 'provides expected index' );
 		t.strictEqual( arguments[ 2 ], arr, 'provides input collection' );
 
 		setTimeout( onTimeout, arguments[ 0 ] );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -438,29 +445,28 @@ tape( 'by default, the function processes collection elements concurrently', fun
 	var count;
 	var arr;
 
-	arr = [ 300, 250, 100 ];
+	arr = [ 100, 250, 300 ];
 	expected = [ 100, 250, 300 ];
 	count = -1;
 
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -471,32 +477,31 @@ tape( 'the function supports processing collection elements sequentially (in ser
 	var opts;
 	var arr;
 
-	arr = [ 300, 250, 100 ];
+	arr = [ 100, 250, 300 ];
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
 	opts = {
 		'series': true
 	};
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -507,7 +512,7 @@ tape( 'the function supports processing collection elements sequentially (limit 
 	var opts;
 	var arr;
 
-	arr = [ 300, 250, 100 ];
+	arr = [ 100, 250, 300 ];
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
@@ -515,25 +520,24 @@ tape( 'the function supports processing collection elements sequentially (limit 
 		'series': false,
 		'limit': 1
 	};
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -544,7 +548,7 @@ tape( 'the function supports limiting the maximum number of collection elements 
 	var opts;
 	var arr;
 
-	arr = [ 300, 250, 100 ];
+	arr = [ 100, 250, 300 ];
 	expected = [ 250, 300, 100 ];
 	count = -1;
 
@@ -552,61 +556,59 @@ tape( 'the function supports limiting the maximum number of collection elements 
 		'series': false,
 		'limit': 2
 	};
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'the function supports specifying an execution context for the predicate function', function test( t ) {
+tape( 'the function supports specifying an execution context for the invoked function', function test( t ) {
 	var opts;
 	var arr;
 	var ctx;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	ctx = {
 		'count': 0
 	};
 	opts = {
 		'thisArg': ctx
 	};
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		/* eslint-disable no-invalid-this */
 		this.count += 1;
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		t.strictEqual( ctx.count, 3, 'updated provided context' );
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -616,14 +618,14 @@ tape( 'if an error is encountered while processing a collection element, the fun
 	var opts;
 	var arr;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	opts = {
 		'series': true
 	};
 	count = 0;
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
@@ -632,14 +634,13 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		t.strictEqual( count, 1, 'suspends execution' );
 		if ( error ) {
 			t.pass( error.message );
 		} else {
 			t.fail( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -649,14 +650,14 @@ tape( 'if an error is encountered while processing a collection element, the fun
 	var opts;
 	var arr;
 
-	arr = [ 300, 100, 250 ];
+	arr = [ 250, 100, 300 ];
 	opts = {
 		'limit': 2
 	};
 	count = 0;
-	anyByAsync( arr, opts, predicate, done );
+	forEachRightAsync( arr, opts, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -664,18 +665,17 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		t.strictEqual( count, 2, 'suspends execution' );
 		if ( error ) {
 			t.pass( error.message );
 		} else {
 			t.fail( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -686,9 +686,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -696,18 +696,17 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, false );
+			next();
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		t.strictEqual( count, 3, 'suspends execution' );
 		if ( error ) {
 			t.pass( error.message );
 		} else {
 			t.fail( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -718,9 +717,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -729,134 +728,31 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		}
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		t.strictEqual( count, 3, 'suspends execution' );
 		if ( error ) {
 			t.pass( error.message );
 		} else {
 			t.fail( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
 
-tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `true` for the test result (series)', function test( t ) {
-	var count;
-	var opts;
-	var arr;
-
-	arr = [ 1, 2, 3 ];
-	opts = {
-		'series': true
-	};
-	count = 0;
-	anyByAsync( arr, opts, predicate, done );
-
-	function predicate( value, index, next ) {
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			count += 1;
-			next( null, true );
-		}
-	}
-
-	function done( error, bool ) {
-		t.strictEqual( count, 1, 'suspends execution' );
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.strictEqual( bool, true, 'returns true' );
-		t.end();
-	}
-});
-
-tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `true` for the test result (concurrent; limit)', function test( t ) {
-	var count;
-	var opts;
-	var arr;
-
-	arr = [ 300, 100, 250 ];
-	opts = {
-		'limit': 2
-	};
-	count = 0;
-	anyByAsync( arr, opts, predicate, done );
-
-	function predicate( value, index, next ) {
-		count += 1;
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			if ( index === 1 ) {
-				return next( null, [] );
-			}
-			next( null, false );
-		}
-	}
-
-	function done( error, bool ) {
-		t.strictEqual( count, 2, 'suspends execution' );
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.strictEqual( bool, true, 'returns true' );
-		t.end();
-	}
-});
-
-tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `true` for the test result (concurrent)', function test( t ) {
-	var count;
-	var arr;
-
-	arr = [ 500, 500, 500 ];
-	count = 0;
-	anyByAsync( arr, predicate, done );
-
-	function predicate( value, index, next ) {
-		count += 1;
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			if ( index === 1 ) {
-				return next( null, new Error( 'beep' ) );
-			}
-			next( null, false );
-		}
-	}
-
-	function done( error, bool ) {
-		t.strictEqual( count, 3, 'suspends execution' );
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.strictEqual( bool, true, 'returns true' );
-		t.end();
-	}
-});
-
-tape( 'if provided an empty collection, the function never invokes a predicate function and returns `false` for the test result', function test( t ) {
+tape( 'if provided an empty collection, the function never invokes a provided function', function test( t ) {
 	var arr = [];
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 
-	function predicate() {
+	function fcn() {
 		t.fail( 'should never be called' );
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.end();
 	}
 });
@@ -865,22 +761,21 @@ tape( 'the function does not guarantee asynchronous execution', function test( t
 	var arr;
 	var i;
 
-	arr = [ 1, 2, 3 ];
+	arr = [ 3, 2, 1 ];
 	i = 0;
-	anyByAsync( arr, predicate, done );
+	forEachRightAsync( arr, fcn, done );
 	i = 1;
 
-	function predicate( value, next ) {
-		next( null, false );
+	function fcn( value, next ) {
+		next();
 	}
 
-	function done( error, bool ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.strictEqual( bool, false, 'returns false' );
 		t.strictEqual( i, 0, 'releases the zalgo' );
 		t.end();
 	}

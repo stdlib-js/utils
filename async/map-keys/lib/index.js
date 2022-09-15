@@ -66,7 +66,7 @@
 // MODULES //
 
 var setReadOnly = require( './../../../define-nonenumerable-read-only-property' );
-var mapKeysAsync = require( './map_keys.js' );
+var mapKeysAsync = require( './main.js' );
 var factory = require( './factory.js' );
 
 

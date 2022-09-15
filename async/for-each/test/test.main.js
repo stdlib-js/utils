@@ -22,14 +22,14 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var tabulateByAsync = require( './../lib/tabulate_by.js' );
+var forEachAsync = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof tabulateByAsync, 'function', 'main export is a function' );
+	t.strictEqual( typeof forEachAsync, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -38,7 +38,7 @@ tape( 'the function throws an error if not provided a collection', function test
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, 'group' );
+		clbk();
 	}
 
 	values = [
@@ -62,12 +62,12 @@ tape( 'the function throws an error if not provided a collection', function test
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( value, next, noop );
+			forEachAsync( value, next, noop );
 		};
 	}
 });
 
-tape( 'the function throws an error if not provided an indicator function to invoke for each collection element (no options)', function test( t ) {
+tape( 'the function throws an error if not provided a function to invoke for each collection element (no options)', function test( t ) {
 	var values;
 	var i;
 
@@ -90,12 +90,12 @@ tape( 'the function throws an error if not provided an indicator function to inv
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( [ 1, 2, 3 ], value, noop );
+			forEachAsync( [ 1, 2, 3 ], value, noop );
 		};
 	}
 });
 
-tape( 'the function throws an error if not provided an indicator function to invoke for each collection element (options)', function test( t ) {
+tape( 'the function throws an error if not provided a function to invoke for each collection element (options)', function test( t ) {
 	var values;
 	var i;
 
@@ -118,7 +118,7 @@ tape( 'the function throws an error if not provided an indicator function to inv
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( [ 1, 2, 3 ], {}, value, noop );
+			forEachAsync( [ 1, 2, 3 ], {}, value, noop );
 		};
 	}
 });
@@ -128,7 +128,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, 'group' );
+		clbk();
 	}
 
 	values = [
@@ -150,7 +150,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( [ 1, 2, 3 ], next, value );
+			forEachAsync( [ 1, 2, 3 ], next, value );
 		};
 	}
 });
@@ -160,7 +160,7 @@ tape( 'the function throws an error if not provided a callback function (options
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, 'group' );
+		clbk();
 	}
 
 	values = [
@@ -182,7 +182,7 @@ tape( 'the function throws an error if not provided a callback function (options
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( [ 1, 2, 3 ], {}, next, value );
+			forEachAsync( [ 1, 2, 3 ], {}, next, value );
 		};
 	}
 });
@@ -192,7 +192,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, 'group' );
+		clbk();
 	}
 
 	values = [
@@ -214,7 +214,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 
 	function badValue( value ) {
 		return function badValue() {
-			tabulateByAsync( [ 1, 2, 3 ], value, next, noop );
+			forEachAsync( [ 1, 2, 3 ], value, next, noop );
 		};
 	}
 });
@@ -224,7 +224,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, 'group' );
+		clbk();
 	}
 
 	values = [
@@ -252,14 +252,13 @@ tape( 'the function throws an error if provided an invalid option', function tes
 			var opts = {
 				'limit': value
 			};
-			tabulateByAsync( [ 1, 2, 3 ], opts, next, noop );
+			forEachAsync( [ 1, 2, 3 ], opts, next, noop );
 		};
 	}
 });
 
-tape( 'the function invokes an indicator function once for each element in a collection (value,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,next)', function test( t ) {
 	var expected;
-	var results;
 	var arr;
 	var i;
 
@@ -267,38 +266,31 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value, next ) {
+	function fcn( value, next ) {
 		i += 1;
 		t.strictEqual( value, expected[ i ], 'provides expected value' );
 
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, (value < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
-tape( 'the function invokes an indicator function once for each element in a collection (value,index,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,index,next)', function test( t ) {
 	var expected;
-	var results;
 	var arr;
 	var i;
 
@@ -306,14 +298,9 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		i += 1;
 		t.strictEqual( value, expected[ index ], 'provides expected value' );
 		t.strictEqual( index, i, 'provides expected index' );
@@ -321,24 +308,22 @@ tape( 'the function invokes an indicator function once for each element in a col
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, (value < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
-tape( 'the function invokes an indicator function once for each element in a collection (value,index,collection,next)', function test( t ) {
+tape( 'the function invokes a provided function once for each element in a collection (value,index,collection,next)', function test( t ) {
 	var expected;
-	var results;
 	var arr;
 	var i;
 
@@ -346,14 +331,9 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value, index, collection, next ) {
+	function fcn( value, index, collection, next ) {
 		i += 1;
 		t.strictEqual( value, expected[ index ], 'provides expected value' );
 		t.strictEqual( index, i, 'provides expected index' );
@@ -362,24 +342,22 @@ tape( 'the function invokes an indicator function once for each element in a col
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, (value < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
-tape( 'if an indicator function accepts fewer than 2 arguments, the function invokes an indicator function with four arguments (1 argument)', function test( t ) {
+tape( 'if a provided function accepts fewer than 2 arguments, the function invokes a provided function with four arguments (1 argument)', function test( t ) {
 	var expected;
-	var results;
 	var arr;
 	var i;
 
@@ -387,14 +365,9 @@ tape( 'if an indicator function accepts fewer than 2 arguments, the function inv
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value ) {
+	function fcn( value ) {
 		var next = arguments[ 3 ];
 		i += 1;
 
@@ -405,24 +378,22 @@ tape( 'if an indicator function accepts fewer than 2 arguments, the function inv
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, (value < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
-tape( 'if an indicator function length is 0, the function invokes an indicator function with four arguments', function test( t ) {
+tape( 'if a provided function length is 0, the function invokes a provided function with four arguments', function test( t ) {
 	var expected;
-	var results;
 	var arr;
 	var i;
 
@@ -430,77 +401,35 @@ tape( 'if an indicator function length is 0, the function invokes an indicator f
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator() {
-		var next;
-		var v;
-
-		next = arguments[ 3 ];
-		v = arguments[ 0 ];
+	function fcn() {
+		var next = arguments[ 3 ];
 		i += 1;
 
-		t.strictEqual( v, expected[ i ], 'provides expected value' );
+		t.strictEqual( arguments[ 0 ], expected[ i ], 'provides expected value' );
 		t.strictEqual( arguments[ 1 ], i, 'provides expected index' );
 		t.strictEqual( arguments[ 2 ], arr, 'provides input collection' );
 
 		setTimeout( onTimeout, arguments[ 0 ] );
 
 		function onTimeout() {
-			next( null, (v < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
-		t.end();
-	}
-});
-
-tape( 'the function generates a frequency table according to an indicator function', function test( t ) {
-	var results;
-	var arr;
-
-	arr = [ 300, 250, 100 ];
-	results = [
-		[ false, 1, 1.0/3.0 ],
-		[ true, 2, 2.0/3.0 ]
-	];
-
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value, index, next ) {
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			next( null, (value > 200) );
-		}
-	}
-
-	function done( error, result ) {
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
 tape( 'by default, the function processes collection elements concurrently', function test( t ) {
 	var expected;
-	var results;
 	var count;
 	var arr;
 
@@ -508,37 +437,30 @@ tape( 'by default, the function processes collection elements concurrently', fun
 	expected = [ 100, 250, 300 ];
 	count = -1;
 
-	results = [
-		[ false, 1, 1.0/3.0 ],
-		[ true, 2, 2.0/3.0 ]
-	];
+	forEachAsync( arr, fcn, done );
 
-	tabulateByAsync( arr, indicator, done );
-
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, (value > 200) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
 tape( 'the function supports processing collection elements sequentially (in series)', function test( t ) {
 	var expected;
-	var results;
 	var count;
 	var opts;
 	var arr;
@@ -547,40 +469,33 @@ tape( 'the function supports processing collection elements sequentially (in ser
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
-
 	opts = {
 		'series': true
 	};
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, (value > 200) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
 tape( 'the function supports processing collection elements sequentially (limit = 1)', function test( t ) {
 	var expected;
-	var results;
 	var count;
 	var opts;
 	var arr;
@@ -589,41 +504,34 @@ tape( 'the function supports processing collection elements sequentially (limit 
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
-
 	opts = {
 		'series': false,
 		'limit': 1
 	};
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, (value > 200) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
 tape( 'the function supports limiting the maximum number of collection elements which are processed at any one time', function test( t ) {
 	var expected;
-	var results;
 	var count;
 	var opts;
 	var arr;
@@ -632,75 +540,63 @@ tape( 'the function supports limiting the maximum number of collection elements 
 	expected = [ 250, 300, 100 ];
 	count = -1;
 
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
-
 	opts = {
 		'series': false,
 		'limit': 2
 	};
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, (value > 200) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
 
-tape( 'the function supports specifying an execution context for the indicator function', function test( t ) {
-	var results;
+tape( 'the function supports specifying an execution context for the invoked function', function test( t ) {
 	var opts;
 	var arr;
 	var ctx;
 
 	arr = [ 1, 2, 3 ];
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
 	ctx = {
 		'count': 0
 	};
 	opts = {
 		'thisArg': ctx
 	};
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		/* eslint-disable no-invalid-this */
 		this.count += 1;
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, (value < 3) );
+			next();
 		}
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		t.strictEqual( ctx.count, 3, 'updated provided context' );
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.end();
 	}
 });
@@ -715,9 +611,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'series': true
 	};
 	count = 0;
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
@@ -747,9 +643,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'limit': 2
 	};
 	count = 0;
-	tabulateByAsync( arr, opts, indicator, done );
+	forEachAsync( arr, opts, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -757,7 +653,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, 'beep' );
+			next();
 		}
 	}
 
@@ -778,9 +674,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	tabulateByAsync( arr, indicator, done );
+	forEachAsync( arr, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -788,7 +684,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, 'beep' );
+			next();
 		}
 	}
 
@@ -809,9 +705,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	tabulateByAsync( arr, indicator, done );
+	forEachAsync( arr, fcn, done );
 
-	function indicator( value, index, next ) {
+	function fcn( value, index, next ) {
 		count += 1;
 		setTimeout( onTimeout, value );
 
@@ -831,51 +727,43 @@ tape( 'if an error is encountered while processing a collection element, the fun
 	}
 });
 
-tape( 'if provided an empty collection, the function never invokes an indicator function and returns an empty array', function test( t ) {
+tape( 'if provided an empty collection, the function never invokes a provided function', function test( t ) {
 	var arr = [];
-	tabulateByAsync( arr, indicator, done );
+	forEachAsync( arr, fcn, done );
 
-	function indicator() {
+	function fcn() {
 		t.fail( 'should never be called' );
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, [], 'returns expected results' );
 		t.end();
 	}
 });
 
 tape( 'the function does not guarantee asynchronous execution', function test( t ) {
-	var results;
 	var arr;
 	var i;
 
 	arr = [ 1, 2, 3 ];
-	results = [
-		[ true, 2, 2.0/3.0 ],
-		[ false, 1, 1.0/3.0 ]
-	];
-
 	i = 0;
-	tabulateByAsync( arr, indicator, done );
+	forEachAsync( arr, fcn, done );
 	i = 1;
 
-	function indicator( value, next ) {
-		next( null, (value < 3) );
+	function fcn( value, next ) {
+		next();
 	}
 
-	function done( error, result ) {
+	function done( error ) {
 		if ( error ) {
 			t.fail( error.message );
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, results, 'returns expected results' );
 		t.strictEqual( i, 0, 'releases the zalgo' );
 		t.end();
 	}

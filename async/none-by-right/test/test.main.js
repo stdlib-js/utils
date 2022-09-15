@@ -22,14 +22,14 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var everyByRightAsync = require( './../lib/every_by_right.js' );
+var noneByRightAsync = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof everyByRightAsync, 'function', 'main export is a function' );
+	t.strictEqual( typeof noneByRightAsync, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -38,7 +38,7 @@ tape( 'the function throws an error if not provided a collection', function test
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, true );
+		clbk( null, false );
 	}
 
 	values = [
@@ -62,7 +62,7 @@ tape( 'the function throws an error if not provided a collection', function test
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( value, next, noop );
+			noneByRightAsync( value, next, noop );
 		};
 	}
 });
@@ -90,7 +90,7 @@ tape( 'the function throws an error if not provided a predicate function to invo
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( [ 1, 2, 3 ], value, noop );
+			noneByRightAsync( [ 1, 2, 3 ], value, noop );
 		};
 	}
 });
@@ -118,7 +118,7 @@ tape( 'the function throws an error if not provided a predicate function to invo
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( [ 1, 2, 3 ], {}, value, noop );
+			noneByRightAsync( [ 1, 2, 3 ], {}, value, noop );
 		};
 	}
 });
@@ -128,7 +128,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, true );
+		clbk( null, false );
 	}
 
 	values = [
@@ -150,7 +150,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( [ 1, 2, 3 ], next, value );
+			noneByRightAsync( [ 1, 2, 3 ], next, value );
 		};
 	}
 });
@@ -160,7 +160,7 @@ tape( 'the function throws an error if not provided a callback function (options
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, true );
+		clbk( null, false );
 	}
 
 	values = [
@@ -182,7 +182,7 @@ tape( 'the function throws an error if not provided a callback function (options
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( [ 1, 2, 3 ], {}, next, value );
+			noneByRightAsync( [ 1, 2, 3 ], {}, next, value );
 		};
 	}
 });
@@ -192,7 +192,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, true );
+		clbk( null, false );
 	}
 
 	values = [
@@ -214,7 +214,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 
 	function badValue( value ) {
 		return function badValue() {
-			everyByRightAsync( [ 1, 2, 3 ], value, next, noop );
+			noneByRightAsync( [ 1, 2, 3 ], value, next, noop );
 		};
 	}
 });
@@ -224,7 +224,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 	var i;
 
 	function next( value, clbk ) {
-		clbk( null, true );
+		clbk( null, false );
 	}
 
 	values = [
@@ -252,7 +252,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 			var opts = {
 				'limit': value
 			};
-			everyByRightAsync( [ 1, 2, 3 ], opts, next, noop );
+			noneByRightAsync( [ 1, 2, 3 ], opts, next, noop );
 		};
 	}
 });
@@ -266,7 +266,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, next ) {
 		i += 1;
@@ -275,7 +275,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -301,7 +301,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 	i = arr.length;
 	j = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, next ) {
 		i -= 1;
@@ -312,7 +312,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -338,7 +338,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 	i = arr.length;
 	j = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, collection, next ) {
 		i -= 1;
@@ -350,7 +350,7 @@ tape( 'the function invokes a predicate function once for each element in a coll
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -376,7 +376,7 @@ tape( 'if a predicate function accepts fewer than 2 arguments, the function invo
 	i = arr.length;
 	j = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value ) {
 		var next = arguments[ 3 ];
@@ -390,7 +390,7 @@ tape( 'if a predicate function accepts fewer than 2 arguments, the function invo
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -416,7 +416,7 @@ tape( 'if a predicate function length is 0, the function invokes a predicate fun
 	i = arr.length;
 	j = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate() {
 		var next = arguments[ 3 ];
@@ -430,7 +430,7 @@ tape( 'if a predicate function length is 0, the function invokes a predicate fun
 		setTimeout( onTimeout, arguments[ 0 ] );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -454,7 +454,7 @@ tape( 'by default, the function processes collection elements concurrently', fun
 	expected = [ 100, 250, 300 ];
 	count = -1;
 
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -462,7 +462,7 @@ tape( 'by default, the function processes collection elements concurrently', fun
 		function onTimeout() {
 			count += 1;
 			t.strictEqual( value, expected[ count ], 'provides expected value' );
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -490,7 +490,7 @@ tape( 'the function supports processing collection elements sequentially (in ser
 	opts = {
 		'series': true
 	};
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -498,7 +498,7 @@ tape( 'the function supports processing collection elements sequentially (in ser
 		function onTimeout() {
 			i += 1;
 			t.strictEqual( value, expected[ i ], 'provides expected value' );
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -527,7 +527,7 @@ tape( 'the function supports processing collection elements sequentially (limit 
 		'series': false,
 		'limit': 1
 	};
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -535,7 +535,7 @@ tape( 'the function supports processing collection elements sequentially (limit 
 		function onTimeout() {
 			i += 1;
 			t.strictEqual( value, expected[ i ], 'provides expected value' );
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -564,7 +564,7 @@ tape( 'the function supports limiting the maximum number of collection elements 
 		'series': false,
 		'limit': 2
 	};
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -572,7 +572,7 @@ tape( 'the function supports limiting the maximum number of collection elements 
 		function onTimeout() {
 			i += 1;
 			t.strictEqual( value, expected[ i ], 'provides expected value' );
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -599,7 +599,7 @@ tape( 'the function supports specifying an execution context for the predicate f
 	opts = {
 		'thisArg': ctx
 	};
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		/* eslint-disable no-invalid-this */
@@ -607,7 +607,7 @@ tape( 'the function supports specifying an execution context for the predicate f
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -633,7 +633,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'series': true
 	};
 	count = 0;
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -666,7 +666,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'limit': 2
 	};
 	count = 0;
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		count += 1;
@@ -676,7 +676,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -698,7 +698,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, next ) {
 		count += 1;
@@ -708,7 +708,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 			if ( index === 1 ) {
 				return next( new Error( 'beep' ) );
 			}
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -730,7 +730,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, next ) {
 		count += 1;
@@ -753,7 +753,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 	}
 });
 
-tape( 'if a predicate function returns a falsy test result, the function suspends execution and immediately returns `false` for the test result (series)', function test( t ) {
+tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `false` for the test result (series)', function test( t ) {
 	var count;
 	var opts;
 	var arr;
@@ -763,14 +763,14 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 		'series': true
 	};
 	count = 0;
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			count += 1;
-			next( null, false );
+			next( null, true );
 		}
 	}
 
@@ -786,7 +786,7 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 	}
 });
 
-tape( 'if a predicate function returns a falsy test result, the function suspends execution and immediately returns `false` for the test result (concurrent; limit)', function test( t ) {
+tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `false` for the test result (concurrent; limit)', function test( t ) {
 	var count;
 	var opts;
 	var arr;
@@ -796,7 +796,7 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 		'limit': 2
 	};
 	count = 0;
-	everyByRightAsync( arr, opts, predicate, done );
+	noneByRightAsync( arr, opts, predicate, done );
 
 	function predicate( value, index, next ) {
 		count += 1;
@@ -804,9 +804,9 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 
 		function onTimeout() {
 			if ( index === 1 ) {
-				return next( null, 0 );
+				return next( null, 5 );
 			}
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -822,13 +822,13 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 	}
 });
 
-tape( 'if a predicate function returns a falsy test result, the function suspends execution and immediately returns `false` for the test result (concurrent)', function test( t ) {
+tape( 'if a predicate function returns a truthy test result, the function suspends execution and immediately returns `false` for the test result (concurrent)', function test( t ) {
 	var count;
 	var arr;
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate( value, index, next ) {
 		count += 1;
@@ -836,9 +836,9 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 
 		function onTimeout() {
 			if ( index === 1 ) {
-				return next( null, void 0 );
+				return next( null, [] );
 			}
-			next( null, true );
+			next( null, false );
 		}
 	}
 
@@ -856,7 +856,7 @@ tape( 'if a predicate function returns a falsy test result, the function suspend
 
 tape( 'if provided an empty collection, the function never invokes a predicate function and returns `true` for the test result', function test( t ) {
 	var arr = [];
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 
 	function predicate() {
 		t.fail( 'should never be called' );
@@ -879,11 +879,11 @@ tape( 'the function does not guarantee asynchronous execution', function test( t
 
 	arr = [ 3, 2, 1 ];
 	i = 0;
-	everyByRightAsync( arr, predicate, done );
+	noneByRightAsync( arr, predicate, done );
 	i = 1;
 
 	function predicate( value, next ) {
-		next( null, true );
+		next( null, false );
 	}
 
 	function done( error, bool ) {

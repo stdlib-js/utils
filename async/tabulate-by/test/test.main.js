@@ -22,14 +22,14 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var countByAsync = require( './../lib/count_by.js' );
+var tabulateByAsync = require( './../lib' );
 
 
 // TESTS //
 
 tape( 'main export is a function', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof countByAsync, 'function', 'main export is a function' );
+	t.strictEqual( typeof tabulateByAsync, 'function', 'main export is a function' );
 	t.end();
 });
 
@@ -62,7 +62,7 @@ tape( 'the function throws an error if not provided a collection', function test
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( value, next, noop );
+			tabulateByAsync( value, next, noop );
 		};
 	}
 });
@@ -90,7 +90,7 @@ tape( 'the function throws an error if not provided an indicator function to inv
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( [ 1, 2, 3 ], value, noop );
+			tabulateByAsync( [ 1, 2, 3 ], value, noop );
 		};
 	}
 });
@@ -118,7 +118,7 @@ tape( 'the function throws an error if not provided an indicator function to inv
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( [ 1, 2, 3 ], {}, value, noop );
+			tabulateByAsync( [ 1, 2, 3 ], {}, value, noop );
 		};
 	}
 });
@@ -150,7 +150,7 @@ tape( 'the function throws an error if not provided a callback function (no opti
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( [ 1, 2, 3 ], next, value );
+			tabulateByAsync( [ 1, 2, 3 ], next, value );
 		};
 	}
 });
@@ -182,7 +182,7 @@ tape( 'the function throws an error if not provided a callback function (options
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( [ 1, 2, 3 ], {}, next, value );
+			tabulateByAsync( [ 1, 2, 3 ], {}, next, value );
 		};
 	}
 });
@@ -214,7 +214,7 @@ tape( 'the function throws an error if provided an `options` argument which is n
 
 	function badValue( value ) {
 		return function badValue() {
-			countByAsync( [ 1, 2, 3 ], value, next, noop );
+			tabulateByAsync( [ 1, 2, 3 ], value, next, noop );
 		};
 	}
 });
@@ -252,7 +252,7 @@ tape( 'the function throws an error if provided an invalid option', function tes
 			var opts = {
 				'limit': value
 			};
-			countByAsync( [ 1, 2, 3 ], opts, next, noop );
+			tabulateByAsync( [ 1, 2, 3 ], opts, next, noop );
 		};
 	}
 });
@@ -267,12 +267,12 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, next ) {
 		i += 1;
@@ -306,12 +306,12 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, next ) {
 		i += 1;
@@ -346,12 +346,12 @@ tape( 'the function invokes an indicator function once for each element in a col
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, collection, next ) {
 		i += 1;
@@ -387,12 +387,12 @@ tape( 'if an indicator function accepts fewer than 2 arguments, the function inv
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value ) {
 		var next = arguments[ 3 ];
@@ -430,12 +430,12 @@ tape( 'if an indicator function length is 0, the function invokes an indicator f
 	expected = [ 1, 2, 3 ];
 	i = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator() {
 		var next;
@@ -467,83 +467,23 @@ tape( 'if an indicator function length is 0, the function invokes an indicator f
 	}
 });
 
-tape( 'the function groups collection elements according to an indicator function and returns group counts', function test( t ) {
+tape( 'the function generates a frequency table according to an indicator function', function test( t ) {
 	var results;
 	var arr;
 
 	arr = [ 300, 250, 100 ];
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ false, 1, 1.0/3.0 ],
+		[ true, 2, 2.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
 
 		function onTimeout() {
 			next( null, (value > 200) );
-		}
-	}
-
-	function done( error, result ) {
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.deepEqual( result, results, 'returns expected results' );
-		t.end();
-	}
-});
-
-tape( 'the function groups collection elements according to an indicator function and returns group counts (string serialization)', function test( t ) {
-	var results;
-	var arr;
-
-	arr = [ 300, 250, 100 ];
-	results = {
-		'[object Object]': 3
-	};
-
-	countByAsync( arr, indicator, done );
-
-	function indicator( value, index, next ) {
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			next( null, {} );
-		}
-	}
-
-	function done( error, result ) {
-		if ( error ) {
-			t.fail( error.message );
-		} else {
-			t.pass( 'did not return an error' );
-		}
-		t.deepEqual( result, results, 'returns expected results' );
-		t.end();
-	}
-});
-
-tape( 'the function groups collection elements according to an indicator function and returns group counts (string serialization)', function test( t ) {
-	var results;
-	var arr;
-
-	arr = [ 300, 250, 100 ];
-	results = {
-		'undefined': 3
-	};
-
-	countByAsync( arr, indicator, done );
-
-	function indicator( value, index, next ) {
-		setTimeout( onTimeout, value );
-
-		function onTimeout() {
-			next();
 		}
 	}
 
@@ -568,12 +508,12 @@ tape( 'by default, the function processes collection elements concurrently', fun
 	expected = [ 100, 250, 300 ];
 	count = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ false, 1, 1.0/3.0 ],
+		[ true, 2, 2.0/3.0 ]
+	];
 
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -607,15 +547,15 @@ tape( 'the function supports processing collection elements sequentially (in ser
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
 	opts = {
 		'series': true
 	};
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -649,16 +589,16 @@ tape( 'the function supports processing collection elements sequentially (limit 
 	expected = [ 300, 250, 100 ];
 	count = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
 	opts = {
 		'series': false,
 		'limit': 1
 	};
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -692,16 +632,16 @@ tape( 'the function supports limiting the maximum number of collection elements 
 	expected = [ 250, 300, 100 ];
 	count = -1;
 
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
 	opts = {
 		'series': false,
 		'limit': 2
 	};
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -731,17 +671,17 @@ tape( 'the function supports specifying an execution context for the indicator f
 	var ctx;
 
 	arr = [ 1, 2, 3 ];
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 	ctx = {
 		'count': 0
 	};
 	opts = {
 		'thisArg': ctx
 	};
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		/* eslint-disable no-invalid-this */
@@ -775,7 +715,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'series': true
 	};
 	count = 0;
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		setTimeout( onTimeout, value );
@@ -807,7 +747,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 		'limit': 2
 	};
 	count = 0;
-	countByAsync( arr, opts, indicator, done );
+	tabulateByAsync( arr, opts, indicator, done );
 
 	function indicator( value, index, next ) {
 		count += 1;
@@ -838,7 +778,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, next ) {
 		count += 1;
@@ -869,7 +809,7 @@ tape( 'if an error is encountered while processing a collection element, the fun
 
 	arr = [ 500, 500, 500 ];
 	count = 0;
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator( value, index, next ) {
 		count += 1;
@@ -891,9 +831,9 @@ tape( 'if an error is encountered while processing a collection element, the fun
 	}
 });
 
-tape( 'if provided an empty collection, the function never invokes an indicator function and returns an empty object', function test( t ) {
+tape( 'if provided an empty collection, the function never invokes an indicator function and returns an empty array', function test( t ) {
 	var arr = [];
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 
 	function indicator() {
 		t.fail( 'should never be called' );
@@ -905,7 +845,7 @@ tape( 'if provided an empty collection, the function never invokes an indicator 
 		} else {
 			t.pass( 'did not return an error' );
 		}
-		t.deepEqual( result, {}, 'returns an empty object' );
+		t.deepEqual( result, [], 'returns expected results' );
 		t.end();
 	}
 });
@@ -916,13 +856,13 @@ tape( 'the function does not guarantee asynchronous execution', function test( t
 	var i;
 
 	arr = [ 1, 2, 3 ];
-	results = {
-		'true': 2,
-		'false': 1
-	};
+	results = [
+		[ true, 2, 2.0/3.0 ],
+		[ false, 1, 1.0/3.0 ]
+	];
 
 	i = 0;
-	countByAsync( arr, indicator, done );
+	tabulateByAsync( arr, indicator, done );
 	i = 1;
 
 	function indicator( value, next ) {

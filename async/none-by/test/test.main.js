@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../../noop' );
-var noneByAsync = require( './../lib/none_by.js' );
+var noneByAsync = require( './../lib' );
 
 
 // TESTS //
