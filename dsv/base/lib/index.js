@@ -24,7 +24,7 @@
 
 // MODULES //
 
-// var setReadOnly = require( './../../../define-read-only-property' );
+var setReadOnly = require( './../../../define-read-only-property' );
 
 
 // MAIN //
@@ -37,13 +37,13 @@
 var ns = {};
 
 /**
-* @name readDSVLine
+* @name parse
 * @memberof ns
 * @readonly
 * @type {Namespace}
-* @see {@link module:@stdlib/utils/dsv/base/parse-line}
+* @see {@link module:@stdlib/utils/dsv/base/parse}
 */
-// setReadOnly( ns, 'readDSVLine', require( './../../../dsv/base/parse-line' ) );
+setReadOnly( ns, 'parse', require( './../../../dsv/base/parse' ) );
 
 
 // EXPORTS //
