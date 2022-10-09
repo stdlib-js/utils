@@ -22,10 +22,10 @@
 
 var deepGet = require( './../../deep-get' ).factory;
 var isArray = require( '@stdlib/assert/is-array' );
+var format = require( '@stdlib/string/format' );
 var copy = require( './../../copy' );
 var defaults = require( './defaults.json' );
 var validate = require( './validate.js' );
-var format = require( '@stdlib/string/format' );
 
 
 // MAIN //

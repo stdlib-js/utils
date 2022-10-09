@@ -25,6 +25,7 @@ var getOwnPropertyNames = require( './../../property-names' );
 var getPrototypeOf = require( './../../get-prototype-of' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
 var isEnumerable = require( '@stdlib/assert/is-enumerable-property' );
+var Object = require( '@stdlib/object/ctor' );
 
 
 // MAIN //

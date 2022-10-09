@@ -23,6 +23,7 @@
 var getOwnPropertySymbols = require( './../../property-symbols' );
 var getOwnPropertyNames = require( './../../property-names' );
 var getPrototypeOf = require( './../../get-prototype-of' );
+var Object = require( '@stdlib/object/ctor' );
 
 
 // FUNCTIONS //
