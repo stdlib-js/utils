@@ -21,8 +21,10 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+import parse = require( './../../../../dsv/base/parse' );
+
 /**
-* Interface describing the base `dsv` namespace.
+* Interface describing the `base` namespace.
 */
 interface Namespace {
 

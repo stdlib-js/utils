@@ -44,6 +44,7 @@ import copy = require( './../../copy' );
 import countBy = require( './../../count-by' );
 import curry = require( './../../curry' );
 import curryRight = require( './../../curry-right' );
+import decorateAfter = require( './../../decorate-after' );
 import deepGet = require( './../../deep-get' );
 import deepPluck = require( './../../deep-pluck' );
 import deepSet = require( './../../deep-set' );
@@ -73,6 +74,7 @@ import doWhile = require( './../../do-while' );
 import doWhileEach = require( './../../do-while-each' );
 import doWhileEachRight = require( './../../do-while-each-right' );
 import DoublyLinkedList = require( './../../doubly-linked-list' );
+import dsv = require( './../../dsv' );
 import objectEntries = require( './../../entries' );
 import objectEntriesIn = require( './../../entries-in' );
 import enumerableProperties = require( './../../enumerable-properties' );
@@ -208,6 +210,7 @@ import someByRight = require( './../../some-by-right' );
 import Stack = require( './../../stack' );
 import tabulate = require( './../../tabulate' );
 import tabulateBy = require( './../../tabulate-by' );
+import thunk = require( './../../thunk' );
 import timeit = require( './../../timeit' );
 import trycatch = require( './../../try-catch' );
 import tryFunction = require( './../../try-function' );
@@ -948,6 +951,50 @@ interface Namespace {
 	* // returns 5
 	*/
 	curryRight: typeof curryRight;
+
+	/**
+	* Decorates a provided function such that the function's return value is provided as an argument to another function.
+	*
+	* @param fcn - function to decorate
+	* @param arity - number of parameters
+	* @param after - function to invoke with the return value of the decorated function
+	* @param thisArg - evaluation context for `after`
+	* @throws `arity` must be a nonnegative integer
+	* @returns decorator
+	*
+	* @example
+	* var abs = require( `@stdlib/math/base/special/abs` );
+	*
+	* function negate( v ) {
+	*     return -v;
+	* }
+	*
+	* var f = ns.decorateAfter( abs, 1, negate );
+	* // returns <Function>
+	*
+	* var v = f( -5 );
+	* // returns -5
+	*
+	* v = f( 5 );
+	* // returns -5
+	*
+	* @example
+	* var abs = require( `@stdlib/math/base/special/abs` );
+	*
+	* function negate( v ) {
+	*     return -v;
+	* }
+	*
+	* var f = ns.decorateAfter.factory( abs, 1, negate );
+	* // returns <Function>
+	*
+	* var v = f( -5 );
+	* // returns -5
+	*
+	* v = f( 5 );
+	* // returns -5
+	*/
+	decorateAfter: typeof decorateAfter;
 
 	/**
 	* Returns a nested property value.
@@ -1800,6 +1847,11 @@ interface Namespace {
 	* List node.
 	*/
 	DoublyLinkedList: typeof DoublyLinkedList;
+
+	/**
+	* Standard utilities for working with data formatted as delimiter-separated values (DSV).
+	*/
+	dsv: typeof dsv;
 
 	/**
 	* Returns an array of an object's own enumerable property `[key, value]` pairs.
@@ -5518,6 +5570,27 @@ interface Namespace {
 	* // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 	*/
 	tabulateBy: typeof tabulateBy;
+
+	/**
+	* Returns a thunk.
+	*
+	* @param fcn - function to convert to a thunk
+	* @param args - function args
+	* @returns thunk
+	*
+	* @example
+	* var add = require( `@stdlib/math/base/ops/add` );
+	*
+	* var f = ns.thunk( add, 2, 3 );
+	* // returns <Function>
+	*
+	* // ...
+	*
+	* // Evaluate the ns.thunk:
+	* var v = f();
+	* // returns 5
+	*/
+	thunk: typeof thunk;
 
 	/**
 	* Times a snippet.

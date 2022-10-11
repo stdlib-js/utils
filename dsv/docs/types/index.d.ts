@@ -21,11 +21,16 @@
 /* tslint:disable:max-line-length */
 /* tslint:disable:max-file-line-count */
 
+import base = require( './../../../dsv/base' );
+
 /**
 * Interface describing the `dsv` namespace.
 */
 interface Namespace {
-
+	/**
+	* Standard base utilities for working with data formatted as delimiter-separated values (DSV).
+	*/
+	base: typeof base;
 }
 
 /**
