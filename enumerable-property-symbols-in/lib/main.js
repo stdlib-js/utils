@@ -24,6 +24,7 @@ var getOwnPropertySymbols = require( './../../property-symbols' );
 var getPrototypeOf = require( './../../get-prototype-of' );
 var isEnumerableProperty = require( '@stdlib/assert/is-enumerable-property' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var Object = require( '@stdlib/object/ctor' );
 
 
 // MAIN //
