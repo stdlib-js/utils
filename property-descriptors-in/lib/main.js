@@ -26,6 +26,7 @@ var getPrototypeOf = require( './../../get-prototype-of' );
 var objectKeys = require( './../../keys' );
 var defineProperty = require( './../../define-property' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var Object = require( '@stdlib/object/ctor' );
 
 
 // MAIN //
