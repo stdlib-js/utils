@@ -24,14 +24,30 @@ limitations under the License.
 
 > Utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+var utils = require( '@stdlib/utils' );
 ```
 
 #### utils
@@ -107,8 +123,9 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`pop( collection )`][@stdlib/utils/pop]</span><span class="delimiter">: </span><span class="description">remove and return the last element of a collection.</span>
 -   <span class="signature">[`prepend( collection1, collection2 )`][@stdlib/utils/prepend]</span><span class="delimiter">: </span><span class="description">add elements from one collection to the beginning of another collection.</span>
 -   <span class="signature">[`push( collection, ...items )`][@stdlib/utils/push]</span><span class="delimiter">: </span><span class="description">add one or more elements to the end of a collection.</span>
--   <span class="signature">[`reduceRight( collection, initial, reducer[, thisArg ] )`][@stdlib/utils/reduce-right]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result, iterating from right to left.</span>
--   <span class="signature">[`reduce( collection, initial, reducer[, thisArg ] )`][@stdlib/utils/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in a collection and return the accumulated result.</span>
+-   <span class="signature">[`reduceRight( arr, initial, reducer[, thisArg ] )`][@stdlib/utils/reduce-right]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in an array while iterating from right to left and return the accumulated result.</span>
+-   <span class="signature">[`reduce( arr, initial, reducer[, thisArg ] )`][@stdlib/utils/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in an array and return the accumulated result.</span>
+-   <span class="signature">[`reduce2d( arr, initial, fcn[, thisArg] )`][@stdlib/utils/reduce2d]</span><span class="delimiter">: </span><span class="description">reduce the number of dimensions by one of a two-dimensional nested array by applying a function against an accumulator and each element along the innermost dimension and returning the accumulation results as a one-dimensional array.</span>
 -   <span class="signature">[`shift( collection )`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
 -   <span class="signature">[`someByRight( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by-right]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.</span>
 -   <span class="signature">[`someBy( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function.</span>
@@ -213,6 +230,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`objectInverse( obj[, options] )`][@stdlib/utils/object-inverse]</span><span class="delimiter">: </span><span class="description">invert an object, such that keys become values and values become keys.</span>
 -   <span class="signature">[`omitBy( obj, predicate )`][@stdlib/utils/omit-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding properties for which a predicate (function) returns a truthy value.</span>
 -   <span class="signature">[`omit( obj, keys )`][@stdlib/utils/omit]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding specified keys.</span>
+-   <span class="signature">[`pickArguments( fcn, indices[, thisArg] )`][@stdlib/utils/pick-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with specified arguments.</span>
 -   <span class="signature">[`pickBy( obj, predicate )`][@stdlib/utils/pick-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy containing properties for which a predicate (function) returns a truthy value.</span>
 -   <span class="signature">[`pick( obj, keys )`][@stdlib/utils/pick]</span><span class="delimiter">: </span><span class="description">return a partial object copy containing only specified keys.</span>
 -   <span class="signature">[`propertiesIn( obj )`][@stdlib/utils/properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited property names and symbols.</span>
@@ -257,14 +275,18 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`doWhileEachRight( collection, fcn, predicate[, thisArg ] )`][@stdlib/utils/do-while-each-right]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection, iterating from right to left.</span>
 -   <span class="signature">[`doWhileEach( collection, fcn, predicate[, thisArg ] )`][@stdlib/utils/do-while-each]</span><span class="delimiter">: </span><span class="description">while a test condition is true, invoke a function for each element in a collection.</span>
 -   <span class="signature">[`doWhile( fcn, predicate[, thisArg ] )`][@stdlib/utils/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="signature">[`filterArguments( fcn, predicate[, thisArg] )`][@stdlib/utils/filter-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function according to a predicate function.</span>
 -   <span class="signature">[`functionName( fcn )`][@stdlib/utils/function-name]</span><span class="delimiter">: </span><span class="description">determine a function's name.</span>
 -   <span class="signature">[`functionSequence( ...fcn )`][@stdlib/utils/function-sequence]</span><span class="delimiter">: </span><span class="description">function sequence.</span>
 -   <span class="signature">[`identity( x )`][@stdlib/utils/identity-function]</span><span class="delimiter">: </span><span class="description">identity function.</span>
+-   <span class="signature">[`mapArguments( fcn, clbk[, thisArg] )`][@stdlib/utils/map-arguments]</span><span class="delimiter">: </span><span class="description">create a function that applies arguments to a provided function after transforming arguments according to a callback function.</span>
 -   <span class="signature">[`mapFun( fcn, n[, thisArg ] )`][@stdlib/utils/map-function]</span><span class="delimiter">: </span><span class="description">invoke a function `n` times and return an array of accumulated function return values.</span>
+-   <span class="signature">[`maskArguments( fcn, mask[, thisArg] )`][@stdlib/utils/mask-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function according to an argument mask.</span>
 -   <span class="signature">[`memoize( fcn[, hashFunction] )`][@stdlib/utils/memoize]</span><span class="delimiter">: </span><span class="description">memoize a function.</span>
 -   <span class="signature">[`noop()`][@stdlib/utils/noop]</span><span class="delimiter">: </span><span class="description">function which does nothing.</span>
 -   <span class="signature">[`papplyRight( fcn[, ...args] )`][@stdlib/utils/papply-right]</span><span class="delimiter">: </span><span class="description">partially apply function arguments from the right.</span>
 -   <span class="signature">[`papply( fcn[, ...args] )`][@stdlib/utils/papply]</span><span class="delimiter">: </span><span class="description">partially apply function arguments.</span>
+-   <span class="signature">[`rejectArguments( fcn, predicate[, thisArg] )`][@stdlib/utils/reject-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function according to a predicate function.</span>
 -   <span class="signature">[`reorderArguments( fcn, indices[, thisArg] )`][@stdlib/utils/reorder-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with reordered arguments.</span>
 -   <span class="signature">[`reverseArguments( fcn[, thisArg] )`][@stdlib/utils/reverse-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with arguments in reverse order.</span>
 -   <span class="signature">[`uncurryRight( fcn[, arity][, thisArg] )`][@stdlib/utils/uncurry-right]</span><span class="delimiter">: </span><span class="description">transform a curried function into a function invoked with multiple arguments.</span>
@@ -301,7 +323,9 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`constructorName( value )`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
 -   <span class="signature">[`convertPath( from, to )`][@stdlib/utils/convert-path]</span><span class="delimiter">: </span><span class="description">convert between POSIX and Windows paths.</span>
 -   <span class="signature">[`copy( value[, level] )`][@stdlib/utils/copy]</span><span class="delimiter">: </span><span class="description">copy or deep clone a value to an arbitrary depth.</span>
+-   <span class="signature">[`decorateAfter( fcn, arity, after[, thisArg] )`][@stdlib/utils/decorate-after]</span><span class="delimiter">: </span><span class="description">decorate a provided function such that the function's return value is provided as an argument to another function.</span>
 -   <span class="signature">[`dirname( path )`][@stdlib/utils/dirname]</span><span class="delimiter">: </span><span class="description">return a directory name.</span>
+-   <span class="signature">[`dsv`][@stdlib/utils/dsv]</span><span class="delimiter">: </span><span class="description">utilities for working with data formatted as delimiter-separated values (DSV).</span>
 -   <span class="signature">[`rescape( str )`][@stdlib/utils/escape-regexp-string]</span><span class="delimiter">: </span><span class="description">escape a regular expression string or pattern.</span>
 -   <span class="signature">[`evil( str )`][@stdlib/utils/eval]</span><span class="delimiter">: </span><span class="description">alias for `eval` global.</span>
 -   <span class="signature">[`extname( filename )`][@stdlib/utils/extname]</span><span class="delimiter">: </span><span class="description">return a filename extension.</span>
@@ -310,6 +334,17 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`ifthen( bool, x, y )`][@stdlib/utils/if-then]</span><span class="delimiter">: </span><span class="description">if a condition is truthy, invoke `x`; otherwise, invoke `y`.</span>
 -   <span class="signature">[`inherit( ctor, superCtor )`][@stdlib/utils/inherit]</span><span class="delimiter">: </span><span class="description">implement prototypical inheritance by replacing the prototype of one constructor with the prototype of another constructor.</span>
 -   <span class="signature">[`objectKeys( obj )`][@stdlib/utils/keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names.</span>
+-   <span class="signature">[`mapReduceRight( arr, initial, mapper, reducer[, thisArg ] )`][@stdlib/utils/map-reduce-right]</span><span class="delimiter">: </span><span class="description">perform a single-pass map-reduce operation against each element in an array while iterating from right to left and return the accumulated result.</span>
+-   <span class="signature">[`mapReduce( arr, initial, mapper, reducer[, thisArg ] )`][@stdlib/utils/map-reduce]</span><span class="delimiter">: </span><span class="description">perform a single-pass map-reduce operation against each element in an array and return the accumulated result.</span>
+-   <span class="signature">[`mapRight( arr, fcn[, thisArg] )`][@stdlib/utils/map-right]</span><span class="delimiter">: </span><span class="description">apply a function to each element in an array and assign the result to an element in an output array, iterating from right to left.</span>
+-   <span class="signature">[`map( arr, fcn[, thisArg] )`][@stdlib/utils/map]</span><span class="delimiter">: </span><span class="description">apply a function to each element in an array and assign the result to an element in an output array.</span>
+-   <span class="signature">[`map2Right( x, y, fcn[, thisArg] )`][@stdlib/utils/map2-right]</span><span class="delimiter">: </span><span class="description">apply a function to elements in two input arrays while iterating from right to left and assign the results to an output array.</span>
+-   <span class="signature">[`map2( x, y, fcn[, thisArg] )`][@stdlib/utils/map2]</span><span class="delimiter">: </span><span class="description">apply a function to elements in two input arrays and assign the results to an output array.</span>
+-   <span class="signature">[`map2d( arr, fcn[, thisArg] )`][@stdlib/utils/map2d]</span><span class="delimiter">: </span><span class="description">apply a function to each nested element in an array of arrays and assign the result to a nested element in a new array of arrays.</span>
+-   <span class="signature">[`map3d( arr, fcn[, thisArg] )`][@stdlib/utils/map3d]</span><span class="delimiter">: </span><span class="description">apply a function to each nested element in a three-dimensional nested array and assign the result to a nested element in a new three-dimensional nested array.</span>
+-   <span class="signature">[`map4d( arr, fcn[, thisArg] )`][@stdlib/utils/map4d]</span><span class="delimiter">: </span><span class="description">apply a function to each nested element in a four-dimensional nested array and assign the result to a nested element in a new four-dimensional nested array.</span>
+-   <span class="signature">[`map5d( arr, fcn[, thisArg] )`][@stdlib/utils/map5d]</span><span class="delimiter">: </span><span class="description">apply a function to each nested element in a five-dimensional nested array and assign the result to a nested element in a new five-dimensional nested array.</span>
+-   <span class="signature">[`naryFunction( fcn, arity[, thisArg] )`][@stdlib/utils/nary-function]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with a specified number of arguments.</span>
 -   <span class="signature">[`nativeClass( value )`][@stdlib/utils/native-class]</span><span class="delimiter">: </span><span class="description">determine the specification defined classification of an object.</span>
 -   <span class="signature">[`nextTick( clbk[, ...args] )`][@stdlib/utils/next-tick]</span><span class="delimiter">: </span><span class="description">add a callback to the "next tick queue".</span>
 -   <span class="signature">[`openURL()`][@stdlib/utils/open-url]</span><span class="delimiter">: </span><span class="description">open a URL.</span>
@@ -321,6 +356,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`safeintmax( dtype )`][@stdlib/utils/safe-int-max]</span><span class="delimiter">: </span><span class="description">return the maximum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`safeintmin( dtype )`][@stdlib/utils/safe-int-min]</span><span class="delimiter">: </span><span class="description">return the minimum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`sizeOf( dtype )`][@stdlib/utils/size-of]</span><span class="delimiter">: </span><span class="description">return the size (in bytes) of the canonical binary representation of a specified numeric type.</span>
+-   <span class="signature">[`thunk( fcn[, ...args] )`][@stdlib/utils/thunk]</span><span class="delimiter">: </span><span class="description">generate a thunk.</span>
 -   <span class="signature">[`timeit( code, [options,] clbk )`][@stdlib/utils/timeit]</span><span class="delimiter">: </span><span class="description">time a snippet.</span>
 -   <span class="signature">[`typemax( dtype )`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 -   <span class="signature">[`typemin( dtype )`][@stdlib/utils/type-min]</span><span class="delimiter">: </span><span class="description">return the minimum value of a specified numeric type.</span>
@@ -342,20 +378,11 @@ The namespace has the following sub-namespaces:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var utils = require( '@stdlib/utils' );
 
 console.log( objectKeys( utils ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -379,7 +406,7 @@ console.log( objectKeys( utils ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -449,7 +476,11 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/copy]: https://github.com/stdlib-js/utils/tree/main/copy
 
+[@stdlib/utils/decorate-after]: https://github.com/stdlib-js/utils/tree/main/decorate-after
+
 [@stdlib/utils/dirname]: https://github.com/stdlib-js/utils/tree/main/dirname
+
+[@stdlib/utils/dsv]: https://github.com/stdlib-js/utils/tree/main/dsv
 
 [@stdlib/utils/escape-regexp-string]: https://github.com/stdlib-js/utils/tree/main/escape-regexp-string
 
@@ -466,6 +497,28 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/inherit]: https://github.com/stdlib-js/utils/tree/main/inherit
 
 [@stdlib/utils/keys]: https://github.com/stdlib-js/utils/tree/main/keys
+
+[@stdlib/utils/map-reduce-right]: https://github.com/stdlib-js/utils/tree/main/map-reduce-right
+
+[@stdlib/utils/map-reduce]: https://github.com/stdlib-js/utils/tree/main/map-reduce
+
+[@stdlib/utils/map-right]: https://github.com/stdlib-js/utils/tree/main/map-right
+
+[@stdlib/utils/map]: https://github.com/stdlib-js/utils/tree/main/map
+
+[@stdlib/utils/map2-right]: https://github.com/stdlib-js/utils/tree/main/map2-right
+
+[@stdlib/utils/map2]: https://github.com/stdlib-js/utils/tree/main/map2
+
+[@stdlib/utils/map2d]: https://github.com/stdlib-js/utils/tree/main/map2d
+
+[@stdlib/utils/map3d]: https://github.com/stdlib-js/utils/tree/main/map3d
+
+[@stdlib/utils/map4d]: https://github.com/stdlib-js/utils/tree/main/map4d
+
+[@stdlib/utils/map5d]: https://github.com/stdlib-js/utils/tree/main/map5d
+
+[@stdlib/utils/nary-function]: https://github.com/stdlib-js/utils/tree/main/nary-function
 
 [@stdlib/utils/native-class]: https://github.com/stdlib-js/utils/tree/main/native-class
 
@@ -488,6 +541,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils/tree/main/safe-int-min
 
 [@stdlib/utils/size-of]: https://github.com/stdlib-js/utils/tree/main/size-of
+
+[@stdlib/utils/thunk]: https://github.com/stdlib-js/utils/tree/main/thunk
 
 [@stdlib/utils/timeit]: https://github.com/stdlib-js/utils/tree/main/timeit
 
@@ -527,13 +582,19 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/do-while]: https://github.com/stdlib-js/utils/tree/main/do-while
 
+[@stdlib/utils/filter-arguments]: https://github.com/stdlib-js/utils/tree/main/filter-arguments
+
 [@stdlib/utils/function-name]: https://github.com/stdlib-js/utils/tree/main/function-name
 
 [@stdlib/utils/function-sequence]: https://github.com/stdlib-js/utils/tree/main/function-sequence
 
 [@stdlib/utils/identity-function]: https://github.com/stdlib-js/utils/tree/main/identity-function
 
+[@stdlib/utils/map-arguments]: https://github.com/stdlib-js/utils/tree/main/map-arguments
+
 [@stdlib/utils/map-function]: https://github.com/stdlib-js/utils/tree/main/map-function
+
+[@stdlib/utils/mask-arguments]: https://github.com/stdlib-js/utils/tree/main/mask-arguments
 
 [@stdlib/utils/memoize]: https://github.com/stdlib-js/utils/tree/main/memoize
 
@@ -542,6 +603,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/papply-right]: https://github.com/stdlib-js/utils/tree/main/papply-right
 
 [@stdlib/utils/papply]: https://github.com/stdlib-js/utils/tree/main/papply
+
+[@stdlib/utils/reject-arguments]: https://github.com/stdlib-js/utils/tree/main/reject-arguments
 
 [@stdlib/utils/reorder-arguments]: https://github.com/stdlib-js/utils/tree/main/reorder-arguments
 
@@ -681,6 +744,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/omit]: https://github.com/stdlib-js/utils/tree/main/omit
 
+[@stdlib/utils/pick-arguments]: https://github.com/stdlib-js/utils/tree/main/pick-arguments
+
 [@stdlib/utils/pick-by]: https://github.com/stdlib-js/utils/tree/main/pick-by
 
 [@stdlib/utils/pick]: https://github.com/stdlib-js/utils/tree/main/pick
@@ -800,6 +865,8 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/reduce-right]: https://github.com/stdlib-js/utils/tree/main/reduce-right
 
 [@stdlib/utils/reduce]: https://github.com/stdlib-js/utils/tree/main/reduce
+
+[@stdlib/utils/reduce2d]: https://github.com/stdlib-js/utils/tree/main/reduce2d
 
 [@stdlib/utils/shift]: https://github.com/stdlib-js/utils/tree/main/shift
 
