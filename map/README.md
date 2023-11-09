@@ -283,6 +283,13 @@ console.log( y.data );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/utils/map-right`][@stdlib/utils/map-right]</span><span class="delimiter">: </span><span class="description">apply a function to each element in an array and assign the result to an element in an output array, iterating from right to left.</span>
+-   <span class="package-name">[`@stdlib/utils/reduce`][@stdlib/utils/reduce]</span><span class="delimiter">: </span><span class="description">apply a function against an accumulator and each element in an array and return the accumulated result.</span>
+
 </section>
 
 <!-- /.related -->
@@ -291,19 +298,27 @@ console.log( y.data );
 
 <section class="links">
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/base/unary]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/base/unary]: https://github.com/stdlib-js/ndarray-base-unary
 
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
-[@stdlib/ndarray/base/assert/is-contiguous]: https://github.com/stdlib-js/stdlib
+[@stdlib/ndarray/base/assert/is-contiguous]: https://github.com/stdlib-js/ndarray-base-assert-is-contiguous
 
-[@stdlib/array/complex64]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/complex64]: https://github.com/stdlib-js/array-complex64
 
-[@stdlib/array/complex128]: https://github.com/stdlib-js/stdlib
+[@stdlib/array/complex128]: https://github.com/stdlib-js/array-complex128
 
 [mdn-typedarray-map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray/map
+
+<!-- <related-links> -->
+
+[@stdlib/utils/map-right]: https://github.com/stdlib-js/utils/tree/main/map-right
+
+[@stdlib/utils/reduce]: https://github.com/stdlib-js/utils/tree/main/reduce
+
+<!-- </related-links> -->
 
 </section>
 
