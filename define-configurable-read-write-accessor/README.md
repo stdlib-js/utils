@@ -145,8 +145,6 @@ console.log( foo.name );
 
 [@stdlib/utils/define-configurable-write-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-write-only-accessor
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils/tree/main/define-property
-
 [@stdlib/utils/define-read-write-accessor]: https://github.com/stdlib-js/utils/tree/main/define-read-write-accessor
 
 <!-- </related-links> -->
