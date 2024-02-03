@@ -237,8 +237,6 @@ next();
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/if-else]: https://github.com/stdlib-js/utils/tree/main/async/if-else
-
 [@stdlib/utils/if-then]: https://github.com/stdlib-js/utils/tree/main/if-then
 
 <!-- </related-links> -->
