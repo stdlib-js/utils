@@ -18,9 +18,9 @@ limitations under the License.
 
 -->
 
-# everyOwnBy
+# anyOwnBy
 
-> Test whether all own propertes of an object pass a test implemented by a predicate function.
+> Test whether at least one own property of a provided object passes a test implemented by a predicate function.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -37,15 +37,37 @@ limitations under the License.
 ## Usage
 
 ```javascript
-var everyOwnBy = require( '@stdlib/utils/every-own-by' );
+var anyOwnBy = require( '@stdlib/utils/any-own-by' );
 ```
 
-#### everyOwnBy( object, predicate\[, thisArg ] )
+#### anyBy( collection, predicate\[, thisArg ] )
 
-Tests whether all `own` properties of an object pass a test implemented by a `predicate` function.
+Tests whether at least one own property of a provided [`object`][mdn-object] passes a test implemented by a `predicate` function.
+
+```javascript
+function isNegative( value ) {
+    return ( value < 0 );
+}
+
+var obj = {
+    'a': 1,
+    'b': 2,
+    'c': 3,
+    'd': -24,
+    'e': 12
+};
+
+var bool = anyOwnBy( obj, isNegative );
+// returns true
+```
+
+If a `predicate` function returns a truthy value, the function **immediately** returns `true`.
 
 ```javascript
 function isPositive( value ) {
+    if ( value < 0 ) {
+        throw new Error( 'should never reach this line' );
+    }
     return ( value > 0 );
 }
 
@@ -53,29 +75,12 @@ var obj = {
     'a': 1,
     'b': 2,
     'c': 3,
-    'd': 4
+    'd': -24,
+    'e': 12
 };
 
-var bool = everyOwnBy( obj, isPositive );
+var bool = anyOwnBy( obj, isPositive );
 // returns true
-```
-
-If a `predicate` function returns a non-truthy value, the function **immediately** returns `false`.
-
-```javascript
-function isPositive( value ) {
-    return ( value > 0 );
-}
-
-var obj = {
-    'a': 1,
-    'b': -2,
-    'c': 3,
-    'd': 4
-};
-
-var bool = everyOwnBy( obj, isPositive );
-// returns false
 ```
 
 The invoked `function` is provided three arguments:
@@ -87,19 +92,17 @@ The invoked `function` is provided three arguments:
 To set the function execution context, provide a `thisArg`.
 
 ```javascript
-function sum( value ) {
-    if ( value < 0 ) {
-        return false;
-    }
+function verify( value ) {
     this.sum += value;
     this.count += 1;
-    return true;
+    return ( value > 0 );
 }
 
 var obj = {
-    'a': 1,
-    'b': 2,
-    'c': 3
+    'a': -1,
+    'b': -2,
+    'c': 3,
+    'd': -14
 };
 
 var context = {
@@ -107,11 +110,11 @@ var context = {
     'count': 0
 };
 
-var bool = everyOwnBy( obj, sum, context );
+var bool = anyOwnBy( obj, verify, context );
 // returns true
 
 var mean = context.sum / context.count;
-// returns 2
+// returns 0
 ```
 
 </section>
@@ -124,17 +127,14 @@ var mean = context.sum / context.count;
 
 ## Notes
 
--   If the 1st argument is not an [`object`][mdn-object] or the second argument is not a fuction , the
-    function throws a Type Error.
-
--   If provided an empty object, the function returns `true`.
+-   If provided an empty object, the function returns `false`.
 
     ```javascript
-    function untrue() {
-        return false;
+    function verify() {
+        return true;
     }
-    var bool = everyOwnBy( {}, untrue );
-    // returns true
+    var bool = anyOwnBy( {}, verify );
+    // returns false
     ```
 
 </section>
@@ -151,21 +151,21 @@ var mean = context.sum / context.count;
 
 ```javascript
 var randu = require( '@stdlib/random/base/randu' );
-var everyOwnBy = require( '@stdlib/utils/every-own-by' );
+var anyOwnBy = require( '@stdlib/utils/any-own-by' );
 
-function isPositive( value ) {
-    return ( value > 0 );
+function threshold( value ) {
+    return ( value > 0.94 );
 }
 
+var bool;
 var obj = {};
+var keys = [ 'a', 'b', 'c', 'd', 'e' ];
 var i;
-
-// Populate object with random values
-for ( i = 0; i < 100; i++ ) {
-    obj[ 'prop_' + i ] = randu();
+for ( i = 0; i < keys.length; i++ ) {
+    obj[ keys[ i ] ] = randu();
 }
 
-var bool = everyOwnBy( obj, isPositive );
+bool = anyOwnBy( obj, threshold );
 // returns <boolean>
 ```
 
@@ -185,6 +185,7 @@ var bool = everyOwnBy( obj, isPositive );
 
 <section class="related">
 
+
 </section>
 
 <!-- /.related -->
@@ -196,6 +197,7 @@ var bool = everyOwnBy( obj, isPositive );
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 
 <!-- <related-links> -->
+
 
 <!-- </related-links> -->
 
