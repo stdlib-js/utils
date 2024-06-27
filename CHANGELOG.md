@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-19)
+## Unreleased (2024-06-27)
 
 <section class="packages">
 
@@ -113,6 +113,40 @@ This release closes the following issue:
 This release closes the following issue:
 
 [##1096](#1096)
+
+</section>
+
+<!-- /.issues -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-async-parallel-unreleased">
+
+#### [@stdlib/utils/async/parallel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/parallel)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#1811](https://github.com/stdlib-js/stdlib/issues/1811)
 
 </section>
 
@@ -320,9 +354,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[##1086 ](#1086 ), [##1095 ](#1095 ), [##1096](#1096)
+[#1811](https://github.com/stdlib-js/stdlib/issues/1811), [##1086 ](#1086 ), [##1095 ](#1095 ), [##1096](#1096)
 
 </section>
 
@@ -332,12 +366,13 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 16 people contributed to this release. Thank you to the following contributors:
+A total of 17 people contributed to this release. Thank you to the following contributors:
 
 -   AgPriyanshu18
 -   Athan Reines
 -   Joel Mathew Koshy
 -   Manik Sharma
+-   NightKnight
 -   Philipp Burckhardt
 -   Philipp Burckhardt
 -   Prajwal Kulkarni
@@ -361,6 +396,7 @@ A total of 16 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - **feat:** add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896) _(by NightKnight, Athan Reines, Philipp Burckhardt, stdlib-bot)_
 -   [`09073da`](https://github.com/stdlib-js/stdlib/commit/09073dad351205baefa3e56125aa5002b8771f8f) - **chore:** update indentation and add newline _(by Philipp Burckhardt)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
 -   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(##2255)](#2255) _(by stdlib-bot)_
