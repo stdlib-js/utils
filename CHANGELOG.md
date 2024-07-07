@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-06-27)
+## Unreleased (2024-07-07)
 
 <section class="packages">
 
@@ -396,6 +396,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <details>
 
+-   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
 -   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - **feat:** add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896) _(by NightKnight, Athan Reines, Philipp Burckhardt, stdlib-bot)_
 -   [`09073da`](https://github.com/stdlib-js/stdlib/commit/09073dad351205baefa3e56125aa5002b8771f8f) - **chore:** update indentation and add newline _(by Philipp Burckhardt)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
