@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.3.0">
 
-## Unreleased (2024-07-18)
+## 0.3.0 (2024-08-17)
 
 <section class="packages">
 
@@ -71,18 +71,6 @@
 
 <!-- /.bug-fixes -->
 
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[##1095 ](#1095 )
-
-</section>
-
-<!-- /.issues -->
-
 </details>
 
 </section>
@@ -112,7 +100,7 @@ This release closes the following issue:
 
 This release closes the following issue:
 
-[##1096](#1096)
+[#1096](https://github.com/stdlib-js/stdlib/issues/1096)
 
 </section>
 
@@ -212,23 +200,11 @@ This release closes the following issue:
 
 ##### Bug Fixes
 
--   [`e971001`](https://github.com/stdlib-js/stdlib/commit/e971001e2d17ca4c6e67e81aaba687f5001f0288) - improve type declarations by using generics in `utils/group` [(##1375)](#1375)
+-   [`e971001`](https://github.com/stdlib-js/stdlib/commit/e971001e2d17ca4c6e67e81aaba687f5001f0288) - improve type declarations by using generics in `utils/group` [(#1375)](https://github.com/stdlib-js/stdlib/pull/1375)
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="issues">
-
-##### Closed Issues
-
-This release closes the following issue:
-
-[##1086 ](#1086 )
-
-</section>
-
-<!-- /.issues -->
 
 </details>
 
@@ -354,9 +330,9 @@ This release closes the following issue:
 
 ### Closed Issues
 
-A total of 4 issues were closed in this release:
+A total of 2 issues were closed in this release:
 
-[#1811](https://github.com/stdlib-js/stdlib/issues/1811), [##1086 ](#1086 ), [##1095 ](#1095 ), [##1096](#1096)
+[#1096](https://github.com/stdlib-js/stdlib/issues/1096), [#1811](https://github.com/stdlib-js/stdlib/issues/1811)
 
 </section>
 
@@ -366,14 +342,13 @@ A total of 4 issues were closed in this release:
 
 ### Contributors
 
-A total of 17 people contributed to this release. Thank you to the following contributors:
+A total of 15 people contributed to this release. Thank you to the following contributors:
 
 -   AgPriyanshu18
 -   Athan Reines
 -   Joel Mathew Koshy
 -   Manik Sharma
 -   NightKnight
--   Philipp Burckhardt
 -   Philipp Burckhardt
 -   Prajwal Kulkarni
 -   Pranav
@@ -384,7 +359,6 @@ A total of 17 people contributed to this release. Thank you to the following con
 -   Sai Srikar Dumpeti
 -   Shubham Singh
 -   Utkarsh Raj
--   stdlib-bot
 
 </section>
 
@@ -406,30 +380,30 @@ A total of 17 people contributed to this release. Thank you to the following con
 -   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - **feat:** add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896) _(by NightKnight, Athan Reines, Philipp Burckhardt, stdlib-bot)_
 -   [`09073da`](https://github.com/stdlib-js/stdlib/commit/09073dad351205baefa3e56125aa5002b8771f8f) - **chore:** update indentation and add newline _(by Philipp Burckhardt)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
--   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(##2255)](#2255) _(by stdlib-bot)_
--   [`53fd65d`](https://github.com/stdlib-js/stdlib/commit/53fd65de03a466f6cf3ca0752c0908a57ef151b1) - **docs:** update related packages sections [(##2240)](#2240) _(by stdlib-bot)_
+-   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(#2255)](https://github.com/stdlib-js/stdlib/pull/2255) _(by stdlib-bot)_
+-   [`53fd65d`](https://github.com/stdlib-js/stdlib/commit/53fd65de03a466f6cf3ca0752c0908a57ef151b1) - **docs:** update related packages sections [(#2240)](https://github.com/stdlib-js/stdlib/pull/2240) _(by stdlib-bot)_
 -   [`aaa391a`](https://github.com/stdlib-js/stdlib/commit/aaa391a46214c21dca294506d06ac0b3d59512ce) - **chore:** fix typos _(by Philipp Burckhardt)_
 -   [`326479a`](https://github.com/stdlib-js/stdlib/commit/326479a0533ad89929eac59ad1b122cd8cd9cc5f) - **refactor:** update `blas/ext/base/snansumors` to follow current project conventions _(by Pratik, Philipp Burckhardt)_
--   [`98ae85e`](https://github.com/stdlib-js/stdlib/commit/98ae85e1daf32d48a1d3173cfbcb229c722fc79c) - **docs:** update related packages sections [(##2107)](#2107) _(by stdlib-bot)_
--   [`f36cfab`](https://github.com/stdlib-js/stdlib/commit/f36cfab3875404fd9c58b6e2a6fedca5e04cb4d9) - **chore:** update package meta data [(##2014)](#2014) _(by stdlib-bot)_
+-   [`98ae85e`](https://github.com/stdlib-js/stdlib/commit/98ae85e1daf32d48a1d3173cfbcb229c722fc79c) - **docs:** update related packages sections [(#2107)](https://github.com/stdlib-js/stdlib/pull/2107) _(by stdlib-bot)_
+-   [`f36cfab`](https://github.com/stdlib-js/stdlib/commit/f36cfab3875404fd9c58b6e2a6fedca5e04cb4d9) - **chore:** update package meta data [(#2014)](https://github.com/stdlib-js/stdlib/pull/2014) _(by stdlib-bot)_
 -   [`8a88ec1`](https://github.com/stdlib-js/stdlib/commit/8a88ec1f450ddc7cc4e9004f94299fe864bf7acb) - **docs:** update related packages sections [(#2006)](https://github.com/stdlib-js/stdlib/pull/2006) _(by stdlib-bot)_
 -   [`8c5698c`](https://github.com/stdlib-js/stdlib/commit/8c5698ce650800516279f9d90fabbc65a17cff52) - **feat:** add `utils/any-own-by` _(by Joel Mathew Koshy, Philipp Burckhardt)_
--   [`a3fbf67`](https://github.com/stdlib-js/stdlib/commit/a3fbf67720b3d1963b27c1097bd8144397ac0ec1) - **docs:** update related packages sections [(##1857)](#1857) _(by stdlib-bot)_
--   [`d40dbaf`](https://github.com/stdlib-js/stdlib/commit/d40dbafc25e3e10c8fa83f5b4203db97c289823c) - **chore:** update package meta data [(##1812)](#1812) _(by stdlib-bot)_
+-   [`a3fbf67`](https://github.com/stdlib-js/stdlib/commit/a3fbf67720b3d1963b27c1097bd8144397ac0ec1) - **docs:** update related packages sections [(#1857)](https://github.com/stdlib-js/stdlib/pull/1857) _(by stdlib-bot)_
+-   [`d40dbaf`](https://github.com/stdlib-js/stdlib/commit/d40dbafc25e3e10c8fa83f5b4203db97c289823c) - **chore:** update package meta data [(#1812)](https://github.com/stdlib-js/stdlib/pull/1812) _(by stdlib-bot)_
 -   [`8d6f33c`](https://github.com/stdlib-js/stdlib/commit/8d6f33c6b2162168d9855080d5cc261f4f9bfd9e) - **feat:** add `utils/parse-ndjson` _(by Manik Sharma, stdlib-bot, Shubham Singh, Philipp Burckhardt, Athan Reines)_
 -   [`80fdd70`](https://github.com/stdlib-js/stdlib/commit/80fdd7073fb324751656cadfc3ed190045fc1583) - **feat:** add `utils/some-own-by` _(by Rutam, Pranav, Philipp Burckhardt)_
 -   [`69c167d`](https://github.com/stdlib-js/stdlib/commit/69c167d7b5ad978f4e5507a48a8f8dc525464da5) - **feat:** add `utils/any-in-by` _(by Priyansh)_
 -   [`c9e1623`](https://github.com/stdlib-js/stdlib/commit/c9e1623e7c116d0d0afdf80dc22b19af81b3346b) - **feat:** add `utils/none-in-by` _(by AgPriyanshu18, Philipp Burckhardt)_
 -   [`52e479b`](https://github.com/stdlib-js/stdlib/commit/52e479b8430f04cfe0b861bd81f59c9125d7673b) - **feat:** add `utils/every-own-by` _(by Praneki, Philipp Burckhardt)_
--   [`5cfd0a8`](https://github.com/stdlib-js/stdlib/commit/5cfd0a8712299d680aff7f9d8fca0c0ac69de56b) - **chore:** update package meta data [(##1462)](#1462) _(by stdlib-bot)_
+-   [`5cfd0a8`](https://github.com/stdlib-js/stdlib/commit/5cfd0a8712299d680aff7f9d8fca0c0ac69de56b) - **chore:** update package meta data [(#1462)](https://github.com/stdlib-js/stdlib/pull/1462) _(by stdlib-bot)_
 -   [`87ec7c2`](https://github.com/stdlib-js/stdlib/commit/87ec7c2486b008c88a0b0846135240c1ae36e9f1) - **feat:** add `utils/every-in-by` _(by Sai Srikar Dumpeti, Philipp Burckhardt)_
--   [`e971001`](https://github.com/stdlib-js/stdlib/commit/e971001e2d17ca4c6e67e81aaba687f5001f0288) - **fix:** improve type declarations by using generics in `utils/group` [(##1375)](#1375) _(by Utkarsh Raj, Philipp Burckhardt)_
+-   [`e971001`](https://github.com/stdlib-js/stdlib/commit/e971001e2d17ca4c6e67e81aaba687f5001f0288) - **fix:** improve type declarations by using generics in `utils/group` [(#1375)](https://github.com/stdlib-js/stdlib/pull/1375) _(by Utkarsh Raj, Philipp Burckhardt)_
 -   [`046d8c4`](https://github.com/stdlib-js/stdlib/commit/046d8c4f83ff9635764967406fb6c3b5c4554518) - **feat:** add `utils/none-own-by` _(by Pratik, stdlib-bot, Philipp Burckhardt)_
 -   [`2351845`](https://github.com/stdlib-js/stdlib/commit/2351845b933cc7b7368c42e4565b57149806e5f9) - **feat:** add `utils/some-in-by` _(by Rutam, Philipp Burckhardt)_
--   [`6941efb`](https://github.com/stdlib-js/stdlib/commit/6941efb41b8c7c108ec87b93bb82795584134753) - **refactor:** improve type definitions for async/if then [(##1381)](#1381) _(by Prajwal Kulkarni, Philipp Burckhardt)_
+-   [`6941efb`](https://github.com/stdlib-js/stdlib/commit/6941efb41b8c7c108ec87b93bb82795584134753) - **refactor:** improve type definitions for async/if then [(#1381)](https://github.com/stdlib-js/stdlib/pull/1381) _(by Prajwal Kulkarni, Philipp Burckhardt)_
 -   [`19106ca`](https://github.com/stdlib-js/stdlib/commit/19106ca820dcd737e7fcf1b022d9b1b7346c5b52) - **fix:** update unary predicate error type to include null _(by Philipp Burckhardt)_
 -   [`952ea72`](https://github.com/stdlib-js/stdlib/commit/952ea72db18b6ff6b06bf89a3559d9f99a69cae5) - **fix:** properly type predicate error parameter _(by Philipp Burckhardt)_
--   [`174544f`](https://github.com/stdlib-js/stdlib/commit/174544f854a5dd7e839ecf9eb2c46095728f62dd) - **refactor:** use generics to improve type declarations for async/if then [(##1366)](#1366) _(by Prajwal Kulkarni)_
+-   [`174544f`](https://github.com/stdlib-js/stdlib/commit/174544f854a5dd7e839ecf9eb2c46095728f62dd) - **refactor:** use generics to improve type declarations for async/if then [(#1366)](https://github.com/stdlib-js/stdlib/pull/1366) _(by Prajwal Kulkarni)_
 
 </details>
 
@@ -441,13 +415,179 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.release -->
 
+<section class="release" id="v0.2.1">
+
 ## 0.2.1 (2024-02-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.2.0">
+
+## 0.2.0 (2024-02-05)
 
 <section class="packages">
 
 ### Packages
 
-<section class="package" id="utils-v0.2.1">
+<section class="package" id="utils-curry-v0.2.0">
+
+#### [@stdlib/utils/curry](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/curry)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - refactor TypeScript declarations to preserve type information
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-curry-right-v0.2.0">
+
+#### [@stdlib/utils/curry-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/curry-right)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - refactor TypeScript declarations to preserve type information
+
+</section>
+
+<!-- /.features -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-parallel-v0.2.0">
+
+#### [@stdlib/utils/parallel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/parallel)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`541d333`](https://github.com/stdlib-js/stdlib/commit/541d33396f3cef0c017d7c67845a9072d6626be3) - disable code blocks due to runtime errors
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+</section>
+
+<!-- /.packages -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`97992ab`](https://github.com/stdlib-js/stdlib/commit/97992abedd7d2a3d6daf644c6b12e979642c6783) - **docs:** update related packages sections [(#1301)](https://github.com/stdlib-js/stdlib/pull/1301) _(by stdlib-bot)_
+-   [`66f40ad`](https://github.com/stdlib-js/stdlib/commit/66f40ad4e91a8de67a4f631779e38902c3b5ab3e) - **refactor:** use base array utility _(by Athan Reines)_
+-   [`026b390`](https://github.com/stdlib-js/stdlib/commit/026b390088c5ae24a264be607fb53de22fef452a) - **refactor:** use base array utility _(by Athan Reines)_
+-   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
+-   [`8affb20`](https://github.com/stdlib-js/stdlib/commit/8affb20402cfd15cf33663a601541b36cc7edb56) - **docs:** update related packages sections [(#1248)](https://github.com/stdlib-js/stdlib/pull/1248) _(by stdlib-bot)_
+-   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - **feat:** refactor TypeScript declarations to preserve type information _(by Philipp Burckhardt)_
+-   [`d7fc769`](https://github.com/stdlib-js/stdlib/commit/d7fc76934a1cb2fda53ecf88d45c9fd9b9373e45) - **refactor:** use base array utilities _(by Athan Reines)_
+-   [`45799c8`](https://github.com/stdlib-js/stdlib/commit/45799c897e9843534d4585d09dc2b078681a0a4f) - **refactor:** use base array utilities _(by Athan Reines)_
+-   [`57d81e4`](https://github.com/stdlib-js/stdlib/commit/57d81e4c196065f6680f08f22aeccfdc6e590b8f) - **docs:** update related packages sections [(#1151)](https://github.com/stdlib-js/stdlib/pull/1151) _(by stdlib-bot)_
+-   [`b0552be`](https://github.com/stdlib-js/stdlib/commit/b0552becf69910d31c63d3f9e7463e0d9d53fdb7) - **refactor:** use stdlib package to sum three numbers _(by Athan Reines)_
+-   [`e82c983`](https://github.com/stdlib-js/stdlib/commit/e82c9835e5e3c3448ade23dde7b84f7f69d102e8) - **build:** remove tslint directive _(by Philipp Burckhardt)_
+-   [`c0ccd8a`](https://github.com/stdlib-js/stdlib/commit/c0ccd8a6108431a4923fde7fad85ec823690b953) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
+-   [`23114c6`](https://github.com/stdlib-js/stdlib/commit/23114c65f67ea8c17fc835e280408c39544dfa76) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+-   [`d1ea078`](https://github.com/stdlib-js/stdlib/commit/d1ea078e4075bd1c77fb27f7977b17a436fe940c) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
+-   [`2059c81`](https://github.com/stdlib-js/stdlib/commit/2059c8111a9db5fc99bf51c0fcce7ca007edc20a) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
+-   [`5497c40`](https://github.com/stdlib-js/stdlib/commit/5497c40ce46dfa7c4de64d15526ba794446487e2) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
+-   [`9502ed2`](https://github.com/stdlib-js/stdlib/commit/9502ed27e2853e312c556a48bdd7775095e66709) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
+-   [`8b7e032`](https://github.com/stdlib-js/stdlib/commit/8b7e0325d5c3040171114c332e23a1e932302cb7) - **build:** replace tslint directives _(by Philipp Burckhardt)_
+-   [`d82aaaa`](https://github.com/stdlib-js/stdlib/commit/d82aaaad3db8f1c9f8d8e3181c0aec0643bddace) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+-   [`de93ae0`](https://github.com/stdlib-js/stdlib/commit/de93ae01f1d5e234696e02b9e778d3d71515f5b7) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+-   [`2ee04a1`](https://github.com/stdlib-js/stdlib/commit/2ee04a1a56367b9663698aa0d01c10dca8d716df) - **docs:** update namespace ToCs _(by Athan Reines)_
+-   [`cacca61`](https://github.com/stdlib-js/stdlib/commit/cacca61bc884c5c1805716236733cf378d0ce955) - **docs:** update links _(by Athan Reines)_
+-   [`12ce7e3`](https://github.com/stdlib-js/stdlib/commit/12ce7e3d1197f4171d6c7d1c5799c1b3dd40273e) - **style:** disable lint rule _(by Athan Reines)_
+-   [`264b4f3`](https://github.com/stdlib-js/stdlib/commit/264b4f366df5c589ed924a78f33af1d6903b25ce) - **style:** disable lint rule _(by Athan Reines)_
+-   [`4c357d8`](https://github.com/stdlib-js/stdlib/commit/4c357d8c0dd2fd2fd38a91534c1bb64f119bcee9) - **style:** disable lint rule _(by Athan Reines)_
+-   [`537deec`](https://github.com/stdlib-js/stdlib/commit/537deeccd6ab0b5efa37735056356f2866541dba) - **style:** disable lint rule _(by Athan Reines)_
+-   [`6959e96`](https://github.com/stdlib-js/stdlib/commit/6959e964dfbbfb76965a95893526668a85593e2d) - **style:** disable lint rule _(by Athan Reines)_
+-   [`c406bac`](https://github.com/stdlib-js/stdlib/commit/c406bac5520b83ac38e2a56fe24e941b8ee7f99d) - **docs:** add workaround for linting _(by Athan Reines)_
+-   [`85b0900`](https://github.com/stdlib-js/stdlib/commit/85b09002c274239c0524d3632ba7d8fcec9d91f6) - **docs:** resolve lint errors _(by Athan Reines)_
+-   [`0505710`](https://github.com/stdlib-js/stdlib/commit/0505710f323e878aa26c1cf38f92fc2988414dea) - **style:** disable lint rule _(by Athan Reines)_
+-   [`52f2fdc`](https://github.com/stdlib-js/stdlib/commit/52f2fdc34795d546032031c3dacbec7eb419a141) - **style:** disable lint rule _(by Athan Reines)_
+-   [`155dae9`](https://github.com/stdlib-js/stdlib/commit/155dae99c9f66fcfa038c167cd52dce8ebfd2960) - **style:** disable lint rule _(by Athan Reines)_
+-   [`541d333`](https://github.com/stdlib-js/stdlib/commit/541d33396f3cef0c017d7c67845a9072d6626be3) - **fix:** disable code blocks due to runtime errors _(by Athan Reines)_
+-   [`50db6ab`](https://github.com/stdlib-js/stdlib/commit/50db6ab78f162e1d827477db6a78f7ccc775c14d) - **style:** disable lint rule _(by Athan Reines)_
+-   [`d18ab3c`](https://github.com/stdlib-js/stdlib/commit/d18ab3c44e4149f43805a9418219a5c235cf29ec) - **style:** disable lint rule _(by Athan Reines)_
+-   [`405e05b`](https://github.com/stdlib-js/stdlib/commit/405e05b0469a1c2c2fc76e134c11edca4503d8aa) - **style:** disable lint rule _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.1">
+
+## 0.1.1 (2023-11-08)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.1.0">
+
+## 0.1.0 (2023-11-08)
+
+<section class="packages">
+
+### Packages
+
+<section class="package" id="utils-v0.1.0">
 
 #### [@stdlib/utils](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils)
 
@@ -480,8 +620,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -495,7 +634,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-any-v0.2.1">
+<section class="package" id="utils-any-v0.1.0">
 
 #### [@stdlib/utils/any](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/any)
 
@@ -537,7 +676,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-any-by-v0.2.1">
+<section class="package" id="utils-any-by-v0.1.0">
 
 #### [@stdlib/utils/any-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/any-by)
 
@@ -568,8 +707,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -583,7 +721,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-any-by-right-v0.2.1">
+<section class="package" id="utils-any-by-right-v0.1.0">
 
 #### [@stdlib/utils/any-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/any-by-right)
 
@@ -614,8 +752,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -629,7 +766,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-append-v0.2.1">
+<section class="package" id="utils-append-v0.1.0">
 
 #### [@stdlib/utils/append](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/append)
 
@@ -659,8 +796,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -674,7 +810,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-argument-function-v0.2.1">
+<section class="package" id="utils-argument-function-v0.1.0">
 
 #### [@stdlib/utils/argument-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/argument-function)
 
@@ -694,8 +830,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -709,7 +844,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-v0.2.1">
+<section class="package" id="utils-async-v0.1.0">
 
 #### [@stdlib/utils/async](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async)
 
@@ -730,8 +865,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -745,7 +879,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-any-by-v0.2.1">
+<section class="package" id="utils-async-any-by-v0.1.0">
 
 #### [@stdlib/utils/async/any-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/any-by)
 
@@ -775,8 +909,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -790,7 +923,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-any-by-right-v0.2.1">
+<section class="package" id="utils-async-any-by-right-v0.1.0">
 
 #### [@stdlib/utils/async/any-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/any-by-right)
 
@@ -820,8 +953,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -835,7 +967,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-bifurcate-by-v0.2.1">
+<section class="package" id="utils-async-bifurcate-by-v0.1.0">
 
 #### [@stdlib/utils/async/bifurcate-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/bifurcate-by)
 
@@ -865,8 +997,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -880,7 +1011,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-compose-v0.2.1">
+<section class="package" id="utils-async-compose-v0.1.0">
 
 #### [@stdlib/utils/async/compose](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/compose)
 
@@ -900,8 +1031,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -915,7 +1045,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-count-by-v0.2.1">
+<section class="package" id="utils-async-count-by-v0.1.0">
 
 #### [@stdlib/utils/async/count-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/count-by)
 
@@ -945,8 +1075,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -960,7 +1089,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-do-until-v0.2.1">
+<section class="package" id="utils-async-do-until-v0.1.0">
 
 #### [@stdlib/utils/async/do-until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/do-until)
 
@@ -980,8 +1109,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -995,7 +1123,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-do-while-v0.2.1">
+<section class="package" id="utils-async-do-while-v0.1.0">
 
 #### [@stdlib/utils/async/do-while](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/do-while)
 
@@ -1015,8 +1143,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1030,7 +1157,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-every-by-v0.2.1">
+<section class="package" id="utils-async-every-by-v0.1.0">
 
 #### [@stdlib/utils/async/every-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/every-by)
 
@@ -1060,8 +1187,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1075,7 +1201,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-every-by-right-v0.2.1">
+<section class="package" id="utils-async-every-by-right-v0.1.0">
 
 #### [@stdlib/utils/async/every-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/every-by-right)
 
@@ -1105,8 +1231,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1120,7 +1245,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-for-each-v0.2.1">
+<section class="package" id="utils-async-for-each-v0.1.0">
 
 #### [@stdlib/utils/async/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/for-each)
 
@@ -1150,8 +1275,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1165,7 +1289,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-for-each-right-v0.2.1">
+<section class="package" id="utils-async-for-each-right-v0.1.0">
 
 #### [@stdlib/utils/async/for-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/for-each-right)
 
@@ -1195,8 +1319,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1210,7 +1333,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-function-sequence-v0.2.1">
+<section class="package" id="utils-async-function-sequence-v0.1.0">
 
 #### [@stdlib/utils/async/function-sequence](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/function-sequence)
 
@@ -1230,8 +1353,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1245,7 +1367,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-group-by-v0.2.1">
+<section class="package" id="utils-async-group-by-v0.1.0">
 
 #### [@stdlib/utils/async/group-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/group-by)
 
@@ -1275,8 +1397,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1290,7 +1411,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-if-else-v0.2.1">
+<section class="package" id="utils-async-if-else-v0.1.0">
 
 #### [@stdlib/utils/async/if-else](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/if-else)
 
@@ -1310,8 +1431,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1325,7 +1445,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-if-then-v0.2.1">
+<section class="package" id="utils-async-if-then-v0.1.0">
 
 #### [@stdlib/utils/async/if-then](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/if-then)
 
@@ -1345,8 +1465,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1360,7 +1479,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-inmap-v0.2.1">
+<section class="package" id="utils-async-inmap-v0.1.0">
 
 #### [@stdlib/utils/async/inmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/inmap)
 
@@ -1390,8 +1509,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1405,7 +1523,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-inmap-right-v0.2.1">
+<section class="package" id="utils-async-inmap-right-v0.1.0">
 
 #### [@stdlib/utils/async/inmap-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/inmap-right)
 
@@ -1435,8 +1553,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1450,7 +1567,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-map-function-v0.2.1">
+<section class="package" id="utils-async-map-function-v0.1.0">
 
 #### [@stdlib/utils/async/map-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/map-function)
 
@@ -1470,8 +1587,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1485,7 +1601,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-map-keys-v0.2.1">
+<section class="package" id="utils-async-map-keys-v0.1.0">
 
 #### [@stdlib/utils/async/map-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/map-keys)
 
@@ -1505,8 +1621,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1520,7 +1635,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-map-values-v0.2.1">
+<section class="package" id="utils-async-map-values-v0.1.0">
 
 #### [@stdlib/utils/async/map-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/map-values)
 
@@ -1540,8 +1655,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1555,7 +1669,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-none-by-v0.2.1">
+<section class="package" id="utils-async-none-by-v0.1.0">
 
 #### [@stdlib/utils/async/none-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/none-by)
 
@@ -1585,8 +1699,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1600,7 +1713,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-none-by-right-v0.2.1">
+<section class="package" id="utils-async-none-by-right-v0.1.0">
 
 #### [@stdlib/utils/async/none-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/none-by-right)
 
@@ -1630,8 +1743,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1645,7 +1757,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-reduce-v0.2.1">
+<section class="package" id="utils-async-reduce-v0.1.0">
 
 #### [@stdlib/utils/async/reduce](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/reduce)
 
@@ -1675,8 +1787,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1690,7 +1801,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-reduce-right-v0.2.1">
+<section class="package" id="utils-async-reduce-right-v0.1.0">
 
 #### [@stdlib/utils/async/reduce-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/reduce-right)
 
@@ -1720,8 +1831,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1735,7 +1845,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-series-waterfall-v0.2.1">
+<section class="package" id="utils-async-series-waterfall-v0.1.0">
 
 #### [@stdlib/utils/async/series-waterfall](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/series-waterfall)
 
@@ -1755,8 +1865,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1770,7 +1879,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-some-by-v0.2.1">
+<section class="package" id="utils-async-some-by-v0.1.0">
 
 #### [@stdlib/utils/async/some-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/some-by)
 
@@ -1800,8 +1909,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1815,7 +1923,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-some-by-right-v0.2.1">
+<section class="package" id="utils-async-some-by-right-v0.1.0">
 
 #### [@stdlib/utils/async/some-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/some-by-right)
 
@@ -1845,8 +1953,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1860,7 +1967,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-tabulate-by-v0.2.1">
+<section class="package" id="utils-async-tabulate-by-v0.1.0">
 
 #### [@stdlib/utils/async/tabulate-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/tabulate-by)
 
@@ -1890,8 +1997,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1905,7 +2011,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-try-catch-v0.2.1">
+<section class="package" id="utils-async-try-catch-v0.1.0">
 
 #### [@stdlib/utils/async/try-catch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/try-catch)
 
@@ -1925,8 +2031,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1940,7 +2045,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-try-then-v0.2.1">
+<section class="package" id="utils-async-try-then-v0.1.0">
 
 #### [@stdlib/utils/async/try-then](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/try-then)
 
@@ -1960,8 +2065,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -1975,7 +2079,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-until-v0.2.1">
+<section class="package" id="utils-async-until-v0.1.0">
 
 #### [@stdlib/utils/async/until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/until)
 
@@ -1995,8 +2099,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2010,7 +2113,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-while-v0.2.1">
+<section class="package" id="utils-async-while-v0.1.0">
 
 #### [@stdlib/utils/async/while](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/while)
 
@@ -2030,8 +2133,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2045,7 +2147,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-bifurcate-v0.2.1">
+<section class="package" id="utils-bifurcate-v0.1.0">
 
 #### [@stdlib/utils/bifurcate](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/bifurcate)
 
@@ -2075,8 +2177,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2090,7 +2191,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-bifurcate-by-v0.2.1">
+<section class="package" id="utils-bifurcate-by-v0.1.0">
 
 #### [@stdlib/utils/bifurcate-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/bifurcate-by)
 
@@ -2122,8 +2223,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2137,7 +2237,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-bifurcate-in-v0.2.1">
+<section class="package" id="utils-bifurcate-in-v0.1.0">
 
 #### [@stdlib/utils/bifurcate-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/bifurcate-in)
 
@@ -2157,8 +2257,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2172,7 +2271,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-bifurcate-own-v0.2.1">
+<section class="package" id="utils-bifurcate-own-v0.1.0">
 
 #### [@stdlib/utils/bifurcate-own](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/bifurcate-own)
 
@@ -2192,8 +2291,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2207,7 +2305,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-capitalize-keys-v0.2.1">
+<section class="package" id="utils-capitalize-keys-v0.1.0">
 
 #### [@stdlib/utils/capitalize-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/capitalize-keys)
 
@@ -2227,8 +2325,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2242,7 +2339,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-circular-buffer-v0.2.1">
+<section class="package" id="utils-circular-buffer-v0.1.0">
 
 #### [@stdlib/utils/circular-buffer](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/circular-buffer)
 
@@ -2272,8 +2369,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2287,7 +2383,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-common-keys-v0.2.1">
+<section class="package" id="utils-common-keys-v0.1.0">
 
 #### [@stdlib/utils/common-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/common-keys)
 
@@ -2307,8 +2403,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2322,7 +2417,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-common-keys-in-v0.2.1">
+<section class="package" id="utils-common-keys-in-v0.1.0">
 
 #### [@stdlib/utils/common-keys-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/common-keys-in)
 
@@ -2342,8 +2437,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2357,7 +2451,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-compact-adjacency-matrix-v0.2.1">
+<section class="package" id="utils-compact-adjacency-matrix-v0.1.0">
 
 #### [@stdlib/utils/compact-adjacency-matrix](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/compact-adjacency-matrix)
 
@@ -2377,8 +2471,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2392,7 +2485,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-compose-v0.2.1">
+<section class="package" id="utils-compose-v0.1.0">
 
 #### [@stdlib/utils/compose](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/compose)
 
@@ -2412,8 +2505,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2427,7 +2519,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-constant-function-v0.2.1">
+<section class="package" id="utils-constant-function-v0.1.0">
 
 #### [@stdlib/utils/constant-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/constant-function)
 
@@ -2448,8 +2540,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2465,7 +2556,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-constructor-name-v0.2.1">
+<section class="package" id="utils-constructor-name-v0.1.0">
 
 #### [@stdlib/utils/constructor-name](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/constructor-name)
 
@@ -2485,8 +2576,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2500,7 +2590,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-convert-path-v0.2.1">
+<section class="package" id="utils-convert-path-v0.1.0">
 
 #### [@stdlib/utils/convert-path](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/convert-path)
 
@@ -2520,8 +2610,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2535,7 +2624,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-copy-v0.2.1">
+<section class="package" id="utils-copy-v0.1.0">
 
 #### [@stdlib/utils/copy](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/copy)
 
@@ -2555,8 +2644,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2570,7 +2658,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-count-by-v0.2.1">
+<section class="package" id="utils-count-by-v0.1.0">
 
 #### [@stdlib/utils/count-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/count-by)
 
@@ -2603,8 +2691,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2618,7 +2705,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-curry-v0.2.1">
+<section class="package" id="utils-curry-v0.1.0">
 
 #### [@stdlib/utils/curry](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/curry)
 
@@ -2628,7 +2715,6 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### Features
 
--   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - refactor TypeScript declarations to preserve type information
 -   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0) - update minimum TypeScript version
 
 </section>
@@ -2639,8 +2725,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2654,7 +2739,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-curry-right-v0.2.1">
+<section class="package" id="utils-curry-right-v0.1.0">
 
 #### [@stdlib/utils/curry-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/curry-right)
 
@@ -2664,7 +2749,6 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### Features
 
--   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - refactor TypeScript declarations to preserve type information
 -   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0) - update minimum TypeScript version
 
 </section>
@@ -2675,8 +2759,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2690,7 +2773,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-decorate-after-v0.2.1">
+<section class="package" id="utils-decorate-after-v0.1.0">
 
 #### [@stdlib/utils/decorate-after](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/decorate-after)
 
@@ -2710,8 +2793,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2725,7 +2807,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-deep-get-v0.2.1">
+<section class="package" id="utils-deep-get-v0.1.0">
 
 #### [@stdlib/utils/deep-get](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/deep-get)
 
@@ -2745,8 +2827,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2760,7 +2841,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-deep-pluck-v0.2.1">
+<section class="package" id="utils-deep-pluck-v0.1.0">
 
 #### [@stdlib/utils/deep-pluck](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/deep-pluck)
 
@@ -2780,8 +2861,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2795,7 +2875,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-deep-set-v0.2.1">
+<section class="package" id="utils-deep-set-v0.1.0">
 
 #### [@stdlib/utils/deep-set](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/deep-set)
 
@@ -2815,8 +2895,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2830,7 +2909,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-configurable-read-only-accessor-v0.2.1">
+<section class="package" id="utils-define-configurable-read-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-configurable-read-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-configurable-read-only-accessor)
 
@@ -2850,8 +2929,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2865,7 +2943,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-configurable-read-only-property-v0.2.1">
+<section class="package" id="utils-define-configurable-read-only-property-v0.1.0">
 
 #### [@stdlib/utils/define-configurable-read-only-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-configurable-read-only-property)
 
@@ -2885,8 +2963,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2900,7 +2977,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-configurable-read-write-accessor-v0.2.1">
+<section class="package" id="utils-define-configurable-read-write-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-configurable-read-write-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-configurable-read-write-accessor)
 
@@ -2920,8 +2997,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2935,7 +3011,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-configurable-write-only-accessor-v0.2.1">
+<section class="package" id="utils-define-configurable-write-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-configurable-write-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-configurable-write-only-accessor)
 
@@ -2955,8 +3031,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -2970,7 +3045,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-memoized-configurable-read-only-property-v0.2.1">
+<section class="package" id="utils-define-memoized-configurable-read-only-property-v0.1.0">
 
 #### [@stdlib/utils/define-memoized-configurable-read-only-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-memoized-configurable-read-only-property)
 
@@ -2990,8 +3065,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3005,7 +3079,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-memoized-property-v0.2.1">
+<section class="package" id="utils-define-memoized-property-v0.1.0">
 
 #### [@stdlib/utils/define-memoized-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-memoized-property)
 
@@ -3025,8 +3099,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3040,7 +3113,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-memoized-read-only-property-v0.2.1">
+<section class="package" id="utils-define-memoized-read-only-property-v0.1.0">
 
 #### [@stdlib/utils/define-memoized-read-only-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-memoized-read-only-property)
 
@@ -3060,8 +3133,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3075,7 +3147,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-nonenumerable-property-v0.2.1">
+<section class="package" id="utils-define-nonenumerable-property-v0.1.0">
 
 #### [@stdlib/utils/define-nonenumerable-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-nonenumerable-property)
 
@@ -3095,8 +3167,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3110,7 +3181,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-nonenumerable-read-only-accessor-v0.2.1">
+<section class="package" id="utils-define-nonenumerable-read-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-nonenumerable-read-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-nonenumerable-read-only-accessor)
 
@@ -3130,8 +3201,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3145,7 +3215,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-nonenumerable-read-only-property-v0.2.1">
+<section class="package" id="utils-define-nonenumerable-read-only-property-v0.1.0">
 
 #### [@stdlib/utils/define-nonenumerable-read-only-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-nonenumerable-read-only-property)
 
@@ -3165,8 +3235,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3180,7 +3249,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-nonenumerable-read-write-accessor-v0.2.1">
+<section class="package" id="utils-define-nonenumerable-read-write-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-nonenumerable-read-write-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-nonenumerable-read-write-accessor)
 
@@ -3200,8 +3269,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3215,7 +3283,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-nonenumerable-write-only-accessor-v0.2.1">
+<section class="package" id="utils-define-nonenumerable-write-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-nonenumerable-write-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-nonenumerable-write-only-accessor)
 
@@ -3235,8 +3303,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3250,7 +3317,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-properties-v0.2.1">
+<section class="package" id="utils-define-properties-v0.1.0">
 
 #### [@stdlib/utils/define-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-properties)
 
@@ -3270,8 +3337,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3285,7 +3351,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-property-v0.2.1">
+<section class="package" id="utils-define-property-v0.1.0">
 
 #### [@stdlib/utils/define-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-property)
 
@@ -3305,8 +3371,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3320,7 +3385,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-read-only-accessor-v0.2.1">
+<section class="package" id="utils-define-read-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-read-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-read-only-accessor)
 
@@ -3340,8 +3405,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3355,7 +3419,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-read-only-property-v0.2.1">
+<section class="package" id="utils-define-read-only-property-v0.1.0">
 
 #### [@stdlib/utils/define-read-only-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-read-only-property)
 
@@ -3375,8 +3439,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3390,7 +3453,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-read-write-accessor-v0.2.1">
+<section class="package" id="utils-define-read-write-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-read-write-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-read-write-accessor)
 
@@ -3410,8 +3473,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3425,7 +3487,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-define-write-only-accessor-v0.2.1">
+<section class="package" id="utils-define-write-only-accessor-v0.1.0">
 
 #### [@stdlib/utils/define-write-only-accessor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/define-write-only-accessor)
 
@@ -3445,8 +3507,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3460,7 +3521,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-dirname-v0.2.1">
+<section class="package" id="utils-dirname-v0.1.0">
 
 #### [@stdlib/utils/dirname](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/dirname)
 
@@ -3480,8 +3541,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3495,7 +3555,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-until-v0.2.1">
+<section class="package" id="utils-do-until-v0.1.0">
 
 #### [@stdlib/utils/do-until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-until)
 
@@ -3515,8 +3575,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3530,7 +3589,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-until-each-v0.2.1">
+<section class="package" id="utils-do-until-each-v0.1.0">
 
 #### [@stdlib/utils/do-until-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-until-each)
 
@@ -3561,8 +3620,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3576,7 +3634,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-until-each-right-v0.2.1">
+<section class="package" id="utils-do-until-each-right-v0.1.0">
 
 #### [@stdlib/utils/do-until-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-until-each-right)
 
@@ -3607,8 +3665,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3622,7 +3679,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-while-v0.2.1">
+<section class="package" id="utils-do-while-v0.1.0">
 
 #### [@stdlib/utils/do-while](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-while)
 
@@ -3642,8 +3699,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3657,7 +3713,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-while-each-v0.2.1">
+<section class="package" id="utils-do-while-each-v0.1.0">
 
 #### [@stdlib/utils/do-while-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-while-each)
 
@@ -3688,8 +3744,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3703,7 +3758,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-do-while-each-right-v0.2.1">
+<section class="package" id="utils-do-while-each-right-v0.1.0">
 
 #### [@stdlib/utils/do-while-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/do-while-each-right)
 
@@ -3734,8 +3789,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3749,7 +3803,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-doubly-linked-list-v0.2.1">
+<section class="package" id="utils-doubly-linked-list-v0.1.0">
 
 #### [@stdlib/utils/doubly-linked-list](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/doubly-linked-list)
 
@@ -3769,8 +3823,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3784,7 +3837,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-dsv-v0.2.1">
+<section class="package" id="utils-dsv-v0.1.0">
 
 #### [@stdlib/utils/dsv](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/dsv)
 
@@ -3804,8 +3857,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3819,7 +3871,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-dsv-base-v0.2.1">
+<section class="package" id="utils-dsv-base-v0.1.0">
 
 #### [@stdlib/utils/dsv/base](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/dsv/base)
 
@@ -3839,8 +3891,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3854,7 +3905,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-dsv-base-parse-v0.2.1">
+<section class="package" id="utils-dsv-base-parse-v0.1.0">
 
 #### [@stdlib/utils/dsv/base/parse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/dsv/base/parse)
 
@@ -3876,7 +3927,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-entries-v0.2.1">
+<section class="package" id="utils-entries-v0.1.0">
 
 #### [@stdlib/utils/entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/entries)
 
@@ -3896,8 +3947,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3911,7 +3961,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-entries-in-v0.2.1">
+<section class="package" id="utils-entries-in-v0.1.0">
 
 #### [@stdlib/utils/entries-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/entries-in)
 
@@ -3931,8 +3981,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3946,7 +3995,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-enumerable-properties-v0.2.1">
+<section class="package" id="utils-enumerable-properties-v0.1.0">
 
 #### [@stdlib/utils/enumerable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/enumerable-properties)
 
@@ -3966,8 +4015,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -3981,7 +4029,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-enumerable-properties-in-v0.2.1">
+<section class="package" id="utils-enumerable-properties-in-v0.1.0">
 
 #### [@stdlib/utils/enumerable-properties-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/enumerable-properties-in)
 
@@ -4001,8 +4049,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4016,7 +4063,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-enumerable-property-symbols-v0.2.1">
+<section class="package" id="utils-enumerable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/enumerable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/enumerable-property-symbols)
 
@@ -4036,8 +4083,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4051,7 +4097,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-enumerable-property-symbols-in-v0.2.1">
+<section class="package" id="utils-enumerable-property-symbols-in-v0.1.0">
 
 #### [@stdlib/utils/enumerable-property-symbols-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/enumerable-property-symbols-in)
 
@@ -4071,8 +4117,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4086,7 +4131,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-escape-regexp-string-v0.2.1">
+<section class="package" id="utils-escape-regexp-string-v0.1.0">
 
 #### [@stdlib/utils/escape-regexp-string](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/escape-regexp-string)
 
@@ -4106,8 +4151,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4121,7 +4165,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-eval-v0.2.1">
+<section class="package" id="utils-eval-v0.1.0">
 
 #### [@stdlib/utils/eval](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/eval)
 
@@ -4141,8 +4185,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4156,7 +4199,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-every-v0.2.1">
+<section class="package" id="utils-every-v0.1.0">
 
 #### [@stdlib/utils/every](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every)
 
@@ -4198,7 +4241,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-every-by-v0.2.1">
+<section class="package" id="utils-every-by-v0.1.0">
 
 #### [@stdlib/utils/every-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-by)
 
@@ -4229,8 +4272,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4244,7 +4286,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-every-by-right-v0.2.1">
+<section class="package" id="utils-every-by-right-v0.1.0">
 
 #### [@stdlib/utils/every-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-by-right)
 
@@ -4275,8 +4317,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4290,7 +4331,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-extname-v0.2.1">
+<section class="package" id="utils-extname-v0.1.0">
 
 #### [@stdlib/utils/extname](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/extname)
 
@@ -4310,8 +4351,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4325,7 +4365,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-fifo-v0.2.1">
+<section class="package" id="utils-fifo-v0.1.0">
 
 #### [@stdlib/utils/fifo](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/fifo)
 
@@ -4345,8 +4385,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4360,7 +4399,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-filter-arguments-v0.2.1">
+<section class="package" id="utils-filter-arguments-v0.1.0">
 
 #### [@stdlib/utils/filter-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/filter-arguments)
 
@@ -4380,8 +4419,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4395,7 +4433,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-find-v0.2.1">
+<section class="package" id="utils-find-v0.1.0">
 
 #### [@stdlib/utils/find](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/find)
 
@@ -4425,8 +4463,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4440,7 +4477,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-flatten-array-v0.2.1">
+<section class="package" id="utils-flatten-array-v0.1.0">
 
 #### [@stdlib/utils/flatten-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/flatten-array)
 
@@ -4460,8 +4497,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4475,7 +4511,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-flatten-object-v0.2.1">
+<section class="package" id="utils-flatten-object-v0.1.0">
 
 #### [@stdlib/utils/flatten-object](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/flatten-object)
 
@@ -4495,8 +4531,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4510,7 +4545,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-for-each-v0.2.1">
+<section class="package" id="utils-for-each-v0.1.0">
 
 #### [@stdlib/utils/for-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/for-each)
 
@@ -4541,8 +4576,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4556,7 +4590,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-for-each-right-v0.2.1">
+<section class="package" id="utils-for-each-right-v0.1.0">
 
 #### [@stdlib/utils/for-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/for-each-right)
 
@@ -4587,8 +4621,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4602,7 +4635,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-for-in-v0.2.1">
+<section class="package" id="utils-for-in-v0.1.0">
 
 #### [@stdlib/utils/for-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/for-in)
 
@@ -4622,8 +4655,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4637,7 +4669,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-for-own-v0.2.1">
+<section class="package" id="utils-for-own-v0.1.0">
 
 #### [@stdlib/utils/for-own](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/for-own)
 
@@ -4657,8 +4689,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4672,7 +4703,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-from-entries-v0.2.1">
+<section class="package" id="utils-from-entries-v0.1.0">
 
 #### [@stdlib/utils/from-entries](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/from-entries)
 
@@ -4692,8 +4723,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4707,7 +4737,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-function-name-v0.2.1">
+<section class="package" id="utils-function-name-v0.1.0">
 
 #### [@stdlib/utils/function-name](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/function-name)
 
@@ -4727,8 +4757,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4742,7 +4771,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-function-sequence-v0.2.1">
+<section class="package" id="utils-function-sequence-v0.1.0">
 
 #### [@stdlib/utils/function-sequence](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/function-sequence)
 
@@ -4762,8 +4791,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4777,7 +4805,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-get-prototype-of-v0.2.1">
+<section class="package" id="utils-get-prototype-of-v0.1.0">
 
 #### [@stdlib/utils/get-prototype-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/get-prototype-of)
 
@@ -4797,8 +4825,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4812,7 +4839,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-global-v0.2.1">
+<section class="package" id="utils-global-v0.1.0">
 
 #### [@stdlib/utils/global](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/global)
 
@@ -4832,8 +4859,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4847,7 +4873,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-group-v0.2.1">
+<section class="package" id="utils-group-v0.1.0">
 
 #### [@stdlib/utils/group](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/group)
 
@@ -4877,8 +4903,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4892,7 +4917,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-group-by-v0.2.1">
+<section class="package" id="utils-group-by-v0.1.0">
 
 #### [@stdlib/utils/group-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/group-by)
 
@@ -4924,8 +4949,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4939,7 +4963,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-group-in-v0.2.1">
+<section class="package" id="utils-group-in-v0.1.0">
 
 #### [@stdlib/utils/group-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/group-in)
 
@@ -4959,8 +4983,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -4974,7 +4997,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-group-own-v0.2.1">
+<section class="package" id="utils-group-own-v0.1.0">
 
 #### [@stdlib/utils/group-own](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/group-own)
 
@@ -4994,8 +5017,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5009,7 +5031,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-identity-function-v0.2.1">
+<section class="package" id="utils-identity-function-v0.1.0">
 
 #### [@stdlib/utils/identity-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/identity-function)
 
@@ -5030,8 +5052,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5047,7 +5068,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-if-else-v0.2.1">
+<section class="package" id="utils-if-else-v0.1.0">
 
 #### [@stdlib/utils/if-else](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/if-else)
 
@@ -5068,8 +5089,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5085,7 +5105,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-if-then-v0.2.1">
+<section class="package" id="utils-if-then-v0.1.0">
 
 #### [@stdlib/utils/if-then](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/if-then)
 
@@ -5106,8 +5126,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5123,7 +5142,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-index-of-v0.2.1">
+<section class="package" id="utils-index-of-v0.1.0">
 
 #### [@stdlib/utils/index-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/index-of)
 
@@ -5165,7 +5184,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherit-v0.2.1">
+<section class="package" id="utils-inherit-v0.1.0">
 
 #### [@stdlib/utils/inherit](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherit)
 
@@ -5185,8 +5204,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5200,7 +5218,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-enumerable-properties-v0.2.1">
+<section class="package" id="utils-inherited-enumerable-properties-v0.1.0">
 
 #### [@stdlib/utils/inherited-enumerable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-enumerable-properties)
 
@@ -5220,8 +5238,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5235,7 +5252,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-enumerable-property-symbols-v0.2.1">
+<section class="package" id="utils-inherited-enumerable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/inherited-enumerable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-enumerable-property-symbols)
 
@@ -5255,8 +5272,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5270,7 +5286,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-keys-v0.2.1">
+<section class="package" id="utils-inherited-keys-v0.1.0">
 
 #### [@stdlib/utils/inherited-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-keys)
 
@@ -5290,8 +5306,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5305,7 +5320,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-nonenumerable-properties-v0.2.1">
+<section class="package" id="utils-inherited-nonenumerable-properties-v0.1.0">
 
 #### [@stdlib/utils/inherited-nonenumerable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-nonenumerable-properties)
 
@@ -5325,8 +5340,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5340,7 +5354,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-nonenumerable-property-names-v0.2.1">
+<section class="package" id="utils-inherited-nonenumerable-property-names-v0.1.0">
 
 #### [@stdlib/utils/inherited-nonenumerable-property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-nonenumerable-property-names)
 
@@ -5360,8 +5374,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5375,7 +5388,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-nonenumerable-property-symbols-v0.2.1">
+<section class="package" id="utils-inherited-nonenumerable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/inherited-nonenumerable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-nonenumerable-property-symbols)
 
@@ -5395,8 +5408,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5410,7 +5422,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-properties-v0.2.1">
+<section class="package" id="utils-inherited-properties-v0.1.0">
 
 #### [@stdlib/utils/inherited-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-properties)
 
@@ -5430,8 +5442,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5445,7 +5456,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-property-descriptor-v0.2.1">
+<section class="package" id="utils-inherited-property-descriptor-v0.1.0">
 
 #### [@stdlib/utils/inherited-property-descriptor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-property-descriptor)
 
@@ -5465,8 +5476,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5480,7 +5490,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-property-descriptors-v0.2.1">
+<section class="package" id="utils-inherited-property-descriptors-v0.1.0">
 
 #### [@stdlib/utils/inherited-property-descriptors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-property-descriptors)
 
@@ -5500,8 +5510,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5515,7 +5524,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-property-names-v0.2.1">
+<section class="package" id="utils-inherited-property-names-v0.1.0">
 
 #### [@stdlib/utils/inherited-property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-property-names)
 
@@ -5535,8 +5544,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5550,7 +5558,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-property-symbols-v0.2.1">
+<section class="package" id="utils-inherited-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/inherited-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-property-symbols)
 
@@ -5570,8 +5578,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5585,7 +5592,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-writable-properties-v0.2.1">
+<section class="package" id="utils-inherited-writable-properties-v0.1.0">
 
 #### [@stdlib/utils/inherited-writable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-writable-properties)
 
@@ -5605,8 +5612,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5620,7 +5626,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-writable-property-names-v0.2.1">
+<section class="package" id="utils-inherited-writable-property-names-v0.1.0">
 
 #### [@stdlib/utils/inherited-writable-property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-writable-property-names)
 
@@ -5640,8 +5646,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5655,7 +5660,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inherited-writable-property-symbols-v0.2.1">
+<section class="package" id="utils-inherited-writable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/inherited-writable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inherited-writable-property-symbols)
 
@@ -5675,8 +5680,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5690,7 +5694,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inmap-v0.2.1">
+<section class="package" id="utils-inmap-v0.1.0">
 
 #### [@stdlib/utils/inmap](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inmap)
 
@@ -5721,8 +5725,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5736,7 +5739,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-inmap-right-v0.2.1">
+<section class="package" id="utils-inmap-right-v0.1.0">
 
 #### [@stdlib/utils/inmap-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/inmap-right)
 
@@ -5767,8 +5770,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5782,7 +5784,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-key-by-v0.2.1">
+<section class="package" id="utils-key-by-v0.1.0">
 
 #### [@stdlib/utils/key-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/key-by)
 
@@ -5804,7 +5806,6 @@ A total of 17 people contributed to this release. Thank you to the following con
 ##### BREAKING CHANGES
 
 -   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types
--   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types 
 
     -   To migrate, users should update their type definitions accordingly.
 
@@ -5820,7 +5821,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-key-by-right-v0.2.1">
+<section class="package" id="utils-key-by-right-v0.1.0">
 
 #### [@stdlib/utils/key-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/key-by-right)
 
@@ -5850,8 +5851,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5865,7 +5865,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-keys-v0.2.1">
+<section class="package" id="utils-keys-v0.1.0">
 
 #### [@stdlib/utils/keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/keys)
 
@@ -5885,8 +5885,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5900,7 +5899,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-keys-in-v0.2.1">
+<section class="package" id="utils-keys-in-v0.1.0">
 
 #### [@stdlib/utils/keys-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/keys-in)
 
@@ -5920,8 +5919,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5935,7 +5933,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-linked-list-v0.2.1">
+<section class="package" id="utils-linked-list-v0.1.0">
 
 #### [@stdlib/utils/linked-list](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/linked-list)
 
@@ -5955,8 +5953,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -5970,7 +5967,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-lowercase-keys-v0.2.1">
+<section class="package" id="utils-lowercase-keys-v0.1.0">
 
 #### [@stdlib/utils/lowercase-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/lowercase-keys)
 
@@ -5990,8 +5987,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6005,7 +6001,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-v0.2.1">
+<section class="package" id="utils-map-v0.1.0">
 
 #### [@stdlib/utils/map](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map)
 
@@ -6036,8 +6032,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6051,7 +6046,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-arguments-v0.2.1">
+<section class="package" id="utils-map-arguments-v0.1.0">
 
 #### [@stdlib/utils/map-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-arguments)
 
@@ -6071,8 +6066,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6086,7 +6080,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-function-v0.2.1">
+<section class="package" id="utils-map-function-v0.1.0">
 
 #### [@stdlib/utils/map-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-function)
 
@@ -6117,8 +6111,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6132,7 +6125,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-keys-v0.2.1">
+<section class="package" id="utils-map-keys-v0.1.0">
 
 #### [@stdlib/utils/map-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-keys)
 
@@ -6152,8 +6145,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6167,7 +6159,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-reduce-v0.2.1">
+<section class="package" id="utils-map-reduce-v0.1.0">
 
 #### [@stdlib/utils/map-reduce](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-reduce)
 
@@ -6197,8 +6189,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6212,7 +6203,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-reduce-right-v0.2.1">
+<section class="package" id="utils-map-reduce-right-v0.1.0">
 
 #### [@stdlib/utils/map-reduce-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-reduce-right)
 
@@ -6242,8 +6233,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6257,7 +6247,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-right-v0.2.1">
+<section class="package" id="utils-map-right-v0.1.0">
 
 #### [@stdlib/utils/map-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-right)
 
@@ -6288,8 +6278,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6303,7 +6292,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-values-v0.2.1">
+<section class="package" id="utils-map-values-v0.1.0">
 
 #### [@stdlib/utils/map-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-values)
 
@@ -6323,8 +6312,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6338,7 +6326,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map2-v0.2.1">
+<section class="package" id="utils-map2-v0.1.0">
 
 #### [@stdlib/utils/map2](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map2)
 
@@ -6359,15 +6347,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): update callback signature
--   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): consolidate array arguments into a single argument 
+-   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): consolidate array arguments into a single argument
 
     -   To migrate, users should access the input arrays via the fourth
-    argument, where the first element is the first input array and the
-    second element is the second input array.
+        argument, where the first element is the first input array and the
+        second element is the second input array.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6381,7 +6367,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map2-right-v0.2.1">
+<section class="package" id="utils-map2-right-v0.1.0">
 
 #### [@stdlib/utils/map2-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map2-right)
 
@@ -6402,15 +6388,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): update callback signature
--   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): consolidate array arguments into a single argument 
+-   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): consolidate array arguments into a single argument
 
     -   To migrate, users should access the input arrays via the fourth
-    argument, where the first element is the first input array and the
-    second element is the second input array.
+        argument, where the first element is the first input array and the
+        second element is the second input array.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6424,7 +6408,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map2d-v0.2.1">
+<section class="package" id="utils-map2d-v0.1.0">
 
 #### [@stdlib/utils/map2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map2d)
 
@@ -6445,15 +6429,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): consolidate callback arguments
--   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): provide index arguments as an array 
+-   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): provide index arguments as an array
 
     -   To migrate, users should access the indices for the first and second
-    dimension by accessing the respective elements in an index array
-    argument, which is provided to the callback function upon invocation.
+        dimension by accessing the respective elements in an index array
+        argument, which is provided to the callback function upon invocation.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6467,7 +6449,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map3d-v0.2.1">
+<section class="package" id="utils-map3d-v0.1.0">
 
 #### [@stdlib/utils/map3d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map3d)
 
@@ -6488,15 +6470,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): consolidate callback arguments
--   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): provide index arguments as an array 
+-   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): provide index arguments as an array
 
     -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6510,7 +6490,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map4d-v0.2.1">
+<section class="package" id="utils-map4d-v0.1.0">
 
 #### [@stdlib/utils/map4d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map4d)
 
@@ -6531,15 +6511,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): consolidate callback arguments
--   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): provide index arguments as an array 
+-   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): provide index arguments as an array
 
     -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6553,7 +6531,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-map5d-v0.2.1">
+<section class="package" id="utils-map5d-v0.1.0">
 
 #### [@stdlib/utils/map5d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map5d)
 
@@ -6574,15 +6552,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): consolidate callback arguments
--   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): provide index arguments as an array 
+-   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): provide index arguments as an array
 
     -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6596,7 +6572,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-mask-arguments-v0.2.1">
+<section class="package" id="utils-mask-arguments-v0.1.0">
 
 #### [@stdlib/utils/mask-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/mask-arguments)
 
@@ -6638,7 +6614,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-memoize-v0.2.1">
+<section class="package" id="utils-memoize-v0.1.0">
 
 #### [@stdlib/utils/memoize](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/memoize)
 
@@ -6658,8 +6634,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6673,7 +6648,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-merge-v0.2.1">
+<section class="package" id="utils-merge-v0.1.0">
 
 #### [@stdlib/utils/merge](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/merge)
 
@@ -6693,8 +6668,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6708,7 +6682,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-move-property-v0.2.1">
+<section class="package" id="utils-move-property-v0.1.0">
 
 #### [@stdlib/utils/move-property](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/move-property)
 
@@ -6728,8 +6702,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6743,7 +6716,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-named-typed-tuple-v0.2.1">
+<section class="package" id="utils-named-typed-tuple-v0.1.0">
 
 #### [@stdlib/utils/named-typed-tuple](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/named-typed-tuple)
 
@@ -6763,8 +6736,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6778,7 +6750,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nary-function-v0.2.1">
+<section class="package" id="utils-nary-function-v0.1.0">
 
 #### [@stdlib/utils/nary-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nary-function)
 
@@ -6798,8 +6770,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6813,7 +6784,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-native-class-v0.2.1">
+<section class="package" id="utils-native-class-v0.1.0">
 
 #### [@stdlib/utils/native-class](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/native-class)
 
@@ -6833,8 +6804,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6848,7 +6818,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-next-tick-v0.2.1">
+<section class="package" id="utils-next-tick-v0.1.0">
 
 #### [@stdlib/utils/next-tick](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/next-tick)
 
@@ -6868,8 +6838,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6883,7 +6852,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-none-v0.2.1">
+<section class="package" id="utils-none-v0.1.0">
 
 #### [@stdlib/utils/none](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/none)
 
@@ -6925,7 +6894,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-none-by-v0.2.1">
+<section class="package" id="utils-none-by-v0.1.0">
 
 #### [@stdlib/utils/none-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/none-by)
 
@@ -6956,8 +6925,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -6971,7 +6939,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-none-by-right-v0.2.1">
+<section class="package" id="utils-none-by-right-v0.1.0">
 
 #### [@stdlib/utils/none-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/none-by-right)
 
@@ -7002,8 +6970,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7017,7 +6984,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-properties-v0.2.1">
+<section class="package" id="utils-nonenumerable-properties-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-properties)
 
@@ -7037,8 +7004,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7052,7 +7018,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-properties-in-v0.2.1">
+<section class="package" id="utils-nonenumerable-properties-in-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-properties-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-properties-in)
 
@@ -7072,8 +7038,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7087,7 +7052,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-property-names-v0.2.1">
+<section class="package" id="utils-nonenumerable-property-names-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-property-names)
 
@@ -7107,8 +7072,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7122,7 +7086,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-property-names-in-v0.2.1">
+<section class="package" id="utils-nonenumerable-property-names-in-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-property-names-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-property-names-in)
 
@@ -7142,8 +7106,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7157,7 +7120,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-property-symbols-v0.2.1">
+<section class="package" id="utils-nonenumerable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-property-symbols)
 
@@ -7177,8 +7140,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7192,7 +7154,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonenumerable-property-symbols-in-v0.2.1">
+<section class="package" id="utils-nonenumerable-property-symbols-in-v0.1.0">
 
 #### [@stdlib/utils/nonenumerable-property-symbols-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonenumerable-property-symbols-in)
 
@@ -7212,8 +7174,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7227,7 +7188,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-nonindex-keys-v0.2.1">
+<section class="package" id="utils-nonindex-keys-v0.1.0">
 
 #### [@stdlib/utils/nonindex-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nonindex-keys)
 
@@ -7247,8 +7208,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7262,7 +7222,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-noop-v0.2.1">
+<section class="package" id="utils-noop-v0.1.0">
 
 #### [@stdlib/utils/noop](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/noop)
 
@@ -7282,8 +7242,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7297,7 +7256,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-object-inverse-v0.2.1">
+<section class="package" id="utils-object-inverse-v0.1.0">
 
 #### [@stdlib/utils/object-inverse](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/object-inverse)
 
@@ -7317,8 +7276,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7332,7 +7290,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-object-inverse-by-v0.2.1">
+<section class="package" id="utils-object-inverse-by-v0.1.0">
 
 #### [@stdlib/utils/object-inverse-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/object-inverse-by)
 
@@ -7352,8 +7310,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7367,7 +7324,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-omit-v0.2.1">
+<section class="package" id="utils-omit-v0.1.0">
 
 #### [@stdlib/utils/omit](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/omit)
 
@@ -7399,7 +7356,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-omit-by-v0.2.1">
+<section class="package" id="utils-omit-by-v0.1.0">
 
 #### [@stdlib/utils/omit-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/omit-by)
 
@@ -7420,8 +7377,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7437,7 +7393,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-open-url-v0.2.1">
+<section class="package" id="utils-open-url-v0.1.0">
 
 #### [@stdlib/utils/open-url](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/open-url)
 
@@ -7457,8 +7413,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7472,7 +7427,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-papply-v0.2.1">
+<section class="package" id="utils-papply-v0.1.0">
 
 #### [@stdlib/utils/papply](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/papply)
 
@@ -7492,8 +7447,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7507,7 +7461,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-papply-right-v0.2.1">
+<section class="package" id="utils-papply-right-v0.1.0">
 
 #### [@stdlib/utils/papply-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/papply-right)
 
@@ -7527,8 +7481,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7542,7 +7495,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-parallel-v0.2.1">
+<section class="package" id="utils-parallel-v0.1.0">
 
 #### [@stdlib/utils/parallel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/parallel)
 
@@ -7558,22 +7511,11 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.features -->
 
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`541d333`](https://github.com/stdlib-js/stdlib/commit/541d33396f3cef0c017d7c67845a9072d6626be3) - disable code blocks due to runtime errors
-
-</section>
-
-<!-- /.bug-fixes -->
-
 <section class="breaking-changes">
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7587,7 +7529,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-parse-json-v0.2.1">
+<section class="package" id="utils-parse-json-v0.1.0">
 
 #### [@stdlib/utils/parse-json](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/parse-json)
 
@@ -7607,8 +7549,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7622,7 +7563,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-pick-v0.2.1">
+<section class="package" id="utils-pick-v0.1.0">
 
 #### [@stdlib/utils/pick](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/pick)
 
@@ -7642,8 +7583,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7657,7 +7597,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-pick-arguments-v0.2.1">
+<section class="package" id="utils-pick-arguments-v0.1.0">
 
 #### [@stdlib/utils/pick-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/pick-arguments)
 
@@ -7677,8 +7617,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7692,7 +7631,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-pick-by-v0.2.1">
+<section class="package" id="utils-pick-by-v0.1.0">
 
 #### [@stdlib/utils/pick-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/pick-by)
 
@@ -7724,7 +7663,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-pluck-v0.2.1">
+<section class="package" id="utils-pluck-v0.1.0">
 
 #### [@stdlib/utils/pluck](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/pluck)
 
@@ -7744,8 +7683,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7759,7 +7697,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-pop-v0.2.1">
+<section class="package" id="utils-pop-v0.1.0">
 
 #### [@stdlib/utils/pop](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/pop)
 
@@ -7803,7 +7741,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-prepend-v0.2.1">
+<section class="package" id="utils-prepend-v0.1.0">
 
 #### [@stdlib/utils/prepend](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/prepend)
 
@@ -7845,7 +7783,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-properties-v0.2.1">
+<section class="package" id="utils-properties-v0.1.0">
 
 #### [@stdlib/utils/properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/properties)
 
@@ -7865,8 +7803,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7880,7 +7817,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-properties-in-v0.2.1">
+<section class="package" id="utils-properties-in-v0.1.0">
 
 #### [@stdlib/utils/properties-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/properties-in)
 
@@ -7900,8 +7837,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7915,7 +7851,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-descriptor-v0.2.1">
+<section class="package" id="utils-property-descriptor-v0.1.0">
 
 #### [@stdlib/utils/property-descriptor](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptor)
 
@@ -7935,8 +7871,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7950,7 +7885,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-descriptor-in-v0.2.1">
+<section class="package" id="utils-property-descriptor-in-v0.1.0">
 
 #### [@stdlib/utils/property-descriptor-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptor-in)
 
@@ -7970,8 +7905,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -7985,7 +7919,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-descriptors-v0.2.1">
+<section class="package" id="utils-property-descriptors-v0.1.0">
 
 #### [@stdlib/utils/property-descriptors](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptors)
 
@@ -8005,8 +7939,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8020,7 +7953,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-descriptors-in-v0.2.1">
+<section class="package" id="utils-property-descriptors-in-v0.1.0">
 
 #### [@stdlib/utils/property-descriptors-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-descriptors-in)
 
@@ -8040,8 +7973,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8055,7 +7987,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-names-v0.2.1">
+<section class="package" id="utils-property-names-v0.1.0">
 
 #### [@stdlib/utils/property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-names)
 
@@ -8075,8 +8007,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8090,7 +8021,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-names-in-v0.2.1">
+<section class="package" id="utils-property-names-in-v0.1.0">
 
 #### [@stdlib/utils/property-names-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-names-in)
 
@@ -8110,8 +8041,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8125,7 +8055,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-symbols-v0.2.1">
+<section class="package" id="utils-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-symbols)
 
@@ -8145,8 +8075,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8160,7 +8089,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-property-symbols-in-v0.2.1">
+<section class="package" id="utils-property-symbols-in-v0.1.0">
 
 #### [@stdlib/utils/property-symbols-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/property-symbols-in)
 
@@ -8180,8 +8109,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8195,7 +8123,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-push-v0.2.1">
+<section class="package" id="utils-push-v0.1.0">
 
 #### [@stdlib/utils/push](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/push)
 
@@ -8237,7 +8165,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-real-max-v0.2.1">
+<section class="package" id="utils-real-max-v0.1.0">
 
 #### [@stdlib/utils/real-max](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/real-max)
 
@@ -8257,8 +8185,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8272,7 +8199,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-real-min-v0.2.1">
+<section class="package" id="utils-real-min-v0.1.0">
 
 #### [@stdlib/utils/real-min](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/real-min)
 
@@ -8292,8 +8219,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8307,7 +8233,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reduce-v0.2.1">
+<section class="package" id="utils-reduce-v0.1.0">
 
 #### [@stdlib/utils/reduce](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reduce)
 
@@ -8337,8 +8263,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8352,7 +8277,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reduce-right-v0.2.1">
+<section class="package" id="utils-reduce-right-v0.1.0">
 
 #### [@stdlib/utils/reduce-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reduce-right)
 
@@ -8382,8 +8307,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8397,7 +8321,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reduce2d-v0.2.1">
+<section class="package" id="utils-reduce2d-v0.1.0">
 
 #### [@stdlib/utils/reduce2d](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reduce2d)
 
@@ -8418,15 +8342,13 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): update callback signature
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument 
+-   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument
 
     -   To migrate, users should access the array element indices via the third
-    argument, where the first element is the first array dimension index and the
-    second element is the second array dimension index.
+        argument, where the first element is the first array dimension index and the
+        second element is the second array dimension index.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8440,7 +8362,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-regexp-from-string-v0.2.1">
+<section class="package" id="utils-regexp-from-string-v0.1.0">
 
 #### [@stdlib/utils/regexp-from-string](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/regexp-from-string)
 
@@ -8460,8 +8382,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8475,7 +8396,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reject-arguments-v0.2.1">
+<section class="package" id="utils-reject-arguments-v0.1.0">
 
 #### [@stdlib/utils/reject-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reject-arguments)
 
@@ -8495,8 +8416,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8510,7 +8430,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reorder-arguments-v0.2.1">
+<section class="package" id="utils-reorder-arguments-v0.1.0">
 
 #### [@stdlib/utils/reorder-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reorder-arguments)
 
@@ -8530,8 +8450,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8545,7 +8464,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-reverse-arguments-v0.2.1">
+<section class="package" id="utils-reverse-arguments-v0.1.0">
 
 #### [@stdlib/utils/reverse-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/reverse-arguments)
 
@@ -8565,8 +8484,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8580,7 +8498,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-safe-int-max-v0.2.1">
+<section class="package" id="utils-safe-int-max-v0.1.0">
 
 #### [@stdlib/utils/safe-int-max](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/safe-int-max)
 
@@ -8600,8 +8518,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8615,7 +8532,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-safe-int-min-v0.2.1">
+<section class="package" id="utils-safe-int-min-v0.1.0">
 
 #### [@stdlib/utils/safe-int-min](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/safe-int-min)
 
@@ -8635,8 +8552,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8650,7 +8566,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-shift-v0.2.1">
+<section class="package" id="utils-shift-v0.1.0">
 
 #### [@stdlib/utils/shift](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/shift)
 
@@ -8692,7 +8608,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-size-of-v0.2.1">
+<section class="package" id="utils-size-of-v0.1.0">
 
 #### [@stdlib/utils/size-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/size-of)
 
@@ -8712,8 +8628,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8727,7 +8642,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-some-v0.2.1">
+<section class="package" id="utils-some-v0.1.0">
 
 #### [@stdlib/utils/some](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/some)
 
@@ -8769,7 +8684,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-some-by-v0.2.1">
+<section class="package" id="utils-some-by-v0.1.0">
 
 #### [@stdlib/utils/some-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/some-by)
 
@@ -8800,8 +8715,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8815,7 +8729,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-some-by-right-v0.2.1">
+<section class="package" id="utils-some-by-right-v0.1.0">
 
 #### [@stdlib/utils/some-by-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/some-by-right)
 
@@ -8846,8 +8760,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8861,7 +8774,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-stack-v0.2.1">
+<section class="package" id="utils-stack-v0.1.0">
 
 #### [@stdlib/utils/stack](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/stack)
 
@@ -8881,8 +8794,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -8896,7 +8808,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-tabulate-v0.2.1">
+<section class="package" id="utils-tabulate-v0.1.0">
 
 #### [@stdlib/utils/tabulate](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/tabulate)
 
@@ -8938,7 +8850,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-tabulate-by-v0.2.1">
+<section class="package" id="utils-tabulate-by-v0.1.0">
 
 #### [@stdlib/utils/tabulate-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/tabulate-by)
 
@@ -8980,7 +8892,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-thunk-v0.2.1">
+<section class="package" id="utils-thunk-v0.1.0">
 
 #### [@stdlib/utils/thunk](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/thunk)
 
@@ -9000,8 +8912,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9015,7 +8926,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-timeit-v0.2.1">
+<section class="package" id="utils-timeit-v0.1.0">
 
 #### [@stdlib/utils/timeit](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/timeit)
 
@@ -9035,8 +8946,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9050,7 +8960,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-try-catch-v0.2.1">
+<section class="package" id="utils-try-catch-v0.1.0">
 
 #### [@stdlib/utils/try-catch](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/try-catch)
 
@@ -9071,8 +8981,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9088,7 +8997,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-try-function-v0.2.1">
+<section class="package" id="utils-try-function-v0.1.0">
 
 #### [@stdlib/utils/try-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/try-function)
 
@@ -9108,8 +9017,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9123,7 +9031,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-try-require-v0.2.1">
+<section class="package" id="utils-try-require-v0.1.0">
 
 #### [@stdlib/utils/try-require](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/try-require)
 
@@ -9143,8 +9051,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9158,7 +9065,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-try-then-v0.2.1">
+<section class="package" id="utils-try-then-v0.1.0">
 
 #### [@stdlib/utils/try-then](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/try-then)
 
@@ -9189,8 +9096,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9206,7 +9112,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-type-max-v0.2.1">
+<section class="package" id="utils-type-max-v0.1.0">
 
 #### [@stdlib/utils/type-max](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/type-max)
 
@@ -9226,8 +9132,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9241,7 +9146,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-type-min-v0.2.1">
+<section class="package" id="utils-type-min-v0.1.0">
 
 #### [@stdlib/utils/type-min](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/type-min)
 
@@ -9261,8 +9166,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9276,7 +9180,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-type-of-v0.2.1">
+<section class="package" id="utils-type-of-v0.1.0">
 
 #### [@stdlib/utils/type-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/type-of)
 
@@ -9296,8 +9200,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9311,7 +9214,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-uncapitalize-keys-v0.2.1">
+<section class="package" id="utils-uncapitalize-keys-v0.1.0">
 
 #### [@stdlib/utils/uncapitalize-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/uncapitalize-keys)
 
@@ -9331,8 +9234,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9346,7 +9248,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-uncurry-v0.2.1">
+<section class="package" id="utils-uncurry-v0.1.0">
 
 #### [@stdlib/utils/uncurry](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/uncurry)
 
@@ -9366,8 +9268,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9381,7 +9282,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-uncurry-right-v0.2.1">
+<section class="package" id="utils-uncurry-right-v0.1.0">
 
 #### [@stdlib/utils/uncurry-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/uncurry-right)
 
@@ -9401,8 +9302,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9416,7 +9316,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-unshift-v0.2.1">
+<section class="package" id="utils-unshift-v0.1.0">
 
 #### [@stdlib/utils/unshift](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/unshift)
 
@@ -9458,7 +9358,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-until-v0.2.1">
+<section class="package" id="utils-until-v0.1.0">
 
 #### [@stdlib/utils/until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/until)
 
@@ -9479,8 +9379,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9494,7 +9393,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-until-each-v0.2.1">
+<section class="package" id="utils-until-each-v0.1.0">
 
 #### [@stdlib/utils/until-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/until-each)
 
@@ -9539,7 +9438,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-until-each-right-v0.2.1">
+<section class="package" id="utils-until-each-right-v0.1.0">
 
 #### [@stdlib/utils/until-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/until-each-right)
 
@@ -9584,7 +9483,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-unzip-v0.2.1">
+<section class="package" id="utils-unzip-v0.1.0">
 
 #### [@stdlib/utils/unzip](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/unzip)
 
@@ -9604,8 +9503,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9619,7 +9517,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-uppercase-keys-v0.2.1">
+<section class="package" id="utils-uppercase-keys-v0.1.0">
 
 #### [@stdlib/utils/uppercase-keys](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/uppercase-keys)
 
@@ -9639,8 +9537,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9654,7 +9551,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-values-v0.2.1">
+<section class="package" id="utils-values-v0.1.0">
 
 #### [@stdlib/utils/values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/values)
 
@@ -9686,7 +9583,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-values-in-v0.2.1">
+<section class="package" id="utils-values-in-v0.1.0">
 
 #### [@stdlib/utils/values-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/values-in)
 
@@ -9706,8 +9603,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9721,7 +9617,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-while-v0.2.1">
+<section class="package" id="utils-while-v0.1.0">
 
 #### [@stdlib/utils/while](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/while)
 
@@ -9753,7 +9649,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-while-each-v0.2.1">
+<section class="package" id="utils-while-each-v0.1.0">
 
 #### [@stdlib/utils/while-each](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/while-each)
 
@@ -9796,7 +9692,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-while-each-right-v0.2.1">
+<section class="package" id="utils-while-each-right-v0.1.0">
 
 #### [@stdlib/utils/while-each-right](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/while-each-right)
 
@@ -9841,7 +9737,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-properties-v0.2.1">
+<section class="package" id="utils-writable-properties-v0.1.0">
 
 #### [@stdlib/utils/writable-properties](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-properties)
 
@@ -9861,8 +9757,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9876,7 +9771,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-properties-in-v0.2.1">
+<section class="package" id="utils-writable-properties-in-v0.1.0">
 
 #### [@stdlib/utils/writable-properties-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-properties-in)
 
@@ -9896,8 +9791,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9911,7 +9805,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-property-names-v0.2.1">
+<section class="package" id="utils-writable-property-names-v0.1.0">
 
 #### [@stdlib/utils/writable-property-names](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-property-names)
 
@@ -9931,8 +9825,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9946,7 +9839,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-property-names-in-v0.2.1">
+<section class="package" id="utils-writable-property-names-in-v0.1.0">
 
 #### [@stdlib/utils/writable-property-names-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-property-names-in)
 
@@ -9966,8 +9859,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -9981,7 +9873,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-property-symbols-v0.2.1">
+<section class="package" id="utils-writable-property-symbols-v0.1.0">
 
 #### [@stdlib/utils/writable-property-symbols](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-property-symbols)
 
@@ -10001,8 +9893,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -10016,7 +9907,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-writable-property-symbols-in-v0.2.1">
+<section class="package" id="utils-writable-property-symbols-in-v0.1.0">
 
 #### [@stdlib/utils/writable-property-symbols-in](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/writable-property-symbols-in)
 
@@ -10036,8 +9927,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -10051,7 +9941,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 <!-- /.package -->
 
-<section class="package" id="utils-zip-v0.2.1">
+<section class="package" id="utils-zip-v0.1.0">
 
 #### [@stdlib/utils/zip](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/zip)
 
@@ -10071,8 +9961,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ##### BREAKING CHANGES
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -10094,62 +9983,53 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ### BREAKING CHANGES
 
--   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): consolidate callback arguments
--   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): provide index arguments as an array 
+-   [`6ba83db`](https://github.com/stdlib-js/stdlib/commit/6ba83db94da9a5611126becdd83d5a3a0c3b73d7): provide index arguments as an array
 
     -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
 
--   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): consolidate callback arguments
--   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): provide index arguments as an array 
-
-    -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
-
--   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): consolidate callback arguments
--   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): provide index arguments as an array 
+-   [`32a4165`](https://github.com/stdlib-js/stdlib/commit/32a4165d91ab7fc60dc843d619fb3ce472fb5618): provide index arguments as an array
 
     -   To migrate, users should access the indices for the various dimensions
-    by accessing the respective elements in an index array argument, which
-    is provided to the callback function upon invocation.
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
 
--   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): consolidate callback arguments
--   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): provide index arguments as an array 
+-   [`a6be89b`](https://github.com/stdlib-js/stdlib/commit/a6be89ba51bb22516e4e10483bc0086be648d81b): provide index arguments as an array
+
+    -   To migrate, users should access the indices for the various dimensions
+        by accessing the respective elements in an index array argument, which
+        is provided to the callback function upon invocation.
+
+-   [`3a07602`](https://github.com/stdlib-js/stdlib/commit/3a0760275c57c5b61dd748cf825c7146b2b7d619): provide index arguments as an array
 
     -   To migrate, users should access the indices for the first and second
-    dimension by accessing the respective elements in an index array
-    argument, which is provided to the callback function upon invocation.
+        dimension by accessing the respective elements in an index array
+        argument, which is provided to the callback function upon invocation.
 
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): update callback signature
--   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument 
+-   [`f270c07`](https://github.com/stdlib-js/stdlib/commit/f270c078cd4394120cb3cf2d92a9b02892052fe8): consolidate index arguments into a single argument
 
     -   To migrate, users should access the array element indices via the third
-    argument, where the first element is the first array dimension index and the
-    second element is the second array dimension index.
+        argument, where the first element is the first array dimension index and the
+        second element is the second array dimension index.
 
--   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): update callback signature
--   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): consolidate array arguments into a single argument 
-
-    -   To migrate, users should access the input arrays via the fourth
-    argument, where the first element is the first input array and the
-    second element is the second input array.
-
--   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): update callback signature
--   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): consolidate array arguments into a single argument 
+-   [`c1eaf9b`](https://github.com/stdlib-js/stdlib/commit/c1eaf9b48f73112af77d774084caf5a27e2d47e9): consolidate array arguments into a single argument
 
     -   To migrate, users should access the input arrays via the fourth
-    argument, where the first element is the first input array and the
-    second element is the second input array.
+        argument, where the first element is the first input array and the
+        second element is the second input array.
+
+-   [`762c44f`](https://github.com/stdlib-js/stdlib/commit/762c44f2d442ad099b10dae4635e8c29a5c6b328): consolidate array arguments into a single argument
+
+    -   To migrate, users should access the input arrays via the fourth
+        argument, where the first element is the first input array and the
+        second element is the second input array.
 
 -   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types
--   [`701fffc`](https://github.com/stdlib-js/stdlib/commit/701fffc7e3ff3b63c1fc1ad3bafa78017ccaea6d): switch order of generic input types 
 
     -   To migrate, users should update their type definitions accordingly.
 
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version
--   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1 
+-   [`ace728f`](https://github.com/stdlib-js/stdlib/commit/ace728f330033182c28199dc9e13d75eda18cfe0): update minimum TypeScript version to 4.1
 
     -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
 
@@ -10192,9 +10072,8 @@ A total of 17 people contributed to this release. Thank you to the following con
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
--   Athan Reines
 -   Athan Reines
 -   Philipp Burckhardt
 
@@ -10208,42 +10087,6 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`97992ab`](https://github.com/stdlib-js/stdlib/commit/97992abedd7d2a3d6daf644c6b12e979642c6783) - **docs:** update related packages sections [(##1301)](#1301) _(by stdlib-bot)_
--   [`66f40ad`](https://github.com/stdlib-js/stdlib/commit/66f40ad4e91a8de67a4f631779e38902c3b5ab3e) - **refactor:** use base array utility _(by Athan Reines)_
--   [`026b390`](https://github.com/stdlib-js/stdlib/commit/026b390088c5ae24a264be607fb53de22fef452a) - **refactor:** use base array utility _(by Athan Reines)_
--   [`dea49e0`](https://github.com/stdlib-js/stdlib/commit/dea49e03ab5571233e3da26835a6a6d3256d5737) - **docs:** use single quotes in require calls instead of backticks _(by Philipp Burckhardt)_
--   [`8affb20`](https://github.com/stdlib-js/stdlib/commit/8affb20402cfd15cf33663a601541b36cc7edb56) - **docs:** update related packages sections [(#1248)](https://github.com/stdlib-js/stdlib/pull/1248) _(by stdlib-bot)_
--   [`8904b41`](https://github.com/stdlib-js/stdlib/commit/8904b41fed1ab765d80190f1b066106e5ddeb627) - **feat:** refactor TypeScript declarations to preserve type information _(by Philipp Burckhardt)_
--   [`d7fc769`](https://github.com/stdlib-js/stdlib/commit/d7fc76934a1cb2fda53ecf88d45c9fd9b9373e45) - **refactor:** use base array utilities _(by Athan Reines)_
--   [`45799c8`](https://github.com/stdlib-js/stdlib/commit/45799c897e9843534d4585d09dc2b078681a0a4f) - **refactor:** use base array utilities _(by Athan Reines)_
--   [`57d81e4`](https://github.com/stdlib-js/stdlib/commit/57d81e4c196065f6680f08f22aeccfdc6e590b8f) - **docs:** update related packages sections [(#1151)](https://github.com/stdlib-js/stdlib/pull/1151) _(by stdlib-bot)_
--   [`b0552be`](https://github.com/stdlib-js/stdlib/commit/b0552becf69910d31c63d3f9e7463e0d9d53fdb7) - **refactor:** use stdlib package to sum three numbers _(by Athan Reines)_
--   [`e82c983`](https://github.com/stdlib-js/stdlib/commit/e82c9835e5e3c3448ade23dde7b84f7f69d102e8) - **build:** remove tslint directive _(by Philipp Burckhardt)_
--   [`c0ccd8a`](https://github.com/stdlib-js/stdlib/commit/c0ccd8a6108431a4923fde7fad85ec823690b953) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
--   [`23114c6`](https://github.com/stdlib-js/stdlib/commit/23114c65f67ea8c17fc835e280408c39544dfa76) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`d1ea078`](https://github.com/stdlib-js/stdlib/commit/d1ea078e4075bd1c77fb27f7977b17a436fe940c) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
--   [`2059c81`](https://github.com/stdlib-js/stdlib/commit/2059c8111a9db5fc99bf51c0fcce7ca007edc20a) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
--   [`5497c40`](https://github.com/stdlib-js/stdlib/commit/5497c40ce46dfa7c4de64d15526ba794446487e2) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
--   [`9502ed2`](https://github.com/stdlib-js/stdlib/commit/9502ed27e2853e312c556a48bdd7775095e66709) - **build:** replace tslint directive with eslint equivalent _(by Philipp Burckhardt)_
--   [`8b7e032`](https://github.com/stdlib-js/stdlib/commit/8b7e0325d5c3040171114c332e23a1e932302cb7) - **build:** replace tslint directives _(by Philipp Burckhardt)_
--   [`d82aaaa`](https://github.com/stdlib-js/stdlib/commit/d82aaaad3db8f1c9f8d8e3181c0aec0643bddace) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`de93ae0`](https://github.com/stdlib-js/stdlib/commit/de93ae01f1d5e234696e02b9e778d3d71515f5b7) - **build:** remove tslint directives _(by Philipp Burckhardt)_
--   [`2ee04a1`](https://github.com/stdlib-js/stdlib/commit/2ee04a1a56367b9663698aa0d01c10dca8d716df) - **docs:** update namespace ToCs _(by Athan Reines)_
--   [`cacca61`](https://github.com/stdlib-js/stdlib/commit/cacca61bc884c5c1805716236733cf378d0ce955) - **docs:** update links _(by Athan Reines)_
--   [`12ce7e3`](https://github.com/stdlib-js/stdlib/commit/12ce7e3d1197f4171d6c7d1c5799c1b3dd40273e) - **style:** disable lint rule _(by Athan Reines)_
--   [`264b4f3`](https://github.com/stdlib-js/stdlib/commit/264b4f366df5c589ed924a78f33af1d6903b25ce) - **style:** disable lint rule _(by Athan Reines)_
--   [`4c357d8`](https://github.com/stdlib-js/stdlib/commit/4c357d8c0dd2fd2fd38a91534c1bb64f119bcee9) - **style:** disable lint rule _(by Athan Reines)_
--   [`537deec`](https://github.com/stdlib-js/stdlib/commit/537deeccd6ab0b5efa37735056356f2866541dba) - **style:** disable lint rule _(by Athan Reines)_
--   [`6959e96`](https://github.com/stdlib-js/stdlib/commit/6959e964dfbbfb76965a95893526668a85593e2d) - **style:** disable lint rule _(by Athan Reines)_
--   [`c406bac`](https://github.com/stdlib-js/stdlib/commit/c406bac5520b83ac38e2a56fe24e941b8ee7f99d) - **docs:** add workaround for linting _(by Athan Reines)_
--   [`85b0900`](https://github.com/stdlib-js/stdlib/commit/85b09002c274239c0524d3632ba7d8fcec9d91f6) - **docs:** resolve lint errors _(by Athan Reines)_
--   [`0505710`](https://github.com/stdlib-js/stdlib/commit/0505710f323e878aa26c1cf38f92fc2988414dea) - **style:** disable lint rule _(by Athan Reines)_
--   [`52f2fdc`](https://github.com/stdlib-js/stdlib/commit/52f2fdc34795d546032031c3dacbec7eb419a141) - **style:** disable lint rule _(by Athan Reines)_
--   [`155dae9`](https://github.com/stdlib-js/stdlib/commit/155dae99c9f66fcfa038c167cd52dce8ebfd2960) - **style:** disable lint rule _(by Athan Reines)_
--   [`541d333`](https://github.com/stdlib-js/stdlib/commit/541d33396f3cef0c017d7c67845a9072d6626be3) - **fix:** disable code blocks due to runtime errors _(by Athan Reines)_
--   [`50db6ab`](https://github.com/stdlib-js/stdlib/commit/50db6ab78f162e1d827477db6a78f7ccc775c14d) - **style:** disable lint rule _(by Athan Reines)_
--   [`d18ab3c`](https://github.com/stdlib-js/stdlib/commit/d18ab3c44e4149f43805a9418219a5c235cf29ec) - **style:** disable lint rule _(by Athan Reines)_
--   [`405e05b`](https://github.com/stdlib-js/stdlib/commit/405e05b0469a1c2c2fc76e134c11edca4503d8aa) - **style:** disable lint rule _(by Athan Reines)_
 -   [`d73bbf4`](https://github.com/stdlib-js/stdlib/commit/d73bbf43d222f935085f8ecf7526e5f57835f74e) - **build:** replace lint directives _(by Philipp Burckhardt)_
 -   [`3653808`](https://github.com/stdlib-js/stdlib/commit/3653808823106dcfc1b033a8bd054f4250b12e11) - **build:** remove tslint directives _(by Philipp Burckhardt)_
 -   [`bf2cf8b`](https://github.com/stdlib-js/stdlib/commit/bf2cf8b0424e608a4e3abb6d18a8b44d790aa99c) - **build:** remove tslint directives _(by Philipp Burckhardt)_
@@ -10413,4 +10256,128 @@ A total of 3 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.12">
+
+## 0.0.12 (2021-08-22)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.11">
+
+## 0.0.11 (2021-07-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.10">
+
+## 0.0.10 (2021-07-07)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.9">
+
+## 0.0.9 (2021-06-27)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.8">
+
+## 0.0.8 (2021-06-16)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.7">
+
+## 0.0.7 (2021-06-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.6">
+
+## 0.0.6 (2021-06-15)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.5">
+
+## 0.0.5 (2021-06-13)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.4">
+
+## 0.0.4 (2021-06-12)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.3">
+
+## 0.0.3 (2021-06-12)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.2">
+
+## 0.0.2 (2021-06-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
+<section class="release" id="v0.0.1">
+
+## 0.0.1 (2021-06-10)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
 
