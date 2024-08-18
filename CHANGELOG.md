@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.1">
+
+## 0.3.1 (2024-08-18)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2024-08-17)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="utils-any-in-by-unreleased">
+<section class="package" id="utils-any-in-by-v0.3.0">
 
 #### [@stdlib/utils/any-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/any-in-by)
 
@@ -32,7 +42,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="utils-any-own-by-unreleased">
+<section class="package" id="utils-any-own-by-v0.3.0">
 
 #### [@stdlib/utils/any-own-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/any-own-by)
 
@@ -54,7 +64,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-if-else-unreleased">
+<section class="package" id="utils-async-if-else-v0.3.0">
 
 #### [@stdlib/utils/async/if-else](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/if-else)
 
@@ -77,7 +87,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-if-then-unreleased">
+<section class="package" id="utils-async-if-then-v0.3.0">
 
 #### [@stdlib/utils/async/if-then](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/if-then)
 
@@ -112,7 +122,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-async-parallel-unreleased">
+<section class="package" id="utils-async-parallel-v0.3.0">
 
 #### [@stdlib/utils/async/parallel](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/async/parallel)
 
@@ -146,7 +156,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-every-in-by-unreleased">
+<section class="package" id="utils-every-in-by-v0.3.0">
 
 #### [@stdlib/utils/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-in-by)
 
@@ -168,7 +178,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-every-own-by-unreleased">
+<section class="package" id="utils-every-own-by-v0.3.0">
 
 #### [@stdlib/utils/every-own-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-own-by)
 
@@ -190,7 +200,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-group-unreleased">
+<section class="package" id="utils-group-v0.3.0">
 
 #### [@stdlib/utils/group](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/group)
 
@@ -212,7 +222,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-none-in-by-unreleased">
+<section class="package" id="utils-none-in-by-v0.3.0">
 
 #### [@stdlib/utils/none-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/none-in-by)
 
@@ -234,7 +244,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-none-own-by-unreleased">
+<section class="package" id="utils-none-own-by-v0.3.0">
 
 #### [@stdlib/utils/none-own-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/none-own-by)
 
@@ -256,7 +266,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-parse-ndjson-unreleased">
+<section class="package" id="utils-parse-ndjson-v0.3.0">
 
 #### [@stdlib/utils/parse-ndjson](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/parse-ndjson)
 
@@ -278,7 +288,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-some-in-by-unreleased">
+<section class="package" id="utils-some-in-by-v0.3.0">
 
 #### [@stdlib/utils/some-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/some-in-by)
 
@@ -300,7 +310,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-some-own-by-unreleased">
+<section class="package" id="utils-some-own-by-v0.3.0">
 
 #### [@stdlib/utils/some-own-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/some-own-by)
 
