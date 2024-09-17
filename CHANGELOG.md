@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-11)
+## Unreleased (2024-09-17)
 
 <section class="packages">
 
@@ -34,6 +34,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`cadb613`](https://github.com/stdlib-js/stdlib/commit/cadb6131d6ce50338d11757e88e8a910a0367983) - **chore:** update argument documentation styling _(by Philipp Burckhardt)_
 -   [`3c5fc0d`](https://github.com/stdlib-js/stdlib/commit/3c5fc0d3d544356489d3da56507766eadd556fd1) - **style:** replace tabs with spaces in examples indentation _(by Philipp Burckhardt)_
 -   [`8edb71d`](https://github.com/stdlib-js/stdlib/commit/8edb71d3f64bdf44f51c35e24cfce3ff9932f844) - **test:** add tests to `utils/circular-buffer` _(by Karthik Prakash, Philipp Burckhardt, Athan Reines)_
 
