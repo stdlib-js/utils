@@ -4,11 +4,33 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-17)
+## Unreleased (2024-09-20)
 
 <section class="packages">
 
 ### Packages
+
+<section class="package" id="utils-until-unreleased">
+
+#### [@stdlib/utils/until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/until)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`506bdcc`](https://github.com/stdlib-js/stdlib/commit/506bdccd0841d8c1e56df5587de6c32c2c7ec498) - use correct parameter ordering in TS
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
 
 </section>
 
@@ -34,6 +56,8 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`506bdcc`](https://github.com/stdlib-js/stdlib/commit/506bdccd0841d8c1e56df5587de6c32c2c7ec498) - **fix:** use correct parameter ordering in TS _(by Philipp Burckhardt)_
+-   [`5ef3b3d`](https://github.com/stdlib-js/stdlib/commit/5ef3b3d745c115edaa97125b6051a3613423a770) - **chore:** fix comment _(by Philipp Burckhardt)_
 -   [`f387603`](https://github.com/stdlib-js/stdlib/commit/f387603e739f88a38af3263ce6ff675ad903ee8c) - **docs:** consistently use declarative instead of imperative sentences outside of intros _(by Philipp Burckhardt)_
 -   [`31fd427`](https://github.com/stdlib-js/stdlib/commit/31fd42744ec5d7073041f97c6f72350b8005c0fc) - **style:** remove unwanted empty lines _(by Philipp Burckhardt)_
 -   [`cadb613`](https://github.com/stdlib-js/stdlib/commit/cadb6131d6ce50338d11757e88e8a910a0367983) - **chore:** update argument documentation styling _(by Philipp Burckhardt)_
