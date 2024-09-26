@@ -56,6 +56,7 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`f477e26`](https://github.com/stdlib-js/stdlib/commit/f477e26a03e5e365f2e7c4035959a2fb789698a3) - **chore:** move functions to parent scope _(by Philipp Burckhardt)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`506bdcc`](https://github.com/stdlib-js/stdlib/commit/506bdccd0841d8c1e56df5587de6c32c2c7ec498) - **fix:** use correct parameter ordering in TS _(by Philipp Burckhardt)_
 -   [`5ef3b3d`](https://github.com/stdlib-js/stdlib/commit/5ef3b3d745c115edaa97125b6051a3613423a770) - **chore:** fix comment _(by Philipp Burckhardt)_
