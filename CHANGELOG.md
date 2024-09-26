@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-21)
+## Unreleased (2024-09-26)
 
 <section class="packages">
 
@@ -434,13 +434,13 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   NightKnight
 -   Philipp Burckhardt
 -   Prajwal Kulkarni
--   Pranav
+-   Pranav Goswami
 -   Praneki
 -   Pratik
 -   Priyansh
 -   Rutam
 -   Sai Srikar Dumpeti
--   Shubham Singh
+-   Shubham Mishra
 -   Utkarsh Raj
 
 </section>
