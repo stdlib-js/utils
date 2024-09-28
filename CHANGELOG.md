@@ -4,11 +4,55 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-09-26)
+## Unreleased (2024-09-28)
 
 <section class="packages">
 
 ### Packages
+
+<section class="package" id="utils-every-in-by-unreleased">
+
+#### [@stdlib/utils/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-in-by)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`a59219e`](https://github.com/stdlib-js/stdlib/commit/a59219e11d1951ec26cb44a4972e7616e4d8087f) - update import path for collection type
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-nary-function-unreleased">
+
+#### [@stdlib/utils/nary-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nary-function)
+
+<details>
+
+<section class="bug-fixes">
+
+##### Bug Fixes
+
+-   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - remove unused imports from TS declaration file
+
+</section>
+
+<!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
 
 <section class="package" id="utils-until-unreleased">
 
@@ -56,6 +100,10 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b89c97c`](https://github.com/stdlib-js/stdlib/commit/b89c97ce0b812ff0b2aab16b4d77969d44fe3e8c) - **docs:** resolve lint errors in TS declaration files _(by Philipp Burckhardt)_
+-   [`a59219e`](https://github.com/stdlib-js/stdlib/commit/a59219e11d1951ec26cb44a4972e7616e4d8087f) - **fix:** update import path for collection type _(by Philipp Burckhardt)_
+-   [`7f368f6`](https://github.com/stdlib-js/stdlib/commit/7f368f6c3f4cea444a304a62616cea36a5f143eb) - **fix:** remove unused imports from TS declaration file _(by Philipp Burckhardt)_
+-   [`ff9fa81`](https://github.com/stdlib-js/stdlib/commit/ff9fa81f917d539f1a11fba5580e1744991a8a11) - **docs:** fix TSDoc lint errors _(by Philipp Burckhardt)_
 -   [`f477e26`](https://github.com/stdlib-js/stdlib/commit/f477e26a03e5e365f2e7c4035959a2fb789698a3) - **chore:** move functions to parent scope _(by Philipp Burckhardt)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 -   [`506bdcc`](https://github.com/stdlib-js/stdlib/commit/506bdccd0841d8c1e56df5587de6c32c2c7ec498) - **fix:** use correct parameter ordering in TS _(by Philipp Burckhardt)_
