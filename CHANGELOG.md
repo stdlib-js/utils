@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-06)
+## Unreleased (2024-10-14)
 
 <section class="packages">
 
@@ -25,6 +25,57 @@
 </section>
 
 <!-- /.bug-fixes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-map-arguments-unreleased">
+
+#### [@stdlib/utils/map-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-arguments)
+
+<details>
+
+<section class="features">
+
+##### Features
+
+-   [`b74a08a`](https://github.com/stdlib-js/stdlib/commit/b74a08ae1dfc859ac8b9704af27e3c3399ad2da5) - improve type declarations for `utils/map-arguments` [(#2050)](https://github.com/stdlib-js/stdlib/pull/2050)
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`b74a08a`](https://github.com/stdlib-js/stdlib/commit/b74a08ae1dfc859ac8b9704af27e3c3399ad2da5): function signature and return type now more strictly typed
+
+    -   The mapArguments function now uses generic types instead of 'Function', and its
+        return type depends on thisArg presence. 
+        Users should review and update their usage of mapArguments, particularly:
+        -   Ensure provided functions match the new, stricter type requirements
+        -   Update any type assertions or checks where mapArguments is used
+        -   Pay special attention to contexts where this binding is significant
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#1087](https://github.com/stdlib-js/stdlib/issues/1087)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -80,15 +131,45 @@
 
 <!-- /.packages -->
 
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`b74a08a`](https://github.com/stdlib-js/stdlib/commit/b74a08ae1dfc859ac8b9704af27e3c3399ad2da5): function signature and return type now more strictly typed
+
+    -   The mapArguments function now uses generic types instead of 'Function', and its
+        return type depends on thisArg presence. 
+        Users should review and update their usage of mapArguments, particularly:
+        -   Ensure provided functions match the new, stricter type requirements
+        -   Update any type assertions or checks where mapArguments is used
+        -   Pay special attention to contexts where this binding is significant
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#1087](https://github.com/stdlib-js/stdlib/issues/1087)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="contributors">
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Karthik Prakash
 -   Philipp Burckhardt
+-   Prajwal Kulkarni
 -   Shubh Mehta
 
 </section>
@@ -101,6 +182,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`b74a08a`](https://github.com/stdlib-js/stdlib/commit/b74a08ae1dfc859ac8b9704af27e3c3399ad2da5) - **feat:** improve type declarations for `utils/map-arguments` [(#2050)](https://github.com/stdlib-js/stdlib/pull/2050) _(by Prajwal Kulkarni, Philipp Burckhardt, Prajwal Kulkarni)_
 -   [`ec4730b`](https://github.com/stdlib-js/stdlib/commit/ec4730b90a45d2c968405a5d158d7a52b1389272) - **refactor:** improve type specificity for `utils/group-own` _(by Shubh Mehta, Philipp Burckhardt)_
 -   [`2c4e5d8`](https://github.com/stdlib-js/stdlib/commit/2c4e5d824e0c5dc8fd536bf79ff565cee100ce46) - **build:** disable additional lint rule in TS tests _(by Philipp Burckhardt)_
 -   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
