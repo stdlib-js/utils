@@ -2,6 +2,16 @@
 
 > Package changelog.
 
+<section class="release" id="v0.3.3">
+
+## 0.3.3 (2024-11-05)
+
+No changes reported for this release.
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.2">
 
 ## 0.3.2 (2024-11-05)
@@ -10,7 +20,7 @@
 
 ### Packages
 
-<section class="package" id="utils-every-in-by-unreleased">
+<section class="package" id="utils-every-in-by-v0.3.2">
 
 #### [@stdlib/utils/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-in-by)
 
@@ -32,7 +42,7 @@
 
 <!-- /.package -->
 
-<section class="package" id="utils-map-arguments-unreleased">
+<section class="package" id="utils-map-arguments-v0.3.2">
 
 #### [@stdlib/utils/map-arguments](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/map-arguments)
 
@@ -83,7 +93,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-nary-function-unreleased">
+<section class="package" id="utils-nary-function-v0.3.2">
 
 #### [@stdlib/utils/nary-function](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/nary-function)
 
@@ -105,7 +115,7 @@ This release closes the following issue:
 
 <!-- /.package -->
 
-<section class="package" id="utils-until-unreleased">
+<section class="package" id="utils-until-v0.3.2">
 
 #### [@stdlib/utils/until](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/until)
 
