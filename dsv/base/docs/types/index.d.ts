@@ -20,8 +20,6 @@
 
 /* eslint-disable max-lines */
 
-import parse = require( './../../../../dsv/base/parse' );
-
 /**
 * Interface describing the `base` namespace.
 */
