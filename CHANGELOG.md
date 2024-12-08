@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-28)
+## Unreleased (2024-12-08)
 
 <section class="packages">
 
@@ -111,6 +111,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`0a8192d`](https://github.com/stdlib-js/stdlib/commit/0a8192d68506a2abf4c3e52e1af9f1510e1660b4) - **docs:** update related packages sections [(#3370)](https://github.com/stdlib-js/stdlib/pull/3370) _(by stdlib-bot)_
 -   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - **feat:** update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`eeb9d6f`](https://github.com/stdlib-js/stdlib/commit/eeb9d6fdc2e3faa3116c84f276e88737ba11196f) - **fix:** remove unused imports _(by Athan Reines)_
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - **feat:** update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190) _(by stdlib-bot, Philipp Burckhardt)_
@@ -695,18 +696,18 @@ A total of 2 issues were closed in this release:
 
 A total of 15 people contributed to this release. Thank you to the following contributors:
 
--   AgPriyanshu18
+-   Ahmed Atwa
 -   Athan Reines
 -   Joel Mathew Koshy
 -   Manik Sharma
--   NightKnight
 -   Philipp Burckhardt
 -   Prajwal Kulkarni
 -   Pranav Goswami
 -   Praneki
 -   Pratik
 -   Priyansh
--   Rutam
+-   Priyanshu Agarwal
+-   Rutam Kathale
 -   Sai Srikar Dumpeti
 -   Shubham Mishra
 -   Utkarsh Raj
@@ -728,7 +729,7 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   [`ed9c0a5`](https://github.com/stdlib-js/stdlib/commit/ed9c0a5e55ff09af3dd6af8c38615480e2c1828e) - **refactor:** update paths _(by Athan Reines)_
 -   [`18b3c79`](https://github.com/stdlib-js/stdlib/commit/18b3c79c5035c7082618b7379cd6576e64393a96) - **refactor:** update paths _(by Athan Reines)_
 -   [`a78f7d1`](https://github.com/stdlib-js/stdlib/commit/a78f7d1b859b6b1d7b0bc0ee4daf76789e3e0910) - **style:** add missing spaces _(by Philipp Burckhardt)_
--   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - **feat:** add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896) _(by NightKnight, Athan Reines, Philipp Burckhardt, stdlib-bot)_
+-   [`294b868`](https://github.com/stdlib-js/stdlib/commit/294b868248299e6256454efe1853d98ab84ac3f2) - **feat:** add `utils/async/parallel` [(#1896)](https://github.com/stdlib-js/stdlib/pull/1896) _(by Ahmed Atwa, Athan Reines, Philipp Burckhardt, stdlib-bot)_
 -   [`09073da`](https://github.com/stdlib-js/stdlib/commit/09073dad351205baefa3e56125aa5002b8771f8f) - **chore:** update indentation and add newline _(by Philipp Burckhardt)_
 -   [`75d4f83`](https://github.com/stdlib-js/stdlib/commit/75d4f83cb85610d23a04dc21a03f8075f6d3665f) - **refactor:** update require and include paths _(by Athan Reines)_
 -   [`f626b3d`](https://github.com/stdlib-js/stdlib/commit/f626b3d45c5fc4b55ff08dc53da094173a719732) - **docs:** update related packages sections [(#2255)](https://github.com/stdlib-js/stdlib/pull/2255) _(by stdlib-bot)_
@@ -742,15 +743,15 @@ A total of 15 people contributed to this release. Thank you to the following con
 -   [`a3fbf67`](https://github.com/stdlib-js/stdlib/commit/a3fbf67720b3d1963b27c1097bd8144397ac0ec1) - **docs:** update related packages sections [(#1857)](https://github.com/stdlib-js/stdlib/pull/1857) _(by stdlib-bot)_
 -   [`d40dbaf`](https://github.com/stdlib-js/stdlib/commit/d40dbafc25e3e10c8fa83f5b4203db97c289823c) - **chore:** update package meta data [(#1812)](https://github.com/stdlib-js/stdlib/pull/1812) _(by stdlib-bot)_
 -   [`8d6f33c`](https://github.com/stdlib-js/stdlib/commit/8d6f33c6b2162168d9855080d5cc261f4f9bfd9e) - **feat:** add `utils/parse-ndjson` _(by Manik Sharma, stdlib-bot, Shubham Singh, Philipp Burckhardt, Athan Reines)_
--   [`80fdd70`](https://github.com/stdlib-js/stdlib/commit/80fdd7073fb324751656cadfc3ed190045fc1583) - **feat:** add `utils/some-own-by` _(by Rutam, Pranav, Philipp Burckhardt)_
+-   [`80fdd70`](https://github.com/stdlib-js/stdlib/commit/80fdd7073fb324751656cadfc3ed190045fc1583) - **feat:** add `utils/some-own-by` _(by Rutam Kathale, Pranav, Philipp Burckhardt)_
 -   [`69c167d`](https://github.com/stdlib-js/stdlib/commit/69c167d7b5ad978f4e5507a48a8f8dc525464da5) - **feat:** add `utils/any-in-by` _(by Priyansh)_
--   [`c9e1623`](https://github.com/stdlib-js/stdlib/commit/c9e1623e7c116d0d0afdf80dc22b19af81b3346b) - **feat:** add `utils/none-in-by` _(by AgPriyanshu18, Philipp Burckhardt)_
+-   [`c9e1623`](https://github.com/stdlib-js/stdlib/commit/c9e1623e7c116d0d0afdf80dc22b19af81b3346b) - **feat:** add `utils/none-in-by` _(by Priyanshu Agarwal, Philipp Burckhardt)_
 -   [`52e479b`](https://github.com/stdlib-js/stdlib/commit/52e479b8430f04cfe0b861bd81f59c9125d7673b) - **feat:** add `utils/every-own-by` _(by Praneki, Philipp Burckhardt)_
 -   [`5cfd0a8`](https://github.com/stdlib-js/stdlib/commit/5cfd0a8712299d680aff7f9d8fca0c0ac69de56b) - **chore:** update package meta data [(#1462)](https://github.com/stdlib-js/stdlib/pull/1462) _(by stdlib-bot)_
 -   [`87ec7c2`](https://github.com/stdlib-js/stdlib/commit/87ec7c2486b008c88a0b0846135240c1ae36e9f1) - **feat:** add `utils/every-in-by` _(by Sai Srikar Dumpeti, Philipp Burckhardt)_
 -   [`e971001`](https://github.com/stdlib-js/stdlib/commit/e971001e2d17ca4c6e67e81aaba687f5001f0288) - **fix:** improve type declarations by using generics in `utils/group` [(#1375)](https://github.com/stdlib-js/stdlib/pull/1375) _(by Utkarsh Raj, Philipp Burckhardt)_
 -   [`046d8c4`](https://github.com/stdlib-js/stdlib/commit/046d8c4f83ff9635764967406fb6c3b5c4554518) - **feat:** add `utils/none-own-by` _(by Pratik, stdlib-bot, Philipp Burckhardt)_
--   [`2351845`](https://github.com/stdlib-js/stdlib/commit/2351845b933cc7b7368c42e4565b57149806e5f9) - **feat:** add `utils/some-in-by` _(by Rutam, Philipp Burckhardt)_
+-   [`2351845`](https://github.com/stdlib-js/stdlib/commit/2351845b933cc7b7368c42e4565b57149806e5f9) - **feat:** add `utils/some-in-by` _(by Rutam Kathale, Philipp Burckhardt)_
 -   [`6941efb`](https://github.com/stdlib-js/stdlib/commit/6941efb41b8c7c108ec87b93bb82795584134753) - **refactor:** improve type definitions for async/if then [(#1381)](https://github.com/stdlib-js/stdlib/pull/1381) _(by Prajwal Kulkarni, Philipp Burckhardt)_
 -   [`19106ca`](https://github.com/stdlib-js/stdlib/commit/19106ca820dcd737e7fcf1b022d9b1b7346c5b52) - **fix:** update unary predicate error type to include null _(by Philipp Burckhardt)_
 -   [`952ea72`](https://github.com/stdlib-js/stdlib/commit/952ea72db18b6ff6b06bf89a3559d9f99a69cae5) - **fix:** properly type predicate error parameter _(by Philipp Burckhardt)_
