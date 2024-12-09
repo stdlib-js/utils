@@ -213,8 +213,6 @@ f( 5, 3, done );
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/compose]: https://github.com/stdlib-js/utils/tree/main/async/compose
-
 [@stdlib/utils/function-sequence]: https://github.com/stdlib-js/utils/tree/main/function-sequence
 
 <!-- </related-links> -->
