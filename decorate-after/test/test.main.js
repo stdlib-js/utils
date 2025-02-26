@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var noop = require( './../../noop' );
-var add = require( '@stdlib/math/base/ops/add' );
+var add = require( '@stdlib/number/float64/base/add' );
 var decorateAfter = require( './../lib' );
 
 

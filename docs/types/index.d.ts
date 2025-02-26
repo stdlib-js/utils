@@ -31,10 +31,8 @@ import bifurcateBy = require( './../../bifurcate-by' );
 import bifurcateIn = require( './../../bifurcate-in' );
 import bifurcateOwn = require( './../../bifurcate-own' );
 import capitalizeKeys = require( './../../capitalize-keys' );
-import CircularBuffer = require( './../../circular-buffer' );
 import commonKeys = require( './../../common-keys' );
 import commonKeysIn = require( './../../common-keys-in' );
-import CompactAdjacencyMatrix = require( './../../compact-adjacency-matrix' );
 import compose = require( './../../compose' );
 import constantFunction = require( './../../constant-function' );
 import constructorName = require( './../../constructor-name' );
@@ -72,7 +70,6 @@ import doUntilEachRight = require( './../../do-until-each-right' );
 import doWhile = require( './../../do-while' );
 import doWhileEach = require( './../../do-while-each' );
 import doWhileEachRight = require( './../../do-while-each-right' );
-import DoublyLinkedList = require( './../../doubly-linked-list' );
 import dsv = require( './../../dsv' );
 import objectEntries = require( './../../entries' );
 import objectEntriesIn = require( './../../entries-in' );
@@ -86,7 +83,6 @@ import every = require( './../../every' );
 import everyBy = require( './../../every-by' );
 import everyByRight = require( './../../every-by-right' );
 import extname = require( './../../extname' );
-import FIFO = require( './../../fifo' );
 import filterArguments = require( './../../filter-arguments' );
 import find = require( './../../find' );
 import flattenArray = require( './../../flatten-array' );
@@ -129,7 +125,6 @@ import keyBy = require( './../../key-by' );
 import keyByRight = require( './../../key-by-right' );
 import objectKeys = require( './../../keys' );
 import keysIn = require( './../../keys-in' );
-import LinkedList = require( './../../linked-list' );
 import lowercaseKeys = require( './../../lowercase-keys' );
 import map = require( './../../map' );
 import mapArguments = require( './../../map-arguments' );
@@ -149,7 +144,6 @@ import maskArguments = require( './../../mask-arguments' );
 import memoize = require( './../../memoize' );
 import merge = require( './../../merge' );
 import moveProperty = require( './../../move-property' );
-import namedtypedtuple = require( './../../named-typed-tuple' );
 import naryFunction = require( './../../nary-function' );
 import nativeClass = require( './../../native-class' );
 import nextTick = require( './../../next-tick' );
@@ -206,10 +200,8 @@ import sizeOf = require( './../../size-of' );
 import some = require( './../../some' );
 import someBy = require( './../../some-by' );
 import someByRight = require( './../../some-by-right' );
-import Stack = require( './../../stack' );
 import tabulate = require( './../../tabulate' );
 import tabulateBy = require( './../../tabulate-by' );
-import thunk = require( './../../thunk' );
 import timeit = require( './../../timeit' );
 import trycatch = require( './../../try-catch' );
 import tryFunction = require( './../../try-function' );
@@ -608,11 +600,6 @@ interface Namespace {
 	capitalizeKeys: typeof capitalizeKeys;
 
 	/**
-	* Circular buffer.
-	*/
-	CircularBuffer: typeof CircularBuffer;
-
-	/**
 	* Returns the common own property names of two or more objects.
 	*
 	* @param obj1 - first object
@@ -699,16 +686,6 @@ interface Namespace {
 	* // returns [ 'a' ]
 	*/
 	commonKeysIn: typeof commonKeysIn;
-
-	/**
-	* TODO
-	*
-	* @returns TODO
-	*
-	* @example
-	* // TODO
-	*/
-	CompactAdjacencyMatrix: typeof CompactAdjacencyMatrix;
 
 	/**
 	* Function composition.
@@ -1827,11 +1804,6 @@ interface Namespace {
 	doWhileEachRight: typeof doWhileEachRight;
 
 	/**
-	* List node.
-	*/
-	DoublyLinkedList: typeof DoublyLinkedList;
-
-	/**
 	* Standard utilities for working with data formatted as delimiter-separated values (DSV).
 	*/
 	dsv: typeof dsv;
@@ -2070,11 +2042,6 @@ interface Namespace {
 	* // returns '.js'
 	*/
 	extname: typeof extname;
-
-	/**
-	* First-in-first-out (FIFO) queue.
-	*/
-	FIFO: typeof FIFO;
 
 	/**
 	* Returns a function that applies arguments to a provided function according to a predicate function.
@@ -3180,11 +3147,6 @@ interface Namespace {
 	keysIn: typeof keysIn;
 
 	/**
-	* List node.
-	*/
-	LinkedList: typeof LinkedList;
-
-	/**
 	* Converts each object key to lowercase.
 	*
 	* ## Notes
@@ -3589,7 +3551,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	* var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -3599,7 +3561,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var opts = {
@@ -3616,7 +3578,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	* var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -3629,7 +3591,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var opts = {
@@ -3667,7 +3629,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	* var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -3677,7 +3639,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var opts = {
@@ -3694,7 +3656,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* var x = [ 1, 2, 3, 4, 5, 6 ];
 	* var y = [ 1, 1, 1, 1, 1, 1 ];
@@ -3707,7 +3669,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	* var array = require( '@stdlib/ndarray/array' );
 	*
 	* var opts = {
@@ -3967,38 +3929,6 @@ interface Namespace {
 	* // returns false
 	*/
 	moveProperty: typeof moveProperty;
-
-	/**
-	* Returns a named typed tuple factory.
-	*
-	* @param names - field (property) names
-	* @param options - options
-	* @param options.dtype - default data type (default: 'float64')
-	* @param options.name - tuple name (default: 'tuple')
-	* @throws must provide distinct field names
-	* @throws cannot provide a reserved field (property) name
-	* @throws must provide valid options
-	* @throws must provide a recognized data type
-	* @returns factory function
-	*
-	* @example
-	* var point = ns.namedtypedtuple( [ 'x', 'y' ] );
-	*
-	* var p = point( [ 1.0, -1.0 ] );
-	*
-	* var x = p[ 0 ];
-	* // returns 1.0
-	*
-	* x = p.x;
-	* // returns 1.0
-	*
-	* var y = p[ 1 ];
-	* // returns -1.0
-	*
-	* y = p.y;
-	* // returns -1.0
-	*/
-	namedtypedtuple: typeof namedtypedtuple;
 
 	/**
 	* Returns a function that applies a specified number of arguments to a provided function.
@@ -5090,7 +5020,7 @@ interface Namespace {
 	*
 	* @example
 	* var naryFunction = require( './../../nary-function' );
-	* var add = require( '@stdlib/math/base/ops/add' );
+	* var add = require( '@stdlib/number/float64/base/add' );
 	*
 	* var arr = [
 	*     [ 1, 2, 3 ],
@@ -5407,11 +5337,6 @@ interface Namespace {
 	someByRight: typeof someByRight;
 
 	/**
-	* Stack
-	*/
-	Stack: typeof Stack;
-
-	/**
 	* Generates a frequency table.
 	*
 	* ## Notes
@@ -5474,27 +5399,6 @@ interface Namespace {
 	* // returns [ [ 'b', 3, 0.75 ], [ 'f', 1, 0.25 ] ]
 	*/
 	tabulateBy: typeof tabulateBy;
-
-	/**
-	* Returns a thunk.
-	*
-	* @param fcn - function to convert to a thunk
-	* @param args - function args
-	* @returns thunk
-	*
-	* @example
-	* var add = require( '@stdlib/math/base/ops/add' );
-	*
-	* var f = ns.thunk( add, 2, 3 );
-	* // returns <Function>
-	*
-	* // ...
-	*
-	* // Evaluate the ns.thunk:
-	* var v = f();
-	* // returns 5
-	*/
-	thunk: typeof thunk;
 
 	/**
 	* Times a snippet.
