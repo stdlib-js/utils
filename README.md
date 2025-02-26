@@ -35,38 +35,32 @@ limitations under the License.
 
 > Utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-utils = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var utils = require( 'path/to/vendor/umd/utils/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.utils;
-})();
-</script>
+var utils = require( '@stdlib/utils' );
 ```
 
 #### utils
@@ -85,24 +79,6 @@ The namespace has the following sub-namespaces:
 <div class="namespace-toc">
 
 -   <span class="signature">[`async`][@stdlib/utils/async]</span><span class="delimiter">: </span><span class="description">async utilities.</span>
-
-</div>
-
-<!-- </toc> -->
-
-### Data Structures
-
-<!-- <toc keywords="+data structure"> -->
-
-<div class="namespace-toc">
-
--   <span class="signature">[`CircularBuffer( buffer )`][@stdlib/utils/circular-buffer]</span><span class="delimiter">: </span><span class="description">circular buffer constructor.</span>
--   <span class="signature">[`CompactAdjacencyMatrix( N )`][@stdlib/utils/compact-adjacency-matrix]</span><span class="delimiter">: </span><span class="description">compact adjacency matrix constructor.</span>
--   <span class="signature">[`DoublyLinkedList()`][@stdlib/utils/doubly-linked-list]</span><span class="delimiter">: </span><span class="description">doubly linked list constructor.</span>
--   <span class="signature">[`FIFO()`][@stdlib/utils/fifo]</span><span class="delimiter">: </span><span class="description">first-in-first-out (FIFO) queue.</span>
--   <span class="signature">[`LinkedList()`][@stdlib/utils/linked-list]</span><span class="delimiter">: </span><span class="description">singly linked list.</span>
--   <span class="signature">[`namedtypedtuple( fields[, options] )`][@stdlib/utils/named-typed-tuple]</span><span class="delimiter">: </span><span class="description">create a factory for generating named typed tuples.</span>
--   <span class="signature">[`Stack()`][@stdlib/utils/stack]</span><span class="delimiter">: </span><span class="description">stack data structure.</span>
 
 </div>
 
@@ -397,21 +373,11 @@ The namespace has the following sub-namespaces:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var utils = require( '@stdlib/utils' );
 
 console.log( objectKeys( utils ) );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -452,7 +418,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -921,20 +887,6 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/while-each-right]: https://github.com/stdlib-js/utils/tree/main/while-each-right
 
 [@stdlib/utils/while-each]: https://github.com/stdlib-js/utils/tree/main/while-each
-
-[@stdlib/utils/circular-buffer]: https://github.com/stdlib-js/utils/tree/main/circular-buffer
-
-[@stdlib/utils/compact-adjacency-matrix]: https://github.com/stdlib-js/utils/tree/main/compact-adjacency-matrix
-
-[@stdlib/utils/doubly-linked-list]: https://github.com/stdlib-js/utils/tree/main/doubly-linked-list
-
-[@stdlib/utils/fifo]: https://github.com/stdlib-js/utils/tree/main/fifo
-
-[@stdlib/utils/linked-list]: https://github.com/stdlib-js/utils/tree/main/linked-list
-
-[@stdlib/utils/named-typed-tuple]: https://github.com/stdlib-js/utils/tree/main/named-typed-tuple
-
-[@stdlib/utils/stack]: https://github.com/stdlib-js/utils/tree/main/stack
 
 [@stdlib/utils/async]: https://github.com/stdlib-js/utils/tree/main/async
 
