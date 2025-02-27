@@ -351,7 +351,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`safeintmax( dtype )`][@stdlib/utils/safe-int-max]</span><span class="delimiter">: </span><span class="description">return the maximum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`safeintmin( dtype )`][@stdlib/utils/safe-int-min]</span><span class="delimiter">: </span><span class="description">return the minimum safe integer capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`sizeOf( dtype )`][@stdlib/utils/size-of]</span><span class="delimiter">: </span><span class="description">return the size (in bytes) of the canonical binary representation of a specified numeric type.</span>
--   <span class="signature">[`thunk( fcn[, ...args] )`][@stdlib/utils/thunk]</span><span class="delimiter">: </span><span class="description">generate a thunk.</span>
 -   <span class="signature">[`timeit( code, [options,] clbk )`][@stdlib/utils/timeit]</span><span class="delimiter">: </span><span class="description">time a snippet.</span>
 -   <span class="signature">[`typemax( dtype )`][@stdlib/utils/type-max]</span><span class="delimiter">: </span><span class="description">return the maximum value of a specified numeric type.</span>
 -   <span class="signature">[`typemin( dtype )`][@stdlib/utils/type-min]</span><span class="delimiter">: </span><span class="description">return the minimum value of a specified numeric type.</span>
@@ -539,8 +538,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/safe-int-min]: https://github.com/stdlib-js/utils/tree/main/safe-int-min
 
 [@stdlib/utils/size-of]: https://github.com/stdlib-js/utils/tree/main/size-of
-
-[@stdlib/utils/thunk]: https://github.com/stdlib-js/utils/tree/main/thunk
 
 [@stdlib/utils/timeit]: https://github.com/stdlib-js/utils/tree/main/timeit
 
