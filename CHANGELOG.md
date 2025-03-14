@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-27)
+## Unreleased (2025-03-14)
 
 <section class="packages">
 
@@ -1693,6 +1693,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`c9769bb`](https://github.com/stdlib-js/stdlib/commit/c9769bb2e805d85c3f004959d0728f6f249fe318) - **test:** add missing file printout _(by Philipp Burckhardt)_
 -   [`69d4f4b`](https://github.com/stdlib-js/stdlib/commit/69d4f4b2d8f0a6f077c153b065edb403738a6f8b) - **docs:** update namespace table of contents [(#5489)](https://github.com/stdlib-js/stdlib/pull/5489) _(by stdlib-bot)_
 -   [`b6624d0`](https://github.com/stdlib-js/stdlib/commit/b6624d072e58c6843fdcfd95d326c66f3975c501) - **remove:** remove `utils/thunk` _(by Neeraj Pathak)_
 -   [`4b44dd3`](https://github.com/stdlib-js/stdlib/commit/4b44dd34e543a964b5493b1bfed83a1e058d6f69) - **remove:** remove `thunk` from namespace _(by Neeraj Pathak)_
