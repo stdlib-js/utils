@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-14)
+## Unreleased (2025-03-17)
 
 <section class="packages">
 
@@ -704,6 +704,30 @@
 </section>
 
 <!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
+<section class="package" id="utils-get-prototype-of-unreleased">
+
+#### [@stdlib/utils/get-prototype-of](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/get-prototype-of)
+
+<details>
+
+<section class="issues">
+
+##### Closed Issues
+
+This release closes the following issue:
+
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004)
+
+</section>
+
+<!-- /.issues -->
 
 </details>
 
@@ -1672,14 +1696,27 @@
 
 <!-- /.breaking-changes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="contributors">
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
+-   JaySoni1
 -   Neeraj Pathak
 -   Philipp Burckhardt
 
@@ -1693,6 +1730,7 @@ A total of 4 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`09d4050`](https://github.com/stdlib-js/stdlib/commit/09d405085b87aaab8081380f12abd727bd20e310) - **chore:** fix JavaScript lint errors [(#6029)](https://github.com/stdlib-js/stdlib/pull/6029) _(by JaySoni1, Athan Reines)_
 -   [`c9769bb`](https://github.com/stdlib-js/stdlib/commit/c9769bb2e805d85c3f004959d0728f6f249fe318) - **test:** add missing file printout _(by Philipp Burckhardt)_
 -   [`69d4f4b`](https://github.com/stdlib-js/stdlib/commit/69d4f4b2d8f0a6f077c153b065edb403738a6f8b) - **docs:** update namespace table of contents [(#5489)](https://github.com/stdlib-js/stdlib/pull/5489) _(by stdlib-bot)_
 -   [`b6624d0`](https://github.com/stdlib-js/stdlib/commit/b6624d072e58c6843fdcfd95d326c66f3975c501) - **remove:** remove `utils/thunk` _(by Neeraj Pathak)_

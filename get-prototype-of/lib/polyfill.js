@@ -21,6 +21,7 @@
 // MODULES //
 
 var nativeClass = require( './../../native-class' );
+var Object = require( '@stdlib/object/ctor' );
 var getProto = require( './proto.js' );
 
 
