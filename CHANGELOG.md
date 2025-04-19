@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-17)
+## Unreleased (2025-04-19)
 
 <section class="packages">
 
@@ -641,6 +641,31 @@
 
 <!-- /.package -->
 
+<section class="package" id="utils-every-in-by-unreleased">
+
+#### [@stdlib/utils/every-in-by](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/every-in-by)
+
+<details>
+
+<section class="breaking-changes">
+
+##### BREAKING CHANGES
+
+-   [`81f72df`](https://github.com/stdlib-js/stdlib/commit/81f72df6f72639f05f25466ae294e59a4a44d36d): remove `utils/every-in-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/every-in-by` which provides the same API and implementation.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+</details>
+
+</section>
+
+<!-- /.package -->
+
 <section class="package" id="utils-fifo-unreleased">
 
 #### [@stdlib/utils/fifo](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/utils/fifo)
@@ -977,6 +1002,11 @@ This release closes the following issue:
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`81f72df`](https://github.com/stdlib-js/stdlib/commit/81f72df6f72639f05f25466ae294e59a4a44d36d): remove `utils/every-in-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/every-in-by` which provides the same API and implementation.
 
 -   [`b6624d0`](https://github.com/stdlib-js/stdlib/commit/b6624d072e58c6843fdcfd95d326c66f3975c501): remove `utils/thunk`
 
@@ -1716,7 +1746,7 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 -   Athan Reines
 -   Gururaj Gurram
--   JaySoni1
+-   Jay Soni
 -   Neeraj Pathak
 -   Philipp Burckhardt
 
@@ -1730,7 +1760,10 @@ A total of 5 people contributed to this release. Thank you to the following cont
 
 <details>
 
--   [`09d4050`](https://github.com/stdlib-js/stdlib/commit/09d405085b87aaab8081380f12abd727bd20e310) - **chore:** fix JavaScript lint errors [(#6029)](https://github.com/stdlib-js/stdlib/pull/6029) _(by JaySoni1, Athan Reines)_
+-   [`878adf9`](https://github.com/stdlib-js/stdlib/commit/878adf9c25bc91bcacbe564234de5d1893402f5d) - **chore:** fix README lint error _(by Neeraj Pathak)_
+-   [`81f72df`](https://github.com/stdlib-js/stdlib/commit/81f72df6f72639f05f25466ae294e59a4a44d36d) - **remove:** remove `utils/every-in-by` _(by Neeraj Pathak)_
+-   [`cdd16a5`](https://github.com/stdlib-js/stdlib/commit/cdd16a535943832d7f227215467826e0924546ce) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`09d4050`](https://github.com/stdlib-js/stdlib/commit/09d405085b87aaab8081380f12abd727bd20e310) - **chore:** fix JavaScript lint errors [(#6029)](https://github.com/stdlib-js/stdlib/pull/6029) _(by Jay Soni, Athan Reines)_
 -   [`c9769bb`](https://github.com/stdlib-js/stdlib/commit/c9769bb2e805d85c3f004959d0728f6f249fe318) - **test:** add missing file printout _(by Philipp Burckhardt)_
 -   [`69d4f4b`](https://github.com/stdlib-js/stdlib/commit/69d4f4b2d8f0a6f077c153b065edb403738a6f8b) - **docs:** update namespace table of contents [(#5489)](https://github.com/stdlib-js/stdlib/pull/5489) _(by stdlib-bot)_
 -   [`b6624d0`](https://github.com/stdlib-js/stdlib/commit/b6624d072e58c6843fdcfd95d326c66f3975c501) - **remove:** remove `utils/thunk` _(by Neeraj Pathak)_
