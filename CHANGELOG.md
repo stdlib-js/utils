@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-25)
+## Unreleased (2025-05-02)
 
 <section class="features">
 
@@ -128,9 +128,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6800](https://github.com/stdlib-js/stdlib/issues/6800)
 
 </section>
 
@@ -142,6 +142,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`66d1218`](https://github.com/stdlib-js/stdlib/commit/66d12182461dcd60d7168c47e4697f4d3421302f) - **chore:** fix JavaScript lint errors [(#6899)](https://github.com/stdlib-js/stdlib/pull/6899) _(by zhanggy)_
+-   [`805f439`](https://github.com/stdlib-js/stdlib/commit/805f439579204a004b3ff7cb040d5dca166c3205) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`ed9a036`](https://github.com/stdlib-js/stdlib/commit/ed9a036b50dd520e8090f047928e6e45611d0b46) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
 -   [`878adf9`](https://github.com/stdlib-js/stdlib/commit/878adf9c25bc91bcacbe564234de5d1893402f5d) - **chore:** fix README lint error _(by Neeraj Pathak)_
@@ -191,13 +193,14 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
 -   Jay Soni
 -   Neeraj Pathak
 -   Philipp Burckhardt
+-   zhanggy
 
 </section>
 
