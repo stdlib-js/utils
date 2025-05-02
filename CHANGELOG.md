@@ -128,9 +128,9 @@
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6800](https://github.com/stdlib-js/stdlib/issues/6800)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800)
 
 </section>
 
@@ -142,6 +142,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`b904782`](https://github.com/stdlib-js/stdlib/commit/b90478256da0e1c56a9c30788996ff2f5e085f8e) - **chore:** fix JavaScript lint errors [(#6900)](https://github.com/stdlib-js/stdlib/pull/6900) _(by zhanggy)_
 -   [`66d1218`](https://github.com/stdlib-js/stdlib/commit/66d12182461dcd60d7168c47e4697f4d3421302f) - **chore:** fix JavaScript lint errors [(#6899)](https://github.com/stdlib-js/stdlib/pull/6899) _(by zhanggy)_
 -   [`805f439`](https://github.com/stdlib-js/stdlib/commit/805f439579204a004b3ff7cb040d5dca166c3205) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`ed9a036`](https://github.com/stdlib-js/stdlib/commit/ed9a036b50dd520e8090f047928e6e45611d0b46) - **docs:** fix typo _(by Philipp Burckhardt)_
