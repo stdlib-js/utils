@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-24)
+## Unreleased (2025-06-26)
 
 <section class="features">
 
@@ -30,6 +30,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`d27d963`](https://github.com/stdlib-js/stdlib/commit/d27d963735240594f5b51a460c68e31493370a4a): remove `utils/some-in-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/some-in-by` which provides the same API and implementation.
+
+-   [`4817aff`](https://github.com/stdlib-js/stdlib/commit/4817affe594ef1e952c523e8d3aa0911e8fa0983): remove `utils/every-own-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/every-own-by` which provides the same API and implementation.
 
 -   [`81f72df`](https://github.com/stdlib-js/stdlib/commit/81f72df6f72639f05f25466ae294e59a4a44d36d): remove `utils/every-in-by`
 
@@ -142,6 +152,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`d27d963`](https://github.com/stdlib-js/stdlib/commit/d27d963735240594f5b51a460c68e31493370a4a) - **remove:** remove `utils/some-in-by` _(by Neeraj Pathak)_
 -   [`edef1e2`](https://github.com/stdlib-js/stdlib/commit/edef1e298a551ed453c4edc3d769746baf5dbde1) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`379c3c6`](https://github.com/stdlib-js/stdlib/commit/379c3c63f58517995deb3367e26c6f10bdf6f2eb) - **chore:** fix JavaScript lint errors [(#7355)](https://github.com/stdlib-js/stdlib/pull/7355) _(by Lokesh Ranjan, Athan Reines)_
 -   [`b81fb3c`](https://github.com/stdlib-js/stdlib/commit/b81fb3cdb78fb07ec80ad7daf3503f769557508d) - **chore:** fix JavaScript lint errors [(#7065)](https://github.com/stdlib-js/stdlib/pull/7065) _(by Uday Kakade, Philipp Burckhardt)_
@@ -150,6 +161,8 @@ A total of 5 issues were closed in this release:
 -   [`805f439`](https://github.com/stdlib-js/stdlib/commit/805f439579204a004b3ff7cb040d5dca166c3205) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`ed9a036`](https://github.com/stdlib-js/stdlib/commit/ed9a036b50dd520e8090f047928e6e45611d0b46) - **docs:** fix typo _(by Philipp Burckhardt)_
 -   [`5f73301`](https://github.com/stdlib-js/stdlib/commit/5f73301a8509cc423a06b02140c4e316fd02ff49) - **docs:** minor clean-up _(by Philipp Burckhardt)_
+-   [`4817aff`](https://github.com/stdlib-js/stdlib/commit/4817affe594ef1e952c523e8d3aa0911e8fa0983) - **remove:** remove `utils/every-own-by` _(by Neeraj Pathak)_
+-   [`35b2819`](https://github.com/stdlib-js/stdlib/commit/35b281999025fcd8236f7ca446cf44572cbb00f5) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`878adf9`](https://github.com/stdlib-js/stdlib/commit/878adf9c25bc91bcacbe564234de5d1893402f5d) - **chore:** fix README lint error _(by Neeraj Pathak)_
 -   [`81f72df`](https://github.com/stdlib-js/stdlib/commit/81f72df6f72639f05f25466ae294e59a4a44d36d) - **remove:** remove `utils/every-in-by` _(by Neeraj Pathak)_
 -   [`cdd16a5`](https://github.com/stdlib-js/stdlib/commit/cdd16a535943832d7f227215467826e0924546ce) - **refactor:** update paths _(by Neeraj Pathak)_
