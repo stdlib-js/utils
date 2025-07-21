@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-14)
+## Unreleased (2025-07-21)
 
 <section class="features">
 
@@ -143,9 +143,9 @@
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694)
 
 </section>
 
@@ -157,6 +157,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`4baa837`](https://github.com/stdlib-js/stdlib/commit/4baa837fde6fbe176add7b35f1f95f2e3b476ac0) - **chore:** fix EditorConfig lint errors [(#7696)](https://github.com/stdlib-js/stdlib/pull/7696) _(by Satyajeet Chavan, Athan Reines)_
 -   [`708320e`](https://github.com/stdlib-js/stdlib/commit/708320e43d505cd6f390bf6014d58cb5e092cbaf) - **docs:** update related packages sections [(#7647)](https://github.com/stdlib-js/stdlib/pull/7647) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`d27d963`](https://github.com/stdlib-js/stdlib/commit/d27d963735240594f5b51a460c68e31493370a4a) - **remove:** remove `utils/some-in-by` _(by Neeraj Pathak)_
 -   [`edef1e2`](https://github.com/stdlib-js/stdlib/commit/edef1e298a551ed453c4edc3d769746baf5dbde1) - **chore:** minor clean-up _(by Philipp Burckhardt)_
@@ -217,7 +218,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 8 people contributed to this release. Thank you to the following contributors:
+A total of 9 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
@@ -225,6 +226,7 @@ A total of 8 people contributed to this release. Thank you to the following cont
 -   Lokesh Ranjan
 -   Neeraj Pathak
 -   Philipp Burckhardt
+-   Satyajeet Chavan
 -   Uday Kakade
 -   zhanggy
 
