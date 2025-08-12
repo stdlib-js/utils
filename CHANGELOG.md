@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-07-21)
+## Unreleased (2025-08-12)
 
 <section class="features">
 
@@ -157,6 +157,8 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`77867ac`](https://github.com/stdlib-js/stdlib/commit/77867ac1767a186023f633dea30ddf860962aaed) - **docs:** remove trailing whitespace _(by Philipp Burckhardt)_
+-   [`153c9c1`](https://github.com/stdlib-js/stdlib/commit/153c9c19e7e5bc138e18500cea598365d6df55d8) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`4baa837`](https://github.com/stdlib-js/stdlib/commit/4baa837fde6fbe176add7b35f1f95f2e3b476ac0) - **chore:** fix EditorConfig lint errors [(#7696)](https://github.com/stdlib-js/stdlib/pull/7696) _(by Satyajeet Chavan, Athan Reines)_
 -   [`708320e`](https://github.com/stdlib-js/stdlib/commit/708320e43d505cd6f390bf6014d58cb5e092cbaf) - **docs:** update related packages sections [(#7647)](https://github.com/stdlib-js/stdlib/pull/7647) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`d27d963`](https://github.com/stdlib-js/stdlib/commit/d27d963735240594f5b51a460c68e31493370a4a) - **remove:** remove `utils/some-in-by` _(by Neeraj Pathak)_
