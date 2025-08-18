@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-15)
+## Unreleased (2025-08-18)
 
 <section class="features">
 
@@ -157,6 +157,8 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`1f1c5d8`](https://github.com/stdlib-js/stdlib/commit/1f1c5d8bc3bdc88c03da5fd93ca7ef5606ada63d) - **docs:** fix variable name of main export in example code _(by Philipp Burckhardt)_
+-   [`4c33ef4`](https://github.com/stdlib-js/stdlib/commit/4c33ef4cf6c629ed8129bd67c137755a7b75f920) - **chore:** re-order requires _(by Philipp Burckhardt)_
 -   [`6f85067`](https://github.com/stdlib-js/stdlib/commit/6f8506775cdf2b3edf740216340ff7a0a82677dc) - **test:** fix malformed test descriptions from strictEqual migration _(by Philipp Burckhardt)_
 -   [`97f0e11`](https://github.com/stdlib-js/stdlib/commit/97f0e11fad5ac045777328c45d2ff595f568a5e0) - **chore:** use canonical format for JSDoc union types _(by Philipp Burckhardt)_
 -   [`7add020`](https://github.com/stdlib-js/stdlib/commit/7add0201c13e56a0381926ccfd4073c84eaf2ed4) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
