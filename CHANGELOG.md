@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-18)
+## Unreleased (2025-08-20)
 
 <section class="features">
 
@@ -157,6 +157,9 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`e9c5955`](https://github.com/stdlib-js/stdlib/commit/e9c5955756fe9c633f6f67e42882394cc7c50148) - **docs:** update annotation to convey there may be inherited props _(by Philipp Burckhardt)_
+-   [`bef0f69`](https://github.com/stdlib-js/stdlib/commit/bef0f69a3c1007126ef264c4148c41497079eaad) - **docs:** re-order requires _(by Philipp Burckhardt)_
+-   [`1acd7fc`](https://github.com/stdlib-js/stdlib/commit/1acd7fc7114fcbef1b80ab506f6f47d3532d6ea8) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`1f1c5d8`](https://github.com/stdlib-js/stdlib/commit/1f1c5d8bc3bdc88c03da5fd93ca7ef5606ada63d) - **docs:** fix variable name of main export in example code _(by Philipp Burckhardt)_
 -   [`4c33ef4`](https://github.com/stdlib-js/stdlib/commit/4c33ef4cf6c629ed8129bd67c137755a7b75f920) - **chore:** re-order requires _(by Philipp Burckhardt)_
 -   [`6f85067`](https://github.com/stdlib-js/stdlib/commit/6f8506775cdf2b3edf740216340ff7a0a82677dc) - **test:** fix malformed test descriptions from strictEqual migration _(by Philipp Burckhardt)_
