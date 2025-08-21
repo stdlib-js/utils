@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-20)
+## Unreleased (2025-08-21)
 
 <section class="features">
 
@@ -143,9 +143,9 @@
 
 ### Closed Issues
 
-A total of 6 issues were closed in this release:
+A total of 7 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914)
 
 </section>
 
@@ -157,6 +157,7 @@ A total of 6 issues were closed in this release:
 
 <details>
 
+-   [`d2b9b0c`](https://github.com/stdlib-js/stdlib/commit/d2b9b0c10f35487713f6925c360b504a1f9e0a14) - **chore:** address commit comments for commit `1acd7fc` [(#7917)](https://github.com/stdlib-js/stdlib/pull/7917) _(by Srinivas Batthula, Philipp Burckhardt)_
 -   [`e9c5955`](https://github.com/stdlib-js/stdlib/commit/e9c5955756fe9c633f6f67e42882394cc7c50148) - **docs:** update annotation to convey there may be inherited props _(by Philipp Burckhardt)_
 -   [`bef0f69`](https://github.com/stdlib-js/stdlib/commit/bef0f69a3c1007126ef264c4148c41497079eaad) - **docs:** re-order requires _(by Philipp Burckhardt)_
 -   [`1acd7fc`](https://github.com/stdlib-js/stdlib/commit/1acd7fc7114fcbef1b80ab506f6f47d3532d6ea8) - **docs:** fix example code _(by Philipp Burckhardt)_
@@ -231,7 +232,7 @@ A total of 6 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
@@ -240,6 +241,7 @@ A total of 9 people contributed to this release. Thank you to the following cont
 -   Neeraj Pathak
 -   Philipp Burckhardt
 -   Satyajeet Chavan
+-   Srinivas Batthula
 -   Uday Kakade
 -   zhanggy
 
