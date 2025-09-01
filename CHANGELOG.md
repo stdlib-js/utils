@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-21)
+## Unreleased (2025-09-01)
 
 <section class="features">
 
 ### Features
 
+-   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - add missing exports to `utils` namespace
 -   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259)
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 
@@ -157,6 +158,8 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - **feat:** add missing exports to `utils` namespace _(by Philipp Burckhardt)_
+-   [`8a6dbd7`](https://github.com/stdlib-js/stdlib/commit/8a6dbd7bf692bcd9ce166a7370eda0a7410da3b0) - **docs:** fix example code and return annotation values _(by Philipp Burckhardt)_
 -   [`d2b9b0c`](https://github.com/stdlib-js/stdlib/commit/d2b9b0c10f35487713f6925c360b504a1f9e0a14) - **chore:** address commit comments for commit `1acd7fc` [(#7917)](https://github.com/stdlib-js/stdlib/pull/7917) _(by Srinivas Batthula, Philipp Burckhardt)_
 -   [`e9c5955`](https://github.com/stdlib-js/stdlib/commit/e9c5955756fe9c633f6f67e42882394cc7c50148) - **docs:** update annotation to convey there may be inherited props _(by Philipp Burckhardt)_
 -   [`bef0f69`](https://github.com/stdlib-js/stdlib/commit/bef0f69a3c1007126ef264c4148c41497079eaad) - **docs:** re-order requires _(by Philipp Burckhardt)_
