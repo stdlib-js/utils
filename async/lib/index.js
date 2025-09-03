@@ -235,6 +235,15 @@ setReadOnly( ns, 'noneByAsync', require( './../../async/none-by' ) );
 setReadOnly( ns, 'noneByRightAsync', require( './../../async/none-by-right' ) );
 
 /**
+* @name parallel
+* @memberof ns
+* @readonly
+* @type {Function}
+* @see {@link module:@stdlib/utils/async/parallel}
+*/
+setReadOnly( ns, 'parallel', require( './../../async/parallel' ) );
+
+/**
 * @name reduceAsync
 * @memberof ns
 * @readonly

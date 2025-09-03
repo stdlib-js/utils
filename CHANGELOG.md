@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-02)
+## Unreleased (2025-09-03)
 
 <section class="features">
 
 ### Features
 
+-   [`18b2372`](https://github.com/stdlib-js/stdlib/commit/18b2372476178bcaa6bd7ddc69396f0e87dc93f2) - add missing exports to namespaces
 -   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - add missing exports to `utils` namespace
 -   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259)
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
@@ -158,6 +159,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`18b2372`](https://github.com/stdlib-js/stdlib/commit/18b2372476178bcaa6bd7ddc69396f0e87dc93f2) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
 -   [`57b828d`](https://github.com/stdlib-js/stdlib/commit/57b828d10a9b20f3003482557132723a79d27c66) - **chore:** fix JavaScript lint errors [(#8003)](https://github.com/stdlib-js/stdlib/pull/8003) _(by DUDHAT HEMIL PRAVINKUMAR, Athan Reines)_
 -   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - **feat:** add missing exports to `utils` namespace _(by Philipp Burckhardt)_
 -   [`8a6dbd7`](https://github.com/stdlib-js/stdlib/commit/8a6dbd7bf692bcd9ce166a7370eda0a7410da3b0) - **docs:** fix example code and return annotation values _(by Philipp Burckhardt)_
