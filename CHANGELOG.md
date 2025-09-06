@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-03)
+## Unreleased (2025-09-06)
 
 <section class="features">
 
@@ -159,6 +159,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`6bb3c64`](https://github.com/stdlib-js/stdlib/commit/6bb3c64c915bb33715e5256fa8073e46b9a4d443) - **docs:** update examples in TSDoc comments in `utils/async` for doctesting _(by Philipp Burckhardt)_
 -   [`18b2372`](https://github.com/stdlib-js/stdlib/commit/18b2372476178bcaa6bd7ddc69396f0e87dc93f2) - **feat:** add missing exports to namespaces _(by Philipp Burckhardt)_
 -   [`57b828d`](https://github.com/stdlib-js/stdlib/commit/57b828d10a9b20f3003482557132723a79d27c66) - **chore:** fix JavaScript lint errors [(#8003)](https://github.com/stdlib-js/stdlib/pull/8003) _(by DUDHAT HEMIL PRAVINKUMAR, Athan Reines)_
 -   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - **feat:** add missing exports to `utils` namespace _(by Philipp Burckhardt)_
