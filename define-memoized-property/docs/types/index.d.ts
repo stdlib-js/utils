@@ -30,7 +30,7 @@ import { PropertyName, DataPropertyDescriptor } from '@stdlib/types/object';
 *     return 'bar';
 * }
 *
-* var desc: PropertyDescriptor =  {
+* var desc = PropertyDescriptor = {
 *     'configurable': false,
 *     'enumerable': false,
 *     'writable': false,
