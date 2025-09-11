@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-10)
+## Unreleased (2025-09-11)
 
 <section class="features">
 
@@ -160,6 +160,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`c4bf225`](https://github.com/stdlib-js/stdlib/commit/c4bf22523ecfbab88fc1c6bc72468c859e1836e9) - **docs:** remove example _(by Philipp Burckhardt)_
 -   [`1b9a036`](https://github.com/stdlib-js/stdlib/commit/1b9a036d676b247bf502c4ede08635b99fa611ca) - **fix:** allow correct values for `returns` option _(by Philipp Burckhardt)_
 -   [`5feedbc`](https://github.com/stdlib-js/stdlib/commit/5feedbcf7d1de8ab6259c96fa39a2fdc50e2c895) - **docs:** do not pass in options object to avoid cast error _(by Philipp Burckhardt)_
 -   [`6bb3c64`](https://github.com/stdlib-js/stdlib/commit/6bb3c64c915bb33715e5256fa8073e46b9a4d443) - **docs:** update examples in TSDoc comments in `utils/async` for doctesting _(by Philipp Burckhardt)_
