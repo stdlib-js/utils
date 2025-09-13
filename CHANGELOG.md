@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-11)
+## Unreleased (2025-09-13)
 
 <section class="features">
 
@@ -146,9 +146,9 @@
 
 ### Closed Issues
 
-A total of 8 issues were closed in this release:
+A total of 9 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8061](https://github.com/stdlib-js/stdlib/issues/8061)
 
 </section>
 
@@ -160,6 +160,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`e9406ad`](https://github.com/stdlib-js/stdlib/commit/e9406adc483d1626e3fa6a61abc9c99ed78b306e) - **chore:** fix JavaScript lint errors [(#8062)](https://github.com/stdlib-js/stdlib/pull/8062) _(by Tyson Cung)_
 -   [`c4bf225`](https://github.com/stdlib-js/stdlib/commit/c4bf22523ecfbab88fc1c6bc72468c859e1836e9) - **docs:** remove example _(by Philipp Burckhardt)_
 -   [`1b9a036`](https://github.com/stdlib-js/stdlib/commit/1b9a036d676b247bf502c4ede08635b99fa611ca) - **fix:** allow correct values for `returns` option _(by Philipp Burckhardt)_
 -   [`5feedbc`](https://github.com/stdlib-js/stdlib/commit/5feedbcf7d1de8ab6259c96fa39a2fdc50e2c895) - **docs:** do not pass in options object to avoid cast error _(by Philipp Burckhardt)_
@@ -243,7 +244,7 @@ A total of 8 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   DUDHAT HEMIL PRAVINKUMAR
@@ -254,6 +255,7 @@ A total of 11 people contributed to this release. Thank you to the following con
 -   Philipp Burckhardt
 -   Satyajeet Chavan
 -   Srinivas Batthula
+-   Tyson Cung
 -   Uday Kakade
 -   zhanggy
 
