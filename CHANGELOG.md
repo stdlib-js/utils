@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-14)
+## Unreleased (2025-09-29)
 
 <section class="features">
 
 ### Features
 
+-   [`36058e8`](https://github.com/stdlib-js/stdlib/commit/36058e893ce3a1606f454f3054b14afb8f88438b) - update `utils` TypeScript declarations
+-   [`6b4c40d`](https://github.com/stdlib-js/stdlib/commit/6b4c40ddf5581abcc2a1b33c566455ea57b56bc5) - update `utils/async` TypeScript declarations
 -   [`18b2372`](https://github.com/stdlib-js/stdlib/commit/18b2372476178bcaa6bd7ddc69396f0e87dc93f2) - add missing exports to namespaces
 -   [`0bc9823`](https://github.com/stdlib-js/stdlib/commit/0bc98238e0d5e4991912848ef6069a753343eaa1) - add missing exports to `utils` namespace
 -   [`9818fa6`](https://github.com/stdlib-js/stdlib/commit/9818fa6dd8c90e045a147bfd1ba83cb1f693d17b) - update namespace TypeScript declarations [(#3259)](https://github.com/stdlib-js/stdlib/pull/3259)
@@ -160,6 +162,11 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`d94514b`](https://github.com/stdlib-js/stdlib/commit/d94514bc9418f5b42df6233204d5005d53af00ca) - **docs:** clean-up TSDoc declaration comments _(by Philipp Burckhardt)_
+-   [`07459d3`](https://github.com/stdlib-js/stdlib/commit/07459d3be48a57aac6cc018cbb456749fad79f6a) - **chore:** remove private annotations _(by Philipp Burckhardt)_
+-   [`b7c2031`](https://github.com/stdlib-js/stdlib/commit/b7c20312491bdcf54ffc681e5fe489b9ba3d059c) - **docs:** clean-up TSDoc declaration comments _(by Philipp Burckhardt)_
+-   [`36058e8`](https://github.com/stdlib-js/stdlib/commit/36058e893ce3a1606f454f3054b14afb8f88438b) - **feat:** update `utils` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`6b4c40d`](https://github.com/stdlib-js/stdlib/commit/6b4c40ddf5581abcc2a1b33c566455ea57b56bc5) - **feat:** update `utils/async` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`47678cb`](https://github.com/stdlib-js/stdlib/commit/47678cbfcb7f1475f8eea7cc39dc9675fdfc3984) - **chore:** fix JavaScript lint errors [(#8075)](https://github.com/stdlib-js/stdlib/pull/8075) _(by Vara Rahul Rajana, Athan Reines)_
 -   [`e9406ad`](https://github.com/stdlib-js/stdlib/commit/e9406adc483d1626e3fa6a61abc9c99ed78b306e) - **chore:** fix JavaScript lint errors [(#8062)](https://github.com/stdlib-js/stdlib/pull/8062) _(by Tyson Cung)_
 -   [`c4bf225`](https://github.com/stdlib-js/stdlib/commit/c4bf22523ecfbab88fc1c6bc72468c859e1836e9) - **docs:** remove example _(by Philipp Burckhardt)_

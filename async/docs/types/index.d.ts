@@ -42,6 +42,7 @@ import mapKeysAsync = require( './../../../async/map-keys' );
 import mapValuesAsync = require( './../../../async/map-values' );
 import noneByAsync = require( './../../../async/none-by' );
 import noneByRightAsync = require( './../../../async/none-by-right' );
+import parallel = require( './../../../async/parallel' );
 import reduceAsync = require( './../../../async/reduce' );
 import reduceRightAsync = require( './../../../async/reduce-right' );
 import waterfall = require( './../../../async/series-waterfall' );
@@ -1111,6 +1112,79 @@ interface Namespace {
 	* ns.noneByRightAsync( files, predicate, done );
 	*/
 	noneByRightAsync: typeof noneByRightAsync;
+
+	/**
+	* Executes a set of functions in parallel and passes the results of all functions to a provided callback.
+	*
+	* ## Notes
+	*
+	* -   This function is intended to start asynchronous tasks so that execution of each task runs concurrently. If provided a function which does not perform asynchronous tasks, the function will execute synchronously.
+	* -   The function executes provided functions in the same thread. Accordingly, the function does **not** spawn new threads.
+	*
+	* @param fcns - array of functions
+	* @param options - function options
+	* @param options.thisArg - function context
+	* @param options.limit - number of functions to execute concurrently
+	* @param clbk - callback to invoke upon completion
+	*
+	* @example
+	* function foo( clbk ) {
+	*     setTimeout( onTimeout, 300 );
+	*     function onTimeout() {
+	*         clbk( null, 'one' );
+	*     }
+	* }
+	*
+	* function bar( clbk ) {
+	*     setTimeout( onTimeout, 100 );
+	*     function onTimeout() {
+	*         clbk( null, 'two' );
+	*     }
+	* }
+	*
+	* function done( error, results ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( results );
+	*     // => [ 'one', 'two' ]
+	* }
+	*
+	* var fcns = [ foo, bar ];
+	*
+	* ns.parallel( fcns, done );
+	*
+	* @example
+	* function a( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, 2 );
+	*     }
+	* }
+	*
+	* function b( clbk ) {
+	*     setTimeout( onTimeout, 0 );
+	*     function onTimeout() {
+	*         clbk( null, 4 );
+	*     }
+	* }
+	*
+	* function done( error, out ) {
+	*     if ( error ) {
+	*         throw error;
+	*     }
+	*     console.log( out );
+	*     // => [ 2, 4 ]
+	* }
+	*
+	* var fcns = [ a, b ];
+	* var run = ns.parallel.factory( fcns );
+	*
+	* // ...
+	*
+	* run( done );
+	*/
+	parallel: typeof parallel;
 
 	/**
 	* Applies a function against an accumulator and each element in a collection and return the accumulated result.

@@ -80,8 +80,6 @@ interface Parallel {
 	* @param clbk - callback to invoke upon completion
 	*
 	* @example
-	* var parallel = require( './../../../../async/parallel' );
-	*
 	* function foo( clbk ) {
 	*     setTimeout( onTimeout, 300 );
 	*     function onTimeout() {
