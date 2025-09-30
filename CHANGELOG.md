@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-29)
+## Unreleased (2025-09-30)
 
 <section class="features">
 
@@ -162,6 +162,7 @@ A total of 11 issues were closed in this release:
 
 <details>
 
+-   [`586b535`](https://github.com/stdlib-js/stdlib/commit/586b5355d0ef01720adc2a4f6549bacf63f2432d) - **docs:** update extended description [(#8167)](https://github.com/stdlib-js/stdlib/pull/8167) _(by stdlib-bot)_
 -   [`e00e353`](https://github.com/stdlib-js/stdlib/commit/e00e353d8e5861c42098e0322f7ba11ee784529d) - **chore:** resolve javascript lint errors [(#8158)](https://github.com/stdlib-js/stdlib/pull/8158) _(by Zuhair Ahmad, Athan Reines)_
 -   [`d94514b`](https://github.com/stdlib-js/stdlib/commit/d94514bc9418f5b42df6233204d5005d53af00ca) - **docs:** clean-up TSDoc declaration comments _(by Philipp Burckhardt)_
 -   [`07459d3`](https://github.com/stdlib-js/stdlib/commit/07459d3be48a57aac6cc018cbb456749fad79f6a) - **chore:** remove private annotations _(by Philipp Burckhardt)_
