@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-10-01)
+## Unreleased (2025-10-03)
 
 <section class="features">
 
@@ -148,9 +148,9 @@
 
 ### Closed Issues
 
-A total of 12 issues were closed in this release:
+A total of 13 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183)
 
 </section>
 
@@ -162,6 +162,7 @@ A total of 12 issues were closed in this release:
 
 <details>
 
+-   [`eebec21`](https://github.com/stdlib-js/stdlib/commit/eebec2173891b678ab5e419eec8d6ab3651ed9aa) - **chore:** fix lint errors [(#8184)](https://github.com/stdlib-js/stdlib/pull/8184) _(by Payal Goswami, Athan Reines)_
 -   [`78351b3`](https://github.com/stdlib-js/stdlib/commit/78351b361d25d1abd7741df7a2c68f42968a3247) - **chore:** fix JavaScript lint errors [(#8176)](https://github.com/stdlib-js/stdlib/pull/8176) _(by Payal Goswami, Philipp Burckhardt)_
 -   [`586b535`](https://github.com/stdlib-js/stdlib/commit/586b5355d0ef01720adc2a4f6549bacf63f2432d) - **docs:** update extended description [(#8167)](https://github.com/stdlib-js/stdlib/pull/8167) _(by stdlib-bot)_
 -   [`e00e353`](https://github.com/stdlib-js/stdlib/commit/e00e353d8e5861c42098e0322f7ba11ee784529d) - **chore:** resolve javascript lint errors [(#8158)](https://github.com/stdlib-js/stdlib/pull/8158) _(by Zuhair Ahmad, Athan Reines)_
