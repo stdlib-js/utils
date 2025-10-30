@@ -148,9 +148,9 @@
 
 ### Closed Issues
 
-A total of 16 issues were closed in this release:
+A total of 17 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260)
 
 </section>
 
@@ -162,6 +162,7 @@ A total of 16 issues were closed in this release:
 
 <details>
 
+-   [`67a57a2`](https://github.com/stdlib-js/stdlib/commit/67a57a2861401202eb362b67971cf023ecf1518b) - **docs:** refactor example to use array PRNG  [(#8233)](https://github.com/stdlib-js/stdlib/pull/8233) _(by Udit Agarwal, Athan Reines)_
 -   [`de7f81a`](https://github.com/stdlib-js/stdlib/commit/de7f81a291cbabdd093f465844316bdff3a363b9) - **chore:** fix JavaScript lint errors [(#8261)](https://github.com/stdlib-js/stdlib/pull/8261) _(by Payal Goswami)_
 -   [`c08b5f1`](https://github.com/stdlib-js/stdlib/commit/c08b5f1e9ab95ed8f8710a9002b48578959e220a) - **chore:** fix JavaScript lint errors [(#8243)](https://github.com/stdlib-js/stdlib/pull/8243) _(by Mohsin)_
 -   [`447a1ea`](https://github.com/stdlib-js/stdlib/commit/447a1ea0a03fa642d8193bdefd6bcb2533f99148) - **chore:** fix JavaScript lint errors [(#8222)](https://github.com/stdlib-js/stdlib/pull/8222) _(by youzi-forge)_
@@ -259,7 +260,7 @@ A total of 16 issues were closed in this release:
 
 ### Contributors
 
-A total of 17 people contributed to this release. Thank you to the following contributors:
+A total of 18 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Dudhat Hemil Pravinkumar
@@ -275,6 +276,7 @@ A total of 17 people contributed to this release. Thank you to the following con
 -   Srinivas Batthula
 -   Tyson Cung
 -   Uday Kakade
+-   Udit Agarwal
 -   Vara Rahul Rajana
 -   Zuhair Ahmad
 -   youzi-forge
