@@ -162,6 +162,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`b9b8bcf`](https://github.com/stdlib-js/stdlib/commit/b9b8bcfd9708edd2b7b6c867bdfdde60f8e2b27b) - **chore:** resolve lint error in `utils/async/while` [(#8269)](https://github.com/stdlib-js/stdlib/pull/8269) _(by Suyash Pathak, Athan Reines)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`7e82b0c`](https://github.com/stdlib-js/stdlib/commit/7e82b0ca1438082723d163849d06b76ed335a883) - **chore:** fix JavaScript lint errors [(#8400)](https://github.com/stdlib-js/stdlib/pull/8400) _(by Rasim Bhat, Athan Reines)_
 -   [`67a57a2`](https://github.com/stdlib-js/stdlib/commit/67a57a2861401202eb362b67971cf023ecf1518b) - **docs:** refactor example to use array PRNG  [(#8233)](https://github.com/stdlib-js/stdlib/pull/8233) _(by Udit Agarwal, Athan Reines)_
@@ -262,7 +263,7 @@ A total of 18 issues were closed in this release:
 
 ### Contributors
 
-A total of 19 people contributed to this release. Thank you to the following contributors:
+A total of 20 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Dudhat Hemil Pravinkumar
@@ -277,6 +278,7 @@ A total of 19 people contributed to this release. Thank you to the following con
 -   Rasim Bhat
 -   Satyajeet Chavan
 -   Srinivas Batthula
+-   Suyash Pathak
 -   Tyson Cung
 -   Uday Kakade
 -   Udit Agarwal
