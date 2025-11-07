@@ -148,9 +148,9 @@
 
 ### Closed Issues
 
-A total of 18 issues were closed in this release:
+A total of 19 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8390](https://github.com/stdlib-js/stdlib/issues/8390)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390)
 
 </section>
 
@@ -162,6 +162,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`c8faa25`](https://github.com/stdlib-js/stdlib/commit/c8faa25f77167844cb222e101f584dda14f82fd8) - **chore:** fix JavaScript lint errors [(#8424)](https://github.com/stdlib-js/stdlib/pull/8424) _(by kaushal-kumar-it, Athan Reines)_
 -   [`b9b8bcf`](https://github.com/stdlib-js/stdlib/commit/b9b8bcfd9708edd2b7b6c867bdfdde60f8e2b27b) - **chore:** resolve lint error in `utils/async/while` [(#8269)](https://github.com/stdlib-js/stdlib/pull/8269) _(by Suyash Pathak, Athan Reines)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`7e82b0c`](https://github.com/stdlib-js/stdlib/commit/7e82b0ca1438082723d163849d06b76ed335a883) - **chore:** fix JavaScript lint errors [(#8400)](https://github.com/stdlib-js/stdlib/pull/8400) _(by Rasim Bhat, Athan Reines)_
@@ -263,7 +264,7 @@ A total of 18 issues were closed in this release:
 
 ### Contributors
 
-A total of 20 people contributed to this release. Thank you to the following contributors:
+A total of 21 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Dudhat Hemil Pravinkumar
@@ -284,6 +285,7 @@ A total of 20 people contributed to this release. Thank you to the following con
 -   Udit Agarwal
 -   Vara Rahul Rajana
 -   Zuhair Ahmad
+-   kaushal-kumar-it
 -   youzi-forge
 
 </section>

@@ -18,7 +18,7 @@
 
 'use strict';
 
-var parallel = require( './../../../async/parallel' );
+var parallel = require( './../lib' );
 
 function foo( resolve ) {
 	setTimeout( onTimeout, 300 );
