@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-06)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
@@ -162,6 +162,7 @@ A total of 18 issues were closed in this release:
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`7e82b0c`](https://github.com/stdlib-js/stdlib/commit/7e82b0ca1438082723d163849d06b76ed335a883) - **chore:** fix JavaScript lint errors [(#8400)](https://github.com/stdlib-js/stdlib/pull/8400) _(by Rasim Bhat, Athan Reines)_
 -   [`67a57a2`](https://github.com/stdlib-js/stdlib/commit/67a57a2861401202eb362b67971cf023ecf1518b) - **docs:** refactor example to use array PRNG  [(#8233)](https://github.com/stdlib-js/stdlib/pull/8233) _(by Udit Agarwal, Athan Reines)_
 -   [`de7f81a`](https://github.com/stdlib-js/stdlib/commit/de7f81a291cbabdd093f465844316bdff3a363b9) - **chore:** fix JavaScript lint errors [(#8261)](https://github.com/stdlib-js/stdlib/pull/8261) _(by Payal Goswami)_

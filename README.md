@@ -92,6 +92,8 @@ The namespace has the following sub-namespaces:
 
 -   <span class="signature">[`anyByRight( collection, predicate[, thisArg ] )`][@stdlib/utils/any-by-right]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function, iterating from right to left.</span>
 -   <span class="signature">[`anyBy( collection, predicate[, thisArg ] )`][@stdlib/utils/any-by]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection passes a test implemented by a predicate function.</span>
+-   <span class="signature">[`anyInBy( object, predicate[, thisArg ] )`][@stdlib/utils/any-in-by]</span><span class="delimiter">: </span><span class="description">test whether at least one property in an object passes a test implemented by a predicate function.</span>
+-   <span class="signature">[`anyOwnBy( collection, predicate[, thisArg ] )`][@stdlib/utils/any-own-by]</span><span class="delimiter">: </span><span class="description">test whether at least one own property of a provided object passes a test implemented by a predicate function.</span>
 -   <span class="signature">[`any( collection )`][@stdlib/utils/any]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection is truthy.</span>
 -   <span class="signature">[`append( collection1, collection2 )`][@stdlib/utils/append]</span><span class="delimiter">: </span><span class="description">add elements from one collection to the end of another collection.</span>
 -   <span class="signature">[`bifurcateBy( collection, [options,] predicate )`][@stdlib/utils/bifurcate-by]</span><span class="delimiter">: </span><span class="description">split values into two groups according to a predicate function.</span>
@@ -114,6 +116,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`keyBy( collection, fcn[, thisArg ] )`][@stdlib/utils/key-by]</span><span class="delimiter">: </span><span class="description">convert a collection to an object whose keys are determined by a provided function and whose values are the collection values.</span>
 -   <span class="signature">[`noneByRight( collection, predicate[, thisArg ] )`][@stdlib/utils/none-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection fail a test implemented by a predicate function, iterating from right to left.</span>
 -   <span class="signature">[`noneBy( collection, predicate[, thisArg ] )`][@stdlib/utils/none-by]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection fail a test implemented by a predicate function.</span>
+-   <span class="signature">[`noneOwnBy( object, predicate[, thisArg ] )`][@stdlib/utils/none-own-by]</span><span class="delimiter">: </span><span class="description">tests whether every own property of an object fails a test implemented by a predicate function.</span>
 -   <span class="signature">[`none( collection )`][@stdlib/utils/none]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection are falsy.</span>
 -   <span class="signature">[`pop( collection )`][@stdlib/utils/pop]</span><span class="delimiter">: </span><span class="description">remove and return the last element of a collection.</span>
 -   <span class="signature">[`prepend( collection1, collection2 )`][@stdlib/utils/prepend]</span><span class="delimiter">: </span><span class="description">add elements from one collection to the beginning of another collection.</span>
@@ -124,6 +127,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`shift( collection )`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
 -   <span class="signature">[`someByRight( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by-right]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.</span>
 -   <span class="signature">[`someBy( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function.</span>
+-   <span class="signature">[`someOwnBy( obj, n, predicate[, thisArg ] )`][@stdlib/utils/some-own-by]</span><span class="delimiter">: </span><span class="description">test whether an object contains at least `n` own properties which pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`some( collection, n )`][@stdlib/utils/some]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which are truthy.</span>
 -   <span class="signature">[`tabulateBy( collection[, options,] indicator )`][@stdlib/utils/tabulate-by]</span><span class="delimiter">: </span><span class="description">generate a frequency table according to an indicator function.</span>
 -   <span class="signature">[`tabulate( collection )`][@stdlib/utils/tabulate]</span><span class="delimiter">: </span><span class="description">generate a frequency table.</span>
@@ -345,6 +349,7 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`openURL()`][@stdlib/utils/open-url]</span><span class="delimiter">: </span><span class="description">open a URL.</span>
 -   <span class="signature">[`parallel( files, [options,] clbk )`][@stdlib/utils/parallel]</span><span class="delimiter">: </span><span class="description">execute scripts in parallel.</span>
 -   <span class="signature">[`parseJSON( str[, reviver] )`][@stdlib/utils/parse-json]</span><span class="delimiter">: </span><span class="description">parse a string as JSON.</span>
+-   <span class="signature">[`parseNDJSON( str[, reviver] )`][@stdlib/utils/parse-ndjson]</span><span class="delimiter">: </span><span class="description">parse a string containing serialized newline-delimited JSON (NDJSON).</span>
 -   <span class="signature">[`realmax( dtype )`][@stdlib/utils/real-max]</span><span class="delimiter">: </span><span class="description">return the maximum finite value capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`realmin( dtype )`][@stdlib/utils/real-min]</span><span class="delimiter">: </span><span class="description">return the smallest positive normal value capable of being represented by a numeric real type.</span>
 -   <span class="signature">[`reFromString( str )`][@stdlib/utils/regexp-from-string]</span><span class="delimiter">: </span><span class="description">create a regular expression from a regular expression string.</span>
@@ -526,6 +531,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/parallel]: https://github.com/stdlib-js/utils/tree/main/parallel
 
 [@stdlib/utils/parse-json]: https://github.com/stdlib-js/utils/tree/main/parse-json
+
+[@stdlib/utils/parse-ndjson]: https://github.com/stdlib-js/utils/tree/main/parse-ndjson
 
 [@stdlib/utils/real-max]: https://github.com/stdlib-js/utils/tree/main/real-max
 
@@ -805,6 +812,10 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/any-by]: https://github.com/stdlib-js/utils/tree/main/any-by
 
+[@stdlib/utils/any-in-by]: https://github.com/stdlib-js/utils/tree/main/any-in-by
+
+[@stdlib/utils/any-own-by]: https://github.com/stdlib-js/utils/tree/main/any-own-by
+
 [@stdlib/utils/any]: https://github.com/stdlib-js/utils/tree/main/any
 
 [@stdlib/utils/append]: https://github.com/stdlib-js/utils/tree/main/append
@@ -849,6 +860,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/none-by]: https://github.com/stdlib-js/utils/tree/main/none-by
 
+[@stdlib/utils/none-own-by]: https://github.com/stdlib-js/utils/tree/main/none-own-by
+
 [@stdlib/utils/none]: https://github.com/stdlib-js/utils/tree/main/none
 
 [@stdlib/utils/pop]: https://github.com/stdlib-js/utils/tree/main/pop
@@ -868,6 +881,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils/tree/main/some-by-right
 
 [@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by
+
+[@stdlib/utils/some-own-by]: https://github.com/stdlib-js/utils/tree/main/some-own-by
 
 [@stdlib/utils/some]: https://github.com/stdlib-js/utils/tree/main/some
 
