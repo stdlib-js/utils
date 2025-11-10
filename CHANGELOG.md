@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-11-10)
 
 <section class="features">
 
@@ -162,6 +162,7 @@ A total of 19 issues were closed in this release:
 
 <details>
 
+-   [`7849e6f`](https://github.com/stdlib-js/stdlib/commit/7849e6ffba5b1734a5314c5ded28602dd75e0f3c) - **style:** remove semicolons after function declarations _(by Philipp Burckhardt)_
 -   [`c8faa25`](https://github.com/stdlib-js/stdlib/commit/c8faa25f77167844cb222e101f584dda14f82fd8) - **chore:** fix JavaScript lint errors [(#8424)](https://github.com/stdlib-js/stdlib/pull/8424) _(by kaushal-kumar-it, Athan Reines)_
 -   [`b9b8bcf`](https://github.com/stdlib-js/stdlib/commit/b9b8bcfd9708edd2b7b6c867bdfdde60f8e2b27b) - **chore:** resolve lint error in `utils/async/while` [(#8269)](https://github.com/stdlib-js/stdlib/pull/8269) _(by Suyash Pathak, Athan Reines)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
