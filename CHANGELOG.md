@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-10)
+## Unreleased (2025-11-26)
 
 <section class="features">
 
@@ -148,9 +148,9 @@
 
 ### Closed Issues
 
-A total of 19 issues were closed in this release:
+A total of 20 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390), [#8577](https://github.com/stdlib-js/stdlib/issues/8577)
 
 </section>
 
@@ -162,6 +162,7 @@ A total of 19 issues were closed in this release:
 
 <details>
 
+-   [`54f9e1b`](https://github.com/stdlib-js/stdlib/commit/54f9e1b148a5b28618ff25e2b49fa2bd7dc8e946) - **chore:** fix JavaScript lint errors [(#8582)](https://github.com/stdlib-js/stdlib/pull/8582) _(by kaushal-kumar-it)_
 -   [`7849e6f`](https://github.com/stdlib-js/stdlib/commit/7849e6ffba5b1734a5314c5ded28602dd75e0f3c) - **style:** remove semicolons after function declarations _(by Philipp Burckhardt)_
 -   [`c8faa25`](https://github.com/stdlib-js/stdlib/commit/c8faa25f77167844cb222e101f584dda14f82fd8) - **chore:** fix JavaScript lint errors [(#8424)](https://github.com/stdlib-js/stdlib/pull/8424) _(by kaushal-kumar-it, Athan Reines)_
 -   [`b9b8bcf`](https://github.com/stdlib-js/stdlib/commit/b9b8bcfd9708edd2b7b6c867bdfdde60f8e2b27b) - **chore:** resolve lint error in `utils/async/while` [(#8269)](https://github.com/stdlib-js/stdlib/pull/8269) _(by Suyash Pathak, Athan Reines)_
