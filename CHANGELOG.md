@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-26)
+## Unreleased (2025-11-29)
 
 <section class="features">
 
@@ -35,6 +35,11 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`0beaf3c`](https://github.com/stdlib-js/stdlib/commit/0beaf3c1da2264b6964b0f04d639571e95a73a31): remove `utils/any-in-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/any-in-by` which provides the same API and implementation.
 
 -   [`d27d963`](https://github.com/stdlib-js/stdlib/commit/d27d963735240594f5b51a460c68e31493370a4a): remove `utils/some-in-by`
 
@@ -162,6 +167,10 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`272e9da`](https://github.com/stdlib-js/stdlib/commit/272e9dabe6ef320417a6fcada1337fb5c074dc80) - **chore:** fix README lint errors _(by Neeraj Pathak)_
+-   [`6499a10`](https://github.com/stdlib-js/stdlib/commit/6499a10c943fbdbcae8099366fe612d8aa527ddf) - **chore:** fix README lint errors _(by Neeraj Pathak)_
+-   [`0beaf3c`](https://github.com/stdlib-js/stdlib/commit/0beaf3c1da2264b6964b0f04d639571e95a73a31) - **remove:** remove `utils/any-in-by` _(by Neeraj Pathak)_
+-   [`6ea3fff`](https://github.com/stdlib-js/stdlib/commit/6ea3fff1850167852dc0ea18003c1e0209d70335) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`54f9e1b`](https://github.com/stdlib-js/stdlib/commit/54f9e1b148a5b28618ff25e2b49fa2bd7dc8e946) - **chore:** fix JavaScript lint errors [(#8582)](https://github.com/stdlib-js/stdlib/pull/8582) _(by kaushal-kumar-it)_
 -   [`7849e6f`](https://github.com/stdlib-js/stdlib/commit/7849e6ffba5b1734a5314c5ded28602dd75e0f3c) - **style:** remove semicolons after function declarations _(by Philipp Burckhardt)_
 -   [`c8faa25`](https://github.com/stdlib-js/stdlib/commit/c8faa25f77167844cb222e101f584dda14f82fd8) - **chore:** fix JavaScript lint errors [(#8424)](https://github.com/stdlib-js/stdlib/pull/8424) _(by kaushal-kumar-it, Athan Reines)_
