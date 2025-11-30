@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-29)
+## Unreleased (2025-11-30)
 
 <section class="features">
 
@@ -167,6 +167,7 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`e63bbbd`](https://github.com/stdlib-js/stdlib/commit/e63bbbd535150fb694d287d97adbb5d606bd42fe) - **docs:** update namespace table of contents [(#8639)](https://github.com/stdlib-js/stdlib/pull/8639) _(by stdlib-bot)_
 -   [`272e9da`](https://github.com/stdlib-js/stdlib/commit/272e9dabe6ef320417a6fcada1337fb5c074dc80) - **chore:** fix README lint errors _(by Neeraj Pathak)_
 -   [`6499a10`](https://github.com/stdlib-js/stdlib/commit/6499a10c943fbdbcae8099366fe612d8aa527ddf) - **chore:** fix README lint errors _(by Neeraj Pathak)_
 -   [`0beaf3c`](https://github.com/stdlib-js/stdlib/commit/0beaf3c1da2264b6964b0f04d639571e95a73a31) - **remove:** remove `utils/any-in-by` _(by Neeraj Pathak)_
