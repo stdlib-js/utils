@@ -36,6 +36,16 @@
 
 ### BREAKING CHANGES
 
+-   [`8653809`](https://github.com/stdlib-js/stdlib/commit/8653809bec91a38db812e64847db9adf4d429602): remove `utils/none-own-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/none-own-by` which provides the same API and implementation.
+
+-   [`3d7187a`](https://github.com/stdlib-js/stdlib/commit/3d7187a634c8b5882e34522c608d4d4def321038): remove `noneOwnBy`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
 -   [`412d1de`](https://github.com/stdlib-js/stdlib/commit/412d1deb27ab20764d4096c5531c72964cae282c): remove `anyInBy`
 
     -   To migrate, users should access the same symbol via the
@@ -182,6 +192,8 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`8653809`](https://github.com/stdlib-js/stdlib/commit/8653809bec91a38db812e64847db9adf4d429602) - **remove:** remove `utils/none-own-by` _(by Neeraj Pathak)_
+-   [`3d7187a`](https://github.com/stdlib-js/stdlib/commit/3d7187a634c8b5882e34522c608d4d4def321038) - **remove:** remove `noneOwnBy` from namespace _(by Neeraj Pathak)_
 -   [`412d1de`](https://github.com/stdlib-js/stdlib/commit/412d1deb27ab20764d4096c5531c72964cae282c) - **remove:** remove `anyInBy` from namespace  _(by Athan Reines)_
 -   [`c04a8bc`](https://github.com/stdlib-js/stdlib/commit/c04a8bc15913cb8d3130e255eea3078a82276e4e) - **remove:** remove `utils/any-own-by` _(by Neeraj Pathak)_
 -   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_

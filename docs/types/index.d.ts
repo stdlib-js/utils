@@ -150,7 +150,6 @@ import nextTick = require( './../../next-tick' );
 import none = require( './../../none' );
 import noneBy = require( './../../none-by' );
 import noneByRight = require( './../../none-by-right' );
-import noneOwnBy = require( './../../none-own-by' );
 import nonEnumerableProperties = require( './../../nonenumerable-properties' );
 import nonEnumerablePropertiesIn = require( './../../nonenumerable-properties-in' );
 import nonEnumerablePropertyNames = require( './../../nonenumerable-property-names' );
@@ -4091,37 +4090,6 @@ interface Namespace {
 	* // returns true
 	*/
 	noneByRight: typeof noneByRight;
-
-	/**
-	* Tests whether every property of an object fails a test implemented by a predicate function.
-	*
-	* ## Notes
-	*
-	* -   The predicate function is provided three arguments:
-	*
-	*     -   `value`: property value
-	*     -   `key`: property key
-	*     -   `object`: the input object
-	*
-	* -   The function immediately returns upon encountering a truthy return value.
-	* -   If provided an empty object, the function returns `true`.
-	*
-	* @param object - input object
-	* @param predicate - test function
-	* @param thisArg - execution context
-	* @returns boolean indicating whether every property fails a test
-	*
-	* @example
-	* function isUnderage( v ) {
-	*     return ( v < 18 );
-	* }
-	*
-	* var obj = { 'a': 20, 'b': 22, 'c': 25 };
-	*
-	* var bool = ns.noneOwnBy( obj, isUnderage );
-	* // returns true
-	*/
-	noneOwnBy: typeof noneOwnBy;
 
 	/**
 	* Returns an array of an object's own non-enumerable property names and symbols.
