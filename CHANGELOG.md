@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-30)
+## Unreleased (2025-12-01)
 
 <section class="features">
 
@@ -35,6 +35,21 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`412d1de`](https://github.com/stdlib-js/stdlib/commit/412d1deb27ab20764d4096c5531c72964cae282c): remove `anyInBy`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
+-   [`c04a8bc`](https://github.com/stdlib-js/stdlib/commit/c04a8bc15913cb8d3130e255eea3078a82276e4e): remove `utils/any-own-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/objects/any-own-by` which provides the same API and implementation.
+
+-   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b): remove `any-own-by`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`0beaf3c`](https://github.com/stdlib-js/stdlib/commit/0beaf3c1da2264b6964b0f04d639571e95a73a31): remove `utils/any-in-by`
 
@@ -167,6 +182,13 @@ A total of 20 issues were closed in this release:
 
 <details>
 
+-   [`412d1de`](https://github.com/stdlib-js/stdlib/commit/412d1deb27ab20764d4096c5531c72964cae282c) - **remove:** remove `anyInBy` from namespace  _(by Athan Reines)_
+-   [`c04a8bc`](https://github.com/stdlib-js/stdlib/commit/c04a8bc15913cb8d3130e255eea3078a82276e4e) - **remove:** remove `utils/any-own-by` _(by Neeraj Pathak)_
+-   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b) - **remove:** remove `any-own-by` from namespace _(by Neeraj Pathak)_
+-   [`e65c0c3`](https://github.com/stdlib-js/stdlib/commit/e65c0c3498a0b6236197286e973e1df620067f28) - **chore:** address lint failure by disabling lint rule _(by Philipp Burckhardt)_
+-   [`dedae83`](https://github.com/stdlib-js/stdlib/commit/dedae83e63f14730064d5f4af8271dce8175f4e7) - **docs:** replace example given this context is not bound for clbk but fcn _(by Philipp Burckhardt)_
+-   [`4ebbd97`](https://github.com/stdlib-js/stdlib/commit/4ebbd97f55188dd986e9b98b26972c3729b1f6e4) - **docs:** fix TypeScript declarations doctest lint errors _(by Philipp Burckhardt)_
 -   [`e63bbbd`](https://github.com/stdlib-js/stdlib/commit/e63bbbd535150fb694d287d97adbb5d606bd42fe) - **docs:** update namespace table of contents [(#8639)](https://github.com/stdlib-js/stdlib/pull/8639) _(by stdlib-bot)_
 -   [`272e9da`](https://github.com/stdlib-js/stdlib/commit/272e9dabe6ef320417a6fcada1337fb5c074dc80) - **chore:** fix README lint errors _(by Neeraj Pathak)_
 -   [`6499a10`](https://github.com/stdlib-js/stdlib/commit/6499a10c943fbdbcae8099366fe612d8aa527ddf) - **chore:** fix README lint errors _(by Neeraj Pathak)_
