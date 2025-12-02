@@ -192,6 +192,7 @@ A total of 21 issues were closed in this release:
 
 <details>
 
+-   [`ff45992`](https://github.com/stdlib-js/stdlib/commit/ff45992200d325437e5216d0e7738ee812c661dc) - **docs:** update namespace table of contents [(#8704)](https://github.com/stdlib-js/stdlib/pull/8704) _(by stdlib-bot)_
 -   [`bdee45c`](https://github.com/stdlib-js/stdlib/commit/bdee45c142a6e5a8d9dea6d28861900585fc3ac6) - **chore:** fix JavaScript lint errors [(#8686)](https://github.com/stdlib-js/stdlib/pull/8686) _(by Rohit R Bhat, Athan Reines)_
 -   [`8653809`](https://github.com/stdlib-js/stdlib/commit/8653809bec91a38db812e64847db9adf4d429602) - **remove:** remove `utils/none-own-by` _(by Neeraj Pathak)_
 -   [`3d7187a`](https://github.com/stdlib-js/stdlib/commit/3d7187a634c8b5882e34522c608d4d4def321038) - **remove:** remove `noneOwnBy` from namespace _(by Neeraj Pathak)_
