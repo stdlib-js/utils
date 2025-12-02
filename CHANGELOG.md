@@ -192,6 +192,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`92dc7c2`](https://github.com/stdlib-js/stdlib/commit/92dc7c2bea09a0f1d6d12d9048381cc8bcc99fe3) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`2e44271`](https://github.com/stdlib-js/stdlib/commit/2e44271c52942b2140d235372d2247335894b40d) - **chore:** fix JavaScript lint errors [(#8705)](https://github.com/stdlib-js/stdlib/pull/8705) _(by Rohit R Bhat, Athan Reines)_
 -   [`ff45992`](https://github.com/stdlib-js/stdlib/commit/ff45992200d325437e5216d0e7738ee812c661dc) - **docs:** update namespace table of contents [(#8704)](https://github.com/stdlib-js/stdlib/pull/8704) _(by stdlib-bot)_
 -   [`bdee45c`](https://github.com/stdlib-js/stdlib/commit/bdee45c142a6e5a8d9dea6d28861900585fc3ac6) - **chore:** fix JavaScript lint errors [(#8686)](https://github.com/stdlib-js/stdlib/pull/8686) _(by Rohit R Bhat, Athan Reines)_
