@@ -202,6 +202,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`546d714`](https://github.com/stdlib-js/stdlib/commit/546d71415bfaa6861cb8757741e1c465c7759590) - **docs:** fix example code and return annotations in TSDoc declarations _(by Philipp Burckhardt)_
 -   [`4929bea`](https://github.com/stdlib-js/stdlib/commit/4929beadc8b97ef669ac725fbb39758d06dd1784) - **docs:** update namespace table of contents [(#8763)](https://github.com/stdlib-js/stdlib/pull/8763) _(by stdlib-bot)_
 -   [`05f818a`](https://github.com/stdlib-js/stdlib/commit/05f818a8292321d80988ce531bb3ceee8974ee30) - **remove:** remove `utils/some-own-by` _(by Neeraj Pathak)_
 -   [`274666d`](https://github.com/stdlib-js/stdlib/commit/274666d5af9ef7eb9b61f431905a0fe235ace78e) - **remove:** remove `someOwnBy` from namespace _(by Neeraj Pathak)_
