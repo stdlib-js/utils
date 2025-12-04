@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-03)
+## Unreleased (2025-12-04)
 
 <section class="features">
 
@@ -202,6 +202,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`4929bea`](https://github.com/stdlib-js/stdlib/commit/4929beadc8b97ef669ac725fbb39758d06dd1784) - **docs:** update namespace table of contents [(#8763)](https://github.com/stdlib-js/stdlib/pull/8763) _(by stdlib-bot)_
 -   [`05f818a`](https://github.com/stdlib-js/stdlib/commit/05f818a8292321d80988ce531bb3ceee8974ee30) - **remove:** remove `utils/some-own-by` _(by Neeraj Pathak)_
 -   [`274666d`](https://github.com/stdlib-js/stdlib/commit/274666d5af9ef7eb9b61f431905a0fe235ace78e) - **remove:** remove `someOwnBy` from namespace _(by Neeraj Pathak)_
 -   [`92dc7c2`](https://github.com/stdlib-js/stdlib/commit/92dc7c2bea09a0f1d6d12d9048381cc8bcc99fe3) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_

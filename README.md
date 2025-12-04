@@ -124,7 +124,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`shift( collection )`][@stdlib/utils/shift]</span><span class="delimiter">: </span><span class="description">remove and return the first element of a collection.</span>
 -   <span class="signature">[`someByRight( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by-right]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function, iterating from right to left.</span>
 -   <span class="signature">[`someBy( collection, n, predicate[, thisArg ] )`][@stdlib/utils/some-by]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which pass a test implemented by a predicate function.</span>
--   <span class="signature">[`someOwnBy( obj, n, predicate[, thisArg ] )`][@stdlib/utils/some-own-by]</span><span class="delimiter">: </span><span class="description">test whether an object contains at least `n` own properties which pass a test implemented by a predicate function.</span>
 -   <span class="signature">[`some( collection, n )`][@stdlib/utils/some]</span><span class="delimiter">: </span><span class="description">test whether a collection contains at least `n` elements which are truthy.</span>
 -   <span class="signature">[`tabulateBy( collection[, options,] indicator )`][@stdlib/utils/tabulate-by]</span><span class="delimiter">: </span><span class="description">generate a frequency table according to an indicator function.</span>
 -   <span class="signature">[`tabulate( collection )`][@stdlib/utils/tabulate]</span><span class="delimiter">: </span><span class="description">generate a frequency table.</span>
@@ -872,8 +871,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/some-by-right]: https://github.com/stdlib-js/utils/tree/main/some-by-right
 
 [@stdlib/utils/some-by]: https://github.com/stdlib-js/utils/tree/main/some-by
-
-[@stdlib/utils/some-own-by]: https://github.com/stdlib-js/utils/tree/main/some-own-by
 
 [@stdlib/utils/some]: https://github.com/stdlib-js/utils/tree/main/some
 
