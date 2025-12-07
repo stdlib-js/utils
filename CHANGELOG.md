@@ -212,6 +212,7 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`a0f2b40`](https://github.com/stdlib-js/stdlib/commit/a0f2b403a936770b83022b57027ad17312e15bb7) - **docs:** update example _(by Athan Reines)_
 -   [`85e2ccb`](https://github.com/stdlib-js/stdlib/commit/85e2ccbb04eb8a7b6204c158ba9a8bec457a387d) - **remove:** remove `utils/move-property` _(by Neeraj Pathak)_
 -   [`3fd5d2c`](https://github.com/stdlib-js/stdlib/commit/3fd5d2cba39446c9adc8bdb06af2d19891582491) - **remove:** remove `moveProperty` from namespace _(by Neeraj Pathak)_
 -   [`546d714`](https://github.com/stdlib-js/stdlib/commit/546d71415bfaa6861cb8757741e1c465c7759590) - **docs:** fix example code and return annotations in TSDoc declarations _(by Philipp Burckhardt)_
