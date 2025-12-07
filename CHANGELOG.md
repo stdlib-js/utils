@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-04)
+## Unreleased (2025-12-07)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`85e2ccb`](https://github.com/stdlib-js/stdlib/commit/85e2ccbb04eb8a7b6204c158ba9a8bec457a387d): remove `utils/move-property`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/move-property` which provides the same API and implementation.
+
+-   [`3fd5d2c`](https://github.com/stdlib-js/stdlib/commit/3fd5d2cba39446c9adc8bdb06af2d19891582491): remove `moveProperty`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`05f818a`](https://github.com/stdlib-js/stdlib/commit/05f818a8292321d80988ce531bb3ceee8974ee30): remove `utils/some-own-by`
 
@@ -202,6 +212,8 @@ A total of 22 issues were closed in this release:
 
 <details>
 
+-   [`85e2ccb`](https://github.com/stdlib-js/stdlib/commit/85e2ccbb04eb8a7b6204c158ba9a8bec457a387d) - **remove:** remove `utils/move-property` _(by Neeraj Pathak)_
+-   [`3fd5d2c`](https://github.com/stdlib-js/stdlib/commit/3fd5d2cba39446c9adc8bdb06af2d19891582491) - **remove:** remove `moveProperty` from namespace _(by Neeraj Pathak)_
 -   [`546d714`](https://github.com/stdlib-js/stdlib/commit/546d71415bfaa6861cb8757741e1c465c7759590) - **docs:** fix example code and return annotations in TSDoc declarations _(by Philipp Burckhardt)_
 -   [`4929bea`](https://github.com/stdlib-js/stdlib/commit/4929beadc8b97ef669ac725fbb39758d06dd1784) - **docs:** update namespace table of contents [(#8763)](https://github.com/stdlib-js/stdlib/pull/8763) _(by stdlib-bot)_
 -   [`05f818a`](https://github.com/stdlib-js/stdlib/commit/05f818a8292321d80988ce531bb3ceee8974ee30) - **remove:** remove `utils/some-own-by` _(by Neeraj Pathak)_
