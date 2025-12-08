@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-07)
+## Unreleased (2025-12-08)
 
 <section class="features">
 
@@ -212,6 +212,7 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`798b688`](https://github.com/stdlib-js/stdlib/commit/798b6883aeb529c858d2a2003ecf0b45609e16cf) - **docs:** update namespace table of contents [(#8879)](https://github.com/stdlib-js/stdlib/pull/8879) _(by stdlib-bot)_
 -   [`cd0d010`](https://github.com/stdlib-js/stdlib/commit/cd0d010a9f4a8f98c18a6fbd778d91509cd91e6b) - **chore:** fix JavaScript lint errors [(#8420)](https://github.com/stdlib-js/stdlib/pull/8420) _(by kaushal-kumar-it, Athan Reines)_
 -   [`a0f2b40`](https://github.com/stdlib-js/stdlib/commit/a0f2b403a936770b83022b57027ad17312e15bb7) - **docs:** update example _(by Athan Reines)_
 -   [`85e2ccb`](https://github.com/stdlib-js/stdlib/commit/85e2ccbb04eb8a7b6204c158ba9a8bec457a387d) - **remove:** remove `utils/move-property` _(by Neeraj Pathak)_
