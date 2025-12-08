@@ -212,6 +212,7 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`68f3b04`](https://github.com/stdlib-js/stdlib/commit/68f3b044b857c0b812dbaaeb0750fcf96428d43c) - **docs:** update `utils` TypeScript declarations [(#8883)](https://github.com/stdlib-js/stdlib/pull/8883) _(by stdlib-bot)_
 -   [`798b688`](https://github.com/stdlib-js/stdlib/commit/798b6883aeb529c858d2a2003ecf0b45609e16cf) - **docs:** update namespace table of contents [(#8879)](https://github.com/stdlib-js/stdlib/pull/8879) _(by stdlib-bot)_
 -   [`cd0d010`](https://github.com/stdlib-js/stdlib/commit/cd0d010a9f4a8f98c18a6fbd778d91509cd91e6b) - **chore:** fix JavaScript lint errors [(#8420)](https://github.com/stdlib-js/stdlib/pull/8420) _(by kaushal-kumar-it, Athan Reines)_
 -   [`a0f2b40`](https://github.com/stdlib-js/stdlib/commit/a0f2b403a936770b83022b57027ad17312e15bb7) - **docs:** update example _(by Athan Reines)_
