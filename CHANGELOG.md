@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-08)
+## Unreleased (2025-12-15)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`ce09e9e`](https://github.com/stdlib-js/stdlib/commit/ce09e9e07dec47bea292ae246dc7f7f97b2c55ff): remove `utils/capitalize-keys`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/capitalize-keys` which provides the same API and implementation.
+
+-   [`f4d3ddd`](https://github.com/stdlib-js/stdlib/commit/f4d3ddd765a90ab39e18fbc782955c00a612e725): remove `capitalizeKeys`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`85e2ccb`](https://github.com/stdlib-js/stdlib/commit/85e2ccbb04eb8a7b6204c158ba9a8bec457a387d): remove `utils/move-property`
 
@@ -212,6 +222,9 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`ce09e9e`](https://github.com/stdlib-js/stdlib/commit/ce09e9e07dec47bea292ae246dc7f7f97b2c55ff) - **remove:** remove `utils/capitalize-keys` _(by Neeraj Pathak)_
+-   [`a0dfcd3`](https://github.com/stdlib-js/stdlib/commit/a0dfcd3b9db7de70bc2a72a56f3ffe7350732e2b) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`f4d3ddd`](https://github.com/stdlib-js/stdlib/commit/f4d3ddd765a90ab39e18fbc782955c00a612e725) - **remove:** remove `capitalizeKeys` from namespace _(by Neeraj Pathak)_
 -   [`68f3b04`](https://github.com/stdlib-js/stdlib/commit/68f3b044b857c0b812dbaaeb0750fcf96428d43c) - **docs:** update `utils` TypeScript declarations [(#8883)](https://github.com/stdlib-js/stdlib/pull/8883) _(by stdlib-bot)_
 -   [`798b688`](https://github.com/stdlib-js/stdlib/commit/798b6883aeb529c858d2a2003ecf0b45609e16cf) - **docs:** update namespace table of contents [(#8879)](https://github.com/stdlib-js/stdlib/pull/8879) _(by stdlib-bot)_
 -   [`cd0d010`](https://github.com/stdlib-js/stdlib/commit/cd0d010a9f4a8f98c18a6fbd778d91509cd91e6b) - **chore:** fix JavaScript lint errors [(#8420)](https://github.com/stdlib-js/stdlib/pull/8420) _(by kaushal-kumar-it, Athan Reines)_

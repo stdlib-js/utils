@@ -30,7 +30,6 @@ import bifurcate = require( './../../bifurcate' );
 import bifurcateBy = require( './../../bifurcate-by' );
 import bifurcateIn = require( './../../bifurcate-in' );
 import bifurcateOwn = require( './../../bifurcate-own' );
-import capitalizeKeys = require( './../../capitalize-keys' );
 import commonKeys = require( './../../common-keys' );
 import commonKeysIn = require( './../../common-keys-in' );
 import compose = require( './../../compose' );
@@ -576,28 +575,6 @@ interface Namespace {
 	* // e.g., returns [ [ [ 'a', 'beep' ], [ 'b', 'boop' ], [ 'd', 'bar' ] ], [ [ 'c', 'foo' ] ] ]
 	*/
 	bifurcateOwn: typeof bifurcateOwn;
-
-	/**
-	* Converts the first letter of each object key to uppercase.
-	*
-	* ## Notes
-	*
-	* -   The function only transforms own properties. Hence, the function does not transform inherited properties.
-	* -   The function shallow copies key values.
-	*
-	* @param obj - source object
-	* @returns new object
-	*
-	* @example
-	* var obj1 = {
-	*     'aa': 1,
-	*     'bb': 2
-	* };
-	*
-	* var obj2 = ns.capitalizeKeys( obj1 );
-	* // returns { 'Aa': 1, 'Bb': 2 }
-	*/
-	capitalizeKeys: typeof capitalizeKeys;
 
 	/**
 	* Returns the common own property names of two or more objects.
