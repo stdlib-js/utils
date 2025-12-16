@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-15)
+## Unreleased (2025-12-16)
 
 <section class="features">
 
@@ -222,6 +222,7 @@ A total of 23 issues were closed in this release:
 
 <details>
 
+-   [`958995c`](https://github.com/stdlib-js/stdlib/commit/958995cc4c46a48aa3ecbce3e560d45944f823e7) - **docs:** update namespace table of contents [(#9076)](https://github.com/stdlib-js/stdlib/pull/9076) _(by stdlib-bot)_
 -   [`ce09e9e`](https://github.com/stdlib-js/stdlib/commit/ce09e9e07dec47bea292ae246dc7f7f97b2c55ff) - **remove:** remove `utils/capitalize-keys` _(by Neeraj Pathak)_
 -   [`a0dfcd3`](https://github.com/stdlib-js/stdlib/commit/a0dfcd3b9db7de70bc2a72a56f3ffe7350732e2b) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`f4d3ddd`](https://github.com/stdlib-js/stdlib/commit/f4d3ddd765a90ab39e18fbc782955c00a612e725) - **remove:** remove `capitalizeKeys` from namespace _(by Neeraj Pathak)_

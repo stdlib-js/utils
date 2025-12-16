@@ -162,7 +162,6 @@ The namespace has the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`capitalizeKeys( obj )`][@stdlib/utils/capitalize-keys]</span><span class="delimiter">: </span><span class="description">convert the first letter of each object key to uppercase.</span>
 -   <span class="signature">[`commonKeys( obj1, obj2[, obj3[,...,objN]] )`][@stdlib/utils/common-keys]</span><span class="delimiter">: </span><span class="description">return the common own property names of two or more objects.</span>
 -   <span class="signature">[`deepGet( obj, path[, options] )`][@stdlib/utils/deep-get]</span><span class="delimiter">: </span><span class="description">get a nested property value.</span>
 -   <span class="signature">[`deepSet( obj, path, value[, options] )`][@stdlib/utils/deep-set]</span><span class="delimiter">: </span><span class="description">set a nested property value.</span>
@@ -614,8 +613,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/until]: https://github.com/stdlib-js/utils/tree/main/until
 
 [@stdlib/utils/while]: https://github.com/stdlib-js/utils/tree/main/while
-
-[@stdlib/utils/capitalize-keys]: https://github.com/stdlib-js/utils/tree/main/capitalize-keys
 
 [@stdlib/utils/common-keys]: https://github.com/stdlib-js/utils/tree/main/common-keys
 
