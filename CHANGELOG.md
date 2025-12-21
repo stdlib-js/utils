@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-21)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`647a87b`](https://github.com/stdlib-js/stdlib/commit/647a87b0e43b612ec9693158c3f3877a017e494f): remove `utils/uncapitalize-keys`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/uncapitalize-keys` which provides the same API and implementation.
+
+-   [`7702fd2`](https://github.com/stdlib-js/stdlib/commit/7702fd24a0b59de09f253664d90839889a0cc390): remove `uncapitalizeKeys`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`ce09e9e`](https://github.com/stdlib-js/stdlib/commit/ce09e9e07dec47bea292ae246dc7f7f97b2c55ff): remove `utils/capitalize-keys`
 
@@ -222,6 +232,9 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`647a87b`](https://github.com/stdlib-js/stdlib/commit/647a87b0e43b612ec9693158c3f3877a017e494f) - **remove:** remove `utils/uncapitalize-keys` _(by Neeraj Pathak)_
+-   [`b7e501d`](https://github.com/stdlib-js/stdlib/commit/b7e501da67a62621cecdf8ca98125c99667a06d5) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`7702fd2`](https://github.com/stdlib-js/stdlib/commit/7702fd24a0b59de09f253664d90839889a0cc390) - **remove:** remove `uncapitalizeKeys` from namespace _(by Neeraj Pathak)_
 -   [`2ea832b`](https://github.com/stdlib-js/stdlib/commit/2ea832bac1694a9a9baa302603e7e08e24130f1b) - **chore:** fix JavaScript lint errors [(#9039)](https://github.com/stdlib-js/stdlib/pull/9039) _(by 0x00000F, Athan Reines)_
 -   [`958995c`](https://github.com/stdlib-js/stdlib/commit/958995cc4c46a48aa3ecbce3e560d45944f823e7) - **docs:** update namespace table of contents [(#9076)](https://github.com/stdlib-js/stdlib/pull/9076) _(by stdlib-bot)_
 -   [`ce09e9e`](https://github.com/stdlib-js/stdlib/commit/ce09e9e07dec47bea292ae246dc7f7f97b2c55ff) - **remove:** remove `utils/capitalize-keys` _(by Neeraj Pathak)_

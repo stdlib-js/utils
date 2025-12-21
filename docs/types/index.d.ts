@@ -209,7 +209,6 @@ import trythen = require( './../../try-then' );
 import typemax = require( './../../type-max' );
 import typemin = require( './../../type-min' );
 import typeOf = require( './../../type-of' );
-import uncapitalizeKeys = require( './../../uncapitalize-keys' );
 import uncurry = require( './../../uncurry' );
 import uncurryRight = require( './../../uncurry-right' );
 import unshift = require( './../../unshift' );
@@ -5601,28 +5600,6 @@ interface Namespace {
 	* // returns 'number'
 	*/
 	typeOf: typeof typeOf;
-
-	/**
-	* Converts the first letter of each object key to lowercase.
-	*
-	* ## Notes
-	*
-	* -   The function only transforms own properties. Hence, the function does not transform inherited properties.
-	* -   The function shallow copies key values.
-	*
-	* @param obj - source object
-	* @returns new object
-	*
-	* @example
-	* var obj1 = {
-	*     'AA': 1,
-	*     'BB': 2
-	* };
-	*
-	* var obj2 = ns.uncapitalizeKeys( obj1 );
-	* // returns { 'aA': 1, 'bB': 2 }
-	*/
-	uncapitalizeKeys: typeof uncapitalizeKeys;
 
 	/**
 	* Transforms a curried function into a function invoked with multiple arguments.
