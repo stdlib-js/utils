@@ -124,7 +124,6 @@ import keyBy = require( './../../key-by' );
 import keyByRight = require( './../../key-by-right' );
 import objectKeys = require( './../../keys' );
 import keysIn = require( './../../keys-in' );
-import lowercaseKeys = require( './../../lowercase-keys' );
 import map = require( './../../map' );
 import mapArguments = require( './../../map-arguments' );
 import mapFun = require( './../../map-function' );
@@ -3121,28 +3120,6 @@ interface Namespace {
 	* // e.g., returns [ 'beep', 'foo' ]
 	*/
 	keysIn: typeof keysIn;
-
-	/**
-	* Converts each object key to lowercase.
-	*
-	* ## Notes
-	*
-	* -   The function only transforms own properties. Hence, the function does not transform inherited properties.
-	* -   The function shallow copies key values.
-	*
-	* @param obj - source object
-	* @returns new object
-	*
-	* @example
-	* var obj1 = {
-	*     'A': 1,
-	*     'B': 2
-	* };
-	*
-	* var obj2 = ns.lowercaseKeys( obj1 );
-	* // returns { 'a': 1, 'b': 2 }
-	*/
-	lowercaseKeys: typeof lowercaseKeys;
 
 	/**
 	* Applies a function to each element in an array and assigns the result to an element in a new array.
