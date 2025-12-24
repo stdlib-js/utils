@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-23)
+## Unreleased (2025-12-24)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`51b40f8`](https://github.com/stdlib-js/stdlib/commit/51b40f8a4fbabe1a846db9bf75526f7d0c0d597c): remove `utils/uppercase-keys`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/uppercase-keys` which provides the same API and implementation.
+
+-   [`8d6b070`](https://github.com/stdlib-js/stdlib/commit/8d6b070130b5fcfa0fc15eec2349444747208cd2): remove `uppercaseKeys`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`b14ce02`](https://github.com/stdlib-js/stdlib/commit/b14ce02a9a0525d37f12e73686d1b9bddab465b0): remove `utils/lowercase-keys`
 
@@ -242,6 +252,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`51b40f8`](https://github.com/stdlib-js/stdlib/commit/51b40f8a4fbabe1a846db9bf75526f7d0c0d597c) - **remove:** remove `utils/uppercase-keys` _(by Neeraj Pathak)_
+-   [`8d6b070`](https://github.com/stdlib-js/stdlib/commit/8d6b070130b5fcfa0fc15eec2349444747208cd2) - **remove:** remove `uppercaseKeys` from namespace _(by Neeraj Pathak)_
 -   [`b14ce02`](https://github.com/stdlib-js/stdlib/commit/b14ce02a9a0525d37f12e73686d1b9bddab465b0) - **remove:** remove `utils/lowercase-keys` _(by Neeraj Pathak)_
 -   [`fe5ba4b`](https://github.com/stdlib-js/stdlib/commit/fe5ba4bf6b2e9d765c9af3d26266d5fa64e39a95) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`4684482`](https://github.com/stdlib-js/stdlib/commit/4684482c662992df9ef3b0a0e100f0b58584eb33) - **remove:** remove `lowercaseKeys` from namespace _(by Neeraj Pathak)_
