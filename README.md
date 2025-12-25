@@ -35,20 +35,32 @@ limitations under the License.
 
 > Utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { any, anyBy, anyByRight, append, argumentFunction, async, bifurcate, bifurcateBy, bifurcateIn, bifurcateOwn, commonKeys, commonKeysIn, compose, constantFunction, constructorName, convertPath, copy, countBy, curry, curryRight, decorateAfter, deepGet, deepPluck, deepSet, defineMemoizedProperty, defineProperties, defineProperty, dirname, doUntil, doUntilEach, doUntilEachRight, doWhile, doWhileEach, doWhileEachRight, dsv, enumerableProperties, enumerablePropertiesIn, enumerablePropertySymbols, enumerablePropertySymbolsIn, every, everyBy, everyByRight, evil, extname, filterArguments, find, flattenArray, flattenObject, forEach, forEachRight, forIn, forOwn, functionName, functionSequence, getGlobal, getPrototypeOf, group, groupBy, groupIn, groupOwn, identity, ifelse, ifthen, indexOf, inherit, inheritedEnumerableProperties, inheritedEnumerablePropertySymbols, inheritedKeys, inheritedNonEnumerableProperties, inheritedNonEnumerablePropertyNames, inheritedNonEnumerablePropertySymbols, inheritedProperties, inheritedPropertyDescriptor, inheritedPropertyDescriptors, inheritedPropertyNames, inheritedPropertySymbols, inheritedWritableProperties, inheritedWritablePropertyNames, inheritedWritablePropertySymbols, inmap, inmapRight, keyBy, keyByRight, keysIn, map, map2, map2Right, map2d, map3d, map4d, map5d, mapArguments, mapFun, mapKeys, mapReduce, mapReduceRight, mapRight, mapValues, maskArguments, memoize, merge, naryFunction, nativeClass, nextTick, nonEnumerableProperties, nonEnumerablePropertiesIn, nonEnumerablePropertyNames, nonEnumerablePropertyNamesIn, nonEnumerablePropertySymbols, nonEnumerablePropertySymbolsIn, nonIndexKeys, none, noneBy, noneByRight, noop, objectEntries, objectEntriesIn, objectFromEntries, objectInverse, objectInverseBy, objectKeys, objectValues, objectValuesIn, omit, omitBy, openURL, papply, papplyRight, parallel, parseJSON, parseNDJSON, pick, pickArguments, pickBy, pluck, pop, prepend, properties, propertiesIn, propertyDescriptor, propertyDescriptorIn, propertyDescriptors, propertyDescriptorsIn, propertyNames, propertyNamesIn, propertySymbols, propertySymbolsIn, push, reFromString, realmax, realmin, reduce, reduce2d, reduceRight, rejectArguments, reorderArguments, rescape, reverseArguments, safeintmax, safeintmin, setConfigurableReadOnly, setConfigurableReadOnlyAccessor, setConfigurableReadWriteAccessor, setConfigurableWriteOnlyAccessor, setMemoizedConfigurableReadOnly, setMemoizedReadOnly, setNonEnumerableProperty, setNonEnumerableReadOnly, setNonEnumerableReadOnlyAccessor, setNonEnumerableReadWriteAccessor, setNonEnumerableWriteOnlyAccessor, setReadOnly, setReadOnlyAccessor, setReadWriteAccessor, setWriteOnlyAccessor, shift, sizeOf, some, someBy, someByRight, tabulate, tabulateBy, timeit, tryFunction, tryRequire, trycatch, trythen, typeOf, typemax, typemin, uncurry, uncurryRight, unshift, until, untilEach, untilEachRight, unzip, whileEach, whileEachRight, whilst, writableProperties, writablePropertiesIn, writablePropertyNames, writablePropertyNamesIn, writablePropertySymbols, writablePropertySymbolsIn, zip } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+var utils = require( '@stdlib/utils' );
 ```
 
 #### utils
@@ -359,20 +371,11 @@ The namespace has the following sub-namespaces:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var utils = require( '@stdlib/utils' );
 
 console.log( objectKeys( utils ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -396,7 +399,7 @@ console.log( objectKeys( utils ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
