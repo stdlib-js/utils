@@ -88,7 +88,6 @@ import flattenArray = require( './../../flatten-array' );
 import flattenObject = require( './../../flatten-object' );
 import forEach = require( './../../for-each' );
 import forEachRight = require( './../../for-each-right' );
-import forIn = require( './../../for-in' );
 import forOwn = require( './../../for-own' );
 import objectFromEntries = require( './../../from-entries' );
 import functionName = require( './../../function-name' );
@@ -2189,47 +2188,6 @@ interface Namespace {
 	* ns.forEachRight( arr, log );
 	*/
 	forEachRight: typeof forEachRight;
-
-	/**
-	* Invokes a function once for each own and inherited enumerable property of an object.
-	*
-	* ## Notes
-	*
-	* -   When invoked, the function is provided three arguments:
-	*
-	*     -   `value`: object property value
-	*     -   `key`: object property
-	*     -   `obj`: the input object
-	*
-	* -   To terminate iteration before visiting all properties, the provided function must explicitly return `false`.
-	*
-	* -   Iteration order is **not** guaranteed.
-	*
-	*
-	* @param obj - input object
-	* @param fcn - function to invoke
-	* @param thisArg - execution context
-	* @returns obj - input object
-	*
-	* @example
-	* function log( v, key ) {
-	*     console.log( '%s: %d', key, v );
-	* }
-	*
-	* function Foo() {
-	*     this.a = 1;
-	*     this.b = 2;
-	*     return this;
-	* }
-	*
-	* Foo.prototype.c = 3;
-	* Foo.prototype.d = 4;
-	*
-	* var obj = new Foo();
-	*
-	* ns.forIn( obj, log );
-	*/
-	forIn: typeof forIn;
 
 	/**
 	* Invokes a function once for each own enumerable property of an object.
