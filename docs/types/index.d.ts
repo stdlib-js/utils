@@ -88,7 +88,6 @@ import flattenArray = require( './../../flatten-array' );
 import flattenObject = require( './../../flatten-object' );
 import forEach = require( './../../for-each' );
 import forEachRight = require( './../../for-each-right' );
-import forOwn = require( './../../for-own' );
 import objectFromEntries = require( './../../from-entries' );
 import functionName = require( './../../function-name' );
 import functionSequence = require( './../../function-sequence' );
@@ -2188,45 +2187,6 @@ interface Namespace {
 	* ns.forEachRight( arr, log );
 	*/
 	forEachRight: typeof forEachRight;
-
-	/**
-	* Invokes a function once for each own enumerable property of an object.
-	*
-	* ## Notes
-	*
-	* -   When invoked, the function is provided three arguments:
-	*
-	*     -   `value`: object property value
-	*     -   `key`: object property
-	*     -   `obj`: the input object
-	*
-	* -   To terminate iteration before visiting all properties, the provided function must explicitly return `false`.
-	*
-	* -   The function determines the list of own enumerable properties *before* invoking the provided function. Hence, any modifications made to the input object *after* calling this function (such as adding and removing properties) will *not* affect the list of visited properties.
-	*
-	* -   Iteration order is **not** guaranteed.
-	*
-	*
-	* @param obj - input object
-	* @param fcn - function to invoke
-	* @param thisArg - execution context
-	* @returns obj - input object
-	*
-	* @example
-	* function log( v, key ) {
-	*     console.log( '%s: %d', key, v );
-	* }
-	*
-	* var obj = {
-	*     'a': 1,
-	*     'b': 2,
-	*     'c': 3,
-	*     'd': 4
-	* };
-	*
-	* ns.forOwn( obj, log );
-	*/
-	forOwn: typeof forOwn;
 
 	/**
 	* Creates an object from an array of key-value pairs.

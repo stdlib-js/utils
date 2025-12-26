@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-25)
+## Unreleased (2025-12-26)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`f42c569`](https://github.com/stdlib-js/stdlib/commit/f42c569e2164e176146fbaa88e2b49b721d2d4a2): remove `utils/for-own`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/for-own` which provides the same API and implementation.
+
+-   [`5294663`](https://github.com/stdlib-js/stdlib/commit/5294663f5bf5526d8188bb9b0f958451cba2d559): remove `forOwn`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`9ad59d3`](https://github.com/stdlib-js/stdlib/commit/9ad59d3a6121abb4fa0157b008bc0f4a945da364): remove `utils/for-in`
 
@@ -262,6 +272,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`f42c569`](https://github.com/stdlib-js/stdlib/commit/f42c569e2164e176146fbaa88e2b49b721d2d4a2) - **remove:** remove `utils/for-own` _(by Neeraj Pathak)_
+-   [`5294663`](https://github.com/stdlib-js/stdlib/commit/5294663f5bf5526d8188bb9b0f958451cba2d559) - **remove:** remove `forOwn` from namespace _(by Neeraj Pathak)_
 -   [`9ad59d3`](https://github.com/stdlib-js/stdlib/commit/9ad59d3a6121abb4fa0157b008bc0f4a945da364) - **remove:** remove `utils/for-in` _(by Neeraj Pathak)_
 -   [`7f05c02`](https://github.com/stdlib-js/stdlib/commit/7f05c02c10dc7f227a1ab3a7dae7b26998157aab) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`1adafef`](https://github.com/stdlib-js/stdlib/commit/1adafef2af297d4213f2ce18ea8fc2552e90289d) - **remove:** remove `forIn` from namespace _(by Neeraj Pathak)_
