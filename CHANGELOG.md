@@ -36,6 +36,16 @@
 
 ### BREAKING CHANGES
 
+-   [`8ef820d`](https://github.com/stdlib-js/stdlib/commit/8ef820d58331c1f59486a6eb4a6618a3f095427f): remove `utils/common-keys`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/common-keys` which provides the same API and implementation.
+
+-   [`3d36cfe`](https://github.com/stdlib-js/stdlib/commit/3d36cfe70ee02cde114626917a220e8236d8812a): remove `commonKeys`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
 -   [`f42c569`](https://github.com/stdlib-js/stdlib/commit/f42c569e2164e176146fbaa88e2b49b721d2d4a2): remove `utils/for-own`
 
     -   To migrate, users should update their require/import paths to use
@@ -272,6 +282,8 @@ A total of 24 issues were closed in this release:
 
 <details>
 
+-   [`8ef820d`](https://github.com/stdlib-js/stdlib/commit/8ef820d58331c1f59486a6eb4a6618a3f095427f) - **remove:** remove `utils/common-keys` _(by Neeraj Pathak)_
+-   [`3d36cfe`](https://github.com/stdlib-js/stdlib/commit/3d36cfe70ee02cde114626917a220e8236d8812a) - **remove:** remove `commonKeys` from namespace _(by Neeraj Pathak)_
 -   [`f42c569`](https://github.com/stdlib-js/stdlib/commit/f42c569e2164e176146fbaa88e2b49b721d2d4a2) - **remove:** remove `utils/for-own` _(by Neeraj Pathak)_
 -   [`5294663`](https://github.com/stdlib-js/stdlib/commit/5294663f5bf5526d8188bb9b0f958451cba2d559) - **remove:** remove `forOwn` from namespace _(by Neeraj Pathak)_
 -   [`9ad59d3`](https://github.com/stdlib-js/stdlib/commit/9ad59d3a6121abb4fa0157b008bc0f4a945da364) - **remove:** remove `utils/for-in` _(by Neeraj Pathak)_
