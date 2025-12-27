@@ -36,6 +36,16 @@
 
 ### BREAKING CHANGES
 
+-   [`e6cc0c5`](https://github.com/stdlib-js/stdlib/commit/e6cc0c5aa41c0e093346829d82e0fbac7da0f276): remove `utils/common-keys-in`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/common-keys-in` which provides the same API and implementation.
+
+-   [`0e3c5ce`](https://github.com/stdlib-js/stdlib/commit/0e3c5cee0f1413f54a62c77a87b64d6634700424): remove `commonKeysIn`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
 -   [`8ef820d`](https://github.com/stdlib-js/stdlib/commit/8ef820d58331c1f59486a6eb4a6618a3f095427f): remove `utils/common-keys`
 
     -   To migrate, users should update their require/import paths to use
@@ -282,6 +292,8 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`e6cc0c5`](https://github.com/stdlib-js/stdlib/commit/e6cc0c5aa41c0e093346829d82e0fbac7da0f276) - **remove:** remove `utils/common-keys-in` _(by Neeraj Pathak)_
+-   [`0e3c5ce`](https://github.com/stdlib-js/stdlib/commit/0e3c5cee0f1413f54a62c77a87b64d6634700424) - **remove:** remove `commonKeysIn` from namespace _(by Neeraj Pathak)_
 -   [`e8707d4`](https://github.com/stdlib-js/stdlib/commit/e8707d4ad730b5e4b346f17fd045ed7ea3cefb83) - **chore:** fix JavaScript lint errors [(#6424)](https://github.com/stdlib-js/stdlib/pull/6424) _(by Sibi, Athan Reines, stdlib-bot)_
 -   [`8ef820d`](https://github.com/stdlib-js/stdlib/commit/8ef820d58331c1f59486a6eb4a6618a3f095427f) - **remove:** remove `utils/common-keys` _(by Neeraj Pathak)_
 -   [`3d36cfe`](https://github.com/stdlib-js/stdlib/commit/3d36cfe70ee02cde114626917a220e8236d8812a) - **remove:** remove `commonKeys` from namespace _(by Neeraj Pathak)_
