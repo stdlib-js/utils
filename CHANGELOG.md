@@ -25,6 +25,7 @@
 
 ### Bug Fixes
 
+-   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438)
 -   [`1b9a036`](https://github.com/stdlib-js/stdlib/commit/1b9a036d676b247bf502c4ede08635b99fa611ca) - allow correct values for `returns` option
 -   [`eeb9d6f`](https://github.com/stdlib-js/stdlib/commit/eeb9d6fdc2e3faa3116c84f276e88737ba11196f) - remove unused imports
 
@@ -302,6 +303,7 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - **fix:** markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438) _(by Neeraj Pathak, Athan Reines)_
 -   [`2c3e048`](https://github.com/stdlib-js/stdlib/commit/2c3e048dcf3dcc0e1b89b1212d59a506a2bfc282) - **remove:** remove `utils/object-inverse-by` _(by Neeraj Pathak)_
 -   [`4c30cf3`](https://github.com/stdlib-js/stdlib/commit/4c30cf397369b02981a383aa406ebcebd619c163) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`6a656b7`](https://github.com/stdlib-js/stdlib/commit/6a656b7e3cff362aa1b0b2028671e44728097011) - **remove:** remove `objectInverseBy` from namespace _(by Neeraj Pathak)_
