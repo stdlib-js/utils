@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-27)
+## Unreleased (2025-12-30)
 
 <section class="features">
 
@@ -35,6 +35,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`2c3e048`](https://github.com/stdlib-js/stdlib/commit/2c3e048dcf3dcc0e1b89b1212d59a506a2bfc282): remove `utils/object-inverse-by`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/inverse-by` which provides the same API and implementation.
+
+-   [`6a656b7`](https://github.com/stdlib-js/stdlib/commit/6a656b7e3cff362aa1b0b2028671e44728097011): remove `objectInverseBy`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`e6cc0c5`](https://github.com/stdlib-js/stdlib/commit/e6cc0c5aa41c0e093346829d82e0fbac7da0f276): remove `utils/common-keys-in`
 
@@ -292,6 +302,9 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`2c3e048`](https://github.com/stdlib-js/stdlib/commit/2c3e048dcf3dcc0e1b89b1212d59a506a2bfc282) - **remove:** remove `utils/object-inverse-by` _(by Neeraj Pathak)_
+-   [`4c30cf3`](https://github.com/stdlib-js/stdlib/commit/4c30cf397369b02981a383aa406ebcebd619c163) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`6a656b7`](https://github.com/stdlib-js/stdlib/commit/6a656b7e3cff362aa1b0b2028671e44728097011) - **remove:** remove `objectInverseBy` from namespace _(by Neeraj Pathak)_
 -   [`e6cc0c5`](https://github.com/stdlib-js/stdlib/commit/e6cc0c5aa41c0e093346829d82e0fbac7da0f276) - **remove:** remove `utils/common-keys-in` _(by Neeraj Pathak)_
 -   [`0e3c5ce`](https://github.com/stdlib-js/stdlib/commit/0e3c5cee0f1413f54a62c77a87b64d6634700424) - **remove:** remove `commonKeysIn` from namespace _(by Neeraj Pathak)_
 -   [`e8707d4`](https://github.com/stdlib-js/stdlib/commit/e8707d4ad730b5e4b346f17fd045ed7ea3cefb83) - **chore:** fix JavaScript lint errors [(#6424)](https://github.com/stdlib-js/stdlib/pull/6424) _(by Sibi, Athan Reines, stdlib-bot)_
