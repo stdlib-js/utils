@@ -151,7 +151,6 @@ import nonEnumerablePropertySymbols = require( './../../nonenumerable-property-s
 import nonEnumerablePropertySymbolsIn = require( './../../nonenumerable-property-symbols-in' );
 import nonIndexKeys = require( './../../nonindex-keys' );
 import noop = require( './../../noop' );
-import objectInverse = require( './../../object-inverse' );
 import omit = require( './../../omit' );
 import omitBy = require( './../../omit-by' );
 import openURL = require( './../../open-url' );
@@ -4014,41 +4013,6 @@ interface Namespace {
 	* // ...does nothing.
 	*/
 	noop: typeof noop;
-
-	/**
-	* Inverts an object, such that keys become values and values become keys.
-	*
-	* @param obj - input object
-	* @param options - function options
-	* @param options.duplicates - boolean indicating whether to store duplicate keys (default: true)
-	* @returns inverted object
-	*
-	* @example
-	* var out = ns.objectInverse({
-	*     'a': 'beep',
-	*     'b': 'boop'
-	* });
-	* // returns { 'beep': 'a', 'boop': 'b' }
-	*
-	* @example
-	* var out = ns.objectInverse({
-	*     'a': 'beep',
-	*     'b': 'beep'
-	* });
-	* // returns { 'beep': [ 'a', 'b' ] }
-	*
-	* @example
-	* var obj = {};
-	* obj.a = 'beep';
-	* obj.b = 'boop';
-	* obj.c = 'beep'; // inserted after `a`
-	*
-	* var out = ns.objectInverse( obj, {
-	*     'duplicates': false
-	* });
-	* // returns { 'beep': 'c', 'boop': 'b' }
-	*/
-	objectInverse: typeof objectInverse;
 
 	/**
 	* Returns a partial object copy excluding specified keys.

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-30)
+## Unreleased (2026-01-04)
 
 <section class="features">
 
@@ -36,6 +36,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`55030f9`](https://github.com/stdlib-js/stdlib/commit/55030f9809f5dba8e7ab8015c1f7faf9ab337aac): remove `utils/object-inverse`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/inverse` which provides the same API and implementation.
+
+-   [`9ccefc9`](https://github.com/stdlib-js/stdlib/commit/9ccefc92d742e8e4a2555a39a65849c078d4e86e): remove `objectInverse`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`2c3e048`](https://github.com/stdlib-js/stdlib/commit/2c3e048dcf3dcc0e1b89b1212d59a506a2bfc282): remove `utils/object-inverse-by`
 
@@ -303,6 +313,8 @@ A total of 25 issues were closed in this release:
 
 <details>
 
+-   [`55030f9`](https://github.com/stdlib-js/stdlib/commit/55030f9809f5dba8e7ab8015c1f7faf9ab337aac) - **remove:** remove `utils/object-inverse` _(by Neeraj Pathak)_
+-   [`9ccefc9`](https://github.com/stdlib-js/stdlib/commit/9ccefc92d742e8e4a2555a39a65849c078d4e86e) - **remove:** remove `objectInverse` from namespace _(by Neeraj Pathak)_
 -   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - **fix:** markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438) _(by Neeraj Pathak, Athan Reines)_
 -   [`2c3e048`](https://github.com/stdlib-js/stdlib/commit/2c3e048dcf3dcc0e1b89b1212d59a506a2bfc282) - **remove:** remove `utils/object-inverse-by` _(by Neeraj Pathak)_
 -   [`4c30cf3`](https://github.com/stdlib-js/stdlib/commit/4c30cf397369b02981a383aa406ebcebd619c163) - **refactor:** update paths _(by Neeraj Pathak)_
