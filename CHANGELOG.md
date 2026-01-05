@@ -323,6 +323,8 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`2fee906`](https://github.com/stdlib-js/stdlib/commit/2fee906e7981ff2a9a0bf37bfcbfe3b77421bfcd) - **docs:** resolve lint failures _(by Athan Reines)_
+-   [`989e453`](https://github.com/stdlib-js/stdlib/commit/989e45330b4284265444e286a926a693ec8518aa) - **docs:** update copy _(by Athan Reines)_
 -   [`c4671b1`](https://github.com/stdlib-js/stdlib/commit/c4671b1cef6f00d28d483cfb9b558d9c1d5f81c9) - **docs:** resolve lint failures _(by Athan Reines)_
 -   [`e776e3f`](https://github.com/stdlib-js/stdlib/commit/e776e3f55c8636a4d777c47a3f4b076d5523db33) - **remove:** remove `utils/bifurcate-in` _(by Neeraj Pathak)_
 -   [`99d6070`](https://github.com/stdlib-js/stdlib/commit/99d60701eae79fec91f93de28cb68cd31a0bdfc1) - **refactor:** update paths _(by Neeraj Pathak)_
