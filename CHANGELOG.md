@@ -37,6 +37,16 @@
 
 ### BREAKING CHANGES
 
+-   [`e776e3f`](https://github.com/stdlib-js/stdlib/commit/e776e3f55c8636a4d777c47a3f4b076d5523db33): remove `utils/bifurcate-in`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/bifurcate-in` which provides the same API and implementation.
+
+-   [`20ee8cb`](https://github.com/stdlib-js/stdlib/commit/20ee8cb96a8d3d0de5b6229a72b040acbd965188): remove `bifurcateIn`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
 -   [`55030f9`](https://github.com/stdlib-js/stdlib/commit/55030f9809f5dba8e7ab8015c1f7faf9ab337aac): remove `utils/object-inverse`
 
     -   To migrate, users should update their require/import paths to use
@@ -313,6 +323,9 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`e776e3f`](https://github.com/stdlib-js/stdlib/commit/e776e3f55c8636a4d777c47a3f4b076d5523db33) - **remove:** remove `utils/bifurcate-in` _(by Neeraj Pathak)_
+-   [`99d6070`](https://github.com/stdlib-js/stdlib/commit/99d60701eae79fec91f93de28cb68cd31a0bdfc1) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`20ee8cb`](https://github.com/stdlib-js/stdlib/commit/20ee8cb96a8d3d0de5b6229a72b040acbd965188) - **remove:** remove `bifurcateIn` from namespace _(by Neeraj Pathak)_
 -   [`4bb46e9`](https://github.com/stdlib-js/stdlib/commit/4bb46e9a4f4421fd250ac065aba2fd7ca8dfa5da) - **chore:** fix JavaScript lint errors [(#9530)](https://github.com/stdlib-js/stdlib/pull/9530) _(by kaushal-kumar-it, Athan Reines)_
 -   [`55030f9`](https://github.com/stdlib-js/stdlib/commit/55030f9809f5dba8e7ab8015c1f7faf9ab337aac) - **remove:** remove `utils/object-inverse` _(by Neeraj Pathak)_
 -   [`9ccefc9`](https://github.com/stdlib-js/stdlib/commit/9ccefc92d742e8e4a2555a39a65849c078d4e86e) - **remove:** remove `objectInverse` from namespace _(by Neeraj Pathak)_
