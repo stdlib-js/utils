@@ -46,10 +46,10 @@ Escapes a [regular expression][mdn-regexp] `string` or pattern.
 
 ```javascript
 var str = rescape( '/[A-Z]*/' );
-// returns '/\\[A\\-Z\\]\\*/'
+// returns '/\[A\-Z\]\*/'
 
 str = rescape( '[A-Z]*' );
-// returns '\\[A\\-Z\\]\\*'
+// returns '\[A\-Z\]\*'
 ```
 
 If provided a value which is not a primitive `string`, the function **throws** a `TypeError`.
@@ -112,40 +112,40 @@ out = rescape( 'beep' );
 // returns 'beep'
 
 out = rescape( '/[A-Z]*/' );
-// returns '/\\[A\\-Z\\]\\*/'
+// returns '/\[A\-Z\]\*/'
 
 out = rescape( '[A-Z]*' );
-// returns '\\[A\\-Z\\]\\*'
+// returns '\[A\-Z\]\*'
 
 out = rescape( '/\\\//ig' );
-// returns '/\\\\\\\//ig'
+// returns '/\\\//ig'
 
 out = rescape( '\\\/' );
-// returns '\\\\\\\/'
+// returns '\\\/'
 
 out = rescape( '/[A-Z]{0,}/' );
-// returns '/\\[A\\-Z\\]\\{0,\\}/'
+// returns '/\[A\-Z\]\{0,\}/'
 
 out = rescape( '[A-Z]{0,}' );
-// returns '\\[A\\-Z\\]\\{0,\\}'
+// returns '\[A\-Z\]\{0,\}'
 
 out = rescape( '/^boop$/' );
-// returns '/\\^boop\\$/'
+// returns '/\^boop\$/'
 
 out = rescape( '^boop$' );
-// returns '\\^boop\\$'
+// returns '\^boop\$'
 
 out = rescape( '/(?:.*)/' );
-// returns '/\\(\\?:\\.\\*\\)/'
+// returns '/\(\?:\.\*\)/'
 
 out = rescape( '(?:.*)' );
-// returns '\\(\\?:\\.\\*\\)'
+// returns '\(\?:\.\*\)'
 
 out = rescape( '/(?:beep|boop)/' );
-// returns '/\\(\\?:beep\\|boop\\)/'
+// returns '/\(\?:beep\|boop\)/'
 
 out = rescape( '(?:beep|boop)' );
-// returns '\\(\\?:beep\\|boop\\)'
+// returns '\(\?:beep\|boop\)'
 ```
 
 </section>
