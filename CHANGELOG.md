@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-05)
+## Unreleased (2026-01-06)
 
 <section class="features">
 
@@ -25,6 +25,7 @@
 
 ### Bug Fixes
 
+-   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - avoid infinite recursion and update examples
 -   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438)
 -   [`1b9a036`](https://github.com/stdlib-js/stdlib/commit/1b9a036d676b247bf502c4ede08635b99fa611ca) - allow correct values for `returns` option
 -   [`eeb9d6f`](https://github.com/stdlib-js/stdlib/commit/eeb9d6fdc2e3faa3116c84f276e88737ba11196f) - remove unused imports
@@ -323,6 +324,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - **fix:** avoid infinite recursion and update examples _(by Athan Reines)_
 -   [`2fee906`](https://github.com/stdlib-js/stdlib/commit/2fee906e7981ff2a9a0bf37bfcbfe3b77421bfcd) - **docs:** resolve lint failures _(by Athan Reines)_
 -   [`989e453`](https://github.com/stdlib-js/stdlib/commit/989e45330b4284265444e286a926a693ec8518aa) - **docs:** update copy _(by Athan Reines)_
 -   [`c4671b1`](https://github.com/stdlib-js/stdlib/commit/c4671b1cef6f00d28d483cfb9b558d9c1d5f81c9) - **docs:** resolve lint failures _(by Athan Reines)_
