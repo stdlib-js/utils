@@ -324,6 +324,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`363aead`](https://github.com/stdlib-js/stdlib/commit/363aeadb3882671cf1429fc5e2f4a99dbaa9e09a) - **docs:** update examples [(#9575)](https://github.com/stdlib-js/stdlib/pull/9575) _(by stdlib-bot)_
 -   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - **fix:** avoid infinite recursion and update examples _(by Athan Reines)_
 -   [`2fee906`](https://github.com/stdlib-js/stdlib/commit/2fee906e7981ff2a9a0bf37bfcbfe3b77421bfcd) - **docs:** resolve lint failures _(by Athan Reines)_
 -   [`989e453`](https://github.com/stdlib-js/stdlib/commit/989e45330b4284265444e286a926a693ec8518aa) - **docs:** update copy _(by Athan Reines)_
