@@ -25,6 +25,7 @@
 
 ### Bug Fixes
 
+-   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - update TypeScript definitions to use `keys` instead of `indices`
 -   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - avoid infinite recursion and update examples
 -   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438)
 -   [`1b9a036`](https://github.com/stdlib-js/stdlib/commit/1b9a036d676b247bf502c4ede08635b99fa611ca) - allow correct values for `returns` option
@@ -324,6 +325,8 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - **fix:** update TypeScript definitions to use `keys` instead of `indices` _(by Philipp Burckhardt)_
+-   [`7e63571`](https://github.com/stdlib-js/stdlib/commit/7e63571d1ad59b012697ee2ce76e3ca3ac008e7e) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`363aead`](https://github.com/stdlib-js/stdlib/commit/363aeadb3882671cf1429fc5e2f4a99dbaa9e09a) - **docs:** update examples [(#9575)](https://github.com/stdlib-js/stdlib/pull/9575) _(by stdlib-bot)_
 -   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - **fix:** avoid infinite recursion and update examples _(by Athan Reines)_
 -   [`2fee906`](https://github.com/stdlib-js/stdlib/commit/2fee906e7981ff2a9a0bf37bfcbfe3b77421bfcd) - **docs:** resolve lint failures _(by Athan Reines)_
