@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-06)
+## Unreleased (2026-01-07)
 
 <section class="features">
 
@@ -325,6 +325,7 @@ A total of 26 issues were closed in this release:
 
 <details>
 
+-   [`c68ca1f`](https://github.com/stdlib-js/stdlib/commit/c68ca1f56b551e3094df97c3a26f02dec913e930) - **docs:** update example code in `utils` TypeScript declarations [(#9596)](https://github.com/stdlib-js/stdlib/pull/9596) _(by stdlib-bot)_
 -   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - **fix:** update TypeScript definitions to use `keys` instead of `indices` _(by Philipp Burckhardt)_
 -   [`7e63571`](https://github.com/stdlib-js/stdlib/commit/7e63571d1ad59b012697ee2ce76e3ca3ac008e7e) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`363aead`](https://github.com/stdlib-js/stdlib/commit/363aeadb3882671cf1429fc5e2f4a99dbaa9e09a) - **docs:** update examples [(#9575)](https://github.com/stdlib-js/stdlib/pull/9575) _(by stdlib-bot)_
