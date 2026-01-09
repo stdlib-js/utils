@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-08)
+## Unreleased (2026-01-09)
 
 <section class="features">
 
@@ -38,6 +38,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1): remove `utils/bifurcate-own`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/bifurcate-own` which provides the same API and implementation.
+
+-   [`2af3d97`](https://github.com/stdlib-js/stdlib/commit/2af3d9749b0aa0c5fe4c04f5e526e567b963e26a): remove `bifurcateOwn`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`e776e3f`](https://github.com/stdlib-js/stdlib/commit/e776e3f55c8636a4d777c47a3f4b076d5523db33): remove `utils/bifurcate-in`
 
@@ -325,6 +335,9 @@ A total of 28 issues were closed in this release:
 
 <details>
 
+-   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1) - **remove:** remove `utils/bifurcate-own` _(by Neeraj Pathak)_
+-   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`2af3d97`](https://github.com/stdlib-js/stdlib/commit/2af3d9749b0aa0c5fe4c04f5e526e567b963e26a) - **remove:** remove `bifurcateOwn` from namespace _(by Neeraj Pathak)_
 -   [`c364b92`](https://github.com/stdlib-js/stdlib/commit/c364b92c5f5b23e2ba74a43436de24bf3b305d75) - **chore:** fix JavaScript lint errors [(#9616)](https://github.com/stdlib-js/stdlib/pull/9616) _(by Ishanth)_
 -   [`040d8ec`](https://github.com/stdlib-js/stdlib/commit/040d8ecffb823cc3df4a8b11753241fc10e645b1) - **chore:** fix JavaScript lint errors [(#9437)](https://github.com/stdlib-js/stdlib/pull/9437) _(by Shubham)_
 -   [`c68ca1f`](https://github.com/stdlib-js/stdlib/commit/c68ca1f56b551e3094df97c3a26f02dec913e930) - **docs:** update example code in `utils` TypeScript declarations [(#9596)](https://github.com/stdlib-js/stdlib/pull/9596) _(by stdlib-bot)_
