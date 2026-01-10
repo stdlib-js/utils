@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-09)
+## Unreleased (2026-01-10)
 
 <section class="features">
 
@@ -25,6 +25,7 @@
 
 ### Bug Fixes
 
+-   [`20e08f9`](https://github.com/stdlib-js/stdlib/commit/20e08f9e46bae5fdc67e1d0f7e635be8afa3d1fd) - prevent deadlock on single-core systems and with empty arrays in `utils/parallel` [(#9597)](https://github.com/stdlib-js/stdlib/pull/9597)
 -   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - update TypeScript definitions to use `keys` instead of `indices`
 -   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - avoid infinite recursion and update examples
 -   [`6d021ff`](https://github.com/stdlib-js/stdlib/commit/6d021ff12baa5380b83daffc78b7d64a308e1e9d) - markdown lint error in `utils/object-inverse` [(#9438)](https://github.com/stdlib-js/stdlib/pull/9438)
@@ -335,6 +336,7 @@ A total of 28 issues were closed in this release:
 
 <details>
 
+-   [`20e08f9`](https://github.com/stdlib-js/stdlib/commit/20e08f9e46bae5fdc67e1d0f7e635be8afa3d1fd) - **fix:** prevent deadlock on single-core systems and with empty arrays in `utils/parallel` [(#9597)](https://github.com/stdlib-js/stdlib/pull/9597) _(by Shivam Mittal, Athan Reines)_
 -   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1) - **remove:** remove `utils/bifurcate-own` _(by Neeraj Pathak)_
 -   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
 -   [`2af3d97`](https://github.com/stdlib-js/stdlib/commit/2af3d9749b0aa0c5fe4c04f5e526e567b963e26a) - **remove:** remove `bifurcateOwn` from namespace _(by Neeraj Pathak)_
@@ -513,7 +515,7 @@ A total of 28 issues were closed in this release:
 
 ### Contributors
 
-A total of 26 people contributed to this release. Thank you to the following contributors:
+A total of 27 people contributed to this release. Thank you to the following contributors:
 
 -   0x00000F
 -   Athan Reines
@@ -530,6 +532,7 @@ A total of 26 people contributed to this release. Thank you to the following con
 -   Rasim Bhat
 -   Rohit R Bhat
 -   Satyajeet Chavan
+-   Shivam Mittal
 -   Shubham
 -   Sibi
 -   Srinivas Batthula
