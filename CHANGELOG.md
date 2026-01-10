@@ -40,6 +40,16 @@
 
 ### BREAKING CHANGES
 
+-   [`c774606`](https://github.com/stdlib-js/stdlib/commit/c77460647fe72de99efa50c75cff73ce3285a50f): remove `utils/deep-get`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/deep-get` which provides the same API and implementation.
+
+-   [`ff350f3`](https://github.com/stdlib-js/stdlib/commit/ff350f3aa902afbd7dad2e32c03c3f0d5ced798f): remove `deepGet`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
+
 -   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1): remove `utils/bifurcate-own`
 
     -   To migrate, users should update their require/import paths to use
@@ -336,6 +346,9 @@ A total of 28 issues were closed in this release:
 
 <details>
 
+-   [`c774606`](https://github.com/stdlib-js/stdlib/commit/c77460647fe72de99efa50c75cff73ce3285a50f) - **remove:** remove `utils/deep-get` _(by Neeraj Pathak)_
+-   [`dfee33b`](https://github.com/stdlib-js/stdlib/commit/dfee33b1f8c6ae3b28465f81a0dafbd50366f9f0) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`ff350f3`](https://github.com/stdlib-js/stdlib/commit/ff350f3aa902afbd7dad2e32c03c3f0d5ced798f) - **remove:** remove `deepGet` from namespace _(by Neeraj Pathak)_
 -   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
 -   [`20e08f9`](https://github.com/stdlib-js/stdlib/commit/20e08f9e46bae5fdc67e1d0f7e635be8afa3d1fd) - **fix:** prevent deadlock on single-core systems and with empty arrays in `utils/parallel` [(#9597)](https://github.com/stdlib-js/stdlib/pull/9597) _(by Shivam Mittal, Athan Reines)_
 -   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1) - **remove:** remove `utils/bifurcate-own` _(by Neeraj Pathak)_
