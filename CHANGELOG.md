@@ -336,6 +336,7 @@ A total of 28 issues were closed in this release:
 
 <details>
 
+-   [`bfc8c3a`](https://github.com/stdlib-js/stdlib/commit/bfc8c3a7bcebf1a049c9e457ab440f540fd5c7a9) - **chore:** use one asterisk for license comment in TS files _(by Philipp Burckhardt)_
 -   [`20e08f9`](https://github.com/stdlib-js/stdlib/commit/20e08f9e46bae5fdc67e1d0f7e635be8afa3d1fd) - **fix:** prevent deadlock on single-core systems and with empty arrays in `utils/parallel` [(#9597)](https://github.com/stdlib-js/stdlib/pull/9597) _(by Shivam Mittal, Athan Reines)_
 -   [`abfb9e2`](https://github.com/stdlib-js/stdlib/commit/abfb9e2214268f3681deaf54b1d0a454dbe1e4b1) - **remove:** remove `utils/bifurcate-own` _(by Neeraj Pathak)_
 -   [`c8bd14e`](https://github.com/stdlib-js/stdlib/commit/c8bd14eed3693ab50a341bdb9a24cf98cc64bf60) - **refactor:** update paths _(by Neeraj Pathak)_
