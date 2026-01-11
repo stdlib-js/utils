@@ -346,6 +346,7 @@ A total of 29 issues were closed in this release:
 
 <details>
 
+-   [`7aec76a`](https://github.com/stdlib-js/stdlib/commit/7aec76a713e908d3489003144b7d1e470b62745e) - **refactor:** ensure contiguous array allocation _(by Athan Reines)_
 -   [`7d17660`](https://github.com/stdlib-js/stdlib/commit/7d17660137c611ad174f81df229a31f4d3080cbc) - **chore:** fix JavaScript lint errors [(#9690)](https://github.com/stdlib-js/stdlib/pull/9690) _(by Divyanshu)_
 -   [`c774606`](https://github.com/stdlib-js/stdlib/commit/c77460647fe72de99efa50c75cff73ce3285a50f) - **remove:** remove `utils/deep-get` _(by Neeraj Pathak)_
 -   [`dfee33b`](https://github.com/stdlib-js/stdlib/commit/dfee33b1f8c6ae3b28465f81a0dafbd50366f9f0) - **refactor:** update paths _(by Neeraj Pathak)_
