@@ -38,7 +38,6 @@ import curry = require( './../../curry' );
 import curryRight = require( './../../curry-right' );
 import decorateAfter = require( './../../decorate-after' );
 import deepPluck = require( './../../deep-pluck' );
-import deepSet = require( './../../deep-set' );
 import setConfigurableReadOnlyAccessor = require( './../../define-configurable-read-only-accessor' );
 import setConfigurableReadOnly = require( './../../define-configurable-read-only-property' );
 import setConfigurableReadWriteAccessor = require( './../../define-configurable-read-write-accessor' );
@@ -761,61 +760,6 @@ interface Namespace {
 	* // returns [ 1, 2 ]
 	*/
 	deepPluck: typeof deepPluck;
-
-	/**
-	* Sets a nested property value.
-	*
-	* @param obj - input object
-	* @param path - key path
-	* @param value - value to set
-	* @param options - function options
-	* @param options.create - boolean indicating whether to create a path if the key path does not already exist (default: false)
-	* @param options.sep - key path separator (default: '.')
-	* @returns boolean indicating if the property was successfully set
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* var bool = ns.deepSet( obj, 'a.b.c', 'woot' );
-	* // returns true
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* var bool = ns.deepSet( obj, 'a.beep.c', 'boop' );
-	* // returns false
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* var bool = ns.deepSet( null, 'a.beep.c', 'boop' );
-	* // returns false
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* bool = ns.deepSet( 'bap', 'a.beep.c', 'boop' );
-	* // returns false
-	*
-	* @example
-	* var arr = [
-	*     { 'a': [ {'x': 5} ] },
-	*     { 'a': [ {'x': 10} ] }
-	* ];
-	* var bool = ns.deepSet( arr, '1.a.0.x', 25 );
-	* // returns true
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* var bool = ns.deepSet( obj, 'a/b/c', 'beep', {
-	*     'sep': '/'
-	* });
-	* // returns true
-	*
-	* @example
-	* var obj = { 'a': { 'b': { 'c': 'd' } } };
-	* var bool = ns.deepSet( obj, 'a.e.c', 'boop', {
-	*     'create': true
-	* });
-	* // returns true
-	*/
-	deepSet: typeof deepSet;
 
 	/**
 	* Defines a configurable read-only accessor.

@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-11)
+## Unreleased (2026-01-14)
 
 <section class="features">
 
@@ -39,6 +39,16 @@
 <section class="breaking-changes">
 
 ### BREAKING CHANGES
+
+-   [`2cdca3d`](https://github.com/stdlib-js/stdlib/commit/2cdca3d0e0b00fd1c1cc5a46a8e8f367fceb9c3d): remove `utils/deep-set`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/object/deep-set` which provides the same API and implementation.
+
+-   [`1a7afed`](https://github.com/stdlib-js/stdlib/commit/1a7afedb20f93966a643171629dac8620772219c): remove `deepSet`
+
+    -   To migrate, users should access the same symbol via the
+        `@stdlib/object` namespace.
 
 -   [`c774606`](https://github.com/stdlib-js/stdlib/commit/c77460647fe72de99efa50c75cff73ce3285a50f): remove `utils/deep-get`
 
@@ -346,6 +356,9 @@ A total of 29 issues were closed in this release:
 
 <details>
 
+-   [`2cdca3d`](https://github.com/stdlib-js/stdlib/commit/2cdca3d0e0b00fd1c1cc5a46a8e8f367fceb9c3d) - **remove:** remove `utils/deep-set` _(by Neeraj Pathak)_
+-   [`fb171e3`](https://github.com/stdlib-js/stdlib/commit/fb171e313f8973bd4cd7d873f89f8b248b2cf14e) - **refactor:** update paths _(by Neeraj Pathak)_
+-   [`1a7afed`](https://github.com/stdlib-js/stdlib/commit/1a7afedb20f93966a643171629dac8620772219c) - **remove:** remove `deepSet` from namespace _(by Neeraj Pathak)_
 -   [`7aec76a`](https://github.com/stdlib-js/stdlib/commit/7aec76a713e908d3489003144b7d1e470b62745e) - **refactor:** ensure contiguous array allocation _(by Athan Reines)_
 -   [`7d17660`](https://github.com/stdlib-js/stdlib/commit/7d17660137c611ad174f81df229a31f4d3080cbc) - **chore:** fix JavaScript lint errors [(#9690)](https://github.com/stdlib-js/stdlib/pull/9690) _(by Divyanshu)_
 -   [`c774606`](https://github.com/stdlib-js/stdlib/commit/c77460647fe72de99efa50c75cff73ce3285a50f) - **remove:** remove `utils/deep-get` _(by Neeraj Pathak)_
