@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-01-20)
+## Unreleased (2026-01-21)
 
 <section class="features">
 
@@ -356,6 +356,7 @@ A total of 30 issues were closed in this release:
 
 <details>
 
+-   [`68446dc`](https://github.com/stdlib-js/stdlib/commit/68446dcb55d7b08e39baf6efae7ba5ba038c923f) - **docs:** update namespace table of contents [(#9848)](https://github.com/stdlib-js/stdlib/pull/9848) _(by stdlib-bot)_
 -   [`5852d17`](https://github.com/stdlib-js/stdlib/commit/5852d1790fb92fa1464b4cca295bb7724d557013) - **chore:** fix JavaScript lint errors [(#9837)](https://github.com/stdlib-js/stdlib/pull/9837) _(by Utkarsh Singhal)_
 -   [`2cdca3d`](https://github.com/stdlib-js/stdlib/commit/2cdca3d0e0b00fd1c1cc5a46a8e8f367fceb9c3d) - **remove:** remove `utils/deep-set` _(by Neeraj Pathak)_
 -   [`fb171e3`](https://github.com/stdlib-js/stdlib/commit/fb171e313f8973bd4cd7d873f89f8b248b2cf14e) - **refactor:** update paths _(by Neeraj Pathak)_
