@@ -35,20 +35,32 @@ limitations under the License.
 
 > Utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { any, anyBy, anyByRight, append, argumentFunction, async, bifurcate, bifurcateBy, compose, constantFunction, constructorName, convertPath, copy, countBy, curry, curryRight, decorateAfter, deepPluck, defineMemoizedProperty, defineProperties, defineProperty, dirname, doUntil, doUntilEach, doUntilEachRight, doWhile, doWhileEach, doWhileEachRight, dsv, enumerableProperties, enumerablePropertiesIn, enumerablePropertySymbols, enumerablePropertySymbolsIn, every, everyBy, everyByRight, evil, extname, filterArguments, find, flattenArray, flattenObject, forEach, forEachRight, functionName, functionSequence, getGlobal, getPrototypeOf, group, groupBy, groupIn, groupOwn, identity, ifelse, ifthen, indexOf, inherit, inheritedEnumerableProperties, inheritedEnumerablePropertySymbols, inheritedKeys, inheritedNonEnumerableProperties, inheritedNonEnumerablePropertyNames, inheritedNonEnumerablePropertySymbols, inheritedProperties, inheritedPropertyDescriptor, inheritedPropertyDescriptors, inheritedPropertyNames, inheritedPropertySymbols, inheritedWritableProperties, inheritedWritablePropertyNames, inheritedWritablePropertySymbols, inmap, inmapRight, keyBy, keyByRight, keysIn, map, map2, map2Right, map2d, map3d, map4d, map5d, mapArguments, mapFun, mapKeys, mapReduce, mapReduceRight, mapRight, mapValues, maskArguments, memoize, merge, naryFunction, nativeClass, nextTick, nonEnumerableProperties, nonEnumerablePropertiesIn, nonEnumerablePropertyNames, nonEnumerablePropertyNamesIn, nonEnumerablePropertySymbols, nonEnumerablePropertySymbolsIn, nonIndexKeys, none, noneBy, noneByRight, noop, objectEntries, objectEntriesIn, objectFromEntries, objectKeys, objectValues, objectValuesIn, omit, omitBy, openURL, papply, papplyRight, parallel, parseJSON, parseNDJSON, pick, pickArguments, pickBy, pluck, pop, prepend, properties, propertiesIn, propertyDescriptor, propertyDescriptorIn, propertyDescriptors, propertyDescriptorsIn, propertyNames, propertyNamesIn, propertySymbols, propertySymbolsIn, push, reFromString, realmax, realmin, reduce, reduce2d, reduceRight, rejectArguments, reorderArguments, rescape, reverseArguments, safeintmax, safeintmin, setConfigurableReadOnly, setConfigurableReadOnlyAccessor, setConfigurableReadWriteAccessor, setConfigurableWriteOnlyAccessor, setMemoizedConfigurableReadOnly, setMemoizedReadOnly, setNonEnumerableProperty, setNonEnumerableReadOnly, setNonEnumerableReadOnlyAccessor, setNonEnumerableReadWriteAccessor, setNonEnumerableWriteOnlyAccessor, setReadOnly, setReadOnlyAccessor, setReadWriteAccessor, setWriteOnlyAccessor, shift, sizeOf, some, someBy, someByRight, tabulate, tabulateBy, timeit, tryFunction, tryRequire, trycatch, trythen, typeOf, typemax, typemin, uncurry, uncurryRight, unshift, until, untilEach, untilEachRight, unzip, whileEach, whileEachRight, whilst, writableProperties, writablePropertiesIn, writablePropertyNames, writablePropertyNamesIn, writablePropertySymbols, writablePropertySymbolsIn, zip } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+var utils = require( '@stdlib/utils' );
 ```
 
 #### utils
@@ -83,8 +95,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`any( collection )`][@stdlib/utils/any]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a collection is truthy.</span>
 -   <span class="signature">[`append( collection1, collection2 )`][@stdlib/utils/append]</span><span class="delimiter">: </span><span class="description">add elements from one collection to the end of another collection.</span>
 -   <span class="signature">[`bifurcateBy( collection, [options,] predicate )`][@stdlib/utils/bifurcate-by]</span><span class="delimiter">: </span><span class="description">split values into two groups according to a predicate function.</span>
--   <span class="signature">[`bifurcateIn( obj, [options,] predicate )`][@stdlib/utils/bifurcate-in]</span><span class="delimiter">: </span><span class="description">split an object's **own** and **inherited** property values into two groups according to a predicate function.</span>
--   <span class="signature">[`bifurcateOwn( obj, [options,] predicate )`][@stdlib/utils/bifurcate-own]</span><span class="delimiter">: </span><span class="description">split an object's **own** property values into two groups according to a predicate function.</span>
 -   <span class="signature">[`bifurcate( collection, [options,] filter )`][@stdlib/utils/bifurcate]</span><span class="delimiter">: </span><span class="description">split values into two groups.</span>
 -   <span class="signature">[`countBy( collection, [options,] indicator )`][@stdlib/utils/count-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function and return group counts.</span>
 -   <span class="signature">[`everyByRight( collection, predicate[, thisArg ] )`][@stdlib/utils/every-by-right]</span><span class="delimiter">: </span><span class="description">test whether all elements in a collection pass a test implemented by a predicate function, iterating from right to left.</span>
@@ -150,9 +160,6 @@ The namespace has the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`commonKeys( obj1, obj2[, obj3[,...,objN]] )`][@stdlib/utils/common-keys]</span><span class="delimiter">: </span><span class="description">return the common own property names of two or more objects.</span>
--   <span class="signature">[`deepGet( obj, path[, options] )`][@stdlib/utils/deep-get]</span><span class="delimiter">: </span><span class="description">get a nested property value.</span>
--   <span class="signature">[`deepSet( obj, path, value[, options] )`][@stdlib/utils/deep-set]</span><span class="delimiter">: </span><span class="description">set a nested property value.</span>
 -   <span class="signature">[`setConfigurableReadOnlyAccessor( obj, prop, getter )`][@stdlib/utils/define-configurable-read-only-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable **read-only** accessor.</span>
 -   <span class="signature">[`setConfigurableReadOnly( obj, prop, value )`][@stdlib/utils/define-configurable-read-only-property]</span><span class="delimiter">: </span><span class="description">define a configurable **read-only** property.</span>
 -   <span class="signature">[`setConfigurableReadWriteAccessor( obj, prop, getter, setter )`][@stdlib/utils/define-configurable-read-write-accessor]</span><span class="delimiter">: </span><span class="description">define a configurable **read-write** accessor.</span>
@@ -178,8 +185,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`enumerablePropertySymbolsIn( obj )`][@stdlib/utils/enumerable-property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable symbol properties.</span>
 -   <span class="signature">[`enumerablePropertySymbols( obj )`][@stdlib/utils/enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable symbol properties.</span>
 -   <span class="signature">[`flattenObject( obj[, options] )`][@stdlib/utils/flatten-object]</span><span class="delimiter">: </span><span class="description">flatten an object.</span>
--   <span class="signature">[`forIn( obj, fcn[, thisArg ] )`][@stdlib/utils/for-in]</span><span class="delimiter">: </span><span class="description">invoke a function for each own and inherited enumerable property of an object.</span>
--   <span class="signature">[`forOwn( obj, fcn[, thisArg ] )`][@stdlib/utils/for-own]</span><span class="delimiter">: </span><span class="description">invoke a function for each own enumerable property of an object.</span>
 -   <span class="signature">[`getPrototypeOf( value )`][@stdlib/utils/get-prototype-of]</span><span class="delimiter">: </span><span class="description">return the prototype of a provided object.</span>
 -   <span class="signature">[`inheritedEnumerableProperties( obj[, level] )`][@stdlib/utils/inherited-enumerable-properties]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable property names and symbols.</span>
 -   <span class="signature">[`inheritedEnumerablePropertySymbols( obj[, level] )`][@stdlib/utils/inherited-enumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited enumerable symbol properties.</span>
@@ -196,7 +201,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`inheritedWritablePropertyNames( obj[, level] )`][@stdlib/utils/inherited-writable-property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable property names.</span>
 -   <span class="signature">[`inheritedWritablePropertySymbols( obj[, level] )`][@stdlib/utils/inherited-writable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's inherited writable symbol properties.</span>
 -   <span class="signature">[`keysIn( obj )`][@stdlib/utils/keys-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property names.</span>
--   <span class="signature">[`lowercaseKeys( obj )`][@stdlib/utils/lowercase-keys]</span><span class="delimiter">: </span><span class="description">convert each object key to lowercase.</span>
 -   <span class="signature">[`mapKeys( obj, transform )`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
 -   <span class="signature">[`mapValues( obj, transform )`][@stdlib/utils/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 -   <span class="signature">[`merge( target, source1[, source2[,...,sourceN]] )`][@stdlib/utils/merge]</span><span class="delimiter">: </span><span class="description">merge and extend objects.</span>
@@ -207,8 +211,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`nonEnumerablePropertySymbolsIn( obj )`][@stdlib/utils/nonenumerable-property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited non-enumerable symbol properties.</span>
 -   <span class="signature">[`nonEnumerablePropertySymbols( obj )`][@stdlib/utils/nonenumerable-property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own non-enumerable symbol properties.</span>
 -   <span class="signature">[`nonIndexKeys( obj )`][@stdlib/utils/nonindex-keys]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property names which are not integer indices.</span>
--   <span class="signature">[`objectInverseBy( obj, [options,] transform )`][@stdlib/utils/object-inverse-by]</span><span class="delimiter">: </span><span class="description">invert an object, such that keys become values and values become keys, according to a transform function.</span>
--   <span class="signature">[`objectInverse( obj[, options] )`][@stdlib/utils/object-inverse]</span><span class="delimiter">: </span><span class="description">invert an object, such that keys become values and values become keys.</span>
 -   <span class="signature">[`omitBy( obj, predicate )`][@stdlib/utils/omit-by]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding properties for which a predicate (function) returns a truthy value.</span>
 -   <span class="signature">[`omit( obj, keys )`][@stdlib/utils/omit]</span><span class="delimiter">: </span><span class="description">return a partial object copy excluding specified keys.</span>
 -   <span class="signature">[`pickArguments( fcn, indices[, thisArg] )`][@stdlib/utils/pick-arguments]</span><span class="delimiter">: </span><span class="description">create a function that invokes a provided function with specified arguments.</span>
@@ -224,8 +226,6 @@ The namespace has the following sub-namespaces:
 -   <span class="signature">[`propertyNames( obj )`][@stdlib/utils/property-names]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable and non-enumerable property names.</span>
 -   <span class="signature">[`propertySymbolsIn( obj )`][@stdlib/utils/property-symbols-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited symbol properties.</span>
 -   <span class="signature">[`propertySymbols( obj )`][@stdlib/utils/property-symbols]</span><span class="delimiter">: </span><span class="description">return an array of an object's own symbol properties.</span>
--   <span class="signature">[`uncapitalizeKeys( obj )`][@stdlib/utils/uncapitalize-keys]</span><span class="delimiter">: </span><span class="description">convert the first letter of each object key to lowercase.</span>
--   <span class="signature">[`uppercaseKeys( obj )`][@stdlib/utils/uppercase-keys]</span><span class="delimiter">: </span><span class="description">convert each object key to uppercase.</span>
 -   <span class="signature">[`objectValuesIn( obj )`][@stdlib/utils/values-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited enumerable property values.</span>
 -   <span class="signature">[`objectValues( obj )`][@stdlib/utils/values]</span><span class="delimiter">: </span><span class="description">return an array of an object's own enumerable property values.</span>
 -   <span class="signature">[`writablePropertiesIn( obj )`][@stdlib/utils/writable-properties-in]</span><span class="delimiter">: </span><span class="description">return an array of an object's own and inherited writable property names and symbols.</span>
@@ -300,7 +300,6 @@ The namespace has the following sub-namespaces:
 
 <div class="namespace-toc">
 
--   <span class="signature">[`commonKeysIn( obj1, obj2[, obj3[,...,objN]] )`][@stdlib/utils/common-keys-in]</span><span class="delimiter">: </span><span class="description">return the common own and inherited property names of two or more objects.</span>
 -   <span class="signature">[`constructorName( value )`][@stdlib/utils/constructor-name]</span><span class="delimiter">: </span><span class="description">determine the name of a value's constructor.</span>
 -   <span class="signature">[`convertPath( from, to )`][@stdlib/utils/convert-path]</span><span class="delimiter">: </span><span class="description">convert between POSIX and Windows paths.</span>
 -   <span class="signature">[`copy( value[, level] )`][@stdlib/utils/copy]</span><span class="delimiter">: </span><span class="description">copy or deep clone a value to an arbitrary depth.</span>
@@ -359,20 +358,11 @@ The namespace has the following sub-namespaces:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils/keys@esm/index.mjs';
-import utils from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils/keys' );
+var utils = require( '@stdlib/utils' );
 
 console.log( objectKeys( utils ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -396,7 +386,7 @@ console.log( objectKeys( utils ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -460,8 +450,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils/main/LICENSE
 
 <!-- <toc-links> -->
-
-[@stdlib/utils/common-keys-in]: https://github.com/stdlib-js/utils/tree/main/common-keys-in
 
 [@stdlib/utils/constructor-name]: https://github.com/stdlib-js/utils/tree/main/constructor-name
 
@@ -611,12 +599,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/while]: https://github.com/stdlib-js/utils/tree/main/while
 
-[@stdlib/utils/common-keys]: https://github.com/stdlib-js/utils/tree/main/common-keys
-
-[@stdlib/utils/deep-get]: https://github.com/stdlib-js/utils/tree/main/deep-get
-
-[@stdlib/utils/deep-set]: https://github.com/stdlib-js/utils/tree/main/deep-set
-
 [@stdlib/utils/define-configurable-read-only-accessor]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-accessor
 
 [@stdlib/utils/define-configurable-read-only-property]: https://github.com/stdlib-js/utils/tree/main/define-configurable-read-only-property
@@ -667,10 +649,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/flatten-object]: https://github.com/stdlib-js/utils/tree/main/flatten-object
 
-[@stdlib/utils/for-in]: https://github.com/stdlib-js/utils/tree/main/for-in
-
-[@stdlib/utils/for-own]: https://github.com/stdlib-js/utils/tree/main/for-own
-
 [@stdlib/utils/get-prototype-of]: https://github.com/stdlib-js/utils/tree/main/get-prototype-of
 
 [@stdlib/utils/inherited-enumerable-properties]: https://github.com/stdlib-js/utils/tree/main/inherited-enumerable-properties
@@ -703,8 +681,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/utils/keys-in]: https://github.com/stdlib-js/utils/tree/main/keys-in
 
-[@stdlib/utils/lowercase-keys]: https://github.com/stdlib-js/utils/tree/main/lowercase-keys
-
 [@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils/tree/main/map-keys
 
 [@stdlib/utils/map-values]: https://github.com/stdlib-js/utils/tree/main/map-values
@@ -724,10 +700,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/nonenumerable-property-symbols]: https://github.com/stdlib-js/utils/tree/main/nonenumerable-property-symbols
 
 [@stdlib/utils/nonindex-keys]: https://github.com/stdlib-js/utils/tree/main/nonindex-keys
-
-[@stdlib/utils/object-inverse-by]: https://github.com/stdlib-js/utils/tree/main/object-inverse-by
-
-[@stdlib/utils/object-inverse]: https://github.com/stdlib-js/utils/tree/main/object-inverse
 
 [@stdlib/utils/omit-by]: https://github.com/stdlib-js/utils/tree/main/omit-by
 
@@ -758,10 +730,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils/tree/main/property-symbols-in
 
 [@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils/tree/main/property-symbols
-
-[@stdlib/utils/uncapitalize-keys]: https://github.com/stdlib-js/utils/tree/main/uncapitalize-keys
-
-[@stdlib/utils/uppercase-keys]: https://github.com/stdlib-js/utils/tree/main/uppercase-keys
 
 [@stdlib/utils/values-in]: https://github.com/stdlib-js/utils/tree/main/values-in
 
@@ -804,10 +772,6 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [@stdlib/utils/append]: https://github.com/stdlib-js/utils/tree/main/append
 
 [@stdlib/utils/bifurcate-by]: https://github.com/stdlib-js/utils/tree/main/bifurcate-by
-
-[@stdlib/utils/bifurcate-in]: https://github.com/stdlib-js/utils/tree/main/bifurcate-in
-
-[@stdlib/utils/bifurcate-own]: https://github.com/stdlib-js/utils/tree/main/bifurcate-own
 
 [@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils/tree/main/bifurcate
 
