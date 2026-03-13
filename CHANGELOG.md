@@ -356,6 +356,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`337cd19`](https://github.com/stdlib-js/stdlib/commit/337cd19f6517c2a606978fcdc4786d269ea0e2cd) - **bench:** refactor to use string interpolation in `utils/some-by` [(#10867)](https://github.com/stdlib-js/stdlib/pull/10867) _(by Sumithraju)_
 -   [`4ea59e9`](https://github.com/stdlib-js/stdlib/commit/4ea59e9fee040c70ba692fc12c62a930f9f82925) - **bench:** refactor to use string interpolation in `utils/some` [(#10866)](https://github.com/stdlib-js/stdlib/pull/10866) _(by Sumithraju)_
 -   [`ae3b935`](https://github.com/stdlib-js/stdlib/commit/ae3b9357fea476785d737e028d4f0242ade846ec) - **chore:** fix JavaScript lint errors (issue #10501) [(#10502)](https://github.com/stdlib-js/stdlib/pull/10502) _(by Partha Das)_
 -   [`086d2d6`](https://github.com/stdlib-js/stdlib/commit/086d2d61999c12b8ec98b96dbbf9677b835181ea) - **chore:** fix JavaScript lint errors [(#10557)](https://github.com/stdlib-js/stdlib/pull/10557) _(by Partha Das, Athan Reines)_
