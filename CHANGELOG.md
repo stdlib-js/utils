@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-09)
+## Unreleased (2026-03-13)
 
 <section class="features">
 
@@ -356,6 +356,7 @@ A total of 36 issues were closed in this release:
 
 <details>
 
+-   [`4ea59e9`](https://github.com/stdlib-js/stdlib/commit/4ea59e9fee040c70ba692fc12c62a930f9f82925) - **bench:** refactor to use string interpolation in `utils/some` [(#10866)](https://github.com/stdlib-js/stdlib/pull/10866) _(by Sumithraju)_
 -   [`ae3b935`](https://github.com/stdlib-js/stdlib/commit/ae3b9357fea476785d737e028d4f0242ade846ec) - **chore:** fix JavaScript lint errors (issue #10501) [(#10502)](https://github.com/stdlib-js/stdlib/pull/10502) _(by Partha Das)_
 -   [`086d2d6`](https://github.com/stdlib-js/stdlib/commit/086d2d61999c12b8ec98b96dbbf9677b835181ea) - **chore:** fix JavaScript lint errors [(#10557)](https://github.com/stdlib-js/stdlib/pull/10557) _(by Partha Das, Athan Reines)_
 -   [`3422651`](https://github.com/stdlib-js/stdlib/commit/3422651a3ec2e6717f25d82020a62f00dbe2aa78) - **docs:** add missing section closing comments in READMEs _(by Philipp Burckhardt)_
@@ -553,7 +554,7 @@ A total of 36 issues were closed in this release:
 
 ### Contributors
 
-A total of 33 people contributed to this release. Thank you to the following contributors:
+A total of 34 people contributed to this release. Thank you to the following contributors:
 
 -   0x00000F
 -   Athan Reines
@@ -579,6 +580,7 @@ A total of 33 people contributed to this release. Thank you to the following con
 -   Shubham
 -   Sibi
 -   Srinivas Batthula
+-   Sumithraju
 -   Suyash Pathak
 -   Tyson Cung
 -   Uday Kakade
