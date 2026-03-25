@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-03-23)
+## Unreleased (2026-03-25)
 
 <section class="features">
 
@@ -342,9 +342,9 @@
 
 ### Closed Issues
 
-A total of 39 issues were closed in this release:
+A total of 40 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6417](https://github.com/stdlib-js/stdlib/issues/6417), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8253](https://github.com/stdlib-js/stdlib/issues/8253), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390), [#8577](https://github.com/stdlib-js/stdlib/issues/8577), [#8670](https://github.com/stdlib-js/stdlib/issues/8670), [#8701](https://github.com/stdlib-js/stdlib/issues/8701), [#9032](https://github.com/stdlib-js/stdlib/issues/9032), [#9403](https://github.com/stdlib-js/stdlib/issues/9403), [#9527](https://github.com/stdlib-js/stdlib/issues/9527), [#9615](https://github.com/stdlib-js/stdlib/issues/9615), [#9687](https://github.com/stdlib-js/stdlib/issues/9687), [#9833](https://github.com/stdlib-js/stdlib/issues/9833), [#9843](https://github.com/stdlib-js/stdlib/issues/9843), [#9851](https://github.com/stdlib-js/stdlib/issues/9851), [#10327](https://github.com/stdlib-js/stdlib/issues/10327), [#10423](https://github.com/stdlib-js/stdlib/issues/10423), [#10501](https://github.com/stdlib-js/stdlib/issues/10501), [#10556](https://github.com/stdlib-js/stdlib/issues/10556), [#10927](https://github.com/stdlib-js/stdlib/issues/10927), [#11045](https://github.com/stdlib-js/stdlib/issues/11045), [#11082](https://github.com/stdlib-js/stdlib/issues/11082)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6417](https://github.com/stdlib-js/stdlib/issues/6417), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8253](https://github.com/stdlib-js/stdlib/issues/8253), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390), [#8577](https://github.com/stdlib-js/stdlib/issues/8577), [#8670](https://github.com/stdlib-js/stdlib/issues/8670), [#8701](https://github.com/stdlib-js/stdlib/issues/8701), [#9032](https://github.com/stdlib-js/stdlib/issues/9032), [#9403](https://github.com/stdlib-js/stdlib/issues/9403), [#9527](https://github.com/stdlib-js/stdlib/issues/9527), [#9615](https://github.com/stdlib-js/stdlib/issues/9615), [#9687](https://github.com/stdlib-js/stdlib/issues/9687), [#9833](https://github.com/stdlib-js/stdlib/issues/9833), [#9843](https://github.com/stdlib-js/stdlib/issues/9843), [#9851](https://github.com/stdlib-js/stdlib/issues/9851), [#10327](https://github.com/stdlib-js/stdlib/issues/10327), [#10423](https://github.com/stdlib-js/stdlib/issues/10423), [#10501](https://github.com/stdlib-js/stdlib/issues/10501), [#10556](https://github.com/stdlib-js/stdlib/issues/10556), [#10927](https://github.com/stdlib-js/stdlib/issues/10927), [#11045](https://github.com/stdlib-js/stdlib/issues/11045), [#11082](https://github.com/stdlib-js/stdlib/issues/11082), [#11123](https://github.com/stdlib-js/stdlib/issues/11123)
 
 </section>
 
@@ -356,6 +356,7 @@ A total of 39 issues were closed in this release:
 
 <details>
 
+-   [`d5098cc`](https://github.com/stdlib-js/stdlib/commit/d5098cc7e724888381ac7b70bcb2e1269df9f162) - **chore:** fix JavaScript lint errors [(#11133)](https://github.com/stdlib-js/stdlib/pull/11133) _(by Sujal Rana, Athan Reines)_
 -   [`e5b8da9`](https://github.com/stdlib-js/stdlib/commit/e5b8da9902dce751fc23b913afd2a153a5a57c92) - **chore:** resolve JavaScript lint errors in `utils/copy` [(#11083)](https://github.com/stdlib-js/stdlib/pull/11083) _(by Agentic-Worker)_
 -   [`3ed1a6e`](https://github.com/stdlib-js/stdlib/commit/3ed1a6e0425fd8b5f64046ec549a6a1480725a41) - **chore:** fix JavaScript lint errors [(#11047)](https://github.com/stdlib-js/stdlib/pull/11047) _(by Baixiaochun)_
 -   [`0b7dd1b`](https://github.com/stdlib-js/stdlib/commit/0b7dd1b416ede5ee30931e75b88b24a323d3307b) - **chore:** fix JavaScript lint errors [(#10929)](https://github.com/stdlib-js/stdlib/pull/10929) _(by Kahfi Elhady)_
@@ -558,7 +559,7 @@ A total of 39 issues were closed in this release:
 
 ### Contributors
 
-A total of 37 people contributed to this release. Thank you to the following contributors:
+A total of 38 people contributed to this release. Thank you to the following contributors:
 
 -   0x00000F
 -   Agentic-Worker
@@ -587,6 +588,7 @@ A total of 37 people contributed to this release. Thank you to the following con
 -   Shubham
 -   Sibi
 -   Srinivas Batthula
+-   Sujal Rana
 -   Sumithraju
 -   Suyash Pathak
 -   Tyson Cung
