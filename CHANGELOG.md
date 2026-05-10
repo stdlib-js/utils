@@ -356,6 +356,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`f47a4f0`](https://github.com/stdlib-js/stdlib/commit/f47a4f05efd4692933891f80dd9293cd1b4a6374) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce-right` [(#12073)](https://github.com/stdlib-js/stdlib/pull/12073) _(by Karan Anand)_
 -   [`1314dfd`](https://github.com/stdlib-js/stdlib/commit/1314dfdc0e3fbb8f76a68c31c7d7d919886aefe2) - **docs:** improve doctests for complex number typed arrays in `utils/reduce-right` [(#12070)](https://github.com/stdlib-js/stdlib/pull/12070) _(by Karan Anand)_
 -   [`74fcdf4`](https://github.com/stdlib-js/stdlib/commit/74fcdf4ce69fecf9efb9fe3d9a4bd2a114f4c2e1) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce` [(#12068)](https://github.com/stdlib-js/stdlib/pull/12068) _(by Karan Anand)_
 -   [`88c5702`](https://github.com/stdlib-js/stdlib/commit/88c5702417f03ac819a7029fbf7191ddba8a6ac6) - **docs:** improve doctests for complex number typed arrays in `utils/reduce` [(#12069)](https://github.com/stdlib-js/stdlib/pull/12069) _(by Karan Anand)_
