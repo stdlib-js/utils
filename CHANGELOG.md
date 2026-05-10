@@ -356,6 +356,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`74fcdf4`](https://github.com/stdlib-js/stdlib/commit/74fcdf4ce69fecf9efb9fe3d9a4bd2a114f4c2e1) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce` [(#12068)](https://github.com/stdlib-js/stdlib/pull/12068) _(by Karan Anand)_
 -   [`88c5702`](https://github.com/stdlib-js/stdlib/commit/88c5702417f03ac819a7029fbf7191ddba8a6ac6) - **docs:** improve doctests for complex number typed arrays in `utils/reduce` [(#12069)](https://github.com/stdlib-js/stdlib/pull/12069) _(by Karan Anand)_
 -   [`a11d11e`](https://github.com/stdlib-js/stdlib/commit/a11d11e3f1fa65b7ccebccb76884c8123f8a1ed0) - **docs:** improve doctests for complex number typed arrays in `utils` [(#12028)](https://github.com/stdlib-js/stdlib/pull/12028) _(by Karan Anand)_
 -   [`822fadc`](https://github.com/stdlib-js/stdlib/commit/822fadca5619ac17182fad841af43ec6d1cdd81e) - **bench:** refactor to use string interpolation in `utils` [(#11410)](https://github.com/stdlib-js/stdlib/pull/11410) _(by Karan Anand, Athan Reines)_
