@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-10)
+## Unreleased (2026-05-11)
 
 <section class="features">
 
@@ -342,9 +342,9 @@
 
 ### Closed Issues
 
-A total of 43 issues were closed in this release:
+A total of 44 issues were closed in this release:
 
-[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6417](https://github.com/stdlib-js/stdlib/issues/6417), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8253](https://github.com/stdlib-js/stdlib/issues/8253), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390), [#8577](https://github.com/stdlib-js/stdlib/issues/8577), [#8670](https://github.com/stdlib-js/stdlib/issues/8670), [#8701](https://github.com/stdlib-js/stdlib/issues/8701), [#9032](https://github.com/stdlib-js/stdlib/issues/9032), [#9403](https://github.com/stdlib-js/stdlib/issues/9403), [#9527](https://github.com/stdlib-js/stdlib/issues/9527), [#9615](https://github.com/stdlib-js/stdlib/issues/9615), [#9687](https://github.com/stdlib-js/stdlib/issues/9687), [#9833](https://github.com/stdlib-js/stdlib/issues/9833), [#9843](https://github.com/stdlib-js/stdlib/issues/9843), [#9851](https://github.com/stdlib-js/stdlib/issues/9851), [#10327](https://github.com/stdlib-js/stdlib/issues/10327), [#10423](https://github.com/stdlib-js/stdlib/issues/10423), [#10501](https://github.com/stdlib-js/stdlib/issues/10501), [#10556](https://github.com/stdlib-js/stdlib/issues/10556), [#10927](https://github.com/stdlib-js/stdlib/issues/10927), [#11045](https://github.com/stdlib-js/stdlib/issues/11045), [#11082](https://github.com/stdlib-js/stdlib/issues/11082), [#11123](https://github.com/stdlib-js/stdlib/issues/11123), [#11183](https://github.com/stdlib-js/stdlib/issues/11183), [#11267](https://github.com/stdlib-js/stdlib/issues/11267), [#11517](https://github.com/stdlib-js/stdlib/issues/11517)
+[#6004](https://github.com/stdlib-js/stdlib/issues/6004), [#6417](https://github.com/stdlib-js/stdlib/issues/6417), [#6786](https://github.com/stdlib-js/stdlib/issues/6786), [#6800](https://github.com/stdlib-js/stdlib/issues/6800), [#7060](https://github.com/stdlib-js/stdlib/issues/7060), [#7350](https://github.com/stdlib-js/stdlib/issues/7350), [#7694](https://github.com/stdlib-js/stdlib/issues/7694), [#7914](https://github.com/stdlib-js/stdlib/issues/7914), [#8000](https://github.com/stdlib-js/stdlib/issues/8000), [#8043](https://github.com/stdlib-js/stdlib/issues/8043), [#8061](https://github.com/stdlib-js/stdlib/issues/8061), [#8140](https://github.com/stdlib-js/stdlib/issues/8140), [#8155](https://github.com/stdlib-js/stdlib/issues/8155), [#8169](https://github.com/stdlib-js/stdlib/issues/8169), [#8183](https://github.com/stdlib-js/stdlib/issues/8183), [#8227](https://github.com/stdlib-js/stdlib/issues/8227), [#8241](https://github.com/stdlib-js/stdlib/issues/8241), [#8253](https://github.com/stdlib-js/stdlib/issues/8253), [#8260](https://github.com/stdlib-js/stdlib/issues/8260), [#8268](https://github.com/stdlib-js/stdlib/issues/8268), [#8390](https://github.com/stdlib-js/stdlib/issues/8390), [#8577](https://github.com/stdlib-js/stdlib/issues/8577), [#8670](https://github.com/stdlib-js/stdlib/issues/8670), [#8701](https://github.com/stdlib-js/stdlib/issues/8701), [#9032](https://github.com/stdlib-js/stdlib/issues/9032), [#9403](https://github.com/stdlib-js/stdlib/issues/9403), [#9527](https://github.com/stdlib-js/stdlib/issues/9527), [#9615](https://github.com/stdlib-js/stdlib/issues/9615), [#9687](https://github.com/stdlib-js/stdlib/issues/9687), [#9833](https://github.com/stdlib-js/stdlib/issues/9833), [#9843](https://github.com/stdlib-js/stdlib/issues/9843), [#9851](https://github.com/stdlib-js/stdlib/issues/9851), [#10327](https://github.com/stdlib-js/stdlib/issues/10327), [#10423](https://github.com/stdlib-js/stdlib/issues/10423), [#10501](https://github.com/stdlib-js/stdlib/issues/10501), [#10556](https://github.com/stdlib-js/stdlib/issues/10556), [#10927](https://github.com/stdlib-js/stdlib/issues/10927), [#11045](https://github.com/stdlib-js/stdlib/issues/11045), [#11082](https://github.com/stdlib-js/stdlib/issues/11082), [#11123](https://github.com/stdlib-js/stdlib/issues/11123), [#11183](https://github.com/stdlib-js/stdlib/issues/11183), [#11267](https://github.com/stdlib-js/stdlib/issues/11267), [#11517](https://github.com/stdlib-js/stdlib/issues/11517), [#11867](https://github.com/stdlib-js/stdlib/issues/11867)
 
 </section>
 
@@ -356,6 +356,7 @@ A total of 43 issues were closed in this release:
 
 <details>
 
+-   [`bba0a4f`](https://github.com/stdlib-js/stdlib/commit/bba0a4f4bbfb5210ea2bb1a33cac8096ce8194c8) - **chore:** fix JavaScript lint errors [(#12087)](https://github.com/stdlib-js/stdlib/pull/12087) _(by Jeshua:D, Athan Reines)_
 -   [`f47a4f0`](https://github.com/stdlib-js/stdlib/commit/f47a4f05efd4692933891f80dd9293cd1b4a6374) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce-right` [(#12073)](https://github.com/stdlib-js/stdlib/pull/12073) _(by Karan Anand)_
 -   [`1314dfd`](https://github.com/stdlib-js/stdlib/commit/1314dfdc0e3fbb8f76a68c31c7d7d919886aefe2) - **docs:** improve doctests for complex number typed arrays in `utils/reduce-right` [(#12070)](https://github.com/stdlib-js/stdlib/pull/12070) _(by Karan Anand)_
 -   [`74fcdf4`](https://github.com/stdlib-js/stdlib/commit/74fcdf4ce69fecf9efb9fe3d9a4bd2a114f4c2e1) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce` [(#12068)](https://github.com/stdlib-js/stdlib/pull/12068) _(by Karan Anand)_
@@ -573,7 +574,7 @@ A total of 43 issues were closed in this release:
 
 ### Contributors
 
-A total of 42 people contributed to this release. Thank you to the following contributors:
+A total of 43 people contributed to this release. Thank you to the following contributors:
 
 -   0x00000F
 -   Agentic-Worker
@@ -588,6 +589,7 @@ A total of 42 people contributed to this release. Thank you to the following con
 -   Gururaj Gurram
 -   Ishanth
 -   Jay Soni
+-   Jeshua:D
 -   Kahfi Elhady
 -   Karan Anand
 -   Lokesh Ranjan
