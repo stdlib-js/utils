@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-21)
+## Unreleased (2026-05-31)
 
 <section class="features">
 
@@ -356,6 +356,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`899d81e`](https://github.com/stdlib-js/stdlib/commit/899d81ead915301ac8e472bf659b51ef24bdbdb7) - **test:** fix missing parenthesis _(by Athan Reines)_
 -   [`bba0a4f`](https://github.com/stdlib-js/stdlib/commit/bba0a4f4bbfb5210ea2bb1a33cac8096ce8194c8) - **chore:** fix JavaScript lint errors [(#12087)](https://github.com/stdlib-js/stdlib/pull/12087) _(by Jeshua:D, Athan Reines)_
 -   [`f47a4f0`](https://github.com/stdlib-js/stdlib/commit/f47a4f05efd4692933891f80dd9293cd1b4a6374) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce-right` [(#12073)](https://github.com/stdlib-js/stdlib/pull/12073) _(by Karan Anand)_
 -   [`1314dfd`](https://github.com/stdlib-js/stdlib/commit/1314dfdc0e3fbb8f76a68c31c7d7d919886aefe2) - **docs:** improve doctests for complex number typed arrays in `utils/reduce-right` [(#12070)](https://github.com/stdlib-js/stdlib/pull/12070) _(by Karan Anand)_
