@@ -356,6 +356,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`1c95150`](https://github.com/stdlib-js/stdlib/commit/1c9515034550374b8759dcaf681c6cbc99d47030) - **docs:** fix errors and inconsistencies in `@stdlib/utils` TypeScript declarations [(#12391)](https://github.com/stdlib-js/stdlib/pull/12391) _(by Philipp Burckhardt, Athan Reines)_
 -   [`899d81e`](https://github.com/stdlib-js/stdlib/commit/899d81ead915301ac8e472bf659b51ef24bdbdb7) - **test:** fix missing parenthesis _(by Athan Reines)_
 -   [`bba0a4f`](https://github.com/stdlib-js/stdlib/commit/bba0a4f4bbfb5210ea2bb1a33cac8096ce8194c8) - **chore:** fix JavaScript lint errors [(#12087)](https://github.com/stdlib-js/stdlib/pull/12087) _(by Jeshua:D, Athan Reines)_
 -   [`f47a4f0`](https://github.com/stdlib-js/stdlib/commit/f47a4f05efd4692933891f80dd9293cd1b4a6374) - **docs:** improve doctests for complex number typed arrays in `utils/map-reduce-right` [(#12073)](https://github.com/stdlib-js/stdlib/pull/12073) _(by Karan Anand)_
