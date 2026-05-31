@@ -25,6 +25,7 @@
 
 ### Bug Fixes
 
+-   [`da8dc3b`](https://github.com/stdlib-js/stdlib/commit/da8dc3bf2cf7c75d899e53caa0b0629b992ca7e2) - correctly type callback indices as an array [(#12393)](https://github.com/stdlib-js/stdlib/pull/12393)
 -   [`20e08f9`](https://github.com/stdlib-js/stdlib/commit/20e08f9e46bae5fdc67e1d0f7e635be8afa3d1fd) - prevent deadlock on single-core systems and with empty arrays in `utils/parallel` [(#9597)](https://github.com/stdlib-js/stdlib/pull/9597)
 -   [`376e7a3`](https://github.com/stdlib-js/stdlib/commit/376e7a36d5239ed7a21a3fb3f8114561cc0c20ef) - update TypeScript definitions to use `keys` instead of `indices`
 -   [`d2d06f4`](https://github.com/stdlib-js/stdlib/commit/d2d06f45f5df1d830aa0a14331bd6b883d9992d5) - avoid infinite recursion and update examples
@@ -356,6 +357,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`da8dc3b`](https://github.com/stdlib-js/stdlib/commit/da8dc3bf2cf7c75d899e53caa0b0629b992ca7e2) - **fix:** correctly type callback indices as an array [(#12393)](https://github.com/stdlib-js/stdlib/pull/12393) _(by Philipp Burckhardt)_
 -   [`1c95150`](https://github.com/stdlib-js/stdlib/commit/1c9515034550374b8759dcaf681c6cbc99d47030) - **docs:** fix errors and inconsistencies in `@stdlib/utils` TypeScript declarations [(#12391)](https://github.com/stdlib-js/stdlib/pull/12391) _(by Philipp Burckhardt, Athan Reines)_
 -   [`899d81e`](https://github.com/stdlib-js/stdlib/commit/899d81ead915301ac8e472bf659b51ef24bdbdb7) - **test:** fix missing parenthesis _(by Athan Reines)_
 -   [`bba0a4f`](https://github.com/stdlib-js/stdlib/commit/bba0a4f4bbfb5210ea2bb1a33cac8096ce8194c8) - **chore:** fix JavaScript lint errors [(#12087)](https://github.com/stdlib-js/stdlib/pull/12087) _(by Jeshua:D, Athan Reines)_
