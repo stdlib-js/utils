@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-31)
+## Unreleased (2026-06-04)
 
 <section class="features">
 
@@ -357,6 +357,7 @@ A total of 44 issues were closed in this release:
 
 <details>
 
+-   [`7587c51`](https://github.com/stdlib-js/stdlib/commit/7587c516c9cf38a7048079bf01c42135061b8d98) - **docs:** propagate TSDoc declaration fixes to sibling packages [(#12524)](https://github.com/stdlib-js/stdlib/pull/12524) _(by Philipp Burckhardt)_
 -   [`da8dc3b`](https://github.com/stdlib-js/stdlib/commit/da8dc3bf2cf7c75d899e53caa0b0629b992ca7e2) - **fix:** correctly type callback indices as an array [(#12393)](https://github.com/stdlib-js/stdlib/pull/12393) _(by Philipp Burckhardt)_
 -   [`1c95150`](https://github.com/stdlib-js/stdlib/commit/1c9515034550374b8759dcaf681c6cbc99d47030) - **docs:** fix errors and inconsistencies in `@stdlib/utils` TypeScript declarations [(#12391)](https://github.com/stdlib-js/stdlib/pull/12391) _(by Philipp Burckhardt, Athan Reines)_
 -   [`899d81e`](https://github.com/stdlib-js/stdlib/commit/899d81ead915301ac8e472bf659b51ef24bdbdb7) - **test:** fix missing parenthesis _(by Athan Reines)_
