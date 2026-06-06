@@ -2,6 +2,28 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-06-06)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`625dbfd`](https://github.com/stdlib-js/stdlib/commit/625dbfd7980b79fcae4664e003b18fb35f35c95a) - **docs:** update `utils` TypeScript declarations [(#12622)](https://github.com/stdlib-js/stdlib/pull/12622) _(by stdlib-bot)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-06-05)
