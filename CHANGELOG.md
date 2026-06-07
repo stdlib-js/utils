@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-06)
+## Unreleased (2026-06-07)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#12434](https://github.com/stdlib-js/stdlib/issues/12434)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`bf3e06d`](https://github.com/stdlib-js/stdlib/commit/bf3e06d5ab3b9dd46622b1b3c12a6337f094d0c2) - **chore:** fix JavaScript lint errors [(#12667)](https://github.com/stdlib-js/stdlib/pull/12667) _(by titanniya542-spec, Athan Reines)_
 -   [`625dbfd`](https://github.com/stdlib-js/stdlib/commit/625dbfd7980b79fcae4664e003b18fb35f35c95a) - **docs:** update `utils` TypeScript declarations [(#12622)](https://github.com/stdlib-js/stdlib/pull/12622) _(by stdlib-bot)_
 
 </details>
@@ -19,6 +32,19 @@
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   titanniya542-spec
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
