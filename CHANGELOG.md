@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-07)
+## Unreleased (2026-06-10)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
 -   [`bf3e06d`](https://github.com/stdlib-js/stdlib/commit/bf3e06d5ab3b9dd46622b1b3c12a6337f094d0c2) - **chore:** fix JavaScript lint errors [(#12667)](https://github.com/stdlib-js/stdlib/pull/12667) _(by titanniya542-spec, Athan Reines)_
 -   [`625dbfd`](https://github.com/stdlib-js/stdlib/commit/625dbfd7980b79fcae4664e003b18fb35f35c95a) - **docs:** update `utils` TypeScript declarations [(#12622)](https://github.com/stdlib-js/stdlib/pull/12622) _(by stdlib-bot)_
 
@@ -37,9 +38,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 -   titanniya542-spec
 
 </section>
