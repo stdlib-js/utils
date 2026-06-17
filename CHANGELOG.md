@@ -10,9 +10,9 @@
 
 ### Closed Issues
 
-This release closes the following issue:
+A total of 2 issues were closed in this release:
 
-[#12434](https://github.com/stdlib-js/stdlib/issues/12434)
+[#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859)
 
 </section>
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`6325321`](https://github.com/stdlib-js/stdlib/commit/6325321d3b77d35b966746151895cc865c8a78f1) - **chore:** fix JavaScript lint errors [(#12871)](https://github.com/stdlib-js/stdlib/pull/12871) _(by Sathwik Vemula, Athan Reines)_
 -   [`098dede`](https://github.com/stdlib-js/stdlib/commit/098deded1d652e152eb6d5f86cad92ef4844e3bd) - **style:** adjust spacing and fix REPL text wrapping [(#12348)](https://github.com/stdlib-js/stdlib/pull/12348) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
 -   [`bf3e06d`](https://github.com/stdlib-js/stdlib/commit/bf3e06d5ab3b9dd46622b1b3c12a6337f094d0c2) - **chore:** fix JavaScript lint errors [(#12667)](https://github.com/stdlib-js/stdlib/pull/12667) _(by titanniya542-spec, Athan Reines)_
@@ -39,10 +40,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Philipp Burckhardt
+-   Sathwik Vemula
 -   titanniya542-spec
 
 </section>
