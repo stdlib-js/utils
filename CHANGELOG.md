@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-10)
+## Unreleased (2026-06-17)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`098dede`](https://github.com/stdlib-js/stdlib/commit/098deded1d652e152eb6d5f86cad92ef4844e3bd) - **style:** adjust spacing and fix REPL text wrapping [(#12348)](https://github.com/stdlib-js/stdlib/pull/12348) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
 -   [`bf3e06d`](https://github.com/stdlib-js/stdlib/commit/bf3e06d5ab3b9dd46622b1b3c12a6337f094d0c2) - **chore:** fix JavaScript lint errors [(#12667)](https://github.com/stdlib-js/stdlib/pull/12667) _(by titanniya542-spec, Athan Reines)_
 -   [`625dbfd`](https://github.com/stdlib-js/stdlib/commit/625dbfd7980b79fcae4664e003b18fb35f35c95a) - **docs:** update `utils` TypeScript declarations [(#12622)](https://github.com/stdlib-js/stdlib/pull/12622) _(by stdlib-bot)_
