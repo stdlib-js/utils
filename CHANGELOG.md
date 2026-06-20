@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-17)
+## Unreleased (2026-06-20)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 2 issues were closed in this release:
+A total of 3 issues were closed in this release:
 
-[#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859)
+[#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`7f87b92`](https://github.com/stdlib-js/stdlib/commit/7f87b929f8d722cd211a08f7794aaffa710d71bf) - **chore:** fix JavaScript lint errors [(#12981)](https://github.com/stdlib-js/stdlib/pull/12981) _(by Andrey Rodrigues, Athan Reines)_
 -   [`6325321`](https://github.com/stdlib-js/stdlib/commit/6325321d3b77d35b966746151895cc865c8a78f1) - **chore:** fix JavaScript lint errors [(#12871)](https://github.com/stdlib-js/stdlib/pull/12871) _(by Sathwik Vemula, Athan Reines)_
 -   [`098dede`](https://github.com/stdlib-js/stdlib/commit/098deded1d652e152eb6d5f86cad92ef4844e3bd) - **style:** adjust spacing and fix REPL text wrapping [(#12348)](https://github.com/stdlib-js/stdlib/pull/12348) _(by Philipp Burckhardt, Athan Reines)_
 -   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
@@ -40,8 +41,9 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
+-   Andrey Rodrigues
 -   Athan Reines
 -   Philipp Burckhardt
 -   Sathwik Vemula
