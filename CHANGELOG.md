@@ -10,9 +10,9 @@
 
 ### Closed Issues
 
-A total of 3 issues were closed in this release:
+A total of 4 issues were closed in this release:
 
-[#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977)
+[#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`1cecba9`](https://github.com/stdlib-js/stdlib/commit/1cecba96937be3028fe53bf1f93c22859972a129) - **chore:** fix JavaScript lint errors [(#13225)](https://github.com/stdlib-js/stdlib/pull/13225) _(by Nikan Eidi)_
 -   [`b71a63d`](https://github.com/stdlib-js/stdlib/commit/b71a63d212d3943412faa229884d0ee56ee429da) - **style:** remove stray spaces [(#13248)](https://github.com/stdlib-js/stdlib/pull/13248) _(by Philipp Burckhardt)_
 -   [`7f87b92`](https://github.com/stdlib-js/stdlib/commit/7f87b929f8d722cd211a08f7794aaffa710d71bf) - **chore:** fix JavaScript lint errors [(#12981)](https://github.com/stdlib-js/stdlib/pull/12981) _(by Andrey Rodrigues, Athan Reines)_
 -   [`6325321`](https://github.com/stdlib-js/stdlib/commit/6325321d3b77d35b966746151895cc865c8a78f1) - **chore:** fix JavaScript lint errors [(#12871)](https://github.com/stdlib-js/stdlib/pull/12871) _(by Sathwik Vemula, Athan Reines)_
@@ -42,10 +43,11 @@ A total of 3 issues were closed in this release:
 
 ### Contributors
 
-A total of 5 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
+-   Nikan Eidi
 -   Philipp Burckhardt
 -   Sathwik Vemula
 -   titanniya542-spec
