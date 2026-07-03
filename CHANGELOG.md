@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-02)
+## Unreleased (2026-07-03)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ A total of 3 issues were closed in this release:
 
 <details>
 
+-   [`b71a63d`](https://github.com/stdlib-js/stdlib/commit/b71a63d212d3943412faa229884d0ee56ee429da) - **style:** remove stray spaces [(#13248)](https://github.com/stdlib-js/stdlib/pull/13248) _(by Philipp Burckhardt)_
 -   [`7f87b92`](https://github.com/stdlib-js/stdlib/commit/7f87b929f8d722cd211a08f7794aaffa710d71bf) - **chore:** fix JavaScript lint errors [(#12981)](https://github.com/stdlib-js/stdlib/pull/12981) _(by Andrey Rodrigues, Athan Reines)_
 -   [`6325321`](https://github.com/stdlib-js/stdlib/commit/6325321d3b77d35b966746151895cc865c8a78f1) - **chore:** fix JavaScript lint errors [(#12871)](https://github.com/stdlib-js/stdlib/pull/12871) _(by Sathwik Vemula, Athan Reines)_
 -   [`098dede`](https://github.com/stdlib-js/stdlib/commit/098deded1d652e152eb6d5f86cad92ef4844e3bd) - **style:** adjust spacing and fix REPL text wrapping [(#12348)](https://github.com/stdlib-js/stdlib/pull/12348) _(by Philipp Burckhardt, Athan Reines)_
