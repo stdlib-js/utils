@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-06)
+## Unreleased (2026-07-08)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 5 issues were closed in this release:
+A total of 6 issues were closed in this release:
 
-[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224)
+[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 5 issues were closed in this release:
 
 <details>
 
+-   [`2fc0cf4`](https://github.com/stdlib-js/stdlib/commit/2fc0cf41248c0328fe9f281ca252fb15995de42d) - **docs:** fix example [(#13380)](https://github.com/stdlib-js/stdlib/pull/13380) _(by pragyan shankar, Athan Reines)_
 -   [`1396582`](https://github.com/stdlib-js/stdlib/commit/1396582a1c2c075d60f79d72115145b5ee2dd245) - **chore:** fix JavaScript lint errors [(#11211)](https://github.com/stdlib-js/stdlib/pull/11211) _(by Jean Carlos Vargas, Athan Reines)_
 -   [`c33404a`](https://github.com/stdlib-js/stdlib/commit/c33404ab42f5cd06257f3f02843fa23393884e80) - **style:** remove extra space and address lint failures [(#13263)](https://github.com/stdlib-js/stdlib/pull/13263) _(by Philipp Burckhardt)_
 -   [`1cecba9`](https://github.com/stdlib-js/stdlib/commit/1cecba96937be3028fe53bf1f93c22859972a129) - **chore:** fix JavaScript lint errors [(#13225)](https://github.com/stdlib-js/stdlib/pull/13225) _(by Nikan Eidi)_
@@ -45,7 +46,7 @@ A total of 5 issues were closed in this release:
 
 ### Contributors
 
-A total of 7 people contributed to this release. Thank you to the following contributors:
+A total of 8 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
@@ -53,6 +54,7 @@ A total of 7 people contributed to this release. Thank you to the following cont
 -   Nikan Eidi
 -   Philipp Burckhardt
 -   Sathwik Vemula
+-   pragyan shankar
 -   titanniya542-spec
 
 </section>
