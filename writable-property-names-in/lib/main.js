@@ -24,6 +24,7 @@ var getOwnPropertyNames = require( './../../property-names' );
 var getPrototypeOf = require( './../../get-prototype-of' );
 var isWritableProperty = require( '@stdlib/assert/is-writable-property' );
 var hasOwnProp = require( '@stdlib/assert/has-own-property' );
+var Object = require( '@stdlib/object/ctor' );
 
 
 // MAIN //
