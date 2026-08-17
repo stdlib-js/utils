@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-14)
+## Unreleased (2026-08-17)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 7 issues were closed in this release:
+A total of 8 issues were closed in this release:
 
-[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763)
+[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763), [#14273](https://github.com/stdlib-js/stdlib/issues/14273)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 7 issues were closed in this release:
 
 <details>
 
+-   [`6a94f93`](https://github.com/stdlib-js/stdlib/commit/6a94f931962e3a3f227cbc6944f111794f333ce6) - **chore:** fix JavaScript lint errors [(#14286)](https://github.com/stdlib-js/stdlib/pull/14286) _(by Parth Kumbhar, Athan Reines)_
 -   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
 -   [`990d891`](https://github.com/stdlib-js/stdlib/commit/990d891c1d365286b5f719fe32eb06100d6af239) - **chore:** fix JavaScript lint errors [(#13776)](https://github.com/stdlib-js/stdlib/pull/13776) _(by Krishna Sharma, Athan Reines)_
 -   [`be0b1f5`](https://github.com/stdlib-js/stdlib/commit/be0b1f501a4af5546f7ff6ee979585e22bdd56a6) - **chore:** clean-up [(#13780)](https://github.com/stdlib-js/stdlib/pull/13780) _(by Philipp Burckhardt, Athan Reines)_
@@ -49,13 +50,14 @@ A total of 7 issues were closed in this release:
 
 ### Contributors
 
-A total of 9 people contributed to this release. Thank you to the following contributors:
+A total of 10 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
 -   Jean Carlos Vargas
 -   Krishna Sharma
 -   Nikan Eidi
+-   Parth Kumbhar
 -   Philipp Burckhardt
 -   Sathwik Vemula
 -   pragyan shankar
