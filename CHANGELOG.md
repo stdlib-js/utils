@@ -4,15 +4,15 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-20)
+## Unreleased (2026-09-23)
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 8 issues were closed in this release:
+A total of 9 issues were closed in this release:
 
-[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763), [#14273](https://github.com/stdlib-js/stdlib/issues/14273)
+[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763), [#14273](https://github.com/stdlib-js/stdlib/issues/14273), [#15438](https://github.com/stdlib-js/stdlib/issues/15438)
 
 </section>
 
@@ -24,6 +24,7 @@ A total of 8 issues were closed in this release:
 
 <details>
 
+-   [`08e741b`](https://github.com/stdlib-js/stdlib/commit/08e741bd1ce2c024ae86309676d1c0c3cd895c26) - **chore:** fix JavaScript lint errors [(#15439)](https://github.com/stdlib-js/stdlib/pull/15439) _(by MeowdyAGENT, Athan Reines)_
 -   [`72b23ea`](https://github.com/stdlib-js/stdlib/commit/72b23ea594cad1265cd358ade0e366d682f5858d) - **chore:** clean-up [(#14383)](https://github.com/stdlib-js/stdlib/pull/14383) _(by Philipp Burckhardt)_
 -   [`6a94f93`](https://github.com/stdlib-js/stdlib/commit/6a94f931962e3a3f227cbc6944f111794f333ce6) - **chore:** fix JavaScript lint errors [(#14286)](https://github.com/stdlib-js/stdlib/pull/14286) _(by Parth Kumbhar, Athan Reines)_
 -   [`513eef6`](https://github.com/stdlib-js/stdlib/commit/513eef6f9c2c70bff4dc3c0a719d4c6dbfe2e8a4) - **docs:** add missing space and fix punctuation [(#14226)](https://github.com/stdlib-js/stdlib/pull/14226) _(by Philipp Burckhardt)_
@@ -51,12 +52,13 @@ A total of 8 issues were closed in this release:
 
 ### Contributors
 
-A total of 10 people contributed to this release. Thank you to the following contributors:
+A total of 11 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
 -   Jean Carlos Vargas
 -   Krishna Sharma
+-   MeowdyAGENT
 -   Nikan Eidi
 -   Parth Kumbhar
 -   Philipp Burckhardt
@@ -299,9 +301,9 @@ No changes reported for this release.
 -   [`c04a8bc`](https://github.com/stdlib-js/stdlib/commit/c04a8bc15913cb8d3130e255eea3078a82276e4e): remove `utils/any-own-by`
 
     -   To migrate, users should update their require/import paths to use
-        `@stdlib/objects/any-own-by` which provides the same API and implementation.
+        `@stdlib/object/any-own-by` which provides the same API and implementation.
 
--   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b): remove `any-own-by`
+-   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b): remove `anyOwnBy`
 
     -   To migrate, users should access the same symbol via the
         `@stdlib/object` namespace.
@@ -546,7 +548,7 @@ A total of 44 issues were closed in this release:
 -   [`412d1de`](https://github.com/stdlib-js/stdlib/commit/412d1deb27ab20764d4096c5531c72964cae282c) - **remove:** remove `anyInBy` from namespace  _(by Athan Reines)_
 -   [`c04a8bc`](https://github.com/stdlib-js/stdlib/commit/c04a8bc15913cb8d3130e255eea3078a82276e4e) - **remove:** remove `utils/any-own-by` _(by Neeraj Pathak)_
 -   [`0b449a3`](https://github.com/stdlib-js/stdlib/commit/0b449a38d1f623ac56b4cec10626cd022c299c87) - **refactor:** update paths _(by Neeraj Pathak)_
--   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b) - **remove:** remove `any-own-by` from namespace _(by Neeraj Pathak)_
+-   [`e3ff363`](https://github.com/stdlib-js/stdlib/commit/e3ff363a73067533e3479ba237d8e3d1cd76c45b) - **remove:** remove `anyOwnBy` from namespace _(by Neeraj Pathak)_
 -   [`e65c0c3`](https://github.com/stdlib-js/stdlib/commit/e65c0c3498a0b6236197286e973e1df620067f28) - **chore:** address lint failure by disabling lint rule _(by Philipp Burckhardt)_
 -   [`dedae83`](https://github.com/stdlib-js/stdlib/commit/dedae83e63f14730064d5f4af8271dce8175f4e7) - **docs:** replace example given this context is not bound for clbk but fcn _(by Philipp Burckhardt)_
 -   [`4ebbd97`](https://github.com/stdlib-js/stdlib/commit/4ebbd97f55188dd986e9b98b26972c3729b1f6e4) - **docs:** fix TypeScript declarations doctest lint errors _(by Philipp Burckhardt)_
