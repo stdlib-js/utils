@@ -1,3 +1,0 @@
-if ( h !== h ) {
-	throw new Error( 'Something went wrong!' );
-}
