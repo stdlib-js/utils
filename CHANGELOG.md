@@ -4,15 +4,25 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-05)
+## Unreleased (2026-10-12)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`ed03196`](https://github.com/stdlib-js/stdlib/commit/ed031969ed59525f9ce7418f9375a26fb70a4a89) - ensure valid indexing of arguments array [(#15922)](https://github.com/stdlib-js/stdlib/pull/15922)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
 ### Closed Issues
 
-A total of 9 issues were closed in this release:
+A total of 10 issues were closed in this release:
 
-[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763), [#14273](https://github.com/stdlib-js/stdlib/issues/14273), [#15438](https://github.com/stdlib-js/stdlib/issues/15438)
+[#11209](https://github.com/stdlib-js/stdlib/issues/11209), [#12434](https://github.com/stdlib-js/stdlib/issues/12434), [#12859](https://github.com/stdlib-js/stdlib/issues/12859), [#12977](https://github.com/stdlib-js/stdlib/issues/12977), [#13224](https://github.com/stdlib-js/stdlib/issues/13224), [#13366](https://github.com/stdlib-js/stdlib/issues/13366), [#13763](https://github.com/stdlib-js/stdlib/issues/13763), [#14273](https://github.com/stdlib-js/stdlib/issues/14273), [#15438](https://github.com/stdlib-js/stdlib/issues/15438), [#15921](https://github.com/stdlib-js/stdlib/issues/15921)
 
 </section>
 
@@ -24,6 +34,7 @@ A total of 9 issues were closed in this release:
 
 <details>
 
+-   [`ed03196`](https://github.com/stdlib-js/stdlib/commit/ed031969ed59525f9ce7418f9375a26fb70a4a89) - **fix:** ensure valid indexing of arguments array [(#15922)](https://github.com/stdlib-js/stdlib/pull/15922) _(by Manit Roy)_
 -   [`08e741b`](https://github.com/stdlib-js/stdlib/commit/08e741bd1ce2c024ae86309676d1c0c3cd895c26) - **chore:** fix JavaScript lint errors [(#15439)](https://github.com/stdlib-js/stdlib/pull/15439) _(by MeowdyAGENT, Athan Reines)_
 -   [`72b23ea`](https://github.com/stdlib-js/stdlib/commit/72b23ea594cad1265cd358ade0e366d682f5858d) - **chore:** clean-up [(#14383)](https://github.com/stdlib-js/stdlib/pull/14383) _(by Philipp Burckhardt)_
 -   [`6a94f93`](https://github.com/stdlib-js/stdlib/commit/6a94f931962e3a3f227cbc6944f111794f333ce6) - **chore:** fix JavaScript lint errors [(#14286)](https://github.com/stdlib-js/stdlib/pull/14286) _(by Parth Kumbhar, Athan Reines)_
@@ -52,12 +63,13 @@ A total of 9 issues were closed in this release:
 
 ### Contributors
 
-A total of 11 people contributed to this release. Thank you to the following contributors:
+A total of 12 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
 -   Jean Carlos Vargas
 -   Krishna Sharma
+-   Manit Roy
 -   MeowdyAGENT
 -   Nikan Eidi
 -   Parth Kumbhar
