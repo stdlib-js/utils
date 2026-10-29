@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-23)
+## Unreleased (2026-10-29)
 
 <section class="bug-fixes">
 
@@ -34,6 +34,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`c075755`](https://github.com/stdlib-js/stdlib/commit/c075755477fee5aed33b7ad976072bb428f60bc3) - **chore:** update keywords and fix type [(#16329)](https://github.com/stdlib-js/stdlib/pull/16329) _(by Philipp Burckhardt)_
 -   [`a9c5844`](https://github.com/stdlib-js/stdlib/commit/a9c5844dafa15737aaf319baed5cc2a894d6c261) - **docs:** add missing JSDoc examples in `utils/type-of` [(#16295)](https://github.com/stdlib-js/stdlib/pull/16295) _(by Philipp Burckhardt)_
 -   [`ed03196`](https://github.com/stdlib-js/stdlib/commit/ed031969ed59525f9ce7418f9375a26fb70a4a89) - **fix:** ensure valid indexing of arguments array [(#15922)](https://github.com/stdlib-js/stdlib/pull/15922) _(by Manit Roy)_
 -   [`08e741b`](https://github.com/stdlib-js/stdlib/commit/08e741bd1ce2c024ae86309676d1c0c3cd895c26) - **chore:** fix JavaScript lint errors [(#15439)](https://github.com/stdlib-js/stdlib/pull/15439) _(by MeowdyAGENT, Athan Reines)_
