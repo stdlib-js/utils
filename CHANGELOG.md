@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-29)
+## Unreleased (2026-11-08)
 
 <section class="bug-fixes">
 
 ### Bug Fixes
 
+-   [`a3ef833`](https://github.com/stdlib-js/stdlib/commit/a3ef8332fc0b02f15802a6edb81df0ede5457fc6) - add support for `d`, `s`, `u`, and `v` regexp flags [(#16543)](https://github.com/stdlib-js/stdlib/pull/16543)
 -   [`ed03196`](https://github.com/stdlib-js/stdlib/commit/ed031969ed59525f9ce7418f9375a26fb70a4a89) - ensure valid indexing of arguments array [(#15922)](https://github.com/stdlib-js/stdlib/pull/15922)
 
 </section>
@@ -34,6 +35,8 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`a3ef833`](https://github.com/stdlib-js/stdlib/commit/a3ef8332fc0b02f15802a6edb81df0ede5457fc6) - **fix:** add support for `d`, `s`, `u`, and `v` regexp flags [(#16543)](https://github.com/stdlib-js/stdlib/pull/16543) _(by Rajan Pantha)_
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`c075755`](https://github.com/stdlib-js/stdlib/commit/c075755477fee5aed33b7ad976072bb428f60bc3) - **chore:** update keywords and fix type [(#16329)](https://github.com/stdlib-js/stdlib/pull/16329) _(by Philipp Burckhardt)_
 -   [`a9c5844`](https://github.com/stdlib-js/stdlib/commit/a9c5844dafa15737aaf319baed5cc2a894d6c261) - **docs:** add missing JSDoc examples in `utils/type-of` [(#16295)](https://github.com/stdlib-js/stdlib/pull/16295) _(by Philipp Burckhardt)_
 -   [`ed03196`](https://github.com/stdlib-js/stdlib/commit/ed031969ed59525f9ce7418f9375a26fb70a4a89) - **fix:** ensure valid indexing of arguments array [(#15922)](https://github.com/stdlib-js/stdlib/pull/15922) _(by Manit Roy)_
@@ -65,7 +68,7 @@ A total of 10 issues were closed in this release:
 
 ### Contributors
 
-A total of 12 people contributed to this release. Thank you to the following contributors:
+A total of 13 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
@@ -76,6 +79,7 @@ A total of 12 people contributed to this release. Thank you to the following con
 -   Nikan Eidi
 -   Parth Kumbhar
 -   Philipp Burckhardt
+-   Rajan Pantha
 -   Sathwik Vemula
 -   pragyan shankar
 -   titanniya542-spec
