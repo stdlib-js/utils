@@ -56,7 +56,8 @@
     "@stdlib/symbol": "github:stdlib-js/symbol#main",
     "@stdlib/time": "github:stdlib-js/time#main",
     "@stdlib/types": "github:stdlib-js/types#main",
-    "debug": "^2.6.9"
+    "debug": "^2.6.9",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/bench": "github:stdlib-js/bench#main",
