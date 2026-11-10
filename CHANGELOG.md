@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`14e0c0a`](https://github.com/stdlib-js/stdlib/commit/14e0c0a39ad89aa89893c929bb24675fd6047e13) - add `utils/json-pointer/format` [(#15925)](https://github.com/stdlib-js/stdlib/pull/15925)
 -   [`a5f29ac`](https://github.com/stdlib-js/stdlib/commit/a5f29acf8a9479c642edd3a59a8ba8ca10b77b26) - add `utils/json-pointer/resolve` [(#15854)](https://github.com/stdlib-js/stdlib/pull/15854)
 -   [`a9780f1`](https://github.com/stdlib-js/stdlib/commit/a9780f1bd8903e6946f3d565d929a26ba4356970) - add `utils/json-pointer/parse` [(#14824)](https://github.com/stdlib-js/stdlib/pull/14824)
 -   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326)
@@ -48,6 +49,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`14e0c0a`](https://github.com/stdlib-js/stdlib/commit/14e0c0a39ad89aa89893c929bb24675fd6047e13) - **feat:** add `utils/json-pointer/format` [(#15925)](https://github.com/stdlib-js/stdlib/pull/15925) _(by Gururaj Gurram, Athan Reines)_
 -   [`a5f29ac`](https://github.com/stdlib-js/stdlib/commit/a5f29acf8a9479c642edd3a59a8ba8ca10b77b26) - **feat:** add `utils/json-pointer/resolve` [(#15854)](https://github.com/stdlib-js/stdlib/pull/15854) _(by Gururaj Gurram, Athan Reines)_
 -   [`7932712`](https://github.com/stdlib-js/stdlib/commit/7932712b3b65765e50d383477a4866c556f72398) - **chore:** clean-up [(#16570)](https://github.com/stdlib-js/stdlib/pull/16570) _(by Philipp Burckhardt)_
 -   [`a9780f1`](https://github.com/stdlib-js/stdlib/commit/a9780f1bd8903e6946f3d565d929a26ba4356970) - **feat:** add `utils/json-pointer/parse` [(#14824)](https://github.com/stdlib-js/stdlib/pull/14824) _(by Gururaj Gurram, Athan Reines)_
