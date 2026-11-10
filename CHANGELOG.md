@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`a9780f1`](https://github.com/stdlib-js/stdlib/commit/a9780f1bd8903e6946f3d565d929a26ba4356970) - add `utils/json-pointer/parse` [(#14824)](https://github.com/stdlib-js/stdlib/pull/14824)
 -   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326)
 -   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320)
 
@@ -46,6 +47,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`a9780f1`](https://github.com/stdlib-js/stdlib/commit/a9780f1bd8903e6946f3d565d929a26ba4356970) - **feat:** add `utils/json-pointer/parse` [(#14824)](https://github.com/stdlib-js/stdlib/pull/14824) _(by Gururaj Gurram, Athan Reines)_
 -   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - **feat:** add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326) _(by Gururaj Gurram, Athan Reines)_
 -   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - **feat:** add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3ef833`](https://github.com/stdlib-js/stdlib/commit/a3ef8332fc0b02f15802a6edb81df0ede5457fc6) - **fix:** add support for `d`, `s`, `u`, and `v` regexp flags [(#16543)](https://github.com/stdlib-js/stdlib/pull/16543) _(by Rajan Pantha)_
