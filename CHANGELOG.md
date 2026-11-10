@@ -47,6 +47,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`7932712`](https://github.com/stdlib-js/stdlib/commit/7932712b3b65765e50d383477a4866c556f72398) - **chore:** clean-up [(#16570)](https://github.com/stdlib-js/stdlib/pull/16570) _(by Philipp Burckhardt)_
 -   [`a9780f1`](https://github.com/stdlib-js/stdlib/commit/a9780f1bd8903e6946f3d565d929a26ba4356970) - **feat:** add `utils/json-pointer/parse` [(#14824)](https://github.com/stdlib-js/stdlib/pull/14824) _(by Gururaj Gurram, Athan Reines)_
 -   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - **feat:** add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326) _(by Gururaj Gurram, Athan Reines)_
 -   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - **feat:** add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320) _(by Gururaj Gurram, Athan Reines)_
