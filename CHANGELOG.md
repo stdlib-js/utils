@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-08)
+## Unreleased (2026-11-10)
+
+<section class="features">
+
+### Features
+
+-   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320)
+
+</section>
+
+<!-- /.features -->
 
 <section class="bug-fixes">
 
@@ -35,6 +45,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - **feat:** add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3ef833`](https://github.com/stdlib-js/stdlib/commit/a3ef8332fc0b02f15802a6edb81df0ede5457fc6) - **fix:** add support for `d`, `s`, `u`, and `v` regexp flags [(#16543)](https://github.com/stdlib-js/stdlib/pull/16543) _(by Rajan Pantha)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`c075755`](https://github.com/stdlib-js/stdlib/commit/c075755477fee5aed33b7ad976072bb428f60bc3) - **chore:** update keywords and fix type [(#16329)](https://github.com/stdlib-js/stdlib/pull/16329) _(by Philipp Burckhardt)_
@@ -68,10 +79,11 @@ A total of 10 issues were closed in this release:
 
 ### Contributors
 
-A total of 13 people contributed to this release. Thank you to the following contributors:
+A total of 14 people contributed to this release. Thank you to the following contributors:
 
 -   Andrey Rodrigues
 -   Athan Reines
+-   Gururaj Gurram
 -   Jean Carlos Vargas
 -   Krishna Sharma
 -   Manit Roy
