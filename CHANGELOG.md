@@ -10,6 +10,7 @@
 
 ### Features
 
+-   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326)
 -   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320)
 
 </section>
@@ -45,6 +46,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`2593ea6`](https://github.com/stdlib-js/stdlib/commit/2593ea6b21e1190ee06c710d5cf7a597e2e245c0) - **feat:** add `utils/json-pointer/base/resolve-token` [(#16326)](https://github.com/stdlib-js/stdlib/pull/16326) _(by Gururaj Gurram, Athan Reines)_
 -   [`0a22d73`](https://github.com/stdlib-js/stdlib/commit/0a22d737a2f828ebf30c8ea8ba1952d1bed155c7) - **feat:** add `utils/json-pointer/base/assert/is-safe-token` [(#16320)](https://github.com/stdlib-js/stdlib/pull/16320) _(by Gururaj Gurram, Athan Reines)_
 -   [`a3ef833`](https://github.com/stdlib-js/stdlib/commit/a3ef8332fc0b02f15802a6edb81df0ede5457fc6) - **fix:** add support for `d`, `s`, `u`, and `v` regexp flags [(#16543)](https://github.com/stdlib-js/stdlib/pull/16543) _(by Rajan Pantha)_
 -   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
