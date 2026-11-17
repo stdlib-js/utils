@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-11-12)
+## Unreleased (2026-11-17)
 
 <section class="features">
 
@@ -51,6 +51,7 @@ A total of 10 issues were closed in this release:
 
 <details>
 
+-   [`d00c253`](https://github.com/stdlib-js/stdlib/commit/d00c25388d3c73d6fe3a272540e6686a4a86bb19) - **refactor:** add error handling for invalid escape sequences [(#16677)](https://github.com/stdlib-js/stdlib/pull/16677) _(by Gururaj Gurram)_
 -   [`4ce7668`](https://github.com/stdlib-js/stdlib/commit/4ce7668d098bf469feb7d67026e2480fc26de84a) - **docs:** update throws annotations [(#16597)](https://github.com/stdlib-js/stdlib/pull/16597) _(by Philipp Burckhardt, Athan Reines)_
 -   [`a6aa6d9`](https://github.com/stdlib-js/stdlib/commit/a6aa6d97df92d15c0262526367502ebd9d367036) - **feat:** add `utils/json-pointer/has` [(#16246)](https://github.com/stdlib-js/stdlib/pull/16246) _(by Gururaj Gurram, Athan Reines)_
 -   [`6514036`](https://github.com/stdlib-js/stdlib/commit/6514036b042522b853e8c77111fc8b7c2eaf42cc) - **feat:** add `utils/json-pointer/get` [(#16245)](https://github.com/stdlib-js/stdlib/pull/16245) _(by Gururaj Gurram, Athan Reines)_
